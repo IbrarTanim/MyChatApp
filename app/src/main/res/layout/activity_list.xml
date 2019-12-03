@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="150dp">
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -19,9 +18,9 @@
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1.8"
-            android:weightSum="10"
-            android:orientation="vertical">
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:weightSum="10">
 
 
             <de.hdodenhof.circleimageview.CircleImageView
@@ -41,19 +40,43 @@
         </LinearLayout>
 
 
-        <View
+        <!--<View
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight=".2" />
+            android:layout_weight="0.5" />-->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:rotation="180"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_triangle_left"
+                android:tint="#33020727" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="6" />
+
+        </LinearLayout>
 
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="8"
-            android:padding="3dp"
+            android:layout_weight="7.5"
             android:background="@drawable/chat_text_background"
             android:orientation="vertical"
+            android:padding="3dp"
             android:weightSum="10">
 
             <TextView
@@ -86,10 +109,10 @@
                 <ImageView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:padding="4dp"
                     android:layout_gravity="left"
+                    android:layout_weight="1"
                     android:background="@color/transparent"
+                    android:padding="4dp"
                     android:scaleType="fitCenter"
                     android:src="@mipmap/ic_clock" />
 
@@ -111,10 +134,10 @@
                 <ImageView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:padding="4dp"
                     android:layout_gravity="right"
+                    android:layout_weight="1"
                     android:background="@color/transparent"
+                    android:padding="4dp"
                     android:scaleType="fitCenter"
                     android:src="@mipmap/arrow_right" />
 
@@ -126,5 +149,6 @@
 
 
     </LinearLayout>
+
 
 </android.support.constraint.ConstraintLayout>

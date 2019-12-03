@@ -23,11 +23,12 @@ public class HotListAdapter extends RecyclerView.Adapter<HotListAdapter.MyViewHo
     private List<HotList> hotLists;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        public CircleImageView civHotListProfilePic;
+        public CircleImageView civHotListProfilePic, civHotListAdd;
 
         public MyViewHolder(View view) {
             super(view);
             civHotListProfilePic = view.findViewById(R.id.civHotListProfilePic);
+            civHotListAdd = view.findViewById(R.id.civHotListAdd);
         }
 
 
@@ -51,6 +52,12 @@ public class HotListAdapter extends RecyclerView.Adapter<HotListAdapter.MyViewHo
     @Override
     public void onBindViewHolder(final MyViewHolder holder, int position) {
         HotList hotList = hotLists.get(position);
+
+        if (position == 0) {
+            holder.civHotListAdd.setVisibility(View.VISIBLE);
+        } else {
+            holder.civHotListAdd.setVisibility(View.GONE);
+        }
 
         Glide.with(mContext).load(hotList.getProfilePic()).into(holder.civHotListProfilePic);
 
