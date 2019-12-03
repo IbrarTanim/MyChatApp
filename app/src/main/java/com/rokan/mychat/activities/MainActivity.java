@@ -233,7 +233,7 @@ public class MainActivity extends AppCompatActivity {
         actionBar.setDisplayOptions(actionBar.getDisplayOptions() | ActionBar.DISPLAY_SHOW_CUSTOM);
         CircleImageView imageView = new CircleImageView(actionBar.getThemedContext());
         imageView.setImageResource(R.mipmap.avatar);
-        ActionBar.LayoutParams layoutParams = new ActionBar.LayoutParams(60, 60, Gravity.RIGHT | Gravity.RIGHT);
+        ActionBar.LayoutParams layoutParams = new ActionBar.LayoutParams(70, 70, Gravity.RIGHT | Gravity.RIGHT);
         imageView.setLayoutParams(layoutParams);
         actionBar.setCustomView(imageView);
     }
