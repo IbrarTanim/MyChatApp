@@ -4,6 +4,7 @@ import android.content.res.Resources;
 import android.graphics.Rect;
 import android.os.Build;
 import android.os.Handler;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -11,11 +12,13 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.TypedValue;
+import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;
 import android.widget.AbsListView;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.rokan.mychat.R;
@@ -26,6 +29,8 @@ import com.rokan.mychat.pojo.LiveChat;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -78,7 +83,6 @@ public class MainActivity extends AppCompatActivity {
         rvLiveChat.setAdapter(liveChatAdapter);
 
 
-
         rvHotList.setLayoutManager(layoutManager);
         rvHotList.setAdapter(hotListAdapter);
 
@@ -88,6 +92,8 @@ public class MainActivity extends AppCompatActivity {
 
         prepareHotList();
         prepareLiveChat();
+        actionBarIconHandle();
+
 
     }
 
@@ -220,6 +226,16 @@ public class MainActivity extends AppCompatActivity {
     private int dpToPx(int dp) {
         Resources r = getResources();
         return Math.round(TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, r.getDisplayMetrics()));
+    }
+
+    private void actionBarIconHandle() {
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayOptions(actionBar.getDisplayOptions() | ActionBar.DISPLAY_SHOW_CUSTOM);
+        CircleImageView imageView = new CircleImageView(actionBar.getThemedContext());
+        imageView.setImageResource(R.mipmap.avatar);
+        ActionBar.LayoutParams layoutParams = new ActionBar.LayoutParams(80, 80, Gravity.RIGHT | Gravity.RIGHT);
+        imageView.setLayoutParams(layoutParams);
+        actionBar.setCustomView(imageView);
     }
 
 
