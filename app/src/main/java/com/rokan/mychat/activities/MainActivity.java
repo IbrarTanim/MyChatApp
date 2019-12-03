@@ -52,6 +52,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if(getSupportActionBar() != null)
+        {
+            getSupportActionBar().setElevation(0);
+        }
         setContentView(R.layout.activity_main);
         activity = this;
 
@@ -233,7 +237,7 @@ public class MainActivity extends AppCompatActivity {
         actionBar.setDisplayOptions(actionBar.getDisplayOptions() | ActionBar.DISPLAY_SHOW_CUSTOM);
         CircleImageView imageView = new CircleImageView(actionBar.getThemedContext());
         imageView.setImageResource(R.mipmap.avatar);
-        ActionBar.LayoutParams layoutParams = new ActionBar.LayoutParams(70, 70, Gravity.RIGHT | Gravity.RIGHT);
+        ActionBar.LayoutParams layoutParams = new ActionBar.LayoutParams(90, 90, Gravity.RIGHT | Gravity.RIGHT);
         imageView.setLayoutParams(layoutParams);
         actionBar.setCustomView(imageView);
     }
