@@ -1,0 +1,14 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid android:color="@color/reference_login" />
+
+    <stroke
+        android:color="@color/reference_login" />
+
+    <corners
+
+        android:radius="20dp" />
+
+
+
+</shape>

@@ -1,5 +1,6 @@
 package com.rokan.mychat.activities;
 
+import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Rect;
 import android.os.Build;
@@ -18,6 +19,7 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;
 import android.widget.AbsListView;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
@@ -49,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
     LinearLayoutManager layoutManagerLiveChat;
     boolean isLetterShowing = false;
 
+    ImageButton ibtnPhotoBlogs;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,6 +68,13 @@ public class MainActivity extends AppCompatActivity {
         rvLiveChat = findViewById(R.id.rvLiveChat);
         llHotList = findViewById(R.id.llHotList);
         llNewMatches = findViewById(R.id.llNewMatches);
+        ibtnPhotoBlogs = findViewById(R.id.ibtnPhotoBlogs);
+        ibtnPhotoBlogs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity( new Intent(activity, LoginActivity.class));
+            }
+        });
 
 
         hotLists = new ArrayList<>();
