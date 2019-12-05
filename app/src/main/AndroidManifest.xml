@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".dialog.ForgetPasswordDialog"></activity>
         <activity
             android:name=".activities.ListActivity"
             android:screenOrientation="sensorPortrait" />
@@ -24,9 +25,7 @@
         <activity
             android:name=".activities.LoginActivity"
             android:screenOrientation="sensorPortrait"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
-
-            />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
     </application>
 
 </manifest>

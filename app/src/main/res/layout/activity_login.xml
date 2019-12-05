@@ -46,8 +46,8 @@
                 android:layout_gravity="center"
                 android:layout_weight="6"
                 android:background="@color/transparent"
-                android:scaleType="fitCenter"
-                android:src="@drawable/ic_chatingroomforme" />
+                android:scaleType="centerCrop"
+                android:src="@mipmap/login_image" />
 
         </LinearLayout>
 
@@ -130,7 +130,8 @@
                 android:layout_weight="5" />
 
 
-            <TextView
+            <Button
+                android:id="@+id/btnLogin"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_marginLeft="25dp"
@@ -149,7 +150,8 @@
                 android:layout_weight="5"
                 android:gravity="center"
                 android:text="New user? Register Now."
-                android:textColor="@color/reference_login" />
+                android:textColor="@color/reference_login"
+                android:visibility="invisible" />
 
 
             <View
@@ -176,13 +178,14 @@
                 android:weightSum="9">
 
 
-                <TextView
+                <ImageView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="3"
+                    android:background="@color/transparent"
                     android:gravity="center"
-                    android:text="__________"
-                    android:textColor="@color/black" />
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/horizontal_img" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -192,13 +195,14 @@
                     android:text="Use other Methods"
                     android:textColor="@color/black" />
 
-                <TextView
+                <ImageView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="3"
+                    android:background="@color/transparent"
                     android:gravity="center"
-                    android:text="___________"
-                    android:textColor="@color/black" />
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/horizontal_img" />
 
 
             </LinearLayout>
