@@ -1,10 +1,12 @@
 package com.rokan.mychat.activities;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import com.rokan.mychat.R;
 import com.rokan.mychat.dialog.ForgetPasswordDialog;
@@ -13,6 +15,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     LoginActivity activity;
     Button btnLogin;
+    ImageView ivFB;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +23,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         setContentView(R.layout.activity_login);
         activity = this;
         btnLogin = findViewById(R.id.btnLogin);
+        ivFB = findViewById(R.id.ivFB);
         btnLogin.setOnClickListener(this);
+        ivFB.setOnClickListener(this);
     }
 
     @Override
@@ -33,8 +38,13 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 dialog.setCancelable(true);
                 dialog.getWindow().getDecorView().setSystemUiVisibility(activity.getWindow().getDecorView().getSystemUiVisibility());
                 dialog.getWindow().clearFlags(WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE);
-
                 break;
+
+            case R.id.ivFB:
+                startActivity(new Intent(activity, RegistrationActivity.class));
+                break;
+
+
         }
     }
 }
