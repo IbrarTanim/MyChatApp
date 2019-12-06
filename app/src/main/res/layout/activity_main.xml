@@ -33,14 +33,32 @@
                     android:orientation="vertical"
                     android:weightSum="10">
 
-                    <TextView
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="3"
                         android:background="@drawable/textview_background"
-                        android:gravity="left|center"
-                        android:text="HOTLIST"
-                        android:textColor="@color/black" />
+                        android:orientation="horizontal"
+                        android:weightSum="22">
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="21"
+                            android:gravity="left|center"
+                            android:text="HOTLIST"
+                            android:textColor="@color/black"
+                            android:textSize="13dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
 
                     <View
                         android:layout_width="match_parent"
@@ -81,14 +99,31 @@
                     android:orientation="vertical"
                     android:weightSum="10">
 
-                    <TextView
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="3"
                         android:background="@drawable/textview_background"
-                        android:gravity="left|center"
-                        android:text="NEW MATCHES"
-                        android:textColor="@color/black" />
+                        android:orientation="horizontal"
+                        android:weightSum="22">
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="21"
+                            android:gravity="left|center"
+                            android:text="NEW MATCHES"
+                            android:textColor="@color/black"
+                            android:textSize="13dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
 
                     <View
                         android:layout_width="match_parent"
@@ -118,7 +153,6 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_marginLeft="5dp"
                     android:layout_weight="6.8"
                     android:orientation="vertical"
                     android:weightSum="10">
@@ -147,6 +181,7 @@
                             android:id="@+id/rvLiveChat"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:nestedScrollingEnabled="false"
                             android:overScrollMode="never"
                             android:scrollbars="none" />
 
@@ -178,9 +213,21 @@
                 android:layout_height="match_parent"
                 android:layout_weight="2"
                 android:background="@color/transparent"
-                android:padding="10dp"
-                android:scaleType="fitCenter"
-                android:src="@mipmap/photoblogs" />
+                android:scaleType="center"
+                android:src="@drawable/ic_camera" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@color/transparent"
+                android:scaleType="center"
+                android:src="@drawable/ic_message" />
 
             <View
                 android:layout_width="0dp"
@@ -193,8 +240,8 @@
                 android:layout_weight="2"
                 android:background="@color/transparent"
                 android:padding="10dp"
-                android:scaleType="fitCenter"
-                android:src="@mipmap/private_message" />
+                android:scaleType="center"
+                android:src="@drawable/ic_chat_room" />
 
             <View
                 android:layout_width="0dp"
@@ -207,8 +254,8 @@
                 android:layout_weight="2"
                 android:background="@color/transparent"
                 android:padding="10dp"
-                android:scaleType="fitCenter"
-                android:src="@mipmap/chat_rooms" />
+                android:scaleType="center"
+                android:src="@drawable/ic_notification" />
 
             <View
                 android:layout_width="0dp"
@@ -221,22 +268,8 @@
                 android:layout_weight="2"
                 android:background="@color/transparent"
                 android:padding="10dp"
-                android:scaleType="fitCenter"
-                android:src="@mipmap/notification" />
-
-            <View
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.5" />
-
-            <ImageButton
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="2"
-                android:background="@color/transparent"
-                android:padding="10dp"
-                android:scaleType="fitCenter"
-                android:src="@mipmap/my_profile" />
+                android:scaleType="center"
+                android:src="@drawable/ic_profile" />
 
             <View
                 android:layout_width="0dp"

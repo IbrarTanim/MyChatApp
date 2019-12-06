@@ -56,8 +56,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if(getSupportActionBar() != null)
-        {
+        if (getSupportActionBar() != null) {
             getSupportActionBar().setElevation(0);
         }
         setContentView(R.layout.activity_main);
@@ -72,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
         ibtnPhotoBlogs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity( new Intent(activity, LoginActivity.class));
+                startActivity(new Intent(activity, LoginActivity.class));
             }
         });
 
@@ -246,11 +245,13 @@ public class MainActivity extends AppCompatActivity {
     private void actionBarIconHandle() {
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayOptions(actionBar.getDisplayOptions() | ActionBar.DISPLAY_SHOW_CUSTOM);
-        CircleImageView imageView = new CircleImageView(actionBar.getThemedContext());
-        imageView.setImageResource(R.mipmap.avatar);
-        ActionBar.LayoutParams layoutParams = new ActionBar.LayoutParams(90, 90, Gravity.RIGHT | Gravity.RIGHT);
+        ImageView imageView = new ImageView(actionBar.getThemedContext());
+        imageView.setImageResource(R.drawable.ic_chat_request_black);
+        imageView.setScaleType(ImageView.ScaleType.CENTER);
+        ActionBar.LayoutParams layoutParams = new ActionBar.LayoutParams(120, 120, Gravity.RIGHT | Gravity.RIGHT);
         imageView.setLayoutParams(layoutParams);
         actionBar.setCustomView(imageView);
+
     }
 
 
