@@ -31,4 +31,13 @@
         <item name="android:textColor">#ffffff</item>
     </style>
 
+
+    <style name="AppTheme.OnlyStatusBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:statusBarColor">#FFFFFF</item>
+    </style>
+
 </resources>

@@ -14,7 +14,7 @@
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="@dimen/zero"
             android:layout_weight="9"
             android:overScrollMode="never"
             android:scrollbars="none">
@@ -28,7 +28,7 @@
                 <LinearLayout
                     android:id="@+id/llHotList"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
+                    android:layout_height="@dimen/zero"
                     android:layout_weight="1.5"
                     android:orientation="vertical"
                     android:weightSum="10">
@@ -36,25 +36,25 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="0dp"
+                        android:layout_height="@dimen/zero"
                         android:layout_weight="3"
                         android:background="@drawable/textview_background"
                         android:orientation="horizontal"
                         android:weightSum="22">
 
                         <View
-                            android:layout_width="0dp"
+                            android:layout_width="@dimen/zero"
                             android:layout_height="match_parent"
                             android:layout_weight="1" />
 
                         <TextView
-                            android:layout_width="0dp"
+                            android:layout_width="@dimen/zero"
                             android:layout_height="match_parent"
                             android:layout_weight="21"
                             android:gravity="left|center"
-                            android:text="HOTLIST"
+                            android:text="@string/hotlist"
                             android:textColor="@color/black"
-                            android:textSize="13dp"
+                            android:textSize="@dimen/thirteen"
                             android:textStyle="bold" />
 
                     </LinearLayout>
@@ -62,12 +62,12 @@
 
                     <View
                         android:layout_width="match_parent"
-                        android:layout_height="0dp"
+                        android:layout_height="@dimen/zero"
                         android:layout_weight="1" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="0dp"
+                        android:layout_height="@dimen/zero"
                         android:layout_gravity="center"
                         android:layout_weight="6"
                         android:gravity="center"
@@ -87,39 +87,39 @@
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_marginLeft="5dp"
+                    android:layout_height="@dimen/zero"
+                    android:layout_marginLeft="@dimen/five"
                     android:layout_weight=".2" />
 
                 <LinearLayout
                     android:id="@+id/llNewMatches"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
+                    android:layout_height="@dimen/zero"
                     android:layout_weight="1.5"
                     android:orientation="vertical"
                     android:weightSum="10">
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="0dp"
+                        android:layout_height="@dimen/zero"
                         android:layout_weight="3"
                         android:background="@drawable/textview_background"
                         android:orientation="horizontal"
                         android:weightSum="22">
 
                         <View
-                            android:layout_width="0dp"
+                            android:layout_width="@dimen/zero"
                             android:layout_height="match_parent"
                             android:layout_weight="1" />
 
                         <TextView
-                            android:layout_width="0dp"
+                            android:layout_width="@dimen/zero"
                             android:layout_height="match_parent"
                             android:layout_weight="21"
                             android:gravity="left|center"
-                            android:text="NEW MATCHES"
+                            android:text="@string/new_matches"
                             android:textColor="@color/black"
-                            android:textSize="13dp"
+                            android:textSize="@dimen/thirteen"
                             android:textStyle="bold" />
 
                     </LinearLayout>
@@ -127,12 +127,12 @@
 
                     <View
                         android:layout_width="match_parent"
-                        android:layout_height="0dp"
+                        android:layout_height="@dimen/zero"
                         android:layout_weight="1" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="0dp"
+                        android:layout_height="@dimen/zero"
                         android:layout_gravity="center"
                         android:layout_weight="6"
                         android:gravity="center"
@@ -152,28 +152,20 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
+                    android:layout_height="@dimen/zero"
                     android:layout_weight="6.8"
                     android:orientation="vertical"
                     android:weightSum="10">
 
-                    <!--<TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="0.5"
-                        android:gravity="top"
-                        android:text="Active Chat"
-                        android:textColor="@color/black" />
--->
                     <View
                         android:layout_width="match_parent"
-                        android:layout_height="0dp"
+                        android:layout_height="@dimen/zero"
                         android:layout_weight="0.2" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_marginRight="5dp"
+                        android:layout_height="@dimen/zero"
+                        android:layout_marginRight="@dimen/five"
                         android:layout_weight="9.8"
                         android:orientation="vertical">
 
@@ -197,19 +189,19 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="@dimen/zero"
             android:layout_weight="1"
             android:orientation="horizontal"
             android:weightSum="13">
 
             <View
-                android:layout_width="0dp"
+                android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
                 android:layout_weight="0.5" />
 
             <ImageButton
                 android:id="@+id/ibtnPhotoBlogs"
-                android:layout_width="0dp"
+                android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
                 android:layout_weight="2"
                 android:background="@color/transparent"
@@ -217,12 +209,12 @@
                 android:src="@drawable/ic_camera" />
 
             <View
-                android:layout_width="0dp"
+                android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
                 android:layout_weight="0.5" />
 
             <ImageButton
-                android:layout_width="0dp"
+                android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
                 android:layout_weight="2"
                 android:background="@color/transparent"
@@ -230,49 +222,49 @@
                 android:src="@drawable/ic_message" />
 
             <View
-                android:layout_width="0dp"
+                android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
                 android:layout_weight="0.5" />
 
             <ImageButton
-                android:layout_width="0dp"
+                android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
                 android:layout_weight="2"
                 android:background="@color/transparent"
-                android:padding="10dp"
+                android:padding="@dimen/ten"
                 android:scaleType="center"
                 android:src="@drawable/ic_chat_room" />
 
             <View
-                android:layout_width="0dp"
+                android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
                 android:layout_weight="0.5" />
 
             <ImageButton
-                android:layout_width="0dp"
+                android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
                 android:layout_weight="2"
                 android:background="@color/transparent"
-                android:padding="10dp"
+                android:padding="@dimen/ten"
                 android:scaleType="center"
                 android:src="@drawable/ic_notification" />
 
             <View
-                android:layout_width="0dp"
+                android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
                 android:layout_weight="0.5" />
 
             <ImageButton
-                android:layout_width="0dp"
+                android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
                 android:layout_weight="2"
                 android:background="@color/transparent"
-                android:padding="10dp"
+                android:padding="@dimen/ten"
                 android:scaleType="center"
                 android:src="@drawable/ic_profile" />
 
             <View
-                android:layout_width="0dp"
+                android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
                 android:layout_weight="0.5" />
 
