@@ -16,30 +16,29 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.5" />
+            android:layout_weight="0.25" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_gravity="bottom"
-            android:layout_weight="1"
+            android:layout_weight="1.25"
             android:orientation="horizontal"
-            android:weightSum="11">
+            android:weightSum="10">
 
-            <View
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/ten"
                 android:layout_weight="4"
-                android:gravity="left"
+                android:gravity="center|left"
                 android:text="Here's your first step with us!"
                 android:textAlignment="gravity"
-                android:textColor="@color/white"
-                android:textSize="28dp" />
+                android:textColor="@color/black"
+                android:textSize="28dp"
+                android:textStyle="bold" />
+
 
             <ImageView
                 android:layout_width="0dp"
@@ -47,15 +46,11 @@
                 android:layout_gravity="center"
                 android:layout_weight="6"
                 android:background="@color/transparent"
-                android:scaleType="centerCrop"
-                android:src="@mipmap/registration_image" />
+                android:scaleType="fitCenter"
+                android:src="@mipmap/registration_page_image" />
 
         </LinearLayout>
 
-        <!--<View
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.5" />-->
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -99,6 +94,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="7"
+                        android:layout_marginRight="78dp"
                         android:textColor="@color/black" />
 
 
@@ -120,15 +116,15 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="3"
-                        android:text="Yor Name"
+                        android:text="Your Name"
                         android:textColor="@color/reference_login" />
 
 
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
+                        android:layout_marginRight="78dp"
                         android:layout_weight="7"
-                        android:inputType="textPassword"
                         android:textColor="@color/black" />
 
 
@@ -154,12 +150,31 @@
                         android:textColor="@color/reference_login" />
 
 
-                    <EditText
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="7"
-                        android:inputType="textPassword"
-                        android:textColor="@color/black" />
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+
+                        <EditText
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="match_parent"
+                            android:layout_weight="8"
+                            android:inputType="textPassword"
+                            android:textColor="@color/black" />
+
+                        <ImageView
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:background="@color/transparent"
+                            android:padding="@dimen/ten"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/password_show_hide_selector" />
+
+                    </LinearLayout>
 
 
                 </LinearLayout>
@@ -216,62 +231,25 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="vertical"
-            android:weightSum="20">
+            android:weightSum="15">
 
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="5"
-                android:orientation="horizontal"
-                android:weightSum="9">
-
-
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="3"
-                    android:background="@color/transparent"
-                    android:gravity="center"
-                    android:scaleType="fitCenter"
-                    android:src="@mipmap/horizontal_img" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="3"
-                    android:gravity="center"
-                    android:text="Use other Methods"
-                    android:textColor="@color/black" />
-
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="3"
-                    android:background="@color/transparent"
-                    android:gravity="center"
-                    android:scaleType="fitCenter"
-                    android:src="@mipmap/horizontal_img" />
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="10"
+                android:layout_weight="12"
                 android:orientation="horizontal">
 
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:layout_marginRight="@dimen/ten"
                     android:layout_weight="3"
-                    android:gravity="top"
-                    android:padding="@dimen/ten"
+                    android:gravity="left|center"
                     android:text="By clicking 'JOIN BODDO' you agree with our Terms and Conditions. Learn about how we process your data in our privacy policy."
-                    android:textColor="@color/white"
-                    android:textSize="15dp" />
+                    android:textColor="@color/white" />
 
 
             </LinearLayout>
@@ -280,7 +258,7 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="5" />
+                android:layout_weight="3" />
 
 
         </LinearLayout>
