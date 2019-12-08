@@ -4,4 +4,5 @@
     <dimen name="thirteen">13dp</dimen>
     <dimen name="five">5dp</dimen>
     <dimen name="ten">10dp</dimen>
+    <dimen name="hundred_fifty">150dp</dimen>
 </resources>

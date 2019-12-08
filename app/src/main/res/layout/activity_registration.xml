@@ -187,8 +187,9 @@
 
                 <Button
                     android:id="@+id/btnLogin"
-                    android:layout_width="match_parent"
+                    android:layout_width="@dimen/hundred_fifty"
                     android:layout_height="0dp"
+                    android:layout_gravity="center"
                     android:layout_marginLeft="25dp"
                     android:layout_marginRight="25dp"
                     android:layout_weight="10"
@@ -196,7 +197,7 @@
                     android:gravity="center"
                     android:text="Next"
                     android:textColor="@color/white"
-                    android:textSize="20dp" />
+                    android:textSize="18dp" />
 
 
                 <View
@@ -258,36 +259,20 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="5"
-                android:orientation="horizontal"
-                android:weightSum="20">
+                android:layout_weight="10"
+                android:orientation="horizontal">
 
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="7" />
 
-                <ImageView
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="3"
-                    android:background="@color/transparent"
-                    android:scaleType="fitCenter"
-                    android:src="@mipmap/fb_icon" />
+                    android:gravity="top"
+                    android:padding="@dimen/ten"
+                    android:text="By clicking 'JOIN BODDO' you agree with our Terms and Conditions. Learn about how we process your data in our privacy policy."
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
 
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="3"
-                    android:background="@color/transparent"
-                    android:scaleType="fitCenter"
-                    android:src="@mipmap/google_icon" />
-
-
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="7" />
 
             </LinearLayout>
 
@@ -295,7 +280,7 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="10" />
+                android:layout_weight="5" />
 
 
         </LinearLayout>
