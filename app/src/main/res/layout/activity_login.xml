@@ -10,7 +10,7 @@
         android:layout_height="match_parent"
         android:background="@color/white"
         android:orientation="vertical"
-        android:weightSum="5.25">
+        android:weightSum="5">
 
         <View
             android:layout_width="match_parent"
@@ -22,7 +22,7 @@
             android:layout_height="0dp"
             android:layout_gravity="bottom"
             android:layout_marginLeft="10dp"
-            android:layout_weight="1.5"
+            android:layout_weight="2.5"
             android:orientation="horizontal"
             android:weightSum="10">
 
@@ -30,7 +30,7 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="4"
+                android:layout_weight="3"
                 android:gravity="center|left"
                 android:text="Already have an account?"
                 android:textAlignment="gravity"
@@ -42,7 +42,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:layout_weight="6"
+                android:layout_weight="7"
                 android:background="@color/transparent"
                 android:scaleType="fitCenter"
                 android:src="@mipmap/login_page_image" />
@@ -52,7 +52,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.5" />
+            android:layout_weight="0.25" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -66,6 +66,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
+                android:layout_marginRight="@dimen/ten"
                 android:layout_weight="5"
                 android:orientation="vertical"
                 android:weightSum="10">
@@ -81,7 +82,6 @@
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_marginRight="77dp"
                     android:layout_weight="7"
                     android:textColor="@color/black" />
 
@@ -91,6 +91,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
+                android:layout_marginRight="@dimen/ten"
                 android:layout_weight="5"
                 android:orientation="vertical"
                 android:weightSum="10">
@@ -102,32 +103,28 @@
                     android:text="Password"
                     android:textColor="@color/reference_login" />
 
-
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="7"
-                    android:orientation="horizontal"
-                    android:weightSum="10">
+                    android:layout_weight="7">
 
 
                     <EditText
-                        android:layout_width="@dimen/zero"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_weight="8"
                         android:inputType="textPassword"
                         android:textColor="@color/black" />
 
                     <ImageView
-                        android:layout_width="@dimen/zero"
-                        android:layout_height="match_parent"
-                        android:layout_weight="2"
+                        android:layout_width="@dimen/fifty"
+                        android:layout_height="@dimen/fifty"
+                        android:layout_alignParentRight="true"
                         android:background="@color/transparent"
                         android:padding="@dimen/ten"
                         android:scaleType="fitCenter"
                         android:src="@drawable/password_show_hide_selector" />
 
-                </LinearLayout>
+                </RelativeLayout>
 
 
             </LinearLayout>
@@ -179,108 +176,6 @@
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:weightSum="20">
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="5"
-                android:orientation="horizontal"
-                android:weightSum="11">
-
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" />
-
-
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="2"
-                    android:background="@color/transparent"
-                    android:gravity="center"
-                    android:scaleType="fitCenter"
-                    android:src="@mipmap/horizontal_img" />
-
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="5"
-                    android:gravity="center"
-                    android:text="Use other Methods"
-                    android:textColor="@color/black"
-                    android:textStyle="bold" />
-
-
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="2"
-                    android:background="@color/transparent"
-                    android:gravity="center"
-                    android:scaleType="fitCenter"
-                    android:src="@mipmap/horizontal_img" />
-
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" />
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="8"
-                android:orientation="horizontal"
-                android:weightSum="20">
-
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="7" />
-
-                <ImageView
-                    android:id="@+id/ivFB"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="3"
-                    android:background="@color/transparent"
-                    android:scaleType="fitCenter"
-                    android:src="@mipmap/facebook_icon" />
-
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="3"
-                    android:background="@color/transparent"
-                    android:scaleType="fitCenter"
-                    android:src="@mipmap/google_icon" />
-
-
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="7" />
-
-            </LinearLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="7" />
-
-        </LinearLayout>
-
 
     </LinearLayout>
 
@@ -298,6 +193,7 @@
 
 
     <ImageView
+        android:id="@+id/ivPopUPLogIn"
         android:layout_width="40dp"
         android:layout_height="100dp"
         android:background="@color/transparent"

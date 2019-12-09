@@ -16,7 +16,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     LoginActivity activity;
     Button btnLogin;
-    ImageView ivFB, ivInfo;
+    ImageView ivPopUPLogIn, ivInfo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,10 +24,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         setContentView(R.layout.activity_login);
         activity = this;
         btnLogin = findViewById(R.id.btnLogin);
-        ivFB = findViewById(R.id.ivFB);
+        ivPopUPLogIn = findViewById(R.id.ivPopUPLogIn);
         ivInfo = findViewById(R.id.ivInfo);
         btnLogin.setOnClickListener(this);
-        ivFB.setOnClickListener(this);
+        ivPopUPLogIn.setOnClickListener(this);
         ivInfo.setOnClickListener(this);
     }
 
@@ -35,16 +35,18 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btnLogin:
+                startActivity(new Intent(activity, RegistrationActivity.class));
+
+                break;
+
+            case R.id.ivPopUPLogIn:
                 ForgetPasswordDialog dialog = new ForgetPasswordDialog(activity);
                 dialog.getWindow().setFlags(WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE, WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE);
                 dialog.show();
                 dialog.setCancelable(true);
                 dialog.getWindow().getDecorView().setSystemUiVisibility(activity.getWindow().getDecorView().getSystemUiVisibility());
                 dialog.getWindow().clearFlags(WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE);
-                break;
 
-            case R.id.ivFB:
-                startActivity(new Intent(activity, RegistrationActivity.class));
                 break;
 
 

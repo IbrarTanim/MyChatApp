@@ -5,4 +5,6 @@
     <dimen name="five">5dp</dimen>
     <dimen name="ten">10dp</dimen>
     <dimen name="hundred_fifty">150dp</dimen>
+    <dimen name="fifty">50dp</dimen>
+    <dimen name="fifteen">15dp</dimen>
 </resources>
