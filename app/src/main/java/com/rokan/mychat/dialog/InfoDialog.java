@@ -6,12 +6,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.rokan.mychat.R;
-import com.rokan.mychat.activities.LoginActivity;
+import com.rokan.mychat.activities.LandingActivity;
 
 public class InfoDialog extends Dialog {
 
     Context context;
-    LoginActivity activity;
+    LandingActivity activity;
 
     public InfoDialog(Context context) {
         super(context, R.style.CustomAlertDialog);

@@ -16,7 +16,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     LoginActivity activity;
     Button btnLogin;
-    ImageView ivPopUPLogIn, ivInfo;
+    ImageView ivPopUPLogIn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,10 +25,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         activity = this;
         btnLogin = findViewById(R.id.btnLogin);
         ivPopUPLogIn = findViewById(R.id.ivPopUPLogIn);
-        ivInfo = findViewById(R.id.ivInfo);
         btnLogin.setOnClickListener(this);
         ivPopUPLogIn.setOnClickListener(this);
-        ivInfo.setOnClickListener(this);
     }
 
     @Override
@@ -50,14 +48,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 break;
 
 
-            case R.id.ivInfo:
-                InfoDialog infoDialog = new InfoDialog(activity);
-                infoDialog.getWindow().setFlags(WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE, WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE);
-                infoDialog.show();
-                infoDialog.setCancelable(true);
-                infoDialog.getWindow().getDecorView().setSystemUiVisibility(activity.getWindow().getDecorView().getSystemUiVisibility());
-                infoDialog.getWindow().clearFlags(WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE);
-                break;
+
 
 
         }

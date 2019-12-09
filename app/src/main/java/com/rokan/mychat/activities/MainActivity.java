@@ -35,7 +35,7 @@ import java.util.List;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     MainActivity activity;
     private RecyclerView rvHotList;
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
     LinearLayoutManager layoutManagerLiveChat;
     boolean isLetterShowing = false;
 
-    ImageButton ibtnPhotoBlogs;
+    ImageButton ibtnPhotoBlogs, ibtMessage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,12 +68,11 @@ public class MainActivity extends AppCompatActivity {
         llHotList = findViewById(R.id.llHotList);
         llNewMatches = findViewById(R.id.llNewMatches);
         ibtnPhotoBlogs = findViewById(R.id.ibtnPhotoBlogs);
-        ibtnPhotoBlogs.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(activity, LoginActivity.class));
-            }
-        });
+        ibtMessage = findViewById(R.id.ibtMessage);
+
+        ibtnPhotoBlogs.setOnClickListener(this);
+        ibtMessage.setOnClickListener(this);
+
 
 
         hotLists = new ArrayList<>();
@@ -193,6 +192,20 @@ public class MainActivity extends AppCompatActivity {
 
 
         hotListAdapter.notifyDataSetChanged();
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.ibtnPhotoBlogs:
+                startActivity(new Intent(activity, LoginActivity.class));
+                break;
+            case R.id.ibtMessage:
+                startActivity(new Intent(activity, LandingActivity.class));
+                break;
+
+
+        }
     }
 
 

@@ -177,16 +177,6 @@
     </LinearLayout>
 
 
-    <ImageView
-        android:id="@+id/ivInfo"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_margin="@dimen/ten"
-        android:background="@color/transparent"
-        android:scaleType="fitCenter"
-        android:src="@mipmap/info_icon"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 
     <ImageView

@@ -19,6 +19,7 @@
             android:theme="@style/AppTheme.OnlyStatusBar" />
 
         <activity android:name=".dialog.ForgetPasswordDialog" />
+        <activity android:name=".dialog.InfoDialog" />
         <activity
             android:name=".activities.ListActivity"
             android:screenOrientation="sensorPortrait"
