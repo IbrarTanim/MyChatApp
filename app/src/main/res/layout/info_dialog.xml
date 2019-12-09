@@ -38,8 +38,7 @@
             android:layout_weight="0.1"
             android:background="@color/transparent"
             android:gravity="center"
-            android:scaleType="fitXY"
-            android:src="@mipmap/horizontal_img" />
+            android:scaleType="fitXY" />
 
 
         <TextView

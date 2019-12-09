@@ -7,4 +7,5 @@
     <dimen name="hundred_fifty">150dp</dimen>
     <dimen name="fifty">50dp</dimen>
     <dimen name="fifteen">15dp</dimen>
+    <dimen name="twenty_eight">28dp</dimen>
 </resources>
