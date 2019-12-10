@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -12,11 +12,10 @@
         android:orientation="vertical"
         android:weightSum="10">
 
-
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="6"
+            android:layout_weight="7"
             android:background="@color/transparent"
             android:scaleType="fitXY"
             android:src="@mipmap/taking_photo" />
@@ -25,7 +24,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_margin="@dimen/ten"
-            android:layout_weight="4"
+            android:layout_weight="3"
             android:orientation="vertical"
             android:weightSum="7">
 
@@ -43,7 +42,7 @@
                     android:gravity="center|left"
                     android:text="Discover Endless Inspiration"
                     android:textColor="@color/black"
-                    android:textSize="25dp"
+                    android:textSize="20dp"
                     android:textStyle="bold" />
 
 
@@ -51,9 +50,9 @@
                     android:id="@+id/ivInfo"
                     android:layout_width="@dimen/zero"
                     android:layout_height="match_parent"
-                    android:padding="@dimen/five"
                     android:layout_weight="1"
                     android:background="@color/transparent"
+                    android:padding="@dimen/five"
                     android:scaleType="fitCenter"
                     android:src="@mipmap/info_icon" />
 
@@ -63,10 +62,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="4"
-                android:gravity="center|left"
+                android:gravity="top"
                 android:text="Explore inspiring content from around the world like quotes, photography. travel, fashion, and so much more "
                 android:textColor="@color/black"
-                android:textSize="20dp" />
+                android:textSize="17dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -82,8 +81,8 @@
                     android:background="@drawable/gradientbackground"
                     android:gravity="center"
                     android:text="Continue"
-                    android:textColor="@color/black"
-                    android:textSize="25dp" />
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
 
                 <View
                     android:layout_width="0dp"
