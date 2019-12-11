@@ -15,20 +15,40 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/zero">
+            android:layout_height="@dimen/zero"
+            android:layout_weight="9">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:scaleType="fitXY"
+                android:src="@mipmap/chatting" />
+
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/black"
+                android:weightSum="10">
 
 
-        </LinearLayout>
+                
 
-     <TextView
-         android:layout_width="match_parent"
-         android:layout_height="@dimen/zero"
-         android:layout_weight="1"
-         android:text="I'm applying for the position of Senior A"
-         />
 
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=" Name Title" />
 
 
     </LinearLayout>
