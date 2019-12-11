@@ -6,6 +6,86 @@
     android:layout_height="match_parent">
 
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="20">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="Pictures"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fifteen" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+
+            <ImageView
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:padding="@dimen/five"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/chat_rooms" />
+
+
+            <TextView
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:text="JustUp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fifteen" />
+
+
+            <TextView
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:text="Top Photo"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fifteen" />
+
+
+            <ImageView
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:padding="@dimen/five"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/chat_rooms" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero"
+            android:layout_weight="17">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvPhotoBlock"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
 
 
 </android.support.constraint.ConstraintLayout>

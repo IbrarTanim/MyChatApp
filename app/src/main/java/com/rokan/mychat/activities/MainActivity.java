@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     LinearLayoutManager layoutManagerLiveChat;
     boolean isLetterShowing = false;
 
-    ImageButton ibtnPhotoBlogs, ibtMessage;
+    ImageButton ibtnPhotoBlogs, ibtMessage, ibChatRoom;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,10 +69,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         llNewMatches = findViewById(R.id.llNewMatches);
         ibtnPhotoBlogs = findViewById(R.id.ibtnPhotoBlogs);
         ibtMessage = findViewById(R.id.ibtMessage);
+        ibChatRoom = findViewById(R.id.ibChatRoom);
 
         ibtnPhotoBlogs.setOnClickListener(this);
         ibtMessage.setOnClickListener(this);
-
+        ibChatRoom.setOnClickListener(this);
 
 
         hotLists = new ArrayList<>();
@@ -202,6 +203,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.ibtMessage:
                 startActivity(new Intent(activity, LandingActivity.class));
+                break;
+            case R.id.ibChatRoom:
+                startActivity(new Intent(activity, PhotoBlocksActivity.class));
                 break;
 
 
