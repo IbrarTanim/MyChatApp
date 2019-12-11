@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".activities.PhotoBlocksActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme.OnlyStatusBar" />
+        <activity
             android:name=".activities.LandingActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppTheme.OnlyStatusBar" />
@@ -17,7 +21,6 @@
             android:name=".activities.RegistrationActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppTheme.OnlyStatusBar" />
-
         <activity android:name=".dialog.ForgetPasswordDialog" />
         <activity android:name=".dialog.InfoDialog" />
         <activity
