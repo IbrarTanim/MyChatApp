@@ -64,7 +64,7 @@
                 android:gravity="top"
                 android:text="Explore inspiring content from around the world like quotes, photography. travel, fashion, and so much more "
                 android:textColor="@color/black"
-                android:textSize="17dp" />
+                android:textSize="14dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -81,7 +81,7 @@
                     android:gravity="center"
                     android:text="Continue"
                     android:textColor="@color/white"
-                    android:textSize="20dp" />
+                    android:textSize="15dp" />
 
                 <View
                     android:layout_width="0dp"
@@ -95,7 +95,7 @@
                     android:gravity="center"
                     android:text="Skip"
                     android:textColor="@color/black"
-                    android:textSize="20dp" />
+                    android:textSize="15dp" />
 
 
             </LinearLayout>

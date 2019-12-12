@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:weightSum="10">
+        android:weightSum="12">
 
 
         <LinearLayout
@@ -18,7 +18,7 @@
             android:layout_height="0dp"
             android:layout_gravity="bottom"
             android:layout_marginLeft="10dp"
-            android:layout_weight="5"
+            android:layout_weight="7"
             android:orientation="horizontal"
             android:weightSum="10">
 
@@ -27,8 +27,8 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginTop="@dimen/twenty_five"
-                android:layout_weight="2.5"
-                android:gravity="top"
+                android:layout_weight="3"
+                android:gravity="center|left"
                 android:text="Already have an account?"
                 android:textColor="@color/black"
                 android:textSize="22dp"
@@ -38,9 +38,9 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="right"
-                android:layout_weight="7.5"
+                android:layout_weight="7"
                 android:background="@color/transparent"
-                android:scaleType="fitXY"
+                android:scaleType="fitCenter"
                 android:src="@mipmap/login_page_image" />
 
         </LinearLayout>
