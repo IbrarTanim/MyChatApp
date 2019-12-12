@@ -2,6 +2,8 @@ package com.rokan.mychat.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 
 import com.rokan.mychat.R;
 import com.rokan.mychat.adapters.PhotoBlogsAdapter;
@@ -16,6 +18,9 @@ public class PhotoBlogsActivity extends AppCompatActivity {
     PhotoBlogsActivity activity;
     private PhotoBlogsAdapter photoBlogsAdapter;
     private List<PhotoBlogs> photoBlogsList;
+    private RecyclerView rvPhotoBlogs;
+    LinearLayoutManager layoutManagerPhotoBlogs;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,8 +28,13 @@ public class PhotoBlogsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_photo_blogs);
 
         activity = this;
+        rvPhotoBlogs = findViewById(R.id.rvPhotoBlogs);
         photoBlogsList = new ArrayList<>();
         photoBlogsAdapter = new PhotoBlogsAdapter(activity, photoBlogsList);
+        layoutManagerPhotoBlogs = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
+
+        rvPhotoBlogs.setLayoutManager(layoutManagerPhotoBlogs);
+        rvPhotoBlogs.setAdapter(photoBlogsAdapter);
         preparePhotoBlogs();
     }
 
