@@ -72,7 +72,7 @@
                 android:gravity="center"
                 android:padding="@dimen/five"
                 android:scaleType="fitCenter"
-                android:src="@drawable/ic_safety" />
+                android:src="@mipmap/safety" />
 
 
             <TextView
@@ -88,11 +88,11 @@
         </LinearLayout>
 
 
-       <!-- <View
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.03"
-            android:background="@color/gray" />-->
+        <!-- <View
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_weight="0.03"
+             android:background="@color/gray" />-->
 
 
         <LinearLayout
@@ -111,7 +111,7 @@
                 android:gravity="center"
                 android:padding="@dimen/five"
                 android:scaleType="fitCenter"
-                android:src="@drawable/ic_community_guidelines" />
+                android:src="@mipmap/community_guidelines" />
 
 
             <TextView
@@ -150,7 +150,7 @@
                 android:gravity="center"
                 android:padding="@dimen/five"
                 android:scaleType="fitCenter"
-                android:src="@drawable/ic_terms_conditions" />
+                android:src="@mipmap/terms_conditions" />
 
 
             <TextView
@@ -189,7 +189,7 @@
                 android:gravity="center"
                 android:padding="@dimen/five"
                 android:scaleType="fitCenter"
-                android:src="@drawable/ic_privacy_policy" />
+                android:src="@mipmap/privacy_policy" />
 
 
             <TextView

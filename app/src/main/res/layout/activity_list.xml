@@ -96,8 +96,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="6"
-                android:maxLines="2"
                 android:gravity="center|left"
+                android:maxLines="2"
                 android:text="The typical solution is to define the shape and use it as background but as the number of digits varies it's no more a perfect circle, it looks like a rectangle with round edges or Oval. So I have developed this solution, it's working great. Hope it will help someone."
                 android:textColor="@color/white" />
 

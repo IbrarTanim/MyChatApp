@@ -106,8 +106,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         prepareHotList();
         prepareLiveChat();
-        actionBarIconHandle();
-
 
     }
 
@@ -259,17 +257,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         return Math.round(TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, r.getDisplayMetrics()));
     }
 
-    private void actionBarIconHandle() {
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.setDisplayOptions(actionBar.getDisplayOptions() | ActionBar.DISPLAY_SHOW_CUSTOM);
-        ImageView imageView = new ImageView(actionBar.getThemedContext());
-        imageView.setImageResource(R.drawable.ic_chat_request_black);
-        imageView.setScaleType(ImageView.ScaleType.CENTER);
-        ActionBar.LayoutParams layoutParams = new ActionBar.LayoutParams(120, 120, Gravity.RIGHT | Gravity.RIGHT);
-        imageView.setLayoutParams(layoutParams);
-        actionBar.setCustomView(imageView);
-
-    }
 
 
 }

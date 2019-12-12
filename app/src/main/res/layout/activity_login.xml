@@ -26,20 +26,19 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="3"
+                android:layout_marginTop="@dimen/twenty_five"
+                android:layout_weight="2.5"
                 android:gravity="top"
-                android:layout_marginTop="@dimen/ten"
                 android:text="Already have an account?"
-                android:textAlignment="gravity"
                 android:textColor="@color/black"
-                android:textSize="20dp"
+                android:textSize="@dimen/twenty_five"
                 android:textStyle="bold" />
 
             <ImageView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="right"
-                android:layout_weight="7"
+                android:layout_weight="7.5"
                 android:background="@color/transparent"
                 android:scaleType="fitXY"
                 android:src="@mipmap/login_page_image" />
@@ -176,8 +175,6 @@
 
 
     </LinearLayout>
-
-
 
 
     <ImageView
