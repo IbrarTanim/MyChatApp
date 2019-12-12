@@ -30,31 +30,40 @@ public class PhotoBlogsActivity extends AppCompatActivity {
 
     private void preparePhotoBlogs() {
 
-        PhotoBlogs photoBlogs = new PhotoBlogs("15", "3", "9", "Mr.Ahmed", "Ibrar Tanim Rokan");
+
+        int[] listItemPhotoBlogs = new int[]{
+                R.mipmap.nazrul,
+                R.mipmap.jaforiqbal,
+                R.mipmap.sufia_kamal,
+                R.mipmap.sharat,
+                R.mipmap.samsurrahman,
+                R.mipmap.robindronath,
+                R.mipmap.humayunahmed,
+                R.mipmap.samsurrahman,
+        };
+
+        PhotoBlogs photoBlogs = new PhotoBlogs(listItemPhotoBlogs[0], "15", "13", "3", "9", "Mr.Ahmed", "Ibrar Tanim Rokan");
         photoBlogsList.add(photoBlogs);
 
-        photoBlogs = new PhotoBlogs("15", "3", "9", "Mr.Ahmed", "Ibrar Tanim Rokan");
+        photoBlogs = new PhotoBlogs(listItemPhotoBlogs[1], "15", "13", "3", "9", "Mr.Ahmed", "Ibrar Tanim Rokan");
         photoBlogsList.add(photoBlogs);
 
-        photoBlogs = new PhotoBlogs("15", "3", "9", "Mr.Ahmed", "Ibrar Tanim Rokan");
+        photoBlogs = new PhotoBlogs(listItemPhotoBlogs[2], "15", "13", "3", "9", "Mr.Ahmed", "Ibrar Tanim Rokan");
         photoBlogsList.add(photoBlogs);
 
-        photoBlogs = new PhotoBlogs("15", "3", "9", "Mr.Ahmed", "Ibrar Tanim Rokan");
+        photoBlogs = new PhotoBlogs(listItemPhotoBlogs[3], "15", "13", "3", "9", "Mr.Ahmed", "Ibrar Tanim Rokan");
         photoBlogsList.add(photoBlogs);
 
-        photoBlogs = new PhotoBlogs("15", "3", "9", "Mr.Ahmed", "Ibrar Tanim Rokan");
+        photoBlogs = new PhotoBlogs(listItemPhotoBlogs[4], "15", "13", "3", "9", "Mr.Ahmed", "Ibrar Tanim Rokan");
         photoBlogsList.add(photoBlogs);
 
-        photoBlogs = new PhotoBlogs("15", "3", "9", "Mr.Ahmed", "Ibrar Tanim Rokan");
+        photoBlogs = new PhotoBlogs(listItemPhotoBlogs[5], "15", "13", "3", "9", "Mr.Ahmed", "Ibrar Tanim Rokan");
         photoBlogsList.add(photoBlogs);
 
-        photoBlogs = new PhotoBlogs("15", "3", "9", "Mr.Ahmed", "Ibrar Tanim Rokan");
+        photoBlogs = new PhotoBlogs(listItemPhotoBlogs[6], "15", "13", "3", "9", "Mr.Ahmed", "Ibrar Tanim Rokan");
         photoBlogsList.add(photoBlogs);
 
-        photoBlogs = new PhotoBlogs("15", "3", "9", "Mr.Ahmed", "Ibrar Tanim Rokan");
-        photoBlogsList.add(photoBlogs);
-
-        photoBlogs = new PhotoBlogs("15", "3", "9", "Mr.Ahmed", "Ibrar Tanim Rokan");
+        photoBlogs = new PhotoBlogs(listItemPhotoBlogs[7], "15", "13", "3", "9", "Mr.Ahmed", "Ibrar Tanim Rokan");
         photoBlogsList.add(photoBlogs);
 
         photoBlogsAdapter.notifyDataSetChanged();

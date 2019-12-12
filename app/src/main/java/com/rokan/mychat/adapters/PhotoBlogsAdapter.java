@@ -5,6 +5,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
@@ -23,15 +24,18 @@ public class PhotoBlogsAdapter extends RecyclerView.Adapter<PhotoBlogsAdapter.My
     private List<PhotoBlogs> photoBlogsList;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        public TextView tvNameTitle, tvChatText, tvChatTime;
-        public CircleImageView civLiveChatProfilePic;
+        public TextView tvUserName, tvTitle, tvView, tvComment, tvLike, tvLove;
+        public ImageView ivProPicPhotoBlog;
 
         public MyViewHolder(View view) {
             super(view);
-            tvNameTitle = view.findViewById(R.id.tvNameTitle);
-            tvChatText = view.findViewById(R.id.tvChatText);
-            tvChatTime = view.findViewById(R.id.tvChatTime);
-            civLiveChatProfilePic = view.findViewById(R.id.civLiveChatProfilePic);
+            tvUserName = view.findViewById(R.id.tvUserName);
+            tvTitle = view.findViewById(R.id.tvTitle);
+            tvView = view.findViewById(R.id.tvView);
+            tvComment = view.findViewById(R.id.tvComment);
+            tvLike = view.findViewById(R.id.tvLike);
+            tvLove = view.findViewById(R.id.tvLove);
+            ivProPicPhotoBlog = view.findViewById(R.id.ivProPicPhotoBlog);
         }
 
 
@@ -56,10 +60,14 @@ public class PhotoBlogsAdapter extends RecyclerView.Adapter<PhotoBlogsAdapter.My
     public void onBindViewHolder(final PhotoBlogsAdapter.MyViewHolder holder, int position) {
         PhotoBlogs photoBlogs = photoBlogsList.get(position);
 
-        /*holder.tvNameTitle.setText(liveChat.getNameTitle());
-        holder.tvChatText.setText(liveChat.getChatText());
-        holder.tvChatTime.setText(liveChat.getChatTime());
-        Glide.with(mContext).load(liveChat.getLivProfilePic()).into(holder.civLiveChatProfilePic);*/
+        holder.tvUserName.setText(photoBlogs.getUserName());
+        holder.tvTitle.setText(photoBlogs.getTitle());
+        holder.tvView.setText(photoBlogs.getView());
+        holder.tvComment.setText(photoBlogs.getComment());
+        holder.tvLike.setText(photoBlogs.getLike());
+        holder.tvLove.setText(photoBlogs.getLove());
+
+        Glide.with(mContext).load(photoBlogs.getPhotoBlogProfilePic()).into(holder.ivProPicPhotoBlog);
 
     }
 
