@@ -10,16 +10,17 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.rokan.mychat.R;
 import com.rokan.mychat.pojo.LiveChat;
+import com.rokan.mychat.pojo.PhotoBlogs;
 
 import java.util.List;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class PhotoBlockAdapter extends RecyclerView.Adapter<PhotoBlockAdapter.MyViewHolder> {
+public class PhotoBlogsAdapter extends RecyclerView.Adapter<PhotoBlogsAdapter.MyViewHolder> {
 
 
     private Context mContext;
-    private List<LiveChat> liveChatList;
+    private List<PhotoBlogs> photoBlogsList;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView tvNameTitle, tvChatText, tvChatTime;
@@ -37,34 +38,34 @@ public class PhotoBlockAdapter extends RecyclerView.Adapter<PhotoBlockAdapter.My
     }
 
 
-    public PhotoBlockAdapter(Context mContext, List<LiveChat> liveChatList) {
+    public PhotoBlogsAdapter(Context mContext, List<PhotoBlogs> photoBlogsList) {
         this.mContext = mContext;
-        this.liveChatList = liveChatList;
+        this.photoBlogsList = photoBlogsList;
     }
 
     @Override
-    public PhotoBlockAdapter.MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        final View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_list, parent, false);
-        final PhotoBlockAdapter.MyViewHolder myViewHolder = new PhotoBlockAdapter.MyViewHolder(itemView);
+    public PhotoBlogsAdapter.MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        final View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.photo_blogs_cell, parent, false);
+        final PhotoBlogsAdapter.MyViewHolder myViewHolder = new PhotoBlogsAdapter.MyViewHolder(itemView);
 
 
         return myViewHolder;
     }
 
     @Override
-    public void onBindViewHolder(final PhotoBlockAdapter.MyViewHolder holder, int position) {
-        LiveChat liveChat = liveChatList.get(position);
+    public void onBindViewHolder(final PhotoBlogsAdapter.MyViewHolder holder, int position) {
+        PhotoBlogs photoBlogs = photoBlogsList.get(position);
 
-        holder.tvNameTitle.setText(liveChat.getNameTitle());
+        /*holder.tvNameTitle.setText(liveChat.getNameTitle());
         holder.tvChatText.setText(liveChat.getChatText());
         holder.tvChatTime.setText(liveChat.getChatTime());
-        Glide.with(mContext).load(liveChat.getLivProfilePic()).into(holder.civLiveChatProfilePic);
+        Glide.with(mContext).load(liveChat.getLivProfilePic()).into(holder.civLiveChatProfilePic);*/
 
     }
 
 
     @Override
     public int getItemCount() {
-        return liveChatList.size();
+        return photoBlogsList.size();
     }
 }

@@ -12,14 +12,21 @@
         android:orientation="vertical"
         android:weightSum="20">
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero"
+            android:layout_weight="1" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="@dimen/zero"
+            android:layout_marginLeft="@dimen/fifteen"
             android:layout_weight="1"
             android:gravity="center|left"
             android:text="Pictures"
             android:textColor="@color/black"
-            android:textSize="@dimen/fifteen" />
+            android:textSize="@dimen/twenty"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -64,9 +71,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@color/transparent"
-                android:padding="@dimen/five"
                 android:scaleType="fitCenter"
-                android:src="@mipmap/chat_rooms" />
+                android:src="@mipmap/add_icon" />
 
 
         </LinearLayout>
@@ -74,7 +80,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/zero"
-            android:layout_weight="17">
+            android:layout_weight="16">
 
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/rvPhotoBlock"

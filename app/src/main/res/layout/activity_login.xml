@@ -31,7 +31,7 @@
                 android:gravity="top"
                 android:text="Already have an account?"
                 android:textColor="@color/black"
-                android:textSize="@dimen/twenty_five"
+                android:textSize="22dp"
                 android:textStyle="bold" />
 
             <ImageView

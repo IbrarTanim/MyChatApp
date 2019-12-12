@@ -3,24 +3,13 @@ package com.rokan.mychat.activities;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Rect;
-import android.os.Build;
-import android.os.Handler;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.TypedValue;
-import android.view.Gravity;
-import android.view.MotionEvent;
 import android.view.View;
-import android.view.animation.Animation;
-import android.view.animation.TranslateAnimation;
-import android.widget.AbsListView;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.rokan.mychat.R;
@@ -31,8 +20,6 @@ import com.rokan.mychat.pojo.LiveChat;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import de.hdodenhof.circleimageview.CircleImageView;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -203,7 +190,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(activity, LandingActivity.class));
                 break;
             case R.id.ibChatRoom:
-                startActivity(new Intent(activity, PhotoBlocksActivity.class));
+                startActivity(new Intent(activity, PhotoBlogsActivity.class));
                 break;
 
 

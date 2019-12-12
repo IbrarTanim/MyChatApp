@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.OnlyStatusBar">
         <activity
-            android:name=".activities.PhotoBlocksActivity"
+            android:name=".activities.PhotoBlogsActivity"
             android:screenOrientation="sensorPortrait" />
         <activity
             android:name=".activities.LandingActivity"
