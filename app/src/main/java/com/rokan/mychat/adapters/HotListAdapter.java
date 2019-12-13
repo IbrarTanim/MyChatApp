@@ -6,6 +6,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.rokan.mychat.R;
@@ -23,11 +24,12 @@ public class HotListAdapter extends RecyclerView.Adapter<HotListAdapter.MyViewHo
     private List<HotList> hotLists;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        public CircleImageView civHotListProfilePic, civHotListAdd;
+        public CircleImageView civHotListAdd;
+        ImageView ivHotListProfilePic;
 
         public MyViewHolder(View view) {
             super(view);
-            civHotListProfilePic = view.findViewById(R.id.civHotListProfilePic);
+            ivHotListProfilePic = view.findViewById(R.id.ivHotListProfilePic);
             civHotListAdd = view.findViewById(R.id.civHotListAdd);
         }
 
@@ -59,7 +61,7 @@ public class HotListAdapter extends RecyclerView.Adapter<HotListAdapter.MyViewHo
             holder.civHotListAdd.setVisibility(View.GONE);
         }
 
-        Glide.with(mContext).load(hotList.getProfilePic()).into(holder.civHotListProfilePic);
+        Glide.with(mContext).load(hotList.getProfilePic()).into(holder.ivHotListProfilePic);
 
     }
 

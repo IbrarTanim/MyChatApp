@@ -8,11 +8,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/civHotListProfilePic"
+        <ImageView
+            android:id="@+id/ivHotListProfilePic"
+            android:padding="@dimen/five"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:background="@color/transparent"
+            android:background="@drawable/login_btn_bg"
             android:src="@mipmap/nazrul" />
 
 
@@ -20,8 +21,8 @@
             android:id="@+id/civHotListAdd"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_alignRight="@+id/civHotListProfilePic"
-            android:layout_alignBottom="@+id/civHotListProfilePic"
+            android:layout_alignRight="@+id/ivHotListProfilePic"
+            android:layout_alignBottom="@+id/ivHotListProfilePic"
             android:background="@color/transparent"
             android:src="@mipmap/add_icon" />
 
