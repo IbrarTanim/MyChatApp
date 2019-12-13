@@ -17,23 +17,33 @@
             android:layout_height="@dimen/zero"
             android:layout_weight="1" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/zero"
-            android:layout_marginLeft="@dimen/fifteen"
-            android:layout_weight="1"
-            android:gravity="center|left"
-            android:text="Pictures"
-            android:textColor="@color/black"
-            android:textSize="@dimen/twenty"
-            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/zero"
-            android:layout_weight="2"
+            android:layout_weight="1.5"
             android:orientation="horizontal"
             android:weightSum="10">
+
+            <View
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center|left"
+                android:text="Pictures"
+                android:textColor="@color/black"
+                android:textSize="@dimen/twenty"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="4" />
 
 
             <ImageView
@@ -41,30 +51,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@color/transparent"
-                android:padding="@dimen/five"
                 android:scaleType="fitCenter"
                 android:src="@mipmap/chat_rooms" />
-
-
-            <TextView
-                android:layout_width="@dimen/zero"
-                android:layout_height="match_parent"
-                android:layout_weight="4"
-                android:gravity="center"
-                android:text="JustUp"
-                android:textColor="@color/black"
-                android:textSize="@dimen/fifteen" />
-
-
-            <TextView
-                android:layout_width="@dimen/zero"
-                android:layout_height="match_parent"
-                android:layout_weight="4"
-                android:gravity="center"
-                android:text="Top Photo"
-                android:textColor="@color/black"
-                android:textSize="@dimen/fifteen" />
-
 
             <ImageView
                 android:layout_width="@dimen/zero"
@@ -74,21 +62,103 @@
                 android:scaleType="fitCenter"
                 android:src="@mipmap/add_icon" />
 
-
         </LinearLayout>
+
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/zero"
-            android:layout_weight="16">
+            android:layout_weight="1.5"
+            android:padding="@dimen/ten"
+            android:orientation="horizontal"
+            android:weightSum="21.05">
 
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/rvPhotoBlogs"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+            <TextView
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:gravity="center|right"
+                android:text="JustUp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fifteen" />
+
+            <View
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"/>
+
+
+            <View
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:background="@color/black"
+                android:layout_weight=".05"/>
+
+            <View
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"/>
+
+
+            <TextView
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:gravity="center|left"
+                android:text="Top Photo"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fifteen" />
 
 
         </LinearLayout>
+
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero"
+            android:layout_weight="16"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="15">
+
+                <LinearLayout
+                    android:id="@+id/llHotList"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="2"
+                    android:orientation="vertical"
+                    android:weightSum="15">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rvHotList"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/zero"
+                        android:layout_weight="15"
+                        android:overScrollMode="never"
+                        android:scrollbars="none" />
+
+
+                </LinearLayout>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvPhotoBlogs"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="13"
+                    android:overScrollMode="never"
+                    android:scrollbars="none" />
+
+
+            </LinearLayout>
+
+
+        </android.support.v4.widget.NestedScrollView>
 
 
     </LinearLayout>

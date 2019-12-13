@@ -3,9 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="100dp"
-    android:layout_marginTop="@dimen/ten"
-    android:layout_marginRight="@dimen/twenty">
+    android:layout_height="80dp"
+    android:layout_marginTop="@dimen/ten">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -79,7 +78,7 @@
             android:background="@drawable/chat_text_background"
             android:orientation="vertical"
             android:padding="3dp"
-            android:weightSum="10">
+            android:weightSum="7">
 
             <TextView
                 android:id="@+id/tvNameTitle"
@@ -95,9 +94,9 @@
                 android:id="@+id/tvChatText"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="6"
+                android:layout_weight="3"
                 android:gravity="center|left"
-                android:maxLines="2"
+                android:maxLines="1"
                 android:text="The typical solution is to define the shape and use it as background but as the number of digits varies it's no more a perfect circle, it looks like a rectangle with round edges or Oval. So I have developed this solution, it's working great. Hope it will help someone."
                 android:textColor="@color/white" />
 

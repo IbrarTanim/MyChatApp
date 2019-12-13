@@ -10,7 +10,11 @@
         android:layout_height="match_parent"
         android:background="@color/app_color"
         android:orientation="vertical"
-        android:weightSum="11.5">
+        android:weightSum="11.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <View
             android:layout_width="match_parent"
@@ -27,9 +31,9 @@
             <TextView
                 android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/five"
                 android:layout_weight="2"
                 android:gravity="center"
-                android:layout_marginLeft="@dimen/five"
                 android:text="Chats"
                 android:textColor="@color/black"
                 android:textSize="@dimen/twenty"
@@ -52,179 +56,85 @@
 
         </LinearLayout>
 
-        <ScrollView
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/zero"
-            android:layout_weight="9"
-            android:overScrollMode="never"
-            android:scrollbars="none">
+            android:layout_marginBottom="@dimen/ten"
+            android:layout_weight="9">
 
-            <LinearLayout
+            <android.support.v4.widget.NestedScrollView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:weightSum="10">
+                android:overScrollMode="never"
+                android:scrollbars="none">
 
                 <LinearLayout
-                    android:id="@+id/llHotList"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/zero"
-                    android:layout_weight="1.5"
+                    android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:weightSum="10">
 
-
                     <LinearLayout
+                        android:id="@+id/llNewMatches"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/zero"
-                        android:layout_weight="3"
-                        android:background="@drawable/textview_background"
-                        android:orientation="horizontal"
-                        android:weightSum="22">
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+                        android:weightSum="15">
 
-                        <View
-                            android:layout_width="@dimen/zero"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1" />
-
-                        <TextView
-                            android:layout_width="@dimen/zero"
-                            android:layout_height="match_parent"
-                            android:layout_weight="21"
-                            android:gravity="left|center"
-                            android:text="@string/hotlist"
-                            android:textColor="@color/black"
-                            android:textSize="@dimen/thirteen"
-                            android:textStyle="bold" />
-
-                    </LinearLayout>
-
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/zero"
-                        android:layout_weight="1" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/zero"
-                        android:layout_gravity="center"
-                        android:layout_weight="6"
-                        android:gravity="center"
-                        android:orientation="horizontal">
-
-                        <android.support.v7.widget.RecyclerView
-                            android:id="@+id/rvHotList"
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:overScrollMode="never"
-                            android:scrollbars="horizontal" />
+                            android:layout_height="@dimen/zero"
+                            android:layout_weight="2"
+                            android:background="@drawable/textview_background"
+                            android:orientation="horizontal"
+                            android:weightSum="22">
 
-                    </LinearLayout>
+                            <View
+                                android:layout_width="@dimen/zero"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" />
 
+                            <TextView
+                                android:layout_width="@dimen/zero"
+                                android:layout_height="match_parent"
+                                android:layout_weight="21"
+                                android:gravity="left|center"
+                                android:text="@string/new_matches"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/thirteen"
+                                android:textStyle="bold" />
 
-                </LinearLayout>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/zero"
-                    android:layout_marginLeft="@dimen/five"
-                    android:layout_weight=".2" />
-
-                <LinearLayout
-                    android:id="@+id/llNewMatches"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/zero"
-                    android:layout_weight="1.5"
-                    android:orientation="vertical"
-                    android:weightSum="10">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/zero"
-                        android:layout_weight="3"
-                        android:background="@drawable/textview_background"
-                        android:orientation="horizontal"
-                        android:weightSum="22">
-
-                        <View
-                            android:layout_width="@dimen/zero"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1" />
-
-                        <TextView
-                            android:layout_width="@dimen/zero"
-                            android:layout_height="match_parent"
-                            android:layout_weight="21"
-                            android:gravity="left|center"
-                            android:text="@string/new_matches"
-                            android:textColor="@color/black"
-                            android:textSize="@dimen/thirteen"
-                            android:textStyle="bold" />
-
-                    </LinearLayout>
-
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/zero"
-                        android:layout_weight="1" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/zero"
-                        android:layout_gravity="center"
-                        android:layout_weight="6"
-                        android:gravity="center"
-                        android:orientation="horizontal">
+                        </LinearLayout>
 
                         <android.support.v7.widget.RecyclerView
                             android:id="@+id/rvNewMatches"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:overScrollMode="never"
-                            android:scrollbars="horizontal" />
-
-                    </LinearLayout>
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/zero"
-                    android:layout_weight="6.8"
-                    android:orientation="vertical"
-                    android:weightSum="10">
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/zero"
-                        android:layout_weight="0.2" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/zero"
-                        android:layout_marginRight="@dimen/five"
-                        android:layout_weight="9.8"
-                        android:orientation="vertical">
-
-                        <android.support.v7.widget.RecyclerView
-                            android:id="@+id/rvLiveChat"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:nestedScrollingEnabled="false"
+                            android:layout_height="@dimen/zero"
+                            android:layout_gravity="center"
+                            android:layout_weight="13"
                             android:overScrollMode="never"
                             android:scrollbars="none" />
 
+
                     </LinearLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rvLiveChat"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/zero"
+                        android:layout_weight="8"
+                        android:nestedScrollingEnabled="false"
+                        android:overScrollMode="never"
+                        android:scrollbars="none" />
 
 
                 </LinearLayout>
 
-            </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
 
-        </ScrollView>
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -311,8 +221,6 @@
 
 
         </LinearLayout>
-
-
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

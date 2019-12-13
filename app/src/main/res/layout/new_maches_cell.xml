@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/hundrad"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/three"
+    android:background="@drawable/hot_list_cell_bg"
+    android:padding="@dimen/three">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivHotListProfilePic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/nazrul" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:layout_alignParentBottom="true"
+            android:gravity="left|center"
+            android:text="Md.Shofiul Alam"
+            android:textColor="@color/white"
+            android:textSize="@dimen/ten"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -17,34 +17,32 @@ import java.util.List;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 
-public class HotListAdapter extends RecyclerView.Adapter<HotListAdapter.MyViewHolder> {
+public class NewMatchesAdapter extends RecyclerView.Adapter<NewMatchesAdapter.MyViewHolder> {
 
 
     private Context mContext;
     private List<HotList> hotLists;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        public CircleImageView civHotListAdd;
         ImageView ivHotListProfilePic;
 
         public MyViewHolder(View view) {
             super(view);
             ivHotListProfilePic = view.findViewById(R.id.ivHotListProfilePic);
-            civHotListAdd = view.findViewById(R.id.civHotListAdd);
         }
 
 
     }
 
 
-    public HotListAdapter(Context mContext, List<HotList> hotLists) {
+    public NewMatchesAdapter(Context mContext, List<HotList> hotLists) {
         this.mContext = mContext;
         this.hotLists = hotLists;
     }
 
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        final View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.hotlist_cell, parent, false);
+        final View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.new_maches_cell, parent, false);
         final MyViewHolder myViewHolder = new MyViewHolder(itemView);
 
 
@@ -55,11 +53,6 @@ public class HotListAdapter extends RecyclerView.Adapter<HotListAdapter.MyViewHo
     public void onBindViewHolder(final MyViewHolder holder, int position) {
         HotList hotList = hotLists.get(position);
 
-        if (position == 0) {
-            holder.civHotListAdd.setVisibility(View.VISIBLE);
-        } else {
-            holder.civHotListAdd.setVisibility(View.GONE);
-        }
 
         Glide.with(mContext).load(hotList.getProfilePic()).into(holder.ivHotListProfilePic);
 

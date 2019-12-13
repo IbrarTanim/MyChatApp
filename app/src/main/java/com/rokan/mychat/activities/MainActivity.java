@@ -5,6 +5,8 @@ import android.content.res.Resources;
 import android.graphics.Rect;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.DefaultItemAnimator;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.TypedValue;
@@ -15,8 +17,10 @@ import android.widget.LinearLayout;
 import com.rokan.mychat.R;
 import com.rokan.mychat.adapters.HotListAdapter;
 import com.rokan.mychat.adapters.LiveChatAdapter;
+import com.rokan.mychat.adapters.NewMatchesAdapter;
 import com.rokan.mychat.pojo.HotList;
 import com.rokan.mychat.pojo.LiveChat;
+import com.rokan.mychat.utilities.GridSpacingItemDecoration;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,17 +29,15 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     MainActivity activity;
-    private RecyclerView rvHotList;
     private RecyclerView rvNewMatches;
     private RecyclerView rvLiveChat;
     LinearLayout llHotList, llNewMatches;
-    private HotListAdapter hotListAdapter;
     private LiveChatAdapter liveChatAdapter;
     private List<HotList> hotLists;
     private List<LiveChat> liveChatList;
-    LinearLayoutManager layoutManager;
+    private NewMatchesAdapter newMatchesAdapter;
     LinearLayoutManager layoutManagerNewMatches;
-    LinearLayoutManager layoutManagerLiveChat;
+    //LinearLayoutManager layoutManagerLiveChat;
     boolean isLetterShowing = false;
 
     ImageButton ibtnPhotoBlogs, ibtMessage, ibChatRoom;
@@ -49,7 +51,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         activity = this;
 
-        rvHotList = findViewById(R.id.rvHotList);
         rvNewMatches = findViewById(R.id.rvNewMatches);
         rvLiveChat = findViewById(R.id.rvLiveChat);
         llHotList = findViewById(R.id.llHotList);
@@ -64,31 +65,29 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
         hotLists = new ArrayList<>();
-        hotListAdapter = new HotListAdapter(activity, hotLists);
+        newMatchesAdapter = new NewMatchesAdapter(activity, hotLists);
 
         liveChatList = new ArrayList<>();
         liveChatAdapter = new LiveChatAdapter(activity, liveChatList);
 
 
-        layoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
         layoutManagerNewMatches = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
-        layoutManagerLiveChat = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
+        //layoutManagerLiveChat = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
 
 
-        /*RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(this, 1);
+        RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(activity, 1);
         rvLiveChat.setLayoutManager(mLayoutManager);
-        rvLiveChat.addItemDecoration(new GridSpacingItemDecoration(3, dpToPx(10), true));
-        rvLiveChat.setItemAnimator(new DefaultItemAnimator());*/
-
-        rvLiveChat.setLayoutManager(layoutManagerLiveChat);
+        rvLiveChat.addItemDecoration(new GridSpacingItemDecoration(1, GridSpacingItemDecoration.dpToPx(10, activity), true));
+        rvLiveChat.setItemAnimator(new DefaultItemAnimator());
         rvLiveChat.setAdapter(liveChatAdapter);
 
 
-        rvHotList.setLayoutManager(layoutManager);
-        rvHotList.setAdapter(hotListAdapter);
+        //rvLiveChat.setLayoutManager(layoutManagerLiveChat);
+        //rvLiveChat.setAdapter(liveChatAdapter);
+
 
         rvNewMatches.setLayoutManager(layoutManagerNewMatches);
-        rvNewMatches.setAdapter(hotListAdapter);
+        rvNewMatches.setAdapter(newMatchesAdapter);
 
 
         prepareHotList();
@@ -135,7 +134,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         liveChatList.add(liveChat);
 
 
-        hotListAdapter.notifyDataSetChanged();
+        newMatchesAdapter.notifyDataSetChanged();
     }
 
 
@@ -177,7 +176,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         hotLists.add(hotList);
 
 
-        hotListAdapter.notifyDataSetChanged();
+        newMatchesAdapter.notifyDataSetChanged();
     }
 
     @Override
@@ -196,54 +195,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         }
     }
-
-
-    /**
-     * RecyclerView item decoration - give equal margin around grid item
-     */
-    public class GridSpacingItemDecoration extends RecyclerView.ItemDecoration {
-
-        private int spanCount;
-        private int spacing;
-        private boolean includeEdge;
-
-        public GridSpacingItemDecoration(int spanCount, int spacing, boolean includeEdge) {
-            this.spanCount = spanCount;
-            this.spacing = spacing;
-            this.includeEdge = includeEdge;
-        }
-
-        @Override
-        public void getItemOffsets(Rect outRect, View view, RecyclerView parent, RecyclerView.State state) {
-            int position = parent.getChildAdapterPosition(view); // item position
-            int column = position % spanCount; // item column
-
-            if (includeEdge) {
-                outRect.left = spacing - column * spacing / spanCount; // spacing - column * ((1f / spanCount) * spacing)
-                outRect.right = (column + 1) * spacing / spanCount; // (column + 1) * ((1f / spanCount) * spacing)
-
-                if (position < spanCount) { // top edge
-                    outRect.top = spacing;
-                }
-                outRect.bottom = spacing; // item bottom
-            } else {
-                outRect.left = column * spacing / spanCount; // column * ((1f / spanCount) * spacing)
-                outRect.right = spacing - (column + 1) * spacing / spanCount; // spacing - (column + 1) * ((1f /    spanCount) * spacing)
-                if (position >= spanCount) {
-                    outRect.top = spacing; // item top
-                }
-            }
-        }
-    }
-
-    /**
-     * Converting dp to pixel
-     */
-    private int dpToPx(int dp) {
-        Resources r = getResources();
-        return Math.round(TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, r.getDisplayMetrics()));
-    }
-
 
 
 }
