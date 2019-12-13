@@ -14,7 +14,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="7"
+            android:layout_weight="7.5"
             android:background="@color/transparent"
             android:scaleType="fitXY"
             android:src="@mipmap/taking_photo" />
@@ -23,7 +23,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_margin="@dimen/ten"
-            android:layout_weight="3"
+            android:layout_weight="2.5"
             android:orientation="vertical"
             android:weightSum="7">
 
@@ -60,16 +60,16 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="4"
-                android:gravity="top"
+                android:layout_weight="3.5"
+                android:gravity="center|left"
                 android:text="Explore inspiring content from around the world like quotes, photography. travel, fashion, and so much more "
                 android:textColor="@color/black"
-                android:textSize="14dp" />
+                android:textSize="@dimen/fifteen" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="1"
+                android:layout_weight="1.5"
                 android:orientation="horizontal"
                 android:weightSum="3">
 

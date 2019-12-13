@@ -31,7 +31,7 @@
                 android:gravity="center|left"
                 android:text="Already have an account?"
                 android:textColor="@color/black"
-                android:textSize="22dp"
+                android:textSize="@dimen/twenty"
                 android:textStyle="bold" />
 
             <ImageView
@@ -68,14 +68,14 @@
                     android:layout_height="0dp"
                     android:layout_weight="3"
                     android:text="Email"
-                    android:textColor="@color/reference_login" />
+                    android:textColor="@color/text_color" />
 
 
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="7"
-                    android:textColor="@color/black" />
+                    android:textColor="@color/text_color" />
 
 
             </LinearLayout>
@@ -93,7 +93,7 @@
                     android:layout_height="0dp"
                     android:layout_weight="3"
                     android:text="Password"
-                    android:textColor="@color/reference_login" />
+                    android:textColor="@color/text_color" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -105,7 +105,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:inputType="textPassword"
-                        android:textColor="@color/black" />
+                        android:textColor="@color/text_color" />
 
                     <ImageView
                         android:layout_width="@dimen/fifty"
@@ -143,7 +143,7 @@
                 android:layout_height="0dp"
                 android:layout_gravity="center"
                 android:layout_weight="7"
-                android:background="@drawable/login_btn_bg"
+                android:background="@drawable/gradientbackground"
                 android:gravity="center"
                 android:text="Login"
                 android:textColor="@color/white" />
