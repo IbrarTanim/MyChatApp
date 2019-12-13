@@ -6,6 +6,7 @@
     <color name="colorAccent_default">#EF5437</color>
 
     <color name="white">#FFFFFF</color>
+    <color name="white_customize">#33808080</color>
     <color name="transparent">#00ffffff</color>
     <color name="chatTextColor">#13D7F7</color>
     <color name="cellBgColor">#CC7D44</color>

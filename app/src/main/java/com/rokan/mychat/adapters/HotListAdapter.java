@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
+import com.makeramen.roundedimageview.RoundedImageView;
 import com.rokan.mychat.R;
 import com.rokan.mychat.pojo.HotList;
 
@@ -25,7 +26,7 @@ public class HotListAdapter extends RecyclerView.Adapter<HotListAdapter.MyViewHo
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         public CircleImageView civHotListAdd;
-        ImageView ivHotListProfilePic;
+        RoundedImageView ivHotListProfilePic;
 
         public MyViewHolder(View view) {
             super(view);
