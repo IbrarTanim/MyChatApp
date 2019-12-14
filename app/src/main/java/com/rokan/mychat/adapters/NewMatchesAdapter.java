@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
+import com.makeramen.roundedimageview.RoundedImageView;
 import com.rokan.mychat.R;
 import com.rokan.mychat.pojo.HotList;
 
@@ -24,11 +25,11 @@ public class NewMatchesAdapter extends RecyclerView.Adapter<NewMatchesAdapter.My
     private List<HotList> hotLists;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        ImageView ivHotListProfilePic;
+        RoundedImageView ivNewMatchesProfilePic;
 
         public MyViewHolder(View view) {
             super(view);
-            ivHotListProfilePic = view.findViewById(R.id.ivHotListProfilePic);
+            ivNewMatchesProfilePic = view.findViewById(R.id.ivNewMatchesProfilePic);
         }
 
 
@@ -54,7 +55,7 @@ public class NewMatchesAdapter extends RecyclerView.Adapter<NewMatchesAdapter.My
         HotList hotList = hotLists.get(position);
 
 
-        Glide.with(mContext).load(hotList.getProfilePic()).into(holder.ivHotListProfilePic);
+        Glide.with(mContext).load(hotList.getProfilePic()).into(holder.ivNewMatchesProfilePic);
 
     }
 

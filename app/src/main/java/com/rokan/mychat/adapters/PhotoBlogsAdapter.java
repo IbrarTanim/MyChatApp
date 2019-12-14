@@ -6,9 +6,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.makeramen.roundedimageview.RoundedImageView;
 import com.rokan.mychat.R;
 import com.rokan.mychat.pojo.LiveChat;
 import com.rokan.mychat.pojo.PhotoBlogs;
@@ -24,8 +26,10 @@ public class PhotoBlogsAdapter extends RecyclerView.Adapter<PhotoBlogsAdapter.My
     private List<PhotoBlogs> photoBlogsList;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        public TextView tvUserName, tvTitle, tvView, tvComment, tvLike, tvLove;
-        public ImageView ivProPicPhotoBlog;
+        TextView tvUserName, tvTitle, tvView, tvComment, tvLike, tvLove;
+        RoundedImageView ivProPicPhotoBlog;
+        LinearLayout llPhotoBlogs;
+
 
         public MyViewHolder(View view) {
             super(view);
@@ -36,6 +40,7 @@ public class PhotoBlogsAdapter extends RecyclerView.Adapter<PhotoBlogsAdapter.My
             tvLike = view.findViewById(R.id.tvLike);
             tvLove = view.findViewById(R.id.tvLove);
             ivProPicPhotoBlog = view.findViewById(R.id.ivProPicPhotoBlog);
+            llPhotoBlogs = view.findViewById(R.id.llPhotoBlogs);
         }
 
 

@@ -79,7 +79,7 @@
                         android:id="@+id/llNewMatches"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/zero"
-                        android:layout_weight="2"
+                        android:layout_weight="1.5"
                         android:orientation="vertical"
                         android:weightSum="15">
 
@@ -113,6 +113,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="@dimen/zero"
                             android:layout_gravity="center"
+                            android:layout_marginEnd="@dimen/five"
                             android:layout_weight="13"
                             android:overScrollMode="never"
                             android:scrollbars="none" />
@@ -124,7 +125,7 @@
                         android:id="@+id/rvLiveChat"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/zero"
-                        android:layout_weight="8"
+                        android:layout_weight="8.5"
                         android:nestedScrollingEnabled="false"
                         android:overScrollMode="never"
                         android:scrollbars="none" />

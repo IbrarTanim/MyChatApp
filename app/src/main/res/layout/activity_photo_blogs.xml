@@ -124,7 +124,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:weightSum="15">
+                android:weightSum="20">
 
                 <LinearLayout
                     android:id="@+id/llHotList"
@@ -150,7 +150,7 @@
                     android:id="@+id/rvPhotoBlogs"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/zero"
-                    android:layout_weight="13"
+                    android:layout_weight="18"
                     android:overScrollMode="never"
                     android:scrollbars="none" />
 
