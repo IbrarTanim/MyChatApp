@@ -26,9 +26,9 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="3"
-                android:gravity="bottom"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/thirty"
                 android:text="Here's your first step with us!"
-                android:layout_marginBottom="@dimen/fifty"
                 android:textColor="@color/white"
                 android:textSize="@dimen/twenty"
                 android:textStyle="bold" />
