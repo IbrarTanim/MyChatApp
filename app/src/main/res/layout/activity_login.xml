@@ -40,7 +40,8 @@
                 android:layout_gravity="right"
                 android:layout_weight="7"
                 android:background="@color/transparent"
-                android:scaleType="fitCenter"
+                android:paddingTop="@dimen/thirty"
+                android:scaleType="fitXY"
                 android:src="@mipmap/login_page_image" />
 
         </LinearLayout>
