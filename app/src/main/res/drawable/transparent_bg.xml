@@ -1,9 +1,10 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <solid android:color="#4D000000" />
+    <solid android:color="@color/photo_blogs_transparent" />
 
     <stroke
-        android:color="#4D000000" />
+        android:color="@color/photo_blogs_transparent" />
+        <!--android:color="#4D000000" />-->
 
     <corners
 

@@ -18,5 +18,6 @@
     <color name="text_color">#DE2076</color>
     <color name="app_color_left">#DE2076</color>
     <color name="app_color_right">#EF5437</color>
+    <color name="photo_blogs_transparent">#4D898989</color>
 
 </resources>

@@ -46,10 +46,6 @@ public class PhotoBlogsActivity extends AppCompatActivity {
         photoBlogsList = new ArrayList<>();
 
 
-
-
-
-
         photoBlogsAdapter = new PhotoBlogsAdapter(activity, photoBlogsList);
         //layoutManagerPhotoBlogs = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
 

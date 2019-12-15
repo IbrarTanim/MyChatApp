@@ -65,58 +65,10 @@
         </LinearLayout>
 
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/zero"
-            android:layout_weight="1.5"
-            android:padding="@dimen/ten"
-            android:orientation="horizontal"
-            android:weightSum="21.05">
-
-            <TextView
-                android:layout_width="@dimen/zero"
-                android:layout_height="match_parent"
-                android:layout_weight="10"
-                android:gravity="center|right"
-                android:text="JustUp"
-                android:textColor="@color/black"
-                android:textSize="@dimen/fifteen" />
-
-            <View
-                android:layout_width="@dimen/zero"
-                android:layout_height="match_parent"
-                android:layout_weight=".5"/>
-
-
-            <View
-                android:layout_width="@dimen/zero"
-                android:layout_height="match_parent"
-                android:background="@color/black"
-                android:layout_weight=".05"/>
-
-            <View
-                android:layout_width="@dimen/zero"
-                android:layout_height="match_parent"
-                android:layout_weight=".5"/>
-
-
-            <TextView
-                android:layout_width="@dimen/zero"
-                android:layout_height="match_parent"
-                android:layout_weight="10"
-                android:gravity="center|left"
-                android:text="Top Photo"
-                android:textColor="@color/black"
-                android:textSize="@dimen/fifteen" />
-
-
-        </LinearLayout>
-
-
         <android.support.v4.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="@dimen/zero"
-            android:layout_weight="16"
+            android:layout_weight="17.5"
             android:overScrollMode="never"
             android:scrollbars="none">
 
@@ -125,6 +77,54 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:weightSum="20">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/ten"
+                    android:weightSum="21.05">
+
+                    <TextView
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:gravity="center|right"
+                        android:text="JustUp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/fifteen" />
+
+                    <View
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5" />
+
+
+                    <View
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="@dimen/twenty"
+                        android:layout_weight=".05"
+                        android:layout_gravity="center"
+                        android:background="@color/black" />
+
+                    <View
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5" />
+
+
+                    <TextView
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:gravity="center|left"
+                        android:text="Top Photo"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/fifteen" />
+
+
+                </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/llHotList"
@@ -150,7 +150,7 @@
                     android:id="@+id/rvPhotoBlogs"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/zero"
-                    android:layout_weight="18"
+                    android:layout_weight="17"
                     android:overScrollMode="never"
                     android:scrollbars="none" />
 
