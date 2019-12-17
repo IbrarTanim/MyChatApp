@@ -35,25 +35,58 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/thirty"
+                android:layout_height="@dimen/forty"
                 android:layout_alignParentBottom="true"
                 android:background="@drawable/transparent_bg"
                 android:orientation="horizontal"
-                android:weightSum="10">
+                android:weightSum="21">
 
 
+                <View
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5" />
 
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/civProfilePhotoBlogs"
                     android:layout_width="@dimen/zero"
                     android:layout_height="match_parent"
-                    android:layout_weight="2"
+                    android:layout_weight="5"
                     android:src="@mipmap/anisul" />
 
                 <LinearLayout
                     android:layout_width="@dimen/zero"
                     android:layout_height="match_parent"
-                    android:layout_weight="2"
+                    android:layout_weight="5"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <ImageView
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:scaleType="fitCenter"
+                        android:src="@mipmap/view_white" />
+
+                    <TextView
+                        android:id="@+id/tvView"
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="39"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/fifteen"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
                     android:orientation="horizontal"
                     android:weightSum="2">
 
@@ -83,7 +116,7 @@
                 <LinearLayout
                     android:layout_width="@dimen/zero"
                     android:layout_height="match_parent"
-                    android:layout_weight="2"
+                    android:layout_weight="5"
                     android:orientation="horizontal"
                     android:weightSum="2">
 
@@ -114,42 +147,12 @@
                 <View
                     android:layout_width="@dimen/zero"
                     android:layout_height="match_parent"
-                    android:layout_weight="4" />
+                    android:layout_weight="0.5" />
 
 
             </LinearLayout>
 
 
-            <LinearLayout
-                android:layout_width="60dp"
-                android:layout_height="@dimen/thirty"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentRight="true"
-                android:background="@drawable/textview_overlay"
-                android:orientation="horizontal"
-                android:weightSum="2">
-
-                <ImageView
-                    android:layout_width="@dimen/zero"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="@color/transparent"
-                    android:scaleType="fitCenter"
-                    android:src="@mipmap/view_white" />
-
-                <TextView
-                    android:id="@+id/tvView"
-                    android:layout_width="@dimen/zero"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="39"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/fifteen"
-                    android:textStyle="bold" />
-
-
-            </LinearLayout>
 
 
         </RelativeLayout>

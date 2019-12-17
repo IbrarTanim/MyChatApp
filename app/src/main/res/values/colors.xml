@@ -19,6 +19,9 @@
     <color name="text_color">#DE2076</color>
     <color name="app_color_left">#DE2076</color>
     <color name="app_color_right">#EF5437</color>
-    <color name="photo_blogs_transparent">#80898989</color>
+    <color name="photo_blogs_transparent">#80000000</color>
+    <color name="color_a">#70635B</color>
+    <color name="color_b">#B0B8BA</color>
+
 
 </resources>
