@@ -2,14 +2,11 @@
 
     <solid android:color="@color/photo_blogs_transparent" />
 
-    <stroke
-        android:color="@color/photo_blogs_transparent" />
-        <!--android:color="#4D000000" />-->
+    <stroke android:color="@color/photo_blogs_transparent" />
 
     <corners
-
-        android:radius="10dp" />
-
+        android:bottomLeftRadius="@dimen/ten"
+        android:bottomRightRadius="@dimen/ten" />
 
 
 </shape>

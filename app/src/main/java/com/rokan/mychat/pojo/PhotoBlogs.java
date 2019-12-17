@@ -3,24 +3,21 @@ package com.rokan.mychat.pojo;
 public class PhotoBlogs {
 
     int photoBlogProfilePic;
-    String love;
+    int circulerBlogProfilePic;
     String view;
     String comment;
     String like;
-    String userName;
     String title;
 
 
-    public PhotoBlogs(int photoBlogProfilePic, String love, String view, String comment, String like, String userName, String title) {
+    public PhotoBlogs(int photoBlogProfilePic, int circulerBlogProfilePic, String view, String comment, String like, String title) {
         this.photoBlogProfilePic = photoBlogProfilePic;
-        this.love = love;
+        this.circulerBlogProfilePic = circulerBlogProfilePic;
         this.view = view;
         this.comment = comment;
         this.like = like;
-        this.userName = userName;
         this.title = title;
     }
-
 
     public int getPhotoBlogProfilePic() {
         return photoBlogProfilePic;
@@ -30,12 +27,12 @@ public class PhotoBlogs {
         this.photoBlogProfilePic = photoBlogProfilePic;
     }
 
-    public String getLove() {
-        return love;
+    public int getCirculerBlogProfilePic() {
+        return circulerBlogProfilePic;
     }
 
-    public void setLove(String love) {
-        this.love = love;
+    public void setCirculerBlogProfilePic(int circulerBlogProfilePic) {
+        this.circulerBlogProfilePic = circulerBlogProfilePic;
     }
 
     public String getView() {
@@ -60,14 +57,6 @@ public class PhotoBlogs {
 
     public void setLike(String like) {
         this.like = like;
-    }
-
-    public String getUserName() {
-        return userName;
-    }
-
-    public void setUserName(String userName) {
-        this.userName = userName;
     }
 
     public String getTitle() {

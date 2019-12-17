@@ -26,20 +26,20 @@ public class PhotoBlogsAdapter extends RecyclerView.Adapter<PhotoBlogsAdapter.My
     private List<PhotoBlogs> photoBlogsList;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        TextView tvUserName, tvTitle, tvView, tvComment, tvLike, tvLove;
+        TextView tvTitle, tvView, tvComment, tvLike;
         RoundedImageView ivProPicPhotoBlog;
+        CircleImageView civProfilePhotoBlogs;
         LinearLayout llPhotoBlogs;
 
 
         public MyViewHolder(View view) {
             super(view);
-            tvUserName = view.findViewById(R.id.tvUserName);
             tvTitle = view.findViewById(R.id.tvTitle);
             tvView = view.findViewById(R.id.tvView);
             tvComment = view.findViewById(R.id.tvComment);
             tvLike = view.findViewById(R.id.tvLike);
-            tvLove = view.findViewById(R.id.tvLove);
             ivProPicPhotoBlog = view.findViewById(R.id.ivProPicPhotoBlog);
+            civProfilePhotoBlogs = view.findViewById(R.id.civProfilePhotoBlogs);
             llPhotoBlogs = view.findViewById(R.id.llPhotoBlogs);
         }
 
@@ -65,14 +65,13 @@ public class PhotoBlogsAdapter extends RecyclerView.Adapter<PhotoBlogsAdapter.My
     public void onBindViewHolder(final PhotoBlogsAdapter.MyViewHolder holder, int position) {
         PhotoBlogs photoBlogs = photoBlogsList.get(position);
 
-        holder.tvUserName.setText(photoBlogs.getUserName());
         holder.tvTitle.setText(photoBlogs.getTitle());
         holder.tvView.setText(photoBlogs.getView());
         holder.tvComment.setText(photoBlogs.getComment());
         holder.tvLike.setText(photoBlogs.getLike());
-        holder.tvLove.setText(photoBlogs.getLove());
 
         Glide.with(mContext).load(photoBlogs.getPhotoBlogProfilePic()).into(holder.ivProPicPhotoBlog);
+        Glide.with(mContext).load(photoBlogs.getCirculerBlogProfilePic()).into(holder.civProfilePhotoBlogs);
 
     }
 

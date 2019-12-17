@@ -28,98 +28,127 @@
                 android:scaleType="fitXY"
                 android:src="@mipmap/chatting"
                 app:riv_border_color="@color/transparent"
-                app:riv_border_width="2dip"
                 app:riv_corner_radius="10dip"
                 app:riv_mutate_background="true"
                 app:riv_oval="false" />
 
 
-            <TextView
-                android:id="@+id/tvUserName"
-                android:layout_width="@dimen/hundrad"
-                android:layout_height="@dimen/twenty_five"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentLeft="true"
-                android:layout_marginBottom="30dp"
-                android:layout_weight="1"
-                android:background="@drawable/transparent_bg"
-                android:gravity="center"
-                android:text="Mr.Ahmed"
-                android:textColor="@color/white" />
-
             <LinearLayout
-                android:layout_width="30dp"
-                android:layout_height="match_parent"
-                android:layout_alignParentRight="true"
-                android:orientation="vertical"
-                android:weightSum="12">
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/thirty"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/transparent_bg"
+                android:orientation="horizontal"
+                android:weightSum="10">
 
                 <View
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/zero"
-                    android:layout_weight="0.5" />
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civProfilePhotoBlogs"
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:src="@mipmap/anisul" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <ImageView
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_comment_white" />
+
+                    <TextView
+                        android:id="@+id/tvComment"
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="19"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/fifteen"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <ImageView
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_love_white" />
+
+                    <TextView
+                        android:id="@+id/tvLike"
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="14"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/fifteen"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="@dimen/thirty"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/textview_overlay"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_view_white" />
 
                 <TextView
                     android:id="@+id/tvView"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/zero"
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/transparent_bg"
                     android:gravity="center"
-                    android:text="View"
+                    android:text="39"
                     android:textColor="@color/white"
-                    android:textSize="@dimen/fifteen" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/zero"
-                    android:layout_weight="6" />
-
-                <TextView
-                    android:id="@+id/tvComment"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/zero"
-                    android:layout_weight="1"
-                    android:background="@drawable/transparent_bg"
-                    android:gravity="center"
-                    android:text="Comment"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/fifteen" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/zero"
-                    android:layout_weight="0.5" />
-
-                <TextView
-                    android:id="@+id/tvLove"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/zero"
-                    android:layout_weight="1"
-                    android:background="@drawable/transparent_bg"
-                    android:gravity="center"
-                    android:text="Love"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/fifteen" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/zero"
-                    android:layout_weight="0.5" />
-                <TextView
-                    android:id="@+id/tvLike"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/zero"
-                    android:layout_weight="1"
-                    android:background="@drawable/transparent_bg"
-                    android:gravity="center"
-                    android:text="Like"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/fifteen" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/zero"
-                    android:layout_weight="0.5" />
+                    android:textSize="@dimen/fifteen"
+                    android:textStyle="bold" />
 
 
             </LinearLayout>
