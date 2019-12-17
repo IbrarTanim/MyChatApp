@@ -61,9 +61,10 @@
                         android:layout_width="@dimen/zero"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:padding="@dimen/five"
                         android:background="@color/transparent"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/ic_comment_white" />
+                        android:scaleType="fitCenter"
+                        android:src="@mipmap/comment_white" />
 
                     <TextView
                         android:id="@+id/tvComment"
@@ -90,9 +91,10 @@
                         android:layout_width="@dimen/zero"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:padding="@dimen/five"
                         android:background="@color/transparent"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/ic_love_white" />
+                        android:scaleType="fitCenter"
+                        android:src="@mipmap/love_white" />
 
                     <TextView
                         android:id="@+id/tvLike"
@@ -132,8 +134,8 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/transparent"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/ic_view_white" />
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/view_white" />
 
                 <TextView
                     android:id="@+id/tvView"
