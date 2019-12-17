@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.OnlyStatusBar">
-        <activity android:name=".activities.ChattingActivity"></activity>
+        <activity
+            android:name=".activities.ChattingActivity"
+            android:theme="@style/AppTheme.OnlyStatusBar" />
         <activity
             android:name=".activities.PhotoBlogsActivity"
             android:screenOrientation="sensorPortrait"

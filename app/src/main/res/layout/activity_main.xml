@@ -236,6 +236,7 @@
                 android:weightSum="2">
 
                 <ImageButton
+                    android:id="@+id/ibNotification"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/zero"
                     android:layout_weight="1"

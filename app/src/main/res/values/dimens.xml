@@ -15,4 +15,5 @@
     <dimen name="forty">40dp</dimen>
     <dimen name="hundrad">100dp</dimen>
     <dimen name="two">2dp</dimen>
+    <dimen name="sixty">60dp</dimen>
 </resources>
