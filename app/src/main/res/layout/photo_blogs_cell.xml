@@ -61,7 +61,7 @@
                         android:layout_width="@dimen/zero"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:padding="@dimen/five"
+                        android:padding="@dimen/two"
                         android:background="@color/transparent"
                         android:scaleType="fitCenter"
                         android:src="@mipmap/comment_white" />
@@ -91,7 +91,7 @@
                         android:layout_width="@dimen/zero"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:padding="@dimen/five"
+                        android:padding="@dimen/two"
                         android:background="@color/transparent"
                         android:scaleType="fitCenter"
                         android:src="@mipmap/love_white" />
