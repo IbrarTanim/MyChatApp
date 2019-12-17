@@ -49,7 +49,7 @@
                     android:gravity="center|left"
                     android:text="Kazi Nazrul Islam"
                     android:textColor="@color/white"
-                    android:textSize="@dimen/fifteen"
+                    android:textSize="@dimen/twelve"
                     android:textStyle="bold" />
 
                 <View
@@ -228,7 +228,7 @@
                     <LinearLayout
                         android:layout_width="@dimen/zero"
                         android:layout_height="match_parent"
-                        android:layout_weight="4"
+                        android:layout_weight="5"
                         android:background="@drawable/chatting_bg_overlay"
                         android:orientation="horizontal"
                         android:weightSum="10">
@@ -254,7 +254,7 @@
                                 android:gravity="center|left"
                                 android:text="Kazi Nazrul Islam"
                                 android:textColor="@color/white"
-                                android:textSize="@dimen/fifteen"
+                                android:textSize="@dimen/twelve"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -264,7 +264,7 @@
                                 android:gravity="center|left"
                                 android:text="Kazi Nazrul Islam"
                                 android:textColor="@color/white"
-                                android:textSize="@dimen/fifteen" />
+                                android:textSize="@dimen/twelve" />
 
 
                         </LinearLayout>
@@ -275,7 +275,7 @@
                     <View
                         android:layout_width="@dimen/zero"
                         android:layout_height="match_parent"
-                        android:layout_weight="6" />
+                        android:layout_weight="5" />
 
 
                 </LinearLayout>
@@ -291,7 +291,7 @@
                     <LinearLayout
                         android:layout_width="@dimen/zero"
                         android:layout_height="match_parent"
-                        android:layout_weight="4"
+                        android:layout_weight="5"
                         android:background="@drawable/chatting_bg_overlay"
                         android:orientation="horizontal"
                         android:weightSum="10">
@@ -317,7 +317,7 @@
                                 android:gravity="center|left"
                                 android:text="Kazi Nazrul Islam"
                                 android:textColor="@color/white"
-                                android:textSize="@dimen/fifteen"
+                                android:textSize="@dimen/twelve"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -327,7 +327,7 @@
                                 android:gravity="center|left"
                                 android:text="Kazi Nazrul Islam"
                                 android:textColor="@color/white"
-                                android:textSize="@dimen/fifteen" />
+                                android:textSize="@dimen/twelve" />
 
 
                         </LinearLayout>
@@ -338,7 +338,7 @@
                     <View
                         android:layout_width="@dimen/zero"
                         android:layout_height="match_parent"
-                        android:layout_weight="4" />
+                        android:layout_weight="3" />
 
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:layout_width="@dimen/zero"
