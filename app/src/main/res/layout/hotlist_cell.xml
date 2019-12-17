@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
-    android:layout_width="60dp"
-    android:layout_marginLeft="@dimen/three"
-    android:layout_height="match_parent">
+    android:layout_width="120dp"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/five">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/ivHotListProfilePic"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="220dp"
             android:scaleType="fitXY"
             android:src="@mipmap/nazrul"
             app:riv_border_color="@color/transparent"
-            app:riv_border_width="2dip"
-            app:riv_corner_radius="20dip"
+            app:riv_corner_radius="10dip"
             app:riv_mutate_background="true"
             app:riv_oval="false" />
 
@@ -33,13 +33,13 @@
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="@dimen/forty"
+            android:layout_height="@dimen/thirty"
             android:layout_alignParentBottom="true"
+            android:background="@drawable/textview_overlay"
             android:gravity="center"
-            android:layout_marginBottom="@dimen/twenty"
-            android:text="Add to HotList"
+            android:text="Add to hotlist"
             android:textColor="@color/white"
-            android:textSize="@dimen/ten"
+            android:textSize="13dp"
             android:textStyle="bold" />
 
 

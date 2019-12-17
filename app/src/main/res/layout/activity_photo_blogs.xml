@@ -21,7 +21,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/zero"
-            android:layout_weight="1.5"
+            android:layout_weight="1"
             android:orientation="horizontal"
             android:weightSum="10">
 
@@ -68,7 +68,7 @@
         <android.support.v4.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="@dimen/zero"
-            android:layout_weight="17.5"
+            android:layout_weight="18"
             android:overScrollMode="never"
             android:scrollbars="none">
 
@@ -104,8 +104,8 @@
                     <View
                         android:layout_width="@dimen/zero"
                         android:layout_height="@dimen/twenty"
-                        android:layout_weight=".05"
                         android:layout_gravity="center"
+                        android:layout_weight=".05"
                         android:background="@color/black" />
 
                     <View
@@ -130,7 +130,7 @@
                     android:id="@+id/llHotList"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/zero"
-                    android:layout_weight="2"
+                    android:layout_weight="3"
                     android:orientation="vertical"
                     android:weightSum="15">
 
@@ -145,12 +145,11 @@
 
                 </LinearLayout>
 
-
                 <android.support.v7.widget.RecyclerView
                     android:id="@+id/rvPhotoBlogs"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/zero"
-                    android:layout_weight="17"
+                    android:layout_weight="16"
                     android:nestedScrollingEnabled="false"
                     android:overScrollMode="never"
                     android:scrollbars="none" />
