@@ -52,7 +52,7 @@
                 android:layout_weight="1"
                 android:background="@color/transparent"
                 android:scaleType="fitCenter"
-                android:src="@mipmap/chat_rooms" />
+                android:src="@mipmap/bell_icon" />
 
             <ImageView
                 android:layout_width="@dimen/zero"
@@ -60,7 +60,7 @@
                 android:layout_weight="1"
                 android:background="@color/transparent"
                 android:scaleType="fitCenter"
-                android:src="@mipmap/add_icon" />
+                android:src="@mipmap/add_photo_black" />
 
         </LinearLayout>
 

@@ -10,16 +10,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:weightSum="10"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:weightSum="10.5">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="9">
+            android:layout_weight="8">
 
             <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/ivProPicPhotoBlog"
@@ -28,7 +24,8 @@
                 android:scaleType="fitXY"
                 android:src="@mipmap/chatting"
                 app:riv_border_color="@color/transparent"
-                app:riv_corner_radius="10dip"
+                app:riv_corner_radius_top_left="@dimen/ten"
+                app:riv_corner_radius_top_right="@dimen/ten"
                 app:riv_mutate_background="true"
                 app:riv_oval="false" />
 
@@ -37,7 +34,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/forty"
                 android:layout_alignParentBottom="true"
-                android:background="@drawable/transparent_bg"
+                android:background="@color/photo_blogs_transparent"
                 android:orientation="horizontal"
                 android:weightSum="21">
 
@@ -77,8 +74,8 @@
                         android:gravity="center"
                         android:text="39"
                         android:textColor="@color/white"
-                        android:textSize="@dimen/fifteen"
-                        android:textStyle="bold" />
+                        android:textSize="@dimen/twelve"
+                        android:textStyle="normal" />
 
 
                 </LinearLayout>
@@ -94,8 +91,8 @@
                         android:layout_width="@dimen/zero"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:padding="@dimen/two"
                         android:background="@color/transparent"
+                        android:padding="@dimen/two"
                         android:scaleType="fitCenter"
                         android:src="@mipmap/comment_white" />
 
@@ -107,8 +104,8 @@
                         android:gravity="center"
                         android:text="19"
                         android:textColor="@color/white"
-                        android:textSize="@dimen/fifteen"
-                        android:textStyle="bold" />
+                        android:textSize="@dimen/twelve"
+                        android:textStyle="normal" />
 
 
                 </LinearLayout>
@@ -124,8 +121,8 @@
                         android:layout_width="@dimen/zero"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:padding="@dimen/two"
                         android:background="@color/transparent"
+                        android:padding="@dimen/two"
                         android:scaleType="fitCenter"
                         android:src="@mipmap/love_white" />
 
@@ -137,8 +134,8 @@
                         android:gravity="center"
                         android:text="14"
                         android:textColor="@color/white"
-                        android:textSize="@dimen/fifteen"
-                        android:textStyle="bold" />
+                        android:textSize="@dimen/twelve"
+                        android:textStyle="normal" />
 
 
                 </LinearLayout>
@@ -153,23 +150,26 @@
             </LinearLayout>
 
 
-
-
         </RelativeLayout>
 
         <TextView
             android:id="@+id/tvTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:shadowColor="@color/black"
-            android:maxLines="3"
-            android:shadowDx="-1"
-            android:shadowDy="-1"
-            android:shadowRadius="2"
+            android:layout_weight="2"
+            android:background="@drawable/photo_blogs_title_bg"
+            android:paddingLeft="@dimen/three"
+            android:paddingBottom="@dimen/three"
             android:gravity="left"
-            android:text="Name Title" />
+            android:maxLines="5"
+            android:text="Name Title"
+            android:textSize="@dimen/twelve" />
 
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero"
+            android:layout_weight="0.5" />
 
     </LinearLayout>
 
