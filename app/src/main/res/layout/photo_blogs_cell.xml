@@ -18,7 +18,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/zero"
+            android:layout_height="wrap_content"
             android:layout_weight="9">
 
             <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -160,13 +160,14 @@
         <TextView
             android:id="@+id/tvTitle"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/zero"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:shadowColor="@color/black"
+            android:maxLines="3"
             android:shadowDx="-1"
             android:shadowDy="-1"
             android:shadowRadius="2"
-            android:gravity="center"
+            android:gravity="left"
             android:text="Name Title" />
 
 

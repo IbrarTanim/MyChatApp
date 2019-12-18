@@ -124,19 +124,19 @@ public class PhotoBlogsActivity extends AppCompatActivity {
                 R.mipmap.samsurrahman,
         };
 
-        PhotoBlogs photoBlogs = new PhotoBlogs(listItemPhotoBlogs[0], listItemPhotoBlogs[0], "13", "3", "9", getString(R.string.nazrul));
+        PhotoBlogs photoBlogs = new PhotoBlogs(listItemPhotoBlogs[0], listItemPhotoBlogs[0], "13", "3", "9", "Kazi Nazrul Islam our national poet, We Love him from our heart. Kazi Nazrul Islam our national poet, We Love him from our heart");
         photoBlogsList.add(photoBlogs);
 
         photoBlogs = new PhotoBlogs(listItemPhotoBlogs[1], listItemPhotoBlogs[1], "13", "3", "9", getString(R.string.jafariqbal));
         photoBlogsList.add(photoBlogs);
 
-        photoBlogs = new PhotoBlogs(listItemPhotoBlogs[2], listItemPhotoBlogs[2], "13", "3", "9", getString(R.string.sufiakamal));
+        photoBlogs = new PhotoBlogs(listItemPhotoBlogs[2], listItemPhotoBlogs[2], "13", "3", "9",  getString(R.string.sufiakamal));
         photoBlogsList.add(photoBlogs);
 
-        photoBlogs = new PhotoBlogs(listItemPhotoBlogs[3], listItemPhotoBlogs[3], "13", "3", "9", getString(R.string.sarat));
+        photoBlogs = new PhotoBlogs(listItemPhotoBlogs[3], listItemPhotoBlogs[3], "13", "3", "9", "Kazi Nazrul Islam our national poet, We Love him from our heart. Kazi Nazrul Islam our national poet, We Love him from our heart");
         photoBlogsList.add(photoBlogs);
 
-        photoBlogs = new PhotoBlogs(listItemPhotoBlogs[4], listItemPhotoBlogs[4], "13", "3", "9", getString(R.string.samsurrahman));
+        photoBlogs = new PhotoBlogs(listItemPhotoBlogs[4], listItemPhotoBlogs[4], "13", "3", "9", "Kazi Nazrul Islam our national poet, We Love him from our heart");
         photoBlogsList.add(photoBlogs);
 
         photoBlogs = new PhotoBlogs(listItemPhotoBlogs[5], listItemPhotoBlogs[5], "13", "3", "9", getString(R.string.robindronath));
@@ -145,7 +145,7 @@ public class PhotoBlogsActivity extends AppCompatActivity {
         photoBlogs = new PhotoBlogs(listItemPhotoBlogs[6], listItemPhotoBlogs[6], "13", "3", "9", getString(R.string.humayanahmed));
         photoBlogsList.add(photoBlogs);
 
-        photoBlogs = new PhotoBlogs(listItemPhotoBlogs[7], listItemPhotoBlogs[7], "13", "3", "9", getString(R.string.samsurrahman));
+        photoBlogs = new PhotoBlogs(listItemPhotoBlogs[7], listItemPhotoBlogs[7], "13", "3", "9", "Kazi Nazrul Islam our national poet, We Love him from our heart. Kazi Nazrul Islam our national poet, We Love him from our heart");
         photoBlogsList.add(photoBlogs);
 
 
