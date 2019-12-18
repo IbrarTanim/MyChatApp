@@ -45,24 +45,26 @@
                 <TextView
                     android:layout_width="@dimen/zero"
                     android:layout_height="match_parent"
-                    android:layout_weight="5"
+                    android:layout_marginLeft="@dimen/twenty"
+                    android:layout_weight="6"
                     android:gravity="center|left"
+                    android:maxLines="1"
                     android:text="Kazi Nazrul Islam"
                     android:textColor="@color/white"
-                    android:textSize="@dimen/twelve"
+                    android:textSize="@dimen/fifteen"
                     android:textStyle="bold" />
 
                 <View
                     android:layout_width="@dimen/zero"
                     android:layout_height="match_parent"
-                    android:layout_weight="6" />
+                    android:layout_weight="5" />
 
                 <ImageView
                     android:layout_width="@dimen/zero"
                     android:layout_height="match_parent"
-                    android:padding="@dimen/ten"
                     android:layout_weight="2"
                     android:background="@color/transparent"
+                    android:padding="@dimen/ten"
                     android:src="@android:drawable/ic_menu_close_clear_cancel" />
 
             </LinearLayout>
@@ -117,7 +119,7 @@
                             android:text="23"
                             android:textColor="@color/white"
                             android:textSize="@dimen/fifteen"
-                            android:textStyle="bold" />
+                            android:textStyle="normal" />
 
 
                     </LinearLayout>
@@ -152,7 +154,7 @@
                             android:text="19"
                             android:textColor="@color/white"
                             android:textSize="@dimen/fifteen"
-                            android:textStyle="bold" />
+                            android:textStyle="normal" />
 
 
                     </LinearLayout>
@@ -187,7 +189,7 @@
                             android:text="8"
                             android:textColor="@color/white"
                             android:textSize="@dimen/fifteen"
-                            android:textStyle="bold" />
+                            android:textStyle="normal" />
 
 
                     </LinearLayout>
@@ -242,8 +244,9 @@
                         <de.hdodenhof.circleimageview.CircleImageView
                             android:layout_width="@dimen/zero"
                             android:layout_height="match_parent"
+                            android:layout_gravity="left"
                             android:layout_weight="4"
-                            android:src="@mipmap/nazrul" />
+                            android:src="@mipmap/humayunahmed" />
 
                         <LinearLayout
                             android:layout_width="@dimen/zero"
@@ -257,7 +260,7 @@
                                 android:layout_height="@dimen/zero"
                                 android:layout_weight="1"
                                 android:gravity="center|left"
-                                android:text="Kazi Nazrul Islam"
+                                android:text="Humaun Ahmed"
                                 android:textColor="@color/white"
                                 android:textSize="@dimen/twelve"
                                 android:textStyle="bold" />
@@ -267,7 +270,8 @@
                                 android:layout_height="@dimen/zero"
                                 android:layout_weight="1"
                                 android:gravity="center|left"
-                                android:text="Kazi Nazrul Islam"
+                                android:maxLines="1"
+                                android:text="We Love Humaun"
                                 android:textColor="@color/white"
                                 android:textSize="@dimen/twelve" />
 
@@ -305,8 +309,9 @@
                         <de.hdodenhof.circleimageview.CircleImageView
                             android:layout_width="@dimen/zero"
                             android:layout_height="match_parent"
+                            android:layout_gravity="left"
                             android:layout_weight="4"
-                            android:src="@mipmap/nazrul" />
+                            android:src="@mipmap/sufia_kamal" />
 
                         <LinearLayout
                             android:layout_width="@dimen/zero"
@@ -320,7 +325,7 @@
                                 android:layout_height="@dimen/zero"
                                 android:layout_weight="1"
                                 android:gravity="center|left"
-                                android:text="Kazi Nazrul Islam"
+                                android:text="Sufia kamal"
                                 android:textColor="@color/white"
                                 android:textSize="@dimen/twelve"
                                 android:textStyle="bold" />
@@ -330,7 +335,8 @@
                                 android:layout_height="@dimen/zero"
                                 android:layout_weight="1"
                                 android:gravity="center|left"
-                                android:text="Kazi Nazrul Islam"
+                                android:maxLines="1"
+                                android:text="We are proud of you"
                                 android:textColor="@color/white"
                                 android:textSize="@dimen/twelve" />
 
@@ -343,14 +349,7 @@
                     <View
                         android:layout_width="@dimen/zero"
                         android:layout_height="match_parent"
-                        android:layout_weight="3" />
-
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:layout_width="@dimen/zero"
-                        android:layout_height="match_parent"
-                        android:layout_weight="2"
-                        android:background="@color/transparent"
-                        android:src="@mipmap/love_icon" />
+                        android:layout_weight="5" />
 
 
                 </LinearLayout>
@@ -380,20 +379,80 @@
                             android:textSize="@dimen/fifteen" />
 
 
+                        <View
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2" />
+
                     </LinearLayout>
-
-
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:layout_width="@dimen/zero"
-                        android:layout_height="match_parent"
-                        android:layout_weight="2"
-                        android:background="@color/transparent"
-                        android:src="@mipmap/send_icon" />
 
 
                 </LinearLayout>
 
             </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="@dimen/hundrad"
+            android:layout_height="@dimen/thirty"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="70dp"
+            android:layout_weight="5"
+            android:background="@drawable/chatting_bg_overlay"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <ImageView
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:padding="@dimen/five"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/clock_white_croped" />
+
+            <TextView
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="12.35"
+                android:textColor="@color/white"
+                android:textSize="@dimen/fifteen"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/ten"
+            android:layout_marginBottom="@dimen/ten"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zero"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:src="@mipmap/love_icon" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zero"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:src="@mipmap/send_icon" />
 
 
         </LinearLayout>
