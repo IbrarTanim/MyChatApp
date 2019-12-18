@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="80dp"
+    android:layout_height="60dp"
     android:layout_marginTop="@dimen/five">
 
     <LinearLayout
@@ -41,54 +41,58 @@
         </LinearLayout>
 
 
-        <!--<View
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.5" />-->
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.5"
-            android:orientation="vertical"
-            android:weightSum="10">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="4"
-                android:rotation="180"
-                android:scaleType="fitCenter"
-                android:src="@drawable/ic_triangle_left"
-                android:tint="#33020727" />
-
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="6" />
-
-        </LinearLayout>
-
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="7.5"
-            android:background="@drawable/gradient_message"
             android:orientation="vertical"
             android:padding="3dp"
             android:weightSum="7">
 
-            <TextView
-                android:id="@+id/tvNameTitle"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="2"
-                android:gravity="center|left"
-                android:text="Mr.Abul Kalam"
-                android:textColor="@color/white"
-                android:textStyle="bold" />
+                android:layout_weight="3"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/tvNameTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:gravity="center|left"
+                    android:text="Mr.Abul Kalam"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:padding="4dp"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/clock_croped" />
+
+
+                <TextView
+                    android:id="@+id/tvChatTime"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center|right"
+                    android:text="15 min ago"
+                    android:textColor="@color/black" />
+
+
+
+
+
+
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/tvChatText"
@@ -98,53 +102,9 @@
                 android:gravity="center|left"
                 android:maxLines="1"
                 android:text="The typical solution is to define the shape and use it as background but as the number of digits varies it's no more a perfect circle, it looks like a rectangle with round edges or Oval. So I have developed this solution, it's working great. Hope it will help someone."
-                android:textColor="@color/white" />
+                android:textColor="@color/black" />
 
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="2"
-                android:orientation="horizontal"
-                android:weightSum="10">
-
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="left"
-                    android:layout_weight="1"
-                    android:background="@color/transparent"
-                    android:padding="4dp"
-                    android:scaleType="fitCenter"
-                    android:src="@mipmap/clock_white_croped" />
-
-
-                <TextView
-                    android:id="@+id/tvChatTime"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="3"
-                    android:gravity="center|left"
-                    android:text="15 min ago"
-                    android:textColor="@color/white" />
-
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="5" />
-
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="right"
-                    android:layout_weight="1"
-                    android:padding="4dp"
-                    android:background="@color/transparent"
-                    android:scaleType="fitCenter"
-                    android:src="@mipmap/arrow_icon_white_croped" />
-
-
-            </LinearLayout>
 
 
         </LinearLayout>
