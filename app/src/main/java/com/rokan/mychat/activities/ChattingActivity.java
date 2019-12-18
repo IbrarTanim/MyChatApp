@@ -48,8 +48,8 @@ public class ChattingActivity extends AppCompatActivity implements View.OnClickL
                     tvTitleChatting.setMaxLines(Integer.MAX_VALUE);
                     tvTitleChatting.setEllipsize(null);
                     tvTitleChatting.setText(getString(R.string.chatting_title));
-                    tvTitleChatting.setVerticalScrollBarEnabled(true);
-                    tvTitleChatting.setMovementMethod(new ScrollingMovementMethod());
+                    //tvTitleChatting.setVerticalScrollBarEnabled(true);
+                    //tvTitleChatting.setMovementMethod(new ScrollingMovementMethod());
 
                     isTitleShowed = false;
                 } else {
@@ -57,7 +57,7 @@ public class ChattingActivity extends AppCompatActivity implements View.OnClickL
                     ivTitleShowHide.setImageResource(android.R.drawable.arrow_up_float);
                     tvTitleChatting.setMaxLines(2);
                     tvTitleChatting.setText(getString(R.string.chatting_title));
-                    tvTitleChatting.setVerticalScrollBarEnabled(false);
+                    //tvTitleChatting.setVerticalScrollBarEnabled(false);
                     tvTitleChatting.setEllipsize(TextUtils.TruncateAt.END);
 
                     isTitleShowed = true;
