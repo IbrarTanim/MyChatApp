@@ -135,7 +135,7 @@ public class PhotoBlogsActivity extends AppCompatActivity {
         photoBlogsList.add(photoBlogs);
 
         photoBlogs = new PhotoBlogs(listItemPhotoBlogs[1], listItemPhotoBlogs[1], "13", "3", "9",
-                "ছাড়পত্র ছাড়া ইট পোড়ানোর অভিযোগে এসব ভাটাকে ৩৩ লাখ টাকা জরিমানা করা হয়েছে।");
+                "abcd");
         photoBlogsList.add(photoBlogs);
 
         photoBlogs = new PhotoBlogs(listItemPhotoBlogs[2], listItemPhotoBlogs[2], "13", "3", "9",
@@ -155,11 +155,11 @@ public class PhotoBlogsActivity extends AppCompatActivity {
         photoBlogsList.add(photoBlogs);
 
         photoBlogs = new PhotoBlogs(listItemPhotoBlogs[6], listItemPhotoBlogs[6], "13", "3", "9",
-                "ফায়ার সার্ভিসের গাড়ির পাম্পের সাহায্যে কাঁচা ইট বিনষ্ট ও ইট পোড়ানো কার্যক্রম বন্ধ করে দেওয়া হয়।");
+                "kjhgkk");
         photoBlogsList.add(photoBlogs);
 
         photoBlogs = new PhotoBlogs(listItemPhotoBlogs[7], listItemPhotoBlogs[7], "13", "3", "9",
-                "সাভারে পরিবেশ অধিদপ্তরের নির্বাহী ম্যাজিস্ট্রেট মাকছুদুল ইসলাম অভিযান চালান।");
+                "ahsan habib");
         photoBlogsList.add(photoBlogs);
 
 

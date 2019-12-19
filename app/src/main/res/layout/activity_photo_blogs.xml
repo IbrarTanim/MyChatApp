@@ -91,7 +91,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/zero"
-                    android:layout_weight="1"
+                    android:layout_weight="0.5"
                     android:orientation="horizontal"
                     android:padding="@dimen/ten"
                     android:weightSum="21.05">
@@ -108,20 +108,9 @@
                     <View
                         android:layout_width="@dimen/zero"
                         android:layout_height="match_parent"
-                        android:layout_weight=".5" />
+                        android:layout_weight="1" />
 
 
-                    <View
-                        android:layout_width="@dimen/zero"
-                        android:layout_height="@dimen/twenty"
-                        android:layout_gravity="center"
-                        android:layout_weight=".05"
-                        android:background="@color/black" />
-
-                    <View
-                        android:layout_width="@dimen/zero"
-                        android:layout_height="match_parent"
-                        android:layout_weight=".5" />
 
 
                     <TextView
@@ -140,7 +129,7 @@
                     android:id="@+id/llHotList"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/zero"
-                    android:layout_weight="3"
+                    android:layout_weight="2.5"
                     android:orientation="vertical"
                     android:weightSum="15">
 
@@ -159,7 +148,7 @@
                     android:id="@+id/rvPhotoBlogs"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/zero"
-                    android:layout_weight="16"
+                    android:layout_weight="17"
                     android:nestedScrollingEnabled="false"
                     android:overScrollMode="never"
                     android:scrollbars="none" />
