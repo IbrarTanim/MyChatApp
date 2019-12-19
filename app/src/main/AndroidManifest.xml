@@ -9,6 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.OnlyStatusBar">
+
+        <activity
+            android:name=".activities.SearchCirculerActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme.OnlyStatusBar" />
         <activity
             android:name=".activities.ChattingActivity"
             android:theme="@style/AppTheme.OnlyStatusBar" />
