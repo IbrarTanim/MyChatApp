@@ -69,7 +69,6 @@ public class PhotoBlogsActivity extends AppCompatActivity {
 
         rvPhotoBlogs.setAdapter(photoBlogsAdapter);
 
-
         preparePhotoBlogs();
         prepareHotList();
 
