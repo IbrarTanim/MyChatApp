@@ -17,4 +17,5 @@
     <dimen name="two">2dp</dimen>
     <dimen name="sixty">60dp</dimen>
     <dimen name="twelve">12dp</dimen>
+    <dimen name="eighteen">18dp</dimen>
 </resources>

@@ -46,7 +46,7 @@
                     android:layout_width="@dimen/zero"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="@dimen/twenty"
-                    android:layout_weight="6"
+                    android:layout_weight="11"
                     android:gravity="center|left"
                     android:maxLines="1"
                     android:shadowColor="@color/black"
@@ -55,20 +55,17 @@
                     android:shadowRadius="5"
                     android:text="Kazi Nazrul Islam"
                     android:textColor="@color/white"
-                    android:textSize="@dimen/fifteen"
+                    android:textSize="16dp"
                     android:textStyle="bold" />
 
-                <View
-                    android:layout_width="@dimen/zero"
-                    android:layout_height="match_parent"
-                    android:layout_weight="5" />
+
 
                 <ImageView
                     android:layout_width="@dimen/zero"
                     android:layout_height="match_parent"
                     android:layout_weight="2"
                     android:background="@color/transparent"
-                    android:padding="@dimen/ten"
+                    android:padding="@dimen/five"
                     android:src="@android:drawable/ic_menu_close_clear_cancel" />
 
             </LinearLayout>
@@ -79,17 +76,17 @@
                 android:layout_height="@dimen/zero"
                 android:layout_weight="2"
                 android:orientation="horizontal"
-                android:weightSum="10">
+                android:weightSum="11">
 
                 <View
                     android:layout_width="@dimen/zero"
                     android:layout_height="match_parent"
-                    android:layout_weight="7" />
+                    android:layout_weight="9" />
 
                 <LinearLayout
                     android:layout_width="@dimen/zero"
                     android:layout_height="match_parent"
-                    android:layout_weight="3"
+                    android:layout_weight="2"
                     android:orientation="vertical"
                     android:weightSum="19">
 
@@ -106,19 +103,11 @@
                         android:orientation="horizontal"
                         android:weightSum="3">
 
-                        <ImageView
-                            android:layout_width="@dimen/zero"
-                            android:layout_height="match_parent"
-                            android:layout_weight="2"
-                            android:background="@color/transparent"
-                            android:scaleType="fitCenter"
-                            android:src="@mipmap/view_white" />
-
                         <TextView
                             android:layout_width="@dimen/zero"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:gravity="center|left"
+                            android:gravity="center|right"
                             android:shadowColor="@color/black"
                             android:shadowDx="5"
                             android:shadowDy="5"
@@ -126,7 +115,16 @@
                             android:text="23"
                             android:textColor="@color/white"
                             android:textSize="@dimen/fifteen"
-                            android:textStyle="normal" />
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:padding="@dimen/two"
+                            android:background="@color/transparent"
+                            android:scaleType="fitCenter"
+                            android:src="@mipmap/view_white" />
 
 
                     </LinearLayout>
@@ -142,6 +140,21 @@
                         android:layout_weight="5"
                         android:orientation="horizontal"
                         android:weightSum="3">
+
+
+                        <TextView
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center|right"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="5"
+                            android:shadowDy="5"
+                            android:shadowRadius="5"
+                            android:text="19"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/fifteen"
+                            android:textStyle="bold" />
 
                         <ImageView
                             android:layout_width="@dimen/zero"
@@ -151,19 +164,6 @@
                             android:scaleType="fitCenter"
                             android:src="@mipmap/comment_white" />
 
-                        <TextView
-                            android:layout_width="@dimen/zero"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center|left"
-                            android:shadowColor="@color/black"
-                            android:shadowDx="5"
-                            android:shadowDy="5"
-                            android:shadowRadius="5"
-                            android:text="19"
-                            android:textColor="@color/white"
-                            android:textSize="@dimen/fifteen"
-                            android:textStyle="normal" />
 
 
                     </LinearLayout>
@@ -180,19 +180,13 @@
                         android:orientation="horizontal"
                         android:weightSum="3">
 
-                        <ImageView
-                            android:layout_width="@dimen/zero"
-                            android:layout_height="match_parent"
-                            android:layout_weight="2"
-                            android:drawable="@drawable/shadow_bg"
-                            android:scaleType="fitCenter"
-                            android:src="@mipmap/love_white" />
+
 
                         <TextView
                             android:layout_width="@dimen/zero"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:gravity="center|left"
+                            android:gravity="center|right"
                             android:shadowColor="@color/black"
                             android:shadowDx="5"
                             android:shadowDy="5"
@@ -200,7 +194,15 @@
                             android:text="14"
                             android:textColor="@color/white"
                             android:textSize="@dimen/fifteen"
-                            android:textStyle="normal" />
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:drawable="@drawable/shadow_bg"
+                            android:scaleType="fitCenter"
+                            android:src="@mipmap/love_white" />
 
 
                     </LinearLayout>
@@ -301,10 +303,9 @@
                                 android:layout_height="@dimen/zero"
                                 android:layout_weight="1"
                                 android:gravity="center|left"
-
                                 android:text="Humaun Ahmed"
                                 android:textColor="@color/white"
-                                android:textSize="@dimen/twelve"
+                                android:textSize="14dp"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -369,7 +370,7 @@
                                 android:gravity="center|left"
                                 android:text="Sufia kamal"
                                 android:textColor="@color/white"
-                                android:textSize="@dimen/twelve"
+                                android:textSize="14dp"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -438,12 +439,12 @@
 
 
         <LinearLayout
-            android:layout_width="120dp"
-            android:layout_height="@dimen/forty"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="55dp"
-            android:layout_marginTop="85dp"
+            android:layout_marginTop="80dp"
             android:layout_weight="5"
             android:orientation="horizontal"
             android:weightSum="2">
@@ -461,14 +462,14 @@
                 android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:gravity="center"
+                android:gravity="center|left"
                 android:shadowColor="@color/black"
                 android:shadowDx="5"
                 android:shadowDy="5"
                 android:shadowRadius="5"
                 android:text="12.35"
                 android:textColor="@color/white"
-                android:textSize="@dimen/fifteen"
+                android:textSize="@dimen/twelve"
                 android:textStyle="bold" />
 
 
@@ -476,26 +477,25 @@
 
 
         <LinearLayout
-            android:layout_width="80dp"
-            android:layout_height="150dp"
+            android:layout_width="70dp"
+            android:layout_height="130dp"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginRight="@dimen/ten"
             android:layout_marginBottom="@dimen/ten"
             android:orientation="vertical"
-            android:weightSum="5.5">
+            android:weightSum="4.25">
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/zero"
-                android:layout_weight="3"
+                android:layout_weight="2"
                 android:background="@color/transparent"
                 android:src="@mipmap/love_icon" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/zero"
-                android:layout_weight="0.5" />
+                android:layout_weight="0.25" />
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:layout_width="match_parent"
