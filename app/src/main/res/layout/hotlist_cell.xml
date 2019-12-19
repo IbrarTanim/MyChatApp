@@ -27,10 +27,10 @@
             android:id="@+id/civHotListAdd"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
-            android:layout_marginLeft="@dimen/five"
             android:layout_marginTop="@dimen/five"
+            android:layout_marginRight="@dimen/five"
             android:background="@color/transparent"
             android:src="@mipmap/add_icon" />
 
@@ -38,7 +38,6 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/thirty"
             android:layout_alignParentBottom="true"
-            android:background="@drawable/textview_overlay"
             android:gravity="center"
             android:shadowColor="@color/black"
             android:shadowDx="5"

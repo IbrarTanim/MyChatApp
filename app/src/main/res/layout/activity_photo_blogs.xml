@@ -43,16 +43,10 @@
             <View
                 android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
-                android:layout_weight="4" />
+                android:layout_weight="5" />
 
 
-            <ImageView
-                android:layout_width="@dimen/zero"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@color/transparent"
-                android:scaleType="fitCenter"
-                android:src="@mipmap/bell_icon" />
+
 
             <View
                 android:layout_width="@dimen/zero"
@@ -63,6 +57,7 @@
                 android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:padding="@dimen/three"
                 android:background="@color/transparent"
                 android:scaleType="fitCenter"
                 android:src="@mipmap/add_photo_black" />
@@ -101,7 +96,8 @@
                         android:layout_height="match_parent"
                         android:layout_weight="10"
                         android:gravity="center|right"
-                        android:text="JustUp"
+                        android:text="JUST UP"
+                        android:textStyle="bold"
                         android:textColor="@color/black"
                         android:textSize="@dimen/fifteen" />
 
@@ -118,7 +114,8 @@
                         android:layout_height="match_parent"
                         android:layout_weight="10"
                         android:gravity="center|left"
-                        android:text="Top Photo"
+                        android:text="TOP PHOTO"
+                        android:textStyle="bold"
                         android:textColor="@color/black"
                         android:textSize="@dimen/fifteen" />
 

@@ -26,7 +26,7 @@
                     android:id="@+id/ivProPicPhotoBlog"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:scaleType="fitXY"
+                    android:scaleType="centerCrop"
                     android:src="@mipmap/chatting"
                     app:riv_border_color="@color/transparent"
                     app:riv_mutate_background="true"
@@ -51,6 +51,7 @@
                         android:id="@+id/civProfilePhotoBlogs"
                         android:layout_width="@dimen/zero"
                         android:layout_height="match_parent"
+                        android:padding="@dimen/three"
                         android:layout_weight="5"
                         android:src="@mipmap/anisul" />
 
@@ -78,7 +79,7 @@
                             android:text="39"
                             android:textColor="@color/white"
                             android:textSize="@dimen/ten"
-                            android:textStyle="normal" />
+                            android:textStyle="bold" />
 
 
                     </LinearLayout>
@@ -95,7 +96,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="2"
                             android:background="@color/transparent"
-                            android:padding="@dimen/two"
+                            android:padding="@dimen/five"
                             android:scaleType="fitCenter"
                             android:src="@mipmap/comment_white" />
 
@@ -108,7 +109,7 @@
                             android:text="19"
                             android:textColor="@color/white"
                             android:textSize="@dimen/ten"
-                            android:textStyle="normal" />
+                            android:textStyle="bold" />
 
 
                     </LinearLayout>
@@ -125,7 +126,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="2"
                             android:background="@color/transparent"
-                            android:padding="@dimen/two"
+                            android:padding="@dimen/five"
                             android:scaleType="fitCenter"
                             android:src="@mipmap/love_white" />
 
@@ -138,7 +139,7 @@
                             android:text="14"
                             android:textColor="@color/white"
                             android:textSize="@dimen/ten"
-                            android:textStyle="normal" />
+                            android:textStyle="bold" />
 
 
                     </LinearLayout>

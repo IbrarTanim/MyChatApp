@@ -124,7 +124,7 @@ public class PhotoBlogsActivity extends AppCompatActivity {
                 R.mipmap.jaforiqbal,
                 R.mipmap.sufia_kamal,
                 R.mipmap.sharat,
-                R.mipmap.samsurrahman,
+                R.mipmap.cousine,
                 R.mipmap.robindronath,
                 R.mipmap.humayunahmed,
                 R.mipmap.samsurrahman,
