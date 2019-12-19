@@ -7,10 +7,10 @@
 
 
     <android.support.v7.widget.CardView
-        cardCornerRadius="13dp"
-        elevation="3dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:cardCornerRadius="13dp"
+        app:elevation="3dp">
 
         <LinearLayout
             android:id="@+id/llPhotoBlogs"
