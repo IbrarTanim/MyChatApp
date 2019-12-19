@@ -7,10 +7,10 @@
 
 
     <android.support.v7.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
         cardCornerRadius="13dp"
-        elevation="3dp">
+        elevation="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:id="@+id/llPhotoBlogs"
@@ -29,8 +29,7 @@
                     android:scaleType="fitXY"
                     android:src="@mipmap/chatting"
                     app:riv_border_color="@color/transparent"
-                    app:riv_corner_radius_top_left="@dimen/ten"
-                    app:riv_corner_radius_top_right="@dimen/ten"
+                    app:riv_corner_radius="@dimen/ten"
                     app:riv_mutate_background="true"
                     app:riv_oval="false" />
 
@@ -39,7 +38,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/forty"
                     android:layout_alignParentBottom="true"
-                    android:background="@color/photo_blogs_transparent"
+                    android:background="@drawable/transparent_bg"
                     android:orientation="horizontal"
                     android:weightSum="21">
 
@@ -171,6 +170,7 @@
 
 
         </LinearLayout>
+
 
     </android.support.v7.widget.CardView>
 

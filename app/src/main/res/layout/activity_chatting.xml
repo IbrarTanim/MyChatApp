@@ -50,9 +50,9 @@
                     android:gravity="center|left"
                     android:maxLines="1"
                     android:shadowColor="@color/black"
-                    android:shadowDx="-5"
-                    android:shadowDy="-5"
-                    android:shadowRadius="10"
+                    android:shadowDx="5"
+                    android:shadowDy="5"
+                    android:shadowRadius="5"
                     android:text="Kazi Nazrul Islam"
                     android:textColor="@color/white"
                     android:textSize="@dimen/fifteen"
@@ -84,12 +84,12 @@
                 <View
                     android:layout_width="@dimen/zero"
                     android:layout_height="match_parent"
-                    android:layout_weight="8.5" />
+                    android:layout_weight="7" />
 
                 <LinearLayout
                     android:layout_width="@dimen/zero"
                     android:layout_height="match_parent"
-                    android:layout_weight="1.2"
+                    android:layout_weight="3"
                     android:orientation="vertical"
                     android:weightSum="19">
 
@@ -104,29 +104,25 @@
                         android:layout_height="@dimen/zero"
                         android:layout_weight="5"
                         android:orientation="horizontal"
-                        android:weightSum="2">
+                        android:weightSum="3">
 
                         <ImageView
                             android:layout_width="@dimen/zero"
                             android:layout_height="match_parent"
-                            android:layout_weight="1"
+                            android:layout_weight="2"
                             android:background="@color/transparent"
-                            android:scaleType="fitXY"
-                            android:shadowColor="@color/black"
-                            android:shadowDx="-5"
-                            android:shadowDy="-5"
-                            android:shadowRadius="10"
+                            android:scaleType="fitCenter"
                             android:src="@mipmap/view_white" />
 
                         <TextView
                             android:layout_width="@dimen/zero"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:gravity="center"
+                            android:gravity="center|left"
                             android:shadowColor="@color/black"
-                            android:shadowDx="-5"
-                            android:shadowDy="-5"
-                            android:shadowRadius="10"
+                            android:shadowDx="5"
+                            android:shadowDy="5"
+                            android:shadowRadius="5"
                             android:text="23"
                             android:textColor="@color/white"
                             android:textSize="@dimen/fifteen"
@@ -145,30 +141,25 @@
                         android:layout_height="@dimen/zero"
                         android:layout_weight="5"
                         android:orientation="horizontal"
-                        android:weightSum="2">
+                        android:weightSum="3">
 
                         <ImageView
                             android:layout_width="@dimen/zero"
                             android:layout_height="match_parent"
-                            android:layout_weight="1"
+                            android:layout_weight="2"
                             android:background="@color/transparent"
-                            android:padding="@dimen/two"
-                            android:scaleType="fitXY"
-                            android:shadowColor="@color/black"
-                            android:shadowDx="-5"
-                            android:shadowDy="-5"
-                            android:shadowRadius="10"
+                            android:scaleType="fitCenter"
                             android:src="@mipmap/comment_white" />
 
                         <TextView
                             android:layout_width="@dimen/zero"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:gravity="center"
+                            android:gravity="center|left"
                             android:shadowColor="@color/black"
-                            android:shadowDx="-5"
-                            android:shadowDy="-5"
-                            android:shadowRadius="10"
+                            android:shadowDx="5"
+                            android:shadowDy="5"
+                            android:shadowRadius="5"
                             android:text="19"
                             android:textColor="@color/white"
                             android:textSize="@dimen/fifteen"
@@ -187,14 +178,13 @@
                         android:layout_height="@dimen/zero"
                         android:layout_weight="5"
                         android:orientation="horizontal"
-                        android:weightSum="2">
+                        android:weightSum="3">
 
                         <ImageView
                             android:layout_width="@dimen/zero"
                             android:layout_height="match_parent"
-                            android:layout_weight="1"
+                            android:layout_weight="2"
                             android:background="@color/transparent"
-                            android:padding="@dimen/two"
                             android:scaleType="fitCenter"
                             android:src="@mipmap/love_white" />
 
@@ -202,11 +192,11 @@
                             android:layout_width="@dimen/zero"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:gravity="center"
+                            android:gravity="center|left"
                             android:shadowColor="@color/black"
-                            android:shadowDx="-5"
-                            android:shadowDy="-5"
-                            android:shadowRadius="10"
+                            android:shadowDx="5"
+                            android:shadowDy="5"
+                            android:shadowRadius="5"
                             android:text="14"
                             android:textColor="@color/white"
                             android:textSize="@dimen/fifteen"
@@ -223,10 +213,6 @@
 
                 </LinearLayout>
 
-                <View
-                    android:layout_width="@dimen/zero"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.3" />
 
             </LinearLayout>
 
@@ -259,12 +245,12 @@
                     android:id="@+id/tvTitleChatting"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/zero"
-                    android:shadowColor="@color/black"
-                    android:shadowDx="-5"
-                    android:shadowDy="-5"
-                    android:shadowRadius="10"
-                    android:gravity="center|left"
                     android:layout_weight="5.5"
+                    android:gravity="center|left"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="5"
+                    android:shadowDy="5"
+                    android:shadowRadius="5"
                     android:textColor="@color/white" />
 
 
@@ -315,10 +301,7 @@
                                 android:layout_height="@dimen/zero"
                                 android:layout_weight="1"
                                 android:gravity="center|left"
-                                android:shadowColor="@color/black"
-                                android:shadowDx="-5"
-                                android:shadowDy="-5"
-                                android:shadowRadius="10"
+
                                 android:text="Humaun Ahmed"
                                 android:textColor="@color/white"
                                 android:textSize="@dimen/twelve"
@@ -330,10 +313,6 @@
                                 android:layout_weight="1"
                                 android:gravity="center|left"
                                 android:maxLines="1"
-                                android:shadowColor="@color/black"
-                                android:shadowDx="-5"
-                                android:shadowDy="-5"
-                                android:shadowRadius="10"
                                 android:text="We Love Humaun"
                                 android:textColor="@color/white"
                                 android:textSize="@dimen/twelve" />
@@ -388,10 +367,6 @@
                                 android:layout_height="@dimen/zero"
                                 android:layout_weight="1"
                                 android:gravity="center|left"
-                                android:shadowColor="@color/black"
-                                android:shadowDx="-5"
-                                android:shadowDy="-5"
-                                android:shadowRadius="10"
                                 android:text="Sufia kamal"
                                 android:textColor="@color/white"
                                 android:textSize="@dimen/twelve"
@@ -403,10 +378,6 @@
                                 android:layout_weight="1"
                                 android:gravity="center|left"
                                 android:maxLines="1"
-                                android:shadowColor="@color/black"
-                                android:shadowDx="-5"
-                                android:shadowDy="-5"
-                                android:shadowRadius="10"
                                 android:text="We are proud of you"
                                 android:textColor="@color/white"
                                 android:textSize="@dimen/twelve" />
@@ -445,10 +416,6 @@
                             android:layout_height="match_parent"
                             android:layout_marginLeft="@dimen/ten"
                             android:gravity="center|left"
-                            android:shadowColor="@color/black"
-                            android:shadowDx="-5"
-                            android:shadowDy="-5"
-                            android:shadowRadius="10"
                             android:text="Write a comment"
                             android:textColor="@color/white"
                             android:textSize="@dimen/fifteen" />
@@ -496,9 +463,9 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:shadowColor="@color/black"
-                android:shadowDx="-5"
-                android:shadowDy="-5"
-                android:shadowRadius="10"
+                android:shadowDx="5"
+                android:shadowDy="5"
+                android:shadowRadius="5"
                 android:text="12.35"
                 android:textColor="@color/white"
                 android:textSize="@dimen/fifteen"
@@ -509,26 +476,31 @@
 
 
         <LinearLayout
-            android:layout_width="60dp"
-            android:layout_height="100dp"
+            android:layout_width="80dp"
+            android:layout_height="150dp"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
             android:layout_marginRight="@dimen/ten"
             android:layout_marginBottom="@dimen/ten"
             android:orientation="vertical"
-            android:weightSum="2">
+            android:weightSum="5.5">
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/zero"
-                android:layout_weight="1"
+                android:layout_weight="3"
                 android:background="@color/transparent"
                 android:src="@mipmap/love_icon" />
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zero"
+                android:layout_weight="0.5" />
+
             <de.hdodenhof.circleimageview.CircleImageView
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/zero"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:background="@color/transparent"
                 android:src="@mipmap/send_icon" />
 

@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
-    android:layout_width="100dp"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:layout_marginLeft="@dimen/five">
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="100dp"
+        android:layout_height="180dp"
+        card_view:layout_constraintRight_toRightOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent">
 
         <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/ivHotListProfilePic"
             android:layout_width="match_parent"
-            android:layout_height="180dp"
+            android:layout_height="match_parent"
             android:scaleType="fitXY"
             android:src="@mipmap/nazrul"
             app:riv_border_color="@color/transparent"
@@ -38,9 +40,9 @@
             android:background="@drawable/textview_overlay"
             android:gravity="center"
             android:shadowColor="@color/black"
-            android:shadowDx="-5"
-            android:shadowDy="-5"
-            android:shadowRadius="10"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="5"
             android:text="Add to hotlist"
             android:textColor="@color/white"
             android:textSize="13dp"

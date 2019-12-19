@@ -43,7 +43,7 @@
             <View
                 android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
-                android:layout_weight="5" />
+                android:layout_weight="4" />
 
 
             <ImageView
@@ -54,6 +54,11 @@
                 android:scaleType="fitCenter"
                 android:src="@mipmap/bell_icon" />
 
+            <View
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5" />
+
             <ImageView
                 android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
@@ -61,6 +66,11 @@
                 android:background="@color/transparent"
                 android:scaleType="fitCenter"
                 android:src="@mipmap/add_photo_black" />
+
+            <View
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5" />
 
         </LinearLayout>
 
