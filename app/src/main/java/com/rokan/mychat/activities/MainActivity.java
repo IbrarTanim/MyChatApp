@@ -12,6 +12,7 @@ import android.support.v7.widget.RecyclerView;
 import android.util.TypedValue;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.rokan.mychat.R;
@@ -41,6 +42,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     boolean isLetterShowing = false;
 
     ImageButton ibtnPhotoBlogs, ibtMessage, ibChatRoom, ibNotification, ibProfile;
+    ImageView ivChatRequest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,12 +62,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         ibChatRoom = findViewById(R.id.ibChatRoom);
         ibNotification = findViewById(R.id.ibNotification);
         ibProfile = findViewById(R.id.ibProfile);
+        ivChatRequest = findViewById(R.id.ivChatRequest);
 
         ibtnPhotoBlogs.setOnClickListener(this);
         ibtMessage.setOnClickListener(this);
         ibChatRoom.setOnClickListener(this);
         ibNotification.setOnClickListener(this);
         ibProfile.setOnClickListener(this);
+        ivChatRequest.setOnClickListener(this);
 
 
         hotLists = new ArrayList<>();
@@ -202,6 +206,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             case R.id.ibProfile:
                 startActivity(new Intent(activity, ProfileFirstActivity.class));
+                break;
+
+            case R.id.ivChatRequest:
+                startActivity(new Intent(activity, ProfileSecondActivity.class));
                 break;
 
 
