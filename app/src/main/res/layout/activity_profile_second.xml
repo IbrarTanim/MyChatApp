@@ -19,8 +19,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/zero"
-            android:layout_weight="0.6"
             android:layout_marginTop="@dimen/five"
+            android:layout_weight="0.6"
             android:orientation="horizontal"
             android:weightSum="3">
 
@@ -38,7 +38,7 @@
                 android:layout_weight="1"
                 android:background="@color/transparent"
                 android:scaleType="fitCenter"
-                android:src="@mipmap/private_message" />
+                android:src="@mipmap/boddo_logo" />
 
             <ImageView
                 android:layout_width="@dimen/zero"
@@ -76,7 +76,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="centerCrop"
-                    android:src="@mipmap/find_friends"
+                    android:src="@mipmap/chatting"
                     app:riv_border_color="@color/transparent"
                     app:riv_mutate_background="true"
                     app:riv_oval="false" />
@@ -118,7 +118,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="@dimen/three"
-                        android:src="@mipmap/private_message" />
+                        android:src="@mipmap/profile_star_icon" />
 
                     <LinearLayout
                         android:layout_width="@dimen/zero"
@@ -166,7 +166,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="@dimen/three"
-                        android:src="@mipmap/private_message" />
+                        android:src="@mipmap/profile_love_icon" />
 
 
                     <View
@@ -187,8 +187,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/zero"
-            android:layout_margin="@dimen/ten"
+            android:layout_margin="@dimen/three"
             android:layout_weight="1"
+            android:background="@drawable/profile_second_bottom_bg"
             android:orientation="horizontal"
             android:padding="@dimen/ten"
             android:weightSum="4">
