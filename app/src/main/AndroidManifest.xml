@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.OnlyStatusBar">
         <activity
+            android:name=".activities.ProfileThirdActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme.OnlyStatusBar" />
+        <activity
             android:name=".activities.ProfileSecondActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppTheme.OnlyStatusBar" />
