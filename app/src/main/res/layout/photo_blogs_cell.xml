@@ -6,20 +6,34 @@
     android:layout_height="wrap_content">
 
 
-    <android.support.v7.widget.CardView
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/five"
+        android:layout_marginBottom="@dimen/ten"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0.0px"
+        android:elevation="5dp"
         app:cardCornerRadius="@dimen/ten"
-        app:elevation="3dp">
+        card_view:cardElevation="5dp"
+        card_view:cardPreventCornerOverlap="false"
+        card_view:layout_constraintBottom_toBottomOf="parent"
+        card_view:layout_constraintLeft_toLeftOf="parent"
+        card_view:layout_constraintRight_toRightOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:id="@+id/llPhotoBlogs"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
             android:orientation="vertical">
 
             <RelativeLayout
-                android:layout_width="170dp"
+                android:layout_width="180dp"
                 android:layout_height="250dp">
 
                 <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -51,8 +65,8 @@
                         android:id="@+id/civProfilePhotoBlogs"
                         android:layout_width="@dimen/zero"
                         android:layout_height="match_parent"
-                        android:padding="@dimen/three"
                         android:layout_weight="5"
+                        android:padding="@dimen/three"
                         android:src="@mipmap/anisul" />
 
                     <LinearLayout
@@ -158,9 +172,8 @@
 
             <TextView
                 android:id="@+id/tvTitle"
-                android:layout_width="170dp"
+                android:layout_width="180dp"
                 android:layout_height="wrap_content"
-                android:background="@drawable/photo_blogs_title_bg"
                 android:gravity="left"
                 android:maxLines="3"
                 android:padding="@dimen/five"

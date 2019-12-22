@@ -64,8 +64,8 @@ public class PhotoBlogsActivity extends AppCompatActivity {
 
         StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(2, LinearLayoutManager.VERTICAL);
         rvPhotoBlogs.setLayoutManager(staggeredGridLayoutManager);
-        rvPhotoBlogs.addItemDecoration(new GridSpacingItemDecoration(2, GridSpacingItemDecoration.dpToPx(10, activity), true));
-        rvPhotoBlogs.setItemAnimator(new DefaultItemAnimator());
+        /*rvPhotoBlogs.addItemDecoration(new GridSpacingItemDecoration(2, GridSpacingItemDecoration.dpToPx(10, activity), true));
+        rvPhotoBlogs.setItemAnimator(new DefaultItemAnimator());*/
 
         rvPhotoBlogs.setAdapter(photoBlogsAdapter);
 
