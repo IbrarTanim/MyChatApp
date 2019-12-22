@@ -167,7 +167,7 @@
                 android:layout_marginLeft="@dimen/twenty"
                 android:layout_marginRight="@dimen/twenty"
                 android:layout_marginBottom="@dimen/twenty"
-                android:layout_weight="6"
+                android:layout_weight="5"
                 android:clipChildren="false"
                 android:clipToPadding="false"
                 android:divider="@android:color/transparent"
@@ -186,8 +186,7 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/zero"
-                        android:layout_weight="2" />
-
+                        android:layout_weight="1" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -265,6 +264,11 @@
 
                     </LinearLayout>
 
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/zero"
+                        android:layout_weight="2" />
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/zero"
@@ -286,7 +290,7 @@
                                 android:layout_weight="1"
                                 android:background="@color/transparent"
                                 android:scaleType="fitCenter"
-                                android:src="@mipmap/private_message" />
+                                android:src="@drawable/ic_profile_one_liked_me" />
 
                             <TextView
                                 android:layout_width="match_parent"
@@ -315,7 +319,7 @@
                                 android:layout_weight="1"
                                 android:background="@color/transparent"
                                 android:scaleType="fitCenter"
-                                android:src="@mipmap/private_message" />
+                                android:src="@drawable/ic_profile_one_favorite_me" />
 
                             <TextView
                                 android:layout_width="match_parent"
@@ -344,7 +348,7 @@
                                 android:layout_weight="1"
                                 android:background="@color/transparent"
                                 android:scaleType="fitCenter"
-                                android:src="@mipmap/private_message" />
+                                android:src="@drawable/ic_profile_one_visited_me" />
 
                             <TextView
                                 android:layout_width="match_parent"
@@ -362,160 +366,158 @@
 
                     </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/zero"
-                        android:layout_weight="1"
-                        android:orientation="horizontal"
-                        android:weightSum="25">
-
-
-                        <LinearLayout
-                            android:layout_width="@dimen/zero"
-                            android:layout_height="match_parent"
-                            android:layout_weight="5"
-                            android:orientation="vertical"
-                            android:weightSum="2">
-
-                            <ImageButton
-                                android:id="@+id/ibtnPhotoBlogs"
-                                android:layout_width="match_parent"
-                                android:layout_height="@dimen/zero"
-                                android:layout_weight="1"
-                                android:background="@color/transparent"
-                                android:src="@drawable/ic_camera" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="@dimen/zero"
-                                android:layout_weight="1"
-                                android:gravity="center|top"
-                                android:text="Pictures"
-                                android:textColor="@color/black"
-                                android:textStyle="normal" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="@dimen/zero"
-                            android:layout_height="match_parent"
-                            android:layout_weight="5"
-                            android:orientation="vertical"
-                            android:weightSum="2">
-
-                            <ImageButton
-                                android:id="@+id/ibtMessage"
-                                android:layout_width="match_parent"
-                                android:layout_height="@dimen/zero"
-                                android:layout_weight="1"
-                                android:background="@color/transparent"
-                                android:padding="@dimen/fifteen"
-                                android:scaleType="center"
-                                android:src="@drawable/ic_message" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="@dimen/zero"
-                                android:layout_weight="1"
-                                android:gravity="center|top"
-                                android:text="Messages"
-                                android:textColor="@color/black"
-                                android:textStyle="normal" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="@dimen/zero"
-                            android:layout_height="match_parent"
-                            android:layout_weight="5"
-                            android:orientation="vertical"
-                            android:weightSum="2">
-
-                            <ImageButton
-                                android:id="@+id/ibChatRoom"
-                                android:layout_width="match_parent"
-                                android:layout_height="@dimen/zero"
-                                android:layout_weight="1"
-                                android:background="@color/transparent"
-                                android:padding="@dimen/ten"
-                                android:scaleType="center"
-                                android:src="@drawable/ic_chat_room" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="@dimen/zero"
-                                android:layout_weight="1"
-                                android:gravity="center|top"
-                                android:text="Chatrooms"
-                                android:textColor="@color/black"
-                                android:textStyle="normal" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="@dimen/zero"
-                            android:layout_height="match_parent"
-                            android:layout_weight="5"
-                            android:orientation="vertical"
-                            android:weightSum="2">
-
-                            <ImageButton
-                                android:id="@+id/ibNotification"
-                                android:layout_width="match_parent"
-                                android:layout_height="@dimen/zero"
-                                android:layout_weight="1"
-                                android:background="@color/transparent"
-                                android:padding="@dimen/ten"
-                                android:scaleType="center"
-                                android:src="@drawable/ic_notification" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="@dimen/zero"
-                                android:layout_weight="1"
-                                android:gravity="center|top"
-                                android:text="Activities"
-                                android:textColor="@color/black"
-                                android:textStyle="normal" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="@dimen/zero"
-                            android:layout_height="match_parent"
-                            android:layout_weight="5"
-                            android:orientation="vertical"
-                            android:weightSum="2">
-
-                            <ImageButton
-                                android:layout_width="match_parent"
-                                android:layout_height="@dimen/zero"
-                                android:layout_weight="1"
-                                android:background="@color/transparent"
-                                android:padding="@dimen/ten"
-                                android:scaleType="center"
-                                android:src="@drawable/ic_profile" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="@dimen/zero"
-                                android:layout_weight="1"
-                                android:gravity="center|top"
-                                android:text="Profile"
-                                android:textColor="@color/black"
-                                android:textStyle="normal" />
-
-                        </LinearLayout>
-
-
-                    </LinearLayout>
-
-
                 </LinearLayout>
 
 
             </android.support.v7.widget.CardView>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zero"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="25">
+
+
+                <LinearLayout
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <ImageButton
+                        android:id="@+id/ibtnPhotoBlogs"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/zero"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:src="@drawable/ic_camera" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/zero"
+                        android:layout_weight="1"
+                        android:gravity="center|top"
+                        android:text="Pictures"
+                        android:textColor="@color/black"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <ImageButton
+                        android:id="@+id/ibtMessage"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/zero"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:padding="@dimen/fifteen"
+                        android:scaleType="center"
+                        android:src="@drawable/ic_message" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/zero"
+                        android:layout_weight="1"
+                        android:gravity="center|top"
+                        android:text="Messages"
+                        android:textColor="@color/black"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <ImageButton
+                        android:id="@+id/ibChatRoom"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/zero"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:padding="@dimen/ten"
+                        android:scaleType="center"
+                        android:src="@drawable/ic_chat_room" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/zero"
+                        android:layout_weight="1"
+                        android:gravity="center|top"
+                        android:text="Chatrooms"
+                        android:textColor="@color/black"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <ImageButton
+                        android:id="@+id/ibNotification"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/zero"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:padding="@dimen/ten"
+                        android:scaleType="center"
+                        android:src="@drawable/ic_notification" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/zero"
+                        android:layout_weight="1"
+                        android:gravity="center|top"
+                        android:text="Activities"
+                        android:textColor="@color/black"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/zero"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:padding="@dimen/ten"
+                        android:scaleType="center"
+                        android:src="@drawable/ic_profile" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/zero"
+                        android:layout_weight="1"
+                        android:gravity="center|top"
+                        android:text="Profile"
+                        android:textColor="@color/black"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
 
         </LinearLayout>
 
