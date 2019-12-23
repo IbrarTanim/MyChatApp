@@ -22,23 +22,32 @@
             android:layout_marginTop="@dimen/five"
             android:layout_weight="0.6"
             android:orientation="horizontal"
-            android:weightSum="3">
+            android:weightSum="5">
 
             <ImageView
                 android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_weight="0.5"
                 android:background="@color/transparent"
                 android:scaleType="fitCenter"
-                android:src="@mipmap/private_message" />
+                android:src="@drawable/ic_back_button" />
+
+            <View
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
 
             <ImageView
                 android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_weight="1.5"
                 android:background="@color/transparent"
                 android:scaleType="fitCenter"
                 android:src="@mipmap/boddo_logo" />
+            <View
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
 
             <ImageView
                 android:layout_width="@dimen/zero"
@@ -46,7 +55,7 @@
                 android:layout_weight="1"
                 android:background="@color/transparent"
                 android:scaleType="fitCenter"
-                android:src="@mipmap/private_message" />
+                android:src="@drawable/ic_profile_settings_icon" />
 
 
         </LinearLayout>
@@ -84,12 +93,12 @@
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/thirty"
+                    android:layout_height="@dimen/forty"
                     android:layout_alignParentBottom="true"
                     android:layout_marginLeft="@dimen/fifty"
                     android:layout_marginRight="@dimen/fifty"
                     android:layout_marginBottom="70dp"
-                    android:gravity="center"
+                    android:gravity="center|bottom"
                     android:maxLines="1"
                     android:shadowColor="@color/black"
                     android:shadowDx="5"
@@ -97,7 +106,7 @@
                     android:shadowRadius="5"
                     android:text="Samanta Hosain is using this app"
                     android:textColor="@color/white"
-                    android:textSize="@dimen/fifteen"
+                    android:textSize="@dimen/twenty"
                     android:textStyle="bold" />
 
                 <LinearLayout
@@ -125,13 +134,13 @@
                         android:layout_height="match_parent"
                         android:layout_weight="4"
                         android:orientation="vertical"
-                        android:weightSum="3">
+                        android:weightSum="2">
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="@dimen/zero"
-                            android:layout_weight="2"
-                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center|bottom"
                             android:maxLines="1"
                             android:shadowColor="@color/black"
                             android:shadowDx="5"
@@ -139,7 +148,7 @@
                             android:shadowRadius="5"
                             android:text="Samanta Hosain, 27"
                             android:textColor="@color/white"
-                            android:textSize="@dimen/fifteen"
+                            android:textSize="@dimen/eighteen"
                             android:textStyle="bold" />
 
                         <TextView
@@ -154,7 +163,7 @@
                             android:shadowRadius="5"
                             android:text="Dhaka, Bangladesh"
                             android:textColor="@color/white"
-                            android:textSize="@dimen/twelve"
+                            android:textSize="@dimen/fifteen"
                             android:textStyle="normal" />
 
 
@@ -192,7 +201,7 @@
             android:background="@drawable/profile_second_bottom_bg"
             android:orientation="horizontal"
             android:padding="@dimen/ten"
-            android:weightSum="4">
+            android:weightSum="3">
 
             <ImageView
                 android:layout_width="@dimen/zero"
@@ -200,7 +209,7 @@
                 android:layout_weight="1"
                 android:background="@color/transparent"
                 android:scaleType="fitCenter"
-                android:src="@mipmap/private_message" />
+                android:src="@drawable/ic_profile_info_icon" />
 
             <ImageView
                 android:layout_width="@dimen/zero"
@@ -208,7 +217,7 @@
                 android:layout_weight="1"
                 android:background="@color/transparent"
                 android:scaleType="fitCenter"
-                android:src="@mipmap/private_message" />
+                android:src="@drawable/ic_profile_icon_picture" />
 
             <ImageView
                 android:layout_width="@dimen/zero"
@@ -216,15 +225,9 @@
                 android:layout_weight="1"
                 android:background="@color/transparent"
                 android:scaleType="fitCenter"
-                android:src="@mipmap/private_message" />
+                android:src="@drawable/ic_profile_message" />
 
-            <ImageView
-                android:layout_width="@dimen/zero"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@color/transparent"
-                android:scaleType="fitCenter"
-                android:src="@mipmap/private_message" />
+
 
 
         </LinearLayout>

@@ -555,8 +555,9 @@
             <de.hdodenhof.circleimageview.CircleImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/transparent"
-                android:src="@mipmap/add_icon" />
+                android:padding="@dimen/five"
+                android:background="@drawable/rounded_textview"
+                android:src="@mipmap/blac_plus_icon" />
 
         </LinearLayout>
 

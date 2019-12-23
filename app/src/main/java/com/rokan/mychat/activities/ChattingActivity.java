@@ -27,7 +27,7 @@ public class ChattingActivity extends AppCompatActivity implements View.OnClickL
         ivTitleShowHide = findViewById(R.id.ivTitleShowHide);
         tvTitleChatting = findViewById(R.id.tvTitleChatting);
 
-        ivTitleShowHide.setImageResource(R.mipmap.collaps_icon_up);
+        ivTitleShowHide.setImageResource(R.drawable.ic_view_text_arrow_icon);
         tvTitleChatting.setMaxLines(2);
         tvTitleChatting.setVerticalScrollBarEnabled(false);
         tvTitleChatting.setEllipsize(TextUtils.TruncateAt.END);
@@ -54,7 +54,7 @@ public class ChattingActivity extends AppCompatActivity implements View.OnClickL
                     isTitleShowed = false;
                 } else {
 
-                    ivTitleShowHide.setImageResource(R.mipmap.collaps_icon_up);
+                    ivTitleShowHide.setImageResource(R.drawable.ic_view_text_arrow_icon);
                     tvTitleChatting.setMaxLines(2);
                     tvTitleChatting.setText(getString(R.string.chatting_title));
                     //tvTitleChatting.setVerticalScrollBarEnabled(false);
