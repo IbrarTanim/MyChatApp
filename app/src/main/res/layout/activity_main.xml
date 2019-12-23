@@ -53,7 +53,7 @@
                 android:layout_weight="1"
                 android:background="@color/transparent"
                 android:scaleType="fitCenter"
-                android:src="@mipmap/chat_request_black" />
+                android:src="@drawable/ic_chat_request_icon" />
 
 
         </LinearLayout>

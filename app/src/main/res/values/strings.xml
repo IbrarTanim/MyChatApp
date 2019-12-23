@@ -2,21 +2,20 @@
     <string name="app_name">MyChat</string>
     <string name="chats">Chats</string>
 
-    <string name="nazrul">কাজী নজরুল ইসলাম</string>
-    <string name="humayanahmed">হুমায়ূন আহমেদ</string>
-    <string name="jafariqbal">মুহম্মদ জাফর ইকবাল</string>
-    <string name="sufiakamal">সুফিযা কামাল</string>
-    <string name="sarat">শরৎচন্দ্র চট্টোপাধ্যায়</string>
-    <string name="samsurrahman">শামসুর রাহমান</string>
-    <string name="robindronath">রবীন্দ্রনাথ ঠাকুর</string>
-    <string name="jasimuddin">জসীম উদ্দীন</string>
-    <string name="anisulhaque">আনিসুল হক</string>
+    <string name="nazrul">Kazi Nazrul Islam</string>
+    <string name="humayanahmed">Humayan Ahmed</string>
+    <string name="jafariqbal">Md. Jafor Iqbal</string>
+    <string name="sufiakamal">Sufia Kamal</string>
+    <string name="sarat">Shorath Chandro</string>
+    <string name="samsurrahman">Shamsur Rahman</string>
+    <string name="robindronath">Robindronath Tagor</string>
+    <string name="jasimuddin">Jasim Uddin</string>
+    <string name="anisulhaque">Anisul Haque</string>
     <string name="time">15 min ago</string>
 
 
     <string name="nazrul_activities">
-          সালের ডিসেম্বর মাসে কুমিল্লা থেকে কলকাতা ফেরার পথে নজরুল দুটি বৈপ্লবিক সাহিত্যকর্মের জন্ম দেন।
-        এই দুটি হচ্ছে বিদ্রোহী কবিতা ও ভাঙ্গার গান সঙ্গীত।
+          The Electronic Government Procurement (e-GP) System of the Royal Government of Bhutan facilitates all Procuring Agencies to publish the Tenders.
     </string>
     <string name="hotlist">HOTLIST</string>
     <string name="new_matches">NEW MATCHES</string>
@@ -26,7 +25,6 @@
 
     </string>
     <string name="chatting_title">
-        বিংশ শতাব্দীর বাংলা মননে কাজী নজরুল ইসলামের মর্যাদা ও গুরুত্ব অপরিসীম। একাধারে রাজনীতিবিদ এবং সৈনিক হিসেবে অন্যায় ও অবিচারের বিরুদ্ধে নজরুল সর্বদাই ছিলেন সোচ্চার। তার কবিতা ও গানে এই মনোভাবই প্রতিফলিত হয়েছে।
-
+        The Electronic Government Procurement (e-GP) System of the Royal Government of Bhutan facilitates all Procuring Agencies to publish the Tenders.
     </string>
 </resources>

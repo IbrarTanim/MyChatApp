@@ -51,7 +51,7 @@
             <View
                 android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
-                android:layout_weight="0.5" />
+                android:layout_weight="1" />
 
             <ImageView
                 android:layout_width="@dimen/zero"
@@ -62,10 +62,6 @@
                 android:scaleType="fitCenter"
                 android:src="@mipmap/add_photo_black" />
 
-            <View
-                android:layout_width="@dimen/zero"
-                android:layout_height="match_parent"
-                android:layout_weight="0.5" />
 
         </LinearLayout>
 
@@ -145,7 +141,9 @@
                     android:id="@+id/rvPhotoBlogs"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/zero"
-                    android:layout_margin="@dimen/five"
+                    android:layout_marginRight="@dimen/five"
+                    android:layout_marginTop="@dimen/five"
+                    android:layout_marginBottom="@dimen/five"
                     android:layout_weight="17"
                     android:nestedScrollingEnabled="false"
                     android:overScrollMode="never"

@@ -208,7 +208,6 @@
                             android:textStyle="bold" />
 
 
-
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="@dimen/zero"
@@ -515,8 +514,8 @@
 
 
         <LinearLayout
-            android:layout_width="250dp"
-            android:layout_height="250dp"
+            android:layout_width="235dp"
+            android:layout_height="230dp"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="157dp"
             android:orientation="vertical">
@@ -531,7 +530,7 @@
 
         <LinearLayout
             android:layout_width="300dp"
-            android:layout_height="250dp"
+            android:layout_height="230dp"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="150dp"
             android:orientation="vertical">
@@ -545,19 +544,19 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="@dimen/fifty"
-            android:layout_height="@dimen/fifty"
+            android:layout_width="@dimen/forty"
+            android:layout_height="@dimen/forty"
             android:layout_alignParentRight="true"
-            android:layout_marginRight="@dimen/eighty"
             android:layout_marginTop="180dp"
+            android:layout_marginRight="85dp"
             android:orientation="vertical">
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="@dimen/five"
                 android:background="@drawable/rounded_textview"
-                android:src="@mipmap/blac_plus_icon" />
+                android:padding="@dimen/five"
+                android:src="@drawable/ic_add_to_hotlist_icon" />
 
         </LinearLayout>
 
@@ -566,13 +565,13 @@
             android:layout_width="@dimen/eighty"
             android:layout_height="@dimen/forty"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="375dp"
+            android:layout_marginTop="365dp"
             android:background="@drawable/rounded_white_bg"
             android:gravity="center"
             android:text="Edit"
-            android:textStyle="bold"
             android:textColor="@color/black"
-            android:textSize="@dimen/fifteen" />
+            android:textSize="@dimen/eighteen"
+            android:textStyle="bold" />
 
 
     </RelativeLayout>
