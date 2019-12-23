@@ -35,29 +35,92 @@
                 android:orientation="horizontal"
                 android:weightSum="15">
 
-                <de.hdodenhof.circleimageview.CircleImageView
+
+
+                <ImageView
                     android:layout_width="@dimen/zero"
                     android:layout_height="match_parent"
                     android:layout_weight="2"
+                    android:scaleType="fitCenter"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_back_button" />
+
+                <View
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
                     android:background="@color/transparent"
                     android:src="@mipmap/chatting" />
 
-                <TextView
+                <LinearLayout
                     android:layout_width="@dimen/zero"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="@dimen/twenty"
-                    android:layout_weight="11"
-                    android:gravity="center|left"
-                    android:maxLines="1"
-                    android:shadowColor="@color/black"
-                    android:shadowDx="5"
-                    android:shadowDy="5"
-                    android:shadowRadius="5"
-                    android:text="Kazi Nazrul Islam"
-                    android:textColor="@color/white"
-                    android:textSize="16dp"
-                    android:textStyle="bold" />
+                    android:orientation="vertical"
+                    android:weightSum="2"
+                    android:layout_weight="7">
 
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/zero"
+                        android:layout_weight="1"
+                        android:gravity="left|bottom"
+                        android:maxLines="1"
+                        android:shadowColor="@color/black"
+                        android:layout_marginLeft="@dimen/five"
+                        android:shadowDx="5"
+                        android:shadowDy="5"
+                        android:shadowRadius="5"
+                        android:text="Kazi Nazrul Islam"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/twenty"
+                        android:textStyle="bold" />
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/zero"
+                        android:layout_weight="1"
+                        android:layout_gravity="top"
+                        android:orientation="horizontal"
+                        android:weightSum="5">
+
+                        <ImageView
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/transparent"
+                            android:padding="@dimen/five"
+                            android:scaleType="fitCenter"
+                            android:src="@mipmap/clock_white_croped" />
+
+                        <TextView
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:gravity="center|left"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="5"
+                            android:shadowDy="5"
+                            android:shadowRadius="5"
+                            android:text="12.35"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/twelve"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
 
 
                 <ImageView
@@ -438,42 +501,6 @@
         </LinearLayout>
 
 
-        <LinearLayout
-            android:layout_width="100dp"
-            android:layout_height="25dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="55dp"
-            android:layout_marginTop="80dp"
-            android:layout_weight="5"
-            android:orientation="horizontal"
-            android:weightSum="2">
-
-            <ImageView
-                android:layout_width="@dimen/zero"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@color/transparent"
-                android:padding="@dimen/five"
-                android:scaleType="fitCenter"
-                android:src="@mipmap/clock_white_croped" />
-
-            <TextView
-                android:layout_width="@dimen/zero"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center|left"
-                android:shadowColor="@color/black"
-                android:shadowDx="5"
-                android:shadowDy="5"
-                android:shadowRadius="5"
-                android:text="12.35"
-                android:textColor="@color/white"
-                android:textSize="@dimen/twelve"
-                android:textStyle="bold" />
-
-
-        </LinearLayout>
 
 
         <LinearLayout
