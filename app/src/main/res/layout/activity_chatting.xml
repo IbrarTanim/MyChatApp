@@ -40,7 +40,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="2"
                     android:background="@color/transparent"
-                    android:src="@mipmap/nazrul" />
+                    android:src="@mipmap/chatting" />
 
                 <TextView
                     android:layout_width="@dimen/zero"
@@ -490,7 +490,7 @@
                 android:layout_height="@dimen/zero"
                 android:layout_weight="2"
                 android:background="@color/transparent"
-                android:src="@mipmap/love_icon" />
+                android:src="@drawable/ic_message_love_icon" />
 
             <View
                 android:layout_width="match_parent"
@@ -502,7 +502,7 @@
                 android:layout_height="@dimen/zero"
                 android:layout_weight="2"
                 android:background="@color/transparent"
-                android:src="@mipmap/send_icon" />
+                android:src="@drawable/ic_message_send_icon" />
 
 
         </LinearLayout>
