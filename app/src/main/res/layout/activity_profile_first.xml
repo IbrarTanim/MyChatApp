@@ -186,16 +186,16 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/zero"
-                        android:layout_weight="2" />
+                        android:layout_weight="0.5" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/zero"
                         android:layout_marginLeft="@dimen/twenty_five"
                         android:layout_marginRight="@dimen/twenty_five"
-                        android:layout_weight="2"
+                        android:layout_weight="2.5"
                         android:orientation="vertical"
-                        android:weightSum="4.5">
+                        android:weightSum="5">
 
                         <TextView
                             android:layout_width="match_parent"
@@ -242,6 +242,11 @@
 
                         </LinearLayout>
 
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/zero"
+                            android:layout_weight="0.5" />
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="@dimen/zero"
@@ -258,14 +263,20 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/zero"
-                        android:layout_weight="1" />
+                        android:layout_weight="2" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/zero"
                         android:layout_weight="1"
                         android:orientation="horizontal"
-                        android:weightSum="15">
+                        android:weightSum="18">
+
+
+                        <View
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"/>
 
                         <LinearLayout
                             android:layout_width="@dimen/zero"
@@ -274,50 +285,51 @@
                             android:orientation="vertical"
                             android:weightSum="2">
 
-
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="@dimen/zero"
-                                android:layout_weight="1"
-                                android:background="@color/transparent"
-                                android:scaleType="fitCenter"
-                                android:src="@drawable/ic_profile_one_liked_me" />
-
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="@dimen/zero"
                                 android:layout_weight="1"
-                                android:gravity="center"
+                                android:gravity="center|left"
                                 android:text="Liked me"
                                 android:textColor="@color/black"
                                 android:textSize="@dimen/twelve"
                                 android:textStyle="bold" />
 
 
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="@dimen/zero"
-                            android:layout_height="match_parent"
-                            android:layout_weight="5"
-                            android:orientation="vertical"
-                            android:weightSum="2">
-
-
-                            <ImageView
+                            <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="@dimen/zero"
                                 android:layout_weight="1"
-                                android:background="@color/transparent"
-                                android:scaleType="fitCenter"
-                                android:src="@drawable/ic_profile_one_favorite_me" />
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <TextView
+                                    android:layout_width="@dimen/zero"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center|left"
+                                    android:text="485"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/twenty"
+                                    android:textStyle="normal" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/zero"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:background="@color/transparent"
+                                    android:padding="@dimen/two"
+                                    android:scaleType="fitStart"
+                                    android:src="@drawable/ic_profile_one_liked_me" />
+                            </LinearLayout>
+
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="@dimen/zero"
                                 android:layout_weight="1"
                                 android:gravity="center"
-                                android:text="Favorited me"
+                                android:text="Visited me"
                                 android:textColor="@color/black"
                                 android:textSize="@dimen/twelve"
                                 android:textStyle="bold" />
@@ -332,14 +344,102 @@
                             android:orientation="vertical"
                             android:weightSum="2">
 
-
-                            <ImageView
+                            <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="@dimen/zero"
                                 android:layout_weight="1"
-                                android:background="@color/transparent"
-                                android:scaleType="fitCenter"
-                                android:src="@drawable/ic_profile_one_visited_me" />
+                                android:gravity="center|left"
+                                android:text="Favorited me"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/twelve"
+                                android:textStyle="bold" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/zero"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <TextView
+                                    android:layout_width="@dimen/zero"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center|left"
+                                    android:text="485"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/twenty"
+                                    android:textStyle="normal" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/zero"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:background="@color/transparent"
+                                    android:padding="@dimen/two"
+                                    android:scaleType="fitStart"
+                                    android:src="@drawable/ic_profile_one_favorite_me" />
+                            </LinearLayout>
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/zero"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="Visited me"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/twelve"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="match_parent"
+                            android:layout_weight="5"
+                            android:orientation="vertical"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/zero"
+                                android:layout_weight="1"
+                                android:gravity="center|left"
+                                android:text="Visited me"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/twelve"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/zero"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <TextView
+                                    android:layout_width="@dimen/zero"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center|left"
+                                    android:text="485"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/twenty"
+                                    android:textStyle="normal" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/zero"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:background="@color/transparent"
+                                    android:padding="@dimen/two"
+                                    android:scaleType="fitStart"
+                                    android:src="@drawable/ic_profile_one_visited_me" />
+                            </LinearLayout>
+
 
                             <TextView
                                 android:layout_width="match_parent"
@@ -544,17 +644,16 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="@dimen/forty"
-            android:layout_height="@dimen/forty"
+            android:layout_width="@dimen/fifty"
+            android:layout_height="@dimen/fifty"
             android:layout_alignParentRight="true"
             android:layout_marginTop="180dp"
-            android:layout_marginRight="85dp"
+            android:layout_marginRight="80dp"
             android:orientation="vertical">
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/rounded_textview"
                 android:padding="@dimen/five"
                 android:src="@drawable/ic_add_to_hotlist_icon" />
 
@@ -564,8 +663,8 @@
         <TextView
             android:layout_width="@dimen/eighty"
             android:layout_height="@dimen/forty"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="365dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="350dp"
             android:background="@drawable/rounded_white_bg"
             android:gravity="center"
             android:text="Edit"

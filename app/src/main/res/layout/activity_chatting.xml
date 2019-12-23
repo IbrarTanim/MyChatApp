@@ -35,8 +35,6 @@
                 android:orientation="horizontal"
                 android:weightSum="15">
 
-
-
                 <ImageView
                     android:layout_width="@dimen/zero"
                     android:layout_height="match_parent"
@@ -45,16 +43,12 @@
                     android:background="@color/transparent"
                     android:src="@drawable/ic_back_button" />
 
-                <View
-                    android:layout_width="@dimen/zero"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"/>
 
 
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:layout_width="@dimen/zero"
                     android:layout_height="match_parent"
-                    android:layout_weight="3"
+                    android:layout_weight="2"
                     android:background="@color/transparent"
                     android:src="@mipmap/chatting" />
 
@@ -62,14 +56,14 @@
                     android:layout_width="@dimen/zero"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:weightSum="2"
+                    android:weightSum="5"
                     android:layout_weight="7">
 
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/zero"
-                        android:layout_weight="1"
+                        android:layout_weight="3"
                         android:gravity="left|bottom"
                         android:maxLines="1"
                         android:shadowColor="@color/black"
@@ -79,7 +73,7 @@
                         android:shadowRadius="5"
                         android:text="Kazi Nazrul Islam"
                         android:textColor="@color/white"
-                        android:textSize="@dimen/twenty"
+                        android:textSize="14dp"
                         android:textStyle="bold" />
 
 
@@ -87,7 +81,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/zero"
-                        android:layout_weight="1"
+                        android:layout_weight="2"
                         android:layout_gravity="top"
                         android:orientation="horizontal"
                         android:weightSum="5">
@@ -112,7 +106,7 @@
                             android:shadowRadius="5"
                             android:text="12.35"
                             android:textColor="@color/white"
-                            android:textSize="@dimen/twelve"
+                            android:textSize="@dimen/ten"
                             android:textStyle="bold" />
 
 
@@ -122,6 +116,10 @@
 
                 </LinearLayout>
 
+                <View
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"/>
 
                 <ImageView
                     android:layout_width="@dimen/zero"
@@ -170,11 +168,11 @@
                             android:layout_width="@dimen/zero"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:gravity="center|right"
+                            android:gravity="center"
                             android:shadowColor="@color/black"
                             android:shadowDx="5"
                             android:shadowDy="5"
-                            android:shadowRadius="5"
+                            android:shadowRadius="3"
                             android:text="23"
                             android:textColor="@color/white"
                             android:textSize="@dimen/fifteen"
@@ -209,11 +207,11 @@
                             android:layout_width="@dimen/zero"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:gravity="center|right"
+                            android:gravity="center"
                             android:shadowColor="@color/black"
                             android:shadowDx="5"
                             android:shadowDy="5"
-                            android:shadowRadius="5"
+                            android:shadowRadius="3"
                             android:text="19"
                             android:textColor="@color/white"
                             android:textSize="@dimen/fifteen"
@@ -249,11 +247,11 @@
                             android:layout_width="@dimen/zero"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:gravity="center|right"
+                            android:gravity="center"
                             android:shadowColor="@color/black"
                             android:shadowDx="5"
                             android:shadowDy="5"
-                            android:shadowRadius="5"
+                            android:shadowRadius="3"
                             android:text="14"
                             android:textColor="@color/white"
                             android:textSize="@dimen/fifteen"
@@ -475,12 +473,13 @@
                         android:orientation="horizontal"
                         android:weightSum="10">
 
-                        <TextView
+                        <EditText
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_marginLeft="@dimen/ten"
                             android:gravity="center|left"
-                            android:text="Write a comment"
+                            android:hint="Write a comment"
+                            android:textColorHint="@color/white"
                             android:textColor="@color/white"
                             android:textSize="@dimen/fifteen" />
 
