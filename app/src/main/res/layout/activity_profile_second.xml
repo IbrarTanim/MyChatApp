@@ -35,7 +35,7 @@
             <View
                 android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
-                android:layout_weight="0.5" />
+                android:layout_weight="1" />
 
             <ImageView
                 android:layout_width="@dimen/zero"
@@ -48,16 +48,8 @@
             <View
                 android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
-                android:layout_weight="1" />
+                android:layout_weight="1.5" />
 
-            <ImageView
-                android:layout_width="@dimen/zero"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@color/transparent"
-                android:layout_marginRight="@dimen/five"
-                android:scaleType="fitEnd"
-                android:src="@drawable/ic_profile_settings_icon" />
 
 
         </LinearLayout>
@@ -106,7 +98,7 @@
                     android:shadowRadius="5"
                     android:text="Samanta Hosain is using this app"
                     android:textColor="@color/white"
-                    android:textSize="@dimen/twenty"
+                    android:textSize="@dimen/eighteen"
                     android:textStyle="bold" />
 
                 <LinearLayout
@@ -168,7 +160,7 @@
                             android:shadowRadius="5"
                             android:text="Samanta Hosain, 27"
                             android:textColor="@color/white"
-                            android:textSize="@dimen/eighteen"
+                            android:textSize="@dimen/twenty"
                             android:textStyle="bold" />
 
                         <TextView

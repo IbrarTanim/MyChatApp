@@ -22,6 +22,7 @@
     <color name="photo_blogs_transparent">#80000000</color>
     <color name="color_a">#70635B</color>
     <color name="color_b">#B0B8BA</color>
+    <color name="message_text_color">#BEC3C6</color>
 
 
 </resources>
