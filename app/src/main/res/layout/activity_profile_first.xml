@@ -78,7 +78,7 @@
                         android:layout_weight="1"
                         android:background="@color/transparent"
                         android:scaleType="fitCenter"
-                        android:src="@mipmap/private_message" />
+                        android:src="@drawable/ic_profile_hotlist_icon" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -107,7 +107,7 @@
                         android:layout_weight="1"
                         android:background="@color/transparent"
                         android:scaleType="fitCenter"
-                        android:src="@mipmap/private_message" />
+                        android:src="@drawable/ic_profile_support_icon" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -136,7 +136,7 @@
                         android:layout_weight="1"
                         android:background="@color/transparent"
                         android:scaleType="fitCenter"
-                        android:src="@mipmap/private_message" />
+                        android:src="@drawable/ic_profile_settings_icon" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -186,7 +186,7 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/zero"
-                        android:layout_weight="1" />
+                        android:layout_weight="2" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -200,22 +200,14 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="@dimen/zero"
-                            android:layout_weight="1"
+                            android:layout_weight="2"
                             android:gravity="center"
                             android:text="Kazi Nazrul Islam, 57"
                             android:textColor="@color/black"
-                            android:textSize="@dimen/twenty"
+                            android:textSize="22dp"
                             android:textStyle="bold" />
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="@dimen/zero"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:text="Tap to view your profile"
-                            android:textColor="@color/black"
-                            android:textSize="@dimen/twelve"
-                            android:textStyle="normal" />
+
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -230,7 +222,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_marginRight="2dp"
                                 android:layout_weight="1"
-                                android:background="@drawable/login_btn_bg"
+                                android:background="@drawable/gradientbackground"
                                 android:gravity="center"
                                 android:text="Add boddo credits"
                                 android:textColor="@color/white"
@@ -241,7 +233,7 @@
                                 android:layout_width="@dimen/zero"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
-                                android:background="@drawable/login_btn_bg"
+                                android:background="@drawable/gradientbackground"
                                 android:gravity="center"
                                 android:text=" Discover boddo plus"
                                 android:textColor="@color/white"
@@ -267,7 +259,7 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/zero"
-                        android:layout_weight="2" />
+                        android:layout_weight="1" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -326,7 +318,7 @@
                                 android:layout_height="@dimen/zero"
                                 android:layout_weight="1"
                                 android:gravity="center"
-                                android:text="Favourited me"
+                                android:text="Favorited me"
                                 android:textColor="@color/black"
                                 android:textSize="@dimen/twelve"
                                 android:textStyle="bold" />
@@ -548,9 +540,37 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/transparent"
-                android:src="@mipmap/nazrul" />
+                android:src="@mipmap/chatting" />
 
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/sixty"
+            android:layout_height="@dimen/sixty"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/eighty"
+            android:layout_marginTop="180dp"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:src="@mipmap/add_icon" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="@dimen/eighty"
+            android:layout_height="@dimen/thirty"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="370dp"
+            android:background="@drawable/rounded_white_bg"
+            android:gravity="center"
+            android:text="Edit"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fifteen" />
 
 
     </RelativeLayout>
