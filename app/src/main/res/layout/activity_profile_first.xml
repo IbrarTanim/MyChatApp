@@ -665,7 +665,6 @@
             android:layout_height="@dimen/forty"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="350dp"
-            android:background="@drawable/rounded_white_bg"
             android:gravity="center"
             android:text="Edit"
             android:textColor="@color/black"
