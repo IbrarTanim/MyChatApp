@@ -23,6 +23,9 @@
     <color name="color_a">#70635B</color>
     <color name="color_b">#B0B8BA</color>
     <color name="message_text_color">#BEC3C6</color>
+    <color name="chat_text_color">#CC000000</color>
+
+
 
 
 </resources>

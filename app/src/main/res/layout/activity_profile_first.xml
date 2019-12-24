@@ -253,9 +253,9 @@
                             android:layout_weight="1"
                             android:gravity="center"
                             android:text="Wallet:100,000 credits"
-                            android:textColor="@color/black"
+                            android:textColor="@color/color_a"
                             android:textSize="@dimen/twelve"
-                            android:textStyle="normal" />
+                            android:textStyle="bold" />
 
 
                     </LinearLayout>
@@ -291,8 +291,8 @@
                                 android:layout_weight="1"
                                 android:gravity="center|left"
                                 android:text="Liked me"
-                                android:textColor="@color/black"
-                                android:textSize="@dimen/twelve"
+                                android:textColor="@color/chat_text_color"
+                                android:textSize="@dimen/fifteen"
                                 android:textStyle="bold" />
 
 
@@ -309,7 +309,7 @@
                                     android:layout_weight="1"
                                     android:gravity="center|left"
                                     android:text="485"
-                                    android:textColor="@color/black"
+                                    android:textColor="@color/chat_text_color"
                                     android:textSize="@dimen/twenty"
                                     android:textStyle="normal" />
 
@@ -350,8 +350,8 @@
                                 android:layout_weight="1"
                                 android:gravity="center|left"
                                 android:text="Favorited me"
-                                android:textColor="@color/black"
-                                android:textSize="@dimen/twelve"
+                                android:textColor="@color/chat_text_color"
+                                android:textSize="@dimen/fifteen"
                                 android:textStyle="bold" />
 
 
@@ -368,7 +368,7 @@
                                     android:layout_weight="1"
                                     android:gravity="center|left"
                                     android:text="485"
-                                    android:textColor="@color/black"
+                                    android:textColor="@color/chat_text_color"
                                     android:textSize="@dimen/twenty"
                                     android:textStyle="normal" />
 
@@ -409,8 +409,8 @@
                                 android:layout_weight="1"
                                 android:gravity="center|left"
                                 android:text="Visited me"
-                                android:textColor="@color/black"
-                                android:textSize="@dimen/twelve"
+                                android:textColor="@color/chat_text_color"
+                                android:textSize="@dimen/fifteen"
                                 android:textStyle="bold" />
 
                             <LinearLayout
@@ -426,7 +426,7 @@
                                     android:layout_weight="1"
                                     android:gravity="center|left"
                                     android:text="485"
-                                    android:textColor="@color/black"
+                                    android:textColor="@color/chat_text_color"
                                     android:textSize="@dimen/twenty"
                                     android:textStyle="normal" />
 
