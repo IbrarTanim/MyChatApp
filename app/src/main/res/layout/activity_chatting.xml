@@ -479,7 +479,7 @@
                             android:layout_marginLeft="@dimen/ten"
                             android:gravity="center|left"
                             android:hint="Write a comment"
-                            android:inputType="textMultiLine|textVisiblePassword"
+                            android:inputType="textMultiLine"
                             android:textColorHint="@color/white"
                             android:textColor="@color/white"
                             android:textSize="@dimen/fifteen" />
