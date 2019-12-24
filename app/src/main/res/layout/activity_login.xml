@@ -147,7 +147,9 @@
                 android:layout_weight="7"
                 android:background="@drawable/gradientbackground"
                 android:gravity="center"
+                android:textSize="@dimen/twenty"
                 android:text="Login"
+                android:textStyle="bold"
                 android:textColor="@color/white" />
 
             <TextView

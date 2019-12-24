@@ -222,6 +222,7 @@
                             android:layout_width="@dimen/zero"
                             android:layout_height="match_parent"
                             android:layout_weight="2"
+                            android:padding="@dimen/two"
                             android:background="@color/transparent"
                             android:scaleType="fitCenter"
                             android:src="@drawable/ic_photoblog_comment_icon" />
@@ -262,6 +263,7 @@
                             android:layout_width="@dimen/zero"
                             android:layout_height="match_parent"
                             android:layout_weight="2"
+                            android:padding="@dimen/two"
                             android:drawable="@drawable/shadow_bg"
                             android:scaleType="fitCenter"
                             android:src="@drawable/ic_photoblog_love_icon" />
@@ -315,6 +317,8 @@
                     android:shadowDx="5"
                     android:shadowDy="5"
                     android:shadowRadius="5"
+                    android:textSize="@dimen/twelve"
+                    android:textStyle="bold"
                     android:textColor="@color/white" />
 
 

@@ -86,7 +86,7 @@
                         android:layout_height="@dimen/zero"
                         android:layout_weight="2.5"
                         android:orientation="vertical"
-                        android:weightSum="24">
+                        android:weightSum="26">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -107,7 +107,7 @@
                                 android:layout_weight="21"
                                 android:gravity="left|center"
                                 android:text="@string/new_matches"
-                                android:textColor="@color/white"
+                                android:textColor="@color/black"
                                 android:textSize="@dimen/thirteen"
                                 android:textStyle="bold" />
 
@@ -119,7 +119,7 @@
                             android:layout_height="@dimen/zero"
                             android:layout_gravity="center"
                             android:layout_marginTop="@dimen/ten"
-                            android:layout_weight="20"
+                            android:layout_weight="22"
                             android:overScrollMode="never"
                             android:scrollbars="none" />
 
