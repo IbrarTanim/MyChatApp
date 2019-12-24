@@ -43,17 +43,22 @@
             <View
                 android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
-                android:layout_weight="7" />
+                android:layout_weight="6.5" />
 
             <ImageView
                 android:id="@+id/ivChatRequest"
                 android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
-                android:layout_marginRight="@dimen/five"
                 android:layout_weight="1"
+                android:padding="@dimen/five"
                 android:background="@color/transparent"
                 android:scaleType="fitCenter"
                 android:src="@drawable/ic_chat_request_icon" />
+
+            <View
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5" />
 
 
         </LinearLayout>
