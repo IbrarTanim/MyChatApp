@@ -106,13 +106,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void prepareLiveChat() {
         int[] listItem = new int[]{
-                R.mipmap.nazrul,
-                R.mipmap.jaforiqbal,
-                R.mipmap.sufia_kamal,
-                R.mipmap.sharat,
-                R.mipmap.samsurrahman,
-                R.mipmap.robindronath,
+                R.mipmap.chatting,
                 R.mipmap.humayunahmed,
+                R.mipmap.find_your_love,
+                R.mipmap.anisul,
+                R.mipmap.find_friends,
+                R.mipmap.jaforiqbal,
+                R.mipmap.taking_photo,
                 R.mipmap.samsurrahman,
         };
 
@@ -148,13 +148,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void prepareHotList() {
         int[] listItem = new int[]{
-                R.mipmap.nazrul,
-                R.mipmap.jaforiqbal,
-                R.mipmap.sufia_kamal,
-                R.mipmap.sharat,
-                R.mipmap.samsurrahman,
-                R.mipmap.robindronath,
+                R.mipmap.chatting,
                 R.mipmap.humayunahmed,
+                R.mipmap.find_your_love,
+                R.mipmap.anisul,
+                R.mipmap.find_friends,
+                R.mipmap.jaforiqbal,
+                R.mipmap.taking_photo,
                 R.mipmap.samsurrahman,
         };
 
