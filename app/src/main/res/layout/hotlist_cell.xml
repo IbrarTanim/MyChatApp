@@ -8,7 +8,7 @@
 
     <RelativeLayout
         android:layout_width="100dp"
-        android:layout_height="165dp"
+        android:layout_height="170dp"
         card_view:layout_constraintRight_toRightOf="parent"
         card_view:layout_constraintTop_toTopOf="parent">
 
