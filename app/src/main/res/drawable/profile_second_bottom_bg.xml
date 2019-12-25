@@ -6,8 +6,8 @@
 
     <corners
 
-        android:topLeftRadius="@dimen/thirty"
-        android:topRightRadius="@dimen/thirty" />
+        android:topLeftRadius="@dimen/twenty"
+        android:topRightRadius="@dimen/twenty" />
 
 
 </shape>
