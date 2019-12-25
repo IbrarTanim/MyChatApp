@@ -5,30 +5,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <android.support.v4.widget.NestedScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/five"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_margin="@dimen/five">
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:weightSum="15">
+            android:weightSum="20">
 
             <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:card_view="http://schemas.android.com/apk/res-auto"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/zero"
-                android:layout_weight="3"
+                android:layout_weight="2"
                 android:clipChildren="false"
                 android:clipToPadding="false"
                 android:divider="@android:color/transparent"
                 android:dividerHeight="0.0px"
                 android:elevation="5dp"
-                app:cardCornerRadius="@dimen/ten"
+                app:cardCornerRadius="@dimen/twenty"
                 card_view:cardElevation="5dp"
                 card_view:cardPreventCornerOverlap="false">
 
@@ -36,17 +36,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <ImageView
+                    <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/transparent"
                         android:scaleType="fitXY"
-                        android:src="@mipmap/cousine" />
+                        android:src="@mipmap/chatting"
+                        app:riv_corner_radius="@dimen/twenty"
+                        app:riv_border_color="@color/transparent"
+                        app:riv_mutate_background="true"
+                        app:riv_oval="false" />
 
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/user_photoblogs_overlay" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -298,28 +297,22 @@
             </LinearLayout>
 
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/zero"
-                android:layout_weight="9"
-                android:orientation="vertical">
 
                 <android.support.v7.widget.RecyclerView
                     android:id="@+id/rvUserPhotoBlogs"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="@dimen/five"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="16"
                     android:nestedScrollingEnabled="false"
                     android:overScrollMode="never"
                     android:scrollbars="none" />
 
-            </LinearLayout>
 
 
         </LinearLayout>
 
 
-    </android.support.v4.widget.NestedScrollView>
+    </ScrollView>
 
 
 </android.support.constraint.ConstraintLayout>
