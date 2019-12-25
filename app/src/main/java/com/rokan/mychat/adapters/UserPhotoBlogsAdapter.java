@@ -1,6 +1,7 @@
 package com.rokan.mychat.adapters;
 
 import android.content.Context;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -28,11 +29,15 @@ public class UserPhotoBlogsAdapter extends RecyclerView.Adapter<UserPhotoBlogsAd
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         RoundedImageView ivUserProPicPhotoBlog;
+        public CardView userPhotoBlogCard;
+        TextView tvUserPhotoBlogOverLay;
 
         public MyViewHolder(View view) {
             super(view);
 
             ivUserProPicPhotoBlog = view.findViewById(R.id.ivUserProPicPhotoBlog);
+            userPhotoBlogCard = view.findViewById(R.id.userPhotoBlogCard);
+            tvUserPhotoBlogOverLay = view.findViewById(R.id.tvUserPhotoBlogOverLay);
         }
 
     }
@@ -55,7 +60,35 @@ public class UserPhotoBlogsAdapter extends RecyclerView.Adapter<UserPhotoBlogsAd
     public void onBindViewHolder(final UserPhotoBlogsAdapter.MyViewHolder holder, int position) {
         UserPhotoBlogs userPhotoBlogs = userPhotoBlogsList.get(position);
 
-        Glide.with(mContext).load(userPhotoBlogs.getRoundedUserBlogProfilePic()).into(holder.ivUserProPicPhotoBlog);
+
+        //Glide.with(mContext).load(userPhotoBlogs.getRoundedUserBlogProfilePic()).into(holder.ivUserProPicPhotoBlog);
+
+        if (position % 4 == 0) {
+            holder.userPhotoBlogCard.setBackground(mContext.getResources().getDrawable(R.drawable.card_bottom_right));
+            holder.tvUserPhotoBlogOverLay.setBackground(mContext.getResources().getDrawable(R.drawable.card_bottom_right));
+            holder.ivUserProPicPhotoBlog.setCornerRadius(30, 30, 30, 0);
+            Glide.with(mContext).load(userPhotoBlogs.getRoundedUserBlogProfilePic()).into(holder.ivUserProPicPhotoBlog);
+
+
+        } else if (position % 4 == 1) {
+            holder.userPhotoBlogCard.setBackground(mContext.getResources().getDrawable(R.drawable.card_bottom_left));
+            holder.tvUserPhotoBlogOverLay.setBackground(mContext.getResources().getDrawable(R.drawable.card_bottom_left));
+            holder.ivUserProPicPhotoBlog.setCornerRadius(30, 30, 0, 30);
+            Glide.with(mContext).load(userPhotoBlogs.getRoundedUserBlogProfilePic()).into(holder.ivUserProPicPhotoBlog);
+
+        } else if (position % 4 == 2) {
+            holder.userPhotoBlogCard.setBackground(mContext.getResources().getDrawable(R.drawable.card_top_right));
+            holder.tvUserPhotoBlogOverLay.setBackground(mContext.getResources().getDrawable(R.drawable.card_top_right));
+            holder.ivUserProPicPhotoBlog.setCornerRadius(30, 0, 30, 30);
+            Glide.with(mContext).load(userPhotoBlogs.getRoundedUserBlogProfilePic()).into(holder.ivUserProPicPhotoBlog);
+
+        } else if (position % 4 == 3) {
+            holder.userPhotoBlogCard.setBackground(mContext.getResources().getDrawable(R.drawable.card_top_left));
+            holder.tvUserPhotoBlogOverLay.setBackground(mContext.getResources().getDrawable(R.drawable.card_top_left));
+            holder.ivUserProPicPhotoBlog.setCornerRadius(0, 30, 30, 30);
+            Glide.with(mContext).load(userPhotoBlogs.getRoundedUserBlogProfilePic()).into(holder.ivUserProPicPhotoBlog);
+
+        }
 
     }
 

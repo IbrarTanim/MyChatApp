@@ -78,8 +78,7 @@ public class ProfileThirdActivity extends AppCompatActivity {
                 R.mipmap.samsurrahman,
         };
 
-        UserPhotoBlogs
-                userPhotoBlogs = new UserPhotoBlogs(listItemPhotoBlogs[0]);
+        UserPhotoBlogs userPhotoBlogs = new UserPhotoBlogs(listItemPhotoBlogs[0]);
         userPhotoBlogsList.add(userPhotoBlogs);
 
         userPhotoBlogs = new UserPhotoBlogs(listItemPhotoBlogs[1]);

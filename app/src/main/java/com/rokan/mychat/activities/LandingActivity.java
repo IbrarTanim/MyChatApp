@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.Switch;
+import android.widget.TextView;
 
 import com.rokan.mychat.R;
 import com.rokan.mychat.dialog.InfoDialog;
@@ -16,6 +17,7 @@ public class LandingActivity extends AppCompatActivity implements View.OnClickLi
 
     LandingActivity activity;
     ImageView ivInfo;
+    TextView tvContinue;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +26,9 @@ public class LandingActivity extends AppCompatActivity implements View.OnClickLi
         activity = this;
 
         ivInfo = findViewById(R.id.ivInfo);
+        tvContinue = findViewById(R.id.tvContinue);
         ivInfo.setOnClickListener(this);
+        tvContinue.setOnClickListener(this);
     }
 
     @Override
@@ -39,9 +43,11 @@ public class LandingActivity extends AppCompatActivity implements View.OnClickLi
                 infoDialog.getWindow().clearFlags(WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE);
 
                 break;
+            case R.id.tvContinue:
+                startActivity(new Intent(activity, ProfileThirdActivity.class));
+                break;
         }
     }
-
 
 
     public void runSplash() {
