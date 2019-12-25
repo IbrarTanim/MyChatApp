@@ -275,7 +275,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/transparent"
-                    android:padding="@dimen/five"
+                    android:padding="@dimen/ten"
                     android:scaleType="fitStart"
                     android:src="@mipmap/bell_icon" />
 
@@ -289,7 +289,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/transparent"
-                    android:padding="@dimen/five"
+                    android:padding="@dimen/ten"
                     android:scaleType="fitEnd"
                     android:src="@mipmap/blac_plus_icon" />
 
@@ -302,6 +302,14 @@
                 android:layout_weight="9"
                 android:orientation="vertical">
 
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvUserPhotoBlogs"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/five"
+                    android:nestedScrollingEnabled="false"
+                    android:overScrollMode="never"
+                    android:scrollbars="none" />
 
             </LinearLayout>
 

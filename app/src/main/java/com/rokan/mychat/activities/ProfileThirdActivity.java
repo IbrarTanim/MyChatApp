@@ -15,9 +15,11 @@ import android.view.View;
 import com.rokan.mychat.R;
 import com.rokan.mychat.adapters.HotListAdapter;
 import com.rokan.mychat.adapters.PhotoBlogsAdapter;
+import com.rokan.mychat.adapters.UserPhotoBlogsAdapter;
 import com.rokan.mychat.pojo.HotList;
 import com.rokan.mychat.pojo.LiveChat;
 import com.rokan.mychat.pojo.PhotoBlogs;
+import com.rokan.mychat.pojo.UserPhotoBlogs;
 import com.rokan.mychat.utilities.GridSpacingItemDecoration;
 
 import java.util.ArrayList;
@@ -26,15 +28,10 @@ import java.util.List;
 public class ProfileThirdActivity extends AppCompatActivity {
 
     ProfileThirdActivity activity;
-    private PhotoBlogsAdapter photoBlogsAdapter;
-    private List<PhotoBlogs> photoBlogsList;
-    private RecyclerView rvPhotoBlogs;
-    private RecyclerView rvHotList;
-    private List<HotList> hotLists;
-    //LinearLayoutManager layoutManagerPhotoBlogs;
-    private HotListAdapter hotListAdapter;
+    private UserPhotoBlogsAdapter userPhotoBlogsAdapter;
+    private List<UserPhotoBlogs> userPhotoBlogsList;
+    private RecyclerView rvUserPhotoBlogs;
     LinearLayoutManager layoutManager;
-
 
 
     @Override
@@ -43,20 +40,14 @@ public class ProfileThirdActivity extends AppCompatActivity {
         setContentView(R.layout.activity_profile_third);
 
         activity = this;
-        rvHotList = findViewById(R.id.rvHotList);
-        rvPhotoBlogs = findViewById(R.id.rvPhotoBlogs);
-        photoBlogsList = new ArrayList<>();
+        rvUserPhotoBlogs = findViewById(R.id.rvUserPhotoBlogs);
+        userPhotoBlogsList = new ArrayList<>();
 
 
-        photoBlogsAdapter = new PhotoBlogsAdapter(activity, photoBlogsList);
+        userPhotoBlogsAdapter = new UserPhotoBlogsAdapter(activity, userPhotoBlogsList);
         //layoutManagerPhotoBlogs = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
 
-        hotLists = new ArrayList<>();
-        hotListAdapter = new HotListAdapter(activity, hotLists);
 
-        layoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
-        rvHotList.setLayoutManager(layoutManager);
-        rvHotList.setAdapter(hotListAdapter);
 
         /*RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(activity, 2);
         rvPhotoBlogs.setLayoutManager(mLayoutManager);
@@ -64,14 +55,13 @@ public class ProfileThirdActivity extends AppCompatActivity {
         rvPhotoBlogs.setItemAnimator(new DefaultItemAnimator());*/
 
         StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(2, LinearLayoutManager.VERTICAL);
-        rvPhotoBlogs.setLayoutManager(staggeredGridLayoutManager);
-        rvPhotoBlogs.setAdapter(photoBlogsAdapter);
+        rvUserPhotoBlogs.setLayoutManager(staggeredGridLayoutManager);
+        rvUserPhotoBlogs.setAdapter(userPhotoBlogsAdapter);
 
 
         preparePhotoBlogs();
 
     }
-
 
 
     private void preparePhotoBlogs() {
@@ -88,40 +78,33 @@ public class ProfileThirdActivity extends AppCompatActivity {
                 R.mipmap.samsurrahman,
         };
 
-        PhotoBlogs photoBlogs = new PhotoBlogs(listItemPhotoBlogs[0], listItemPhotoBlogs[0], "13", "3", "9",
-                "ঢাকার সাভারের উত্তর ও পশ্চিম কাউন্দিয়া এলাকায় গতকাল বুধবার অভিযান চালিয়ে চারটি ইটভাটা বন্ধ করে দিয়েছে পরিবেশ অধিদপ্তরের ভ্রাম্যমাণ আদালত।");
-        photoBlogsList.add(photoBlogs);
+        UserPhotoBlogs
+                userPhotoBlogs = new UserPhotoBlogs(listItemPhotoBlogs[0]);
+        userPhotoBlogsList.add(userPhotoBlogs);
 
-        photoBlogs = new PhotoBlogs(listItemPhotoBlogs[1], listItemPhotoBlogs[1], "13", "3", "9",
-                "abcd");
-        photoBlogsList.add(photoBlogs);
+        userPhotoBlogs = new UserPhotoBlogs(listItemPhotoBlogs[1]);
+        userPhotoBlogsList.add(userPhotoBlogs);
 
-        photoBlogs = new PhotoBlogs(listItemPhotoBlogs[2], listItemPhotoBlogs[2], "13", "3", "9",
-                "আংশিক ভেঙে দেওয়া হয়েছে তিনটি ভাটা।");
-        photoBlogsList.add(photoBlogs);
+        userPhotoBlogs = new UserPhotoBlogs(listItemPhotoBlogs[2]);
+        userPhotoBlogsList.add(userPhotoBlogs);
 
-        photoBlogs = new PhotoBlogs(listItemPhotoBlogs[3], listItemPhotoBlogs[3], "13", "3", "9",
-                "জরিমানার টাকা পরিশোধ করতে না পারায় আটক করা হয়েছে দুজনকে। ");
-        photoBlogsList.add(photoBlogs);
+        userPhotoBlogs = new UserPhotoBlogs(listItemPhotoBlogs[3]);
+        userPhotoBlogsList.add(userPhotoBlogs);
 
-        photoBlogs = new PhotoBlogs(listItemPhotoBlogs[4], listItemPhotoBlogs[4], "13", "3", "9",
-                "অন্যদিকে নারায়ণগঞ্জের রূপগঞ্জে অবৈধ ছয়টি ইটভাটা উচ্ছেদ করেছেন ভ্রাম্যমাণ আদালত।");
-        photoBlogsList.add(photoBlogs);
+        userPhotoBlogs = new UserPhotoBlogs(listItemPhotoBlogs[4]);
+        userPhotoBlogsList.add(userPhotoBlogs);
 
-        photoBlogs = new PhotoBlogs(listItemPhotoBlogs[5], listItemPhotoBlogs[5], "13", "3", "9",
-                "একই সঙ্গে এসব ইটভাটাকে ১৫ লাখ টাকা জরিমানা করা হয়েছে।");
-        photoBlogsList.add(photoBlogs);
+        userPhotoBlogs = new UserPhotoBlogs(listItemPhotoBlogs[5]);
+        userPhotoBlogsList.add(userPhotoBlogs);
 
-        photoBlogs = new PhotoBlogs(listItemPhotoBlogs[6], listItemPhotoBlogs[6], "13", "3", "9",
-                "kjhgkk");
-        photoBlogsList.add(photoBlogs);
+        userPhotoBlogs = new UserPhotoBlogs(listItemPhotoBlogs[6]);
+        userPhotoBlogsList.add(userPhotoBlogs);
 
-        photoBlogs = new PhotoBlogs(listItemPhotoBlogs[7], listItemPhotoBlogs[7], "13", "3", "9",
-                "ahsan habib");
-        photoBlogsList.add(photoBlogs);
+        userPhotoBlogs = new UserPhotoBlogs(listItemPhotoBlogs[7]);
+        userPhotoBlogsList.add(userPhotoBlogs);
 
 
-        photoBlogsAdapter.notifyDataSetChanged();
+        userPhotoBlogsAdapter.notifyDataSetChanged();
     }
 
 
