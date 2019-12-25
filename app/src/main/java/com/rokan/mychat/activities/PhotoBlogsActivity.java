@@ -36,6 +36,7 @@ public class PhotoBlogsActivity extends AppCompatActivity {
     LinearLayoutManager layoutManager;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
