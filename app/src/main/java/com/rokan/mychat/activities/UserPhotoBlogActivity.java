@@ -33,15 +33,6 @@ public class UserPhotoBlogActivity extends AppCompatActivity {
 
 
         userPhotoBlogsAdapter = new UserPhotoBlogsAdapter(activity, userPhotoBlogsList);
-        //layoutManagerPhotoBlogs = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
-
-
-
-        /*RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(activity, 2);
-        rvPhotoBlogs.setLayoutManager(mLayoutManager);
-        rvPhotoBlogs.addItemDecoration(new GridSpacingItemDecoration(2, GridSpacingItemDecoration.dpToPx(10, activity), true));
-        rvPhotoBlogs.setItemAnimator(new DefaultItemAnimator());*/
-
         StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(2, LinearLayoutManager.VERTICAL);
         rvUserPhotoBlogs.setLayoutManager(staggeredGridLayoutManager);
         rvUserPhotoBlogs.setAdapter(userPhotoBlogsAdapter);

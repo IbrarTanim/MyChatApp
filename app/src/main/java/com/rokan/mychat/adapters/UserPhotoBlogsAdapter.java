@@ -1,6 +1,7 @@
 package com.rokan.mychat.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -13,6 +14,7 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.makeramen.roundedimageview.RoundedImageView;
 import com.rokan.mychat.R;
+import com.rokan.mychat.activities.ViewImageActivity;
 import com.rokan.mychat.pojo.LiveChat;
 import com.rokan.mychat.pojo.PhotoBlogs;
 import com.rokan.mychat.pojo.UserPhotoBlogs;
@@ -33,9 +35,15 @@ public class UserPhotoBlogsAdapter extends RecyclerView.Adapter<UserPhotoBlogsAd
 
         public MyViewHolder(View view) {
             super(view);
-
             ivUserProPicPhotoBlog = view.findViewById(R.id.ivUserProPicPhotoBlog);
             userPhotoBlogCard = view.findViewById(R.id.userPhotoBlogCard);
+            userPhotoBlogCard.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    mContext.startActivity(new Intent(mContext, ViewImageActivity.class));
+
+                }
+            });
         }
 
     }
@@ -59,7 +67,6 @@ public class UserPhotoBlogsAdapter extends RecyclerView.Adapter<UserPhotoBlogsAd
         UserPhotoBlogs userPhotoBlogs = userPhotoBlogsList.get(position);
 
 
-        //Glide.with(mContext).load(userPhotoBlogs.getRoundedUserBlogProfilePic()).into(holder.ivUserProPicPhotoBlog);
 
         if (position % 4 == 0) {
             holder.userPhotoBlogCard.setBackground(mContext.getResources().getDrawable(R.drawable.card_bottom_right));
