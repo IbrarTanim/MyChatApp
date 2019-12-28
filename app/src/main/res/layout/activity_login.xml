@@ -152,22 +152,12 @@
                 android:textStyle="bold"
                 android:textColor="@color/white" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                android:layout_weight="3"
-                android:gravity="center"
-                android:text="New user? Register Now."
-                android:textColor="@color/reference_login"
-                android:visibility="invisible" />
 
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="5" />
+                android:layout_weight="8" />
 
 
         </LinearLayout>

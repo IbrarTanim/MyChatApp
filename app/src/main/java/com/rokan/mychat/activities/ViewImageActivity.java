@@ -3,18 +3,15 @@ package com.rokan.mychat.activities;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.text.method.ScrollingMovementMethod;
 import android.view.View;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.rokan.mychat.R;
 
-public class ChattingActivity extends AppCompatActivity implements View.OnClickListener {
+public class ViewImageActivity extends AppCompatActivity implements View.OnClickListener {
 
-    ChattingActivity activity;
+    ViewImageActivity activity;
     ImageView ivTitleShowHide;
     TextView tvTitleChatting;
     boolean isTitleShowed = false;
@@ -22,7 +19,7 @@ public class ChattingActivity extends AppCompatActivity implements View.OnClickL
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_chatting);
+        setContentView(R.layout.activity_view_image);
         activity = this;
         ivTitleShowHide = findViewById(R.id.ivTitleShowHide);
         tvTitleChatting = findViewById(R.id.tvTitleChatting);

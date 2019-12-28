@@ -9,13 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.OnlyStatusBar">
-        <activity android:name=".activities.ProfileFourActivity"></activity>
+        <activity android:name=".activities.ActivitiesActivity"></activity>
+        <activity android:name=".activities.ChatRoomsActivity" />
+        <activity android:name=".activities.PrivateChatActivity" />
         <activity
-            android:name=".activities.OtherActivity"
+            android:name=".activities.MatchActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppTheme.OnlyStatusBar" />
         <activity
-            android:name=".activities.ProfileThirdActivity"
+            android:name=".activities.UserPhotoBlogActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppTheme.OnlyStatusBar" />
         <activity
@@ -27,10 +29,10 @@
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppTheme.OnlyStatusBar" />
         <activity
-            android:name=".activities.ChattingActivity"
+            android:name=".activities.ViewImageActivity"
             android:theme="@style/AppTheme.OnlyStatusBar" />
         <activity
-            android:name=".activities.PhotoBlogsActivity"
+            android:name=".activities.MessagesActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppTheme.OnlyStatusBar" />
         <activity
@@ -48,7 +50,7 @@
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppTheme.OnlyStatusBar" />
         <activity
-            android:name=".activities.MainActivity"
+            android:name=".activities.PicturesActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppTheme.OnlyStatusBar">
             <intent-filter>

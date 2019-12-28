@@ -27,7 +27,7 @@ public class Heart extends View {
         super.onDraw(canvas);
 
         // Fill the canvas with background color
-        canvas.drawColor(Color.WHITE);
+        canvas.drawColor(getContext().getResources().getColor(R.color.transparent));
         paint.setShader(null);
 
         float width = getContext().getResources().getDimension(R.dimen.heart_width);
@@ -56,8 +56,8 @@ public class Heart extends View {
                 9 * width / 14, 0,
                 width / 2, height / 5);
 
-        paint.setColor(Color.RED);
-        paint.setStyle(Style.FILL);
+        paint.setColor(getContext().getResources().getColor(R.color.transparent));
+        paint.setStyle(Style.STROKE);
         canvas.drawPath(path, paint);
 
     }

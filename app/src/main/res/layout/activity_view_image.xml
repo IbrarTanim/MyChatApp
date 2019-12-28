@@ -186,7 +186,7 @@
                             android:padding="@dimen/two"
                             android:background="@color/transparent"
                             android:scaleType="fitCenter"
-                            android:src="@drawable/ic_view_icon_white" />
+                            android:src="@mipmap/view_icon_decm" />
 
 
                     </LinearLayout>
@@ -225,7 +225,7 @@
                             android:padding="@dimen/two"
                             android:background="@color/transparent"
                             android:scaleType="fitCenter"
-                            android:src="@drawable/ic_photoblog_comment_icon" />
+                            android:src="@mipmap/comment_icon_decm" />
 
 
 
@@ -266,7 +266,7 @@
                             android:padding="@dimen/two"
                             android:drawable="@drawable/shadow_bg"
                             android:scaleType="fitCenter"
-                            android:src="@drawable/ic_photoblog_love_icon" />
+                            android:src="@mipmap/love_icon_decm" />
 
 
                     </LinearLayout>

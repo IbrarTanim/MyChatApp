@@ -1,6 +1,7 @@
 package com.rokan.mychat.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,6 +13,8 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.makeramen.roundedimageview.RoundedImageView;
 import com.rokan.mychat.R;
+import com.rokan.mychat.activities.LoginActivity;
+import com.rokan.mychat.activities.ViewImageActivity;
 import com.rokan.mychat.pojo.LiveChat;
 import com.rokan.mychat.pojo.PhotoBlogs;
 
@@ -41,6 +44,14 @@ public class PhotoBlogsAdapter extends RecyclerView.Adapter<PhotoBlogsAdapter.My
             ivProPicPhotoBlog = view.findViewById(R.id.ivProPicPhotoBlog);
             civProfilePhotoBlogs = view.findViewById(R.id.civProfilePhotoBlogs);
             llPhotoBlogs = view.findViewById(R.id.llPhotoBlogs);
+
+            llPhotoBlogs.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    mContext.startActivity(new Intent(mContext, ViewImageActivity.class));
+
+                }
+            });
         }
 
 

@@ -1,13 +1,11 @@
 package com.rokan.mychat.activities;
 
 import android.content.Intent;
-import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
-import android.widget.Switch;
 import android.widget.TextView;
 
 import com.rokan.mychat.R;
@@ -46,11 +44,11 @@ public class LandingActivity extends AppCompatActivity implements View.OnClickLi
 
                 break;
             case R.id.tvContinue:
-                startActivity(new Intent(activity, ProfileThirdActivity.class));
+                startActivity(new Intent(activity, UserPhotoBlogActivity.class));
                 break;
 
             case R.id.tvSkip:
-                startActivity(new Intent(activity, OtherActivity.class));
+                startActivity(new Intent(activity, MatchActivity.class));
                 break;
 
 
@@ -58,19 +56,4 @@ public class LandingActivity extends AppCompatActivity implements View.OnClickLi
     }
 
 
-    public void runSplash() {
-
-        final Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-
-               /* Intent intent = new Intent(SplashActivity.this, MainActivity.class);
-                startActivity(intent);
-                finish();*/
-
-            }
-        }, 4000);
-
-    }
 }

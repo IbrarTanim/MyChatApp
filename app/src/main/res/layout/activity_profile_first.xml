@@ -470,7 +470,7 @@
                     android:weightSum="2">
 
                     <ImageButton
-                        android:id="@+id/ibtnPhotoBlogs"
+                        android:id="@+id/ibtnPicturesFirst"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/zero"
                         android:layout_weight="1"
@@ -653,6 +653,7 @@
 
 
         <TextView
+            android:id="@+id/tvEdit"
             android:layout_width="@dimen/sixty"
             android:layout_height="@dimen/forty"
             android:layout_alignParentRight="true"

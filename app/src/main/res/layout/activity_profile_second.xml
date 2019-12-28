@@ -31,7 +31,7 @@
                 android:background="@color/transparent"
                 android:padding="@dimen/five"
                 android:scaleType="fitStart"
-                android:src="@drawable/ic_back_button_black" />
+                android:src="@mipmap/back_icon_decm" />
 
             <View
                 android:layout_width="@dimen/zero"
@@ -58,7 +58,7 @@
                 android:layout_weight="1"
                 android:background="@color/transparent"
                 android:scaleType="fitCenter"
-                android:src="@android:drawable/ic_menu_search" />
+                android:src="@mipmap/search_icon_decm" />
 
 
         </LinearLayout>
@@ -196,7 +196,7 @@
                             android:layout_height="match_parent"
                             android:background="@color/transparent"
                             android:padding="@dimen/three"
-                            android:src="@mipmap/profile_love_icon" />
+                            android:src="@mipmap/love_icon_decm_big" />
 
                         <TextView
                             android:layout_width="@dimen/twenty"
@@ -239,25 +239,27 @@
                 android:padding="@dimen/five"
                 android:background="@color/transparent"
                 android:scaleType="fitCenter"
-                android:src="@drawable/ic_profile_info_icon" />
+                android:src="@mipmap/info_icon_decm" />
 
             <ImageView
+                android:id="@+id/ivPictureProfileSecond"
                 android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:padding="@dimen/five"
                 android:background="@color/transparent"
                 android:scaleType="fitCenter"
-                android:src="@drawable/ic_profile_icon_picture" />
+                android:src="@mipmap/picture_icon_decm" />
 
             <ImageView
+                android:id="@+id/ivchatProfileSecond"
                 android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:padding="@dimen/five"
                 android:background="@color/transparent"
                 android:scaleType="fitCenter"
-                android:src="@drawable/ic_profile_message" />
+                android:src="@mipmap/message_icon_decm" />
 
 
         </LinearLayout>

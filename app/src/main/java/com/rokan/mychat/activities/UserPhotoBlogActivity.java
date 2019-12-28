@@ -1,33 +1,21 @@
 package com.rokan.mychat.activities;
 
-import android.content.res.Resources;
-import android.graphics.Rect;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
-import android.util.TypedValue;
-import android.view.View;
 
 import com.rokan.mychat.R;
-import com.rokan.mychat.adapters.HotListAdapter;
-import com.rokan.mychat.adapters.PhotoBlogsAdapter;
 import com.rokan.mychat.adapters.UserPhotoBlogsAdapter;
-import com.rokan.mychat.pojo.HotList;
-import com.rokan.mychat.pojo.LiveChat;
-import com.rokan.mychat.pojo.PhotoBlogs;
 import com.rokan.mychat.pojo.UserPhotoBlogs;
-import com.rokan.mychat.utilities.GridSpacingItemDecoration;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class ProfileThirdActivity extends AppCompatActivity {
+public class UserPhotoBlogActivity extends AppCompatActivity {
 
-    ProfileThirdActivity activity;
+    UserPhotoBlogActivity activity;
     private UserPhotoBlogsAdapter userPhotoBlogsAdapter;
     private List<UserPhotoBlogs> userPhotoBlogsList;
     private RecyclerView rvUserPhotoBlogs;
@@ -37,7 +25,7 @@ public class ProfileThirdActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile_third);
+        setContentView(R.layout.activity_user_photo_blog);
 
         activity = this;
         rvUserPhotoBlogs = findViewById(R.id.rvUserPhotoBlogs);

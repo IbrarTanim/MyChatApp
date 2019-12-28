@@ -1,22 +1,18 @@
 package com.rokan.mychat.activities;
 
 import android.content.Intent;
-import android.content.res.Resources;
-import android.graphics.Rect;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.TypedValue;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.rokan.mychat.R;
-import com.rokan.mychat.adapters.HotListAdapter;
 import com.rokan.mychat.adapters.LiveChatAdapter;
 import com.rokan.mychat.adapters.NewMatchesAdapter;
 import com.rokan.mychat.pojo.HotList;
@@ -27,9 +23,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MessagesActivity extends AppCompatActivity implements View.OnClickListener {
 
-    MainActivity activity;
+    MessagesActivity activity;
     private RecyclerView rvNewMatches;
     private RecyclerView rvLiveChat;
     LinearLayout llHotList, llNewMatches;
@@ -50,7 +46,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (getSupportActionBar() != null) {
             getSupportActionBar().setElevation(0);
         }
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_messages);
         activity = this;
 
         rvNewMatches = findViewById(R.id.rvNewMatches);
@@ -197,11 +193,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(activity, LandingActivity.class));
                 break;
             case R.id.ibChatRoom:
-                startActivity(new Intent(activity, PhotoBlogsActivity.class));
+                startActivity(new Intent(activity, PicturesActivity.class));
                 break;
 
             case R.id.ibNotification:
-                startActivity(new Intent(activity, ChattingActivity.class));
+                startActivity(new Intent(activity, ViewImageActivity.class));
                 break;
 
             case R.id.ibProfile:
@@ -209,7 +205,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.ivChatRequest:
-                startActivity(new Intent(activity, ProfileSecondActivity.class));
+                startActivity(new Intent(activity, MatchActivity.class));
                 break;
 
 

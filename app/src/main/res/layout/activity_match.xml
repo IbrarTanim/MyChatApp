@@ -10,6 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -33,7 +34,7 @@
                     android:gravity="center|bottom"
                     android:text="It's a Match!"
                     android:textColor="@color/white"
-                    android:textSize="@dimen/forty"
+                    android:textSize="@dimen/thirty"
                     android:textStyle="bold" />
 
                 <TextView
@@ -68,37 +69,75 @@
                     android:layout_weight="2" />
 
 
-                <TextView
-                    android:layout_width="match_parent"
+                <LinearLayout
+                    android:layout_width="250dp"
                     android:layout_height="@dimen/zero"
-                    android:layout_marginLeft="@dimen/twenty"
-                    android:layout_marginRight="@dimen/twenty"
-                    android:layout_weight="1"
-                    android:background="@drawable/login_screen_background"
-                    android:gravity="center"
-                    android:text="Send a Message"
-                    android:textColor="@color/gray"
-                    android:textSize="@dimen/twenty"
-                    android:textStyle="bold" />
+                    android:layout_gravity="center"
+                    android:layout_weight="1.25"
+                    android:background="@drawable/white_button_bg"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@color/transparent"
+                        android:padding="@dimen/five"
+                        android:src="@mipmap/send_icon" />
+
+
+                    <TextView
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        android:gravity="center"
+                        android:text="Send a Message"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/twenty"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/zero"
-                    android:layout_weight="1" />
+                    android:layout_weight="0.5" />
 
 
-                <TextView
-                    android:layout_width="match_parent"
+                <LinearLayout
+                    android:layout_width="250dp"
                     android:layout_height="@dimen/zero"
-                    android:layout_marginLeft="@dimen/twenty"
-                    android:layout_marginRight="@dimen/twenty"
-                    android:layout_weight="1"
-                    android:background="@drawable/login_screen_background"
-                    android:gravity="center"
-                    android:text="You and Sophie have liked each other"
-                    android:textColor="@color/gray"
-                    android:textSize="@dimen/fifteen"
-                    android:textStyle="bold" />
+                    android:layout_gravity="center"
+                    android:layout_weight="1.25"
+                    android:background="@drawable/white_button_bg"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@color/transparent"
+                        android:padding="@dimen/five"
+                        android:src="@mipmap/message_icon_decm" />
+
+
+                    <TextView
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        android:gravity="center"
+                        android:text="Keep Exploring"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/twenty"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
 
                 <View
                     android:layout_width="match_parent"
@@ -111,21 +150,26 @@
 
         </LinearLayout>
 
-        <ImageView
-            android:layout_width="220dp"
-            android:layout_height="220dp"
-            android:layout_centerInParent="true"
-            android:background="@color/transparent"
-            android:src="@mipmap/match_love_icon" />
-
-        <ImageView
+        <com.github.siyamed.shapeimageview.HeartImageView
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:layout_marginRight="30dp"
+            android:layout_centerInParent="true"
+            android:background="@color/transparent"
+            android:src="@mipmap/chatting"
+            app:siBorderColor="@color/white"
+            app:siBorderWidth="2dp" />
+
+        <com.github.siyamed.shapeimageview.HeartImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/transparent"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:background="@color/transparent"
-            android:src="@mipmap/match_love_icon" />
+            android:layout_marginRight="57dp"
+            android:src="@mipmap/find_your_love"
+            app:siBorderColor="@color/white"
+            app:siBorderWidth="2dp" />
+
 
     </RelativeLayout>
 
