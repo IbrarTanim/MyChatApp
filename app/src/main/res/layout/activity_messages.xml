@@ -159,7 +159,7 @@
                 android:weightSum="2">
 
                 <ImageButton
-                    android:id="@+id/ibtnPhotoBlogs"
+                    android:id="@+id/ibPictureMessages"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/zero"
                     android:layout_weight="1"
@@ -185,7 +185,7 @@
                 android:weightSum="2">
 
                 <ImageButton
-                    android:id="@+id/ibtMessage"
+                    android:id="@+id/ibMessageMessages"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/zero"
                     android:layout_weight="1"
@@ -213,7 +213,7 @@
                 android:weightSum="2">
 
                 <ImageButton
-                    android:id="@+id/ibChatRoom"
+                    android:id="@+id/ibChatRoomMessages"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/zero"
                     android:layout_weight="1"
@@ -241,7 +241,7 @@
                 android:weightSum="2">
 
                 <ImageButton
-                    android:id="@+id/ibNotification"
+                    android:id="@+id/ibActivitiesMessages"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/zero"
                     android:layout_weight="1"
@@ -269,7 +269,7 @@
                 android:weightSum="2">
 
                 <ImageButton
-                    android:id="@+id/ibProfile"
+                    android:id="@+id/ibProfileMessages"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/zero"
                     android:layout_weight="1"

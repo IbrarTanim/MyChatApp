@@ -74,7 +74,7 @@
         <android.support.v4.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="@dimen/zero"
-            android:layout_weight="18"
+            android:layout_weight="16"
             android:overScrollMode="never"
             android:scrollbars="none">
 
@@ -159,6 +159,157 @@
 
 
         </android.support.v4.widget.NestedScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="25">
+
+
+
+            <LinearLayout
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <ImageButton
+                    android:id="@+id/ibPicturePictures"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_camera" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="1"
+                    android:gravity="center|top"
+                    android:text="Pictures"
+                    android:textColor="@color/black"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <ImageButton
+                    android:id="@+id/ibMessagePictures"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:padding="@dimen/fifteen"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_message" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="1"
+                    android:gravity="center|top"
+                    android:text="Messages"
+                    android:textColor="@color/black"
+                    android:textStyle="normal"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <ImageButton
+                    android:id="@+id/ibChatRoomPictures"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:padding="@dimen/ten"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_chat_room" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="1"
+                    android:gravity="center|top"
+                    android:text="Chatrooms"
+                    android:textColor="@color/black"
+                    android:textStyle="normal"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <ImageButton
+                    android:id="@+id/ibActivitiesPictures"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:padding="@dimen/ten"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_notification" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="1"
+                    android:gravity="center|top"
+                    android:text="Activities"
+                    android:textColor="@color/black"
+                    android:textStyle="normal"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <ImageButton
+                    android:id="@+id/ibProfilePictures"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:padding="@dimen/ten"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_profile" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="1"
+                    android:gravity="center|top"
+                    android:text="Profile"
+                    android:textColor="@color/black"
+                    android:textStyle="normal"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
 
 
     </LinearLayout>

@@ -34,10 +34,9 @@ public class MessagesActivity extends AppCompatActivity implements View.OnClickL
     private List<LiveChat> liveChatList;
     private NewMatchesAdapter newMatchesAdapter;
     LinearLayoutManager layoutManagerNewMatches;
-    //LinearLayoutManager layoutManagerLiveChat;
     boolean isLetterShowing = false;
 
-    ImageButton ibtnPhotoBlogs, ibtMessage, ibChatRoom, ibNotification, ibProfile;
+    ImageButton ibPictureMessages, ibMessageMessages, ibChatRoomMessages, ibActivitiesMessages, ibProfileMessages;
     ImageView ivChatRequest;
 
     @Override
@@ -53,42 +52,31 @@ public class MessagesActivity extends AppCompatActivity implements View.OnClickL
         rvLiveChat = findViewById(R.id.rvLiveChat);
         llHotList = findViewById(R.id.llHotList);
         llNewMatches = findViewById(R.id.llNewMatches);
-        ibtnPhotoBlogs = findViewById(R.id.ibtnPhotoBlogs);
-        ibtMessage = findViewById(R.id.ibtMessage);
-        ibChatRoom = findViewById(R.id.ibChatRoom);
-        ibNotification = findViewById(R.id.ibNotification);
-        ibProfile = findViewById(R.id.ibProfile);
+        ibPictureMessages = findViewById(R.id.ibPictureMessages);
+        ibMessageMessages = findViewById(R.id.ibMessageMessages);
+        ibChatRoomMessages = findViewById(R.id.ibChatRoomMessages);
+        ibActivitiesMessages = findViewById(R.id.ibActivitiesMessages);
+        ibProfileMessages = findViewById(R.id.ibProfileMessages);
         ivChatRequest = findViewById(R.id.ivChatRequest);
 
-        ibtnPhotoBlogs.setOnClickListener(this);
-        ibtMessage.setOnClickListener(this);
-        ibChatRoom.setOnClickListener(this);
-        ibNotification.setOnClickListener(this);
-        ibProfile.setOnClickListener(this);
+        ibPictureMessages.setOnClickListener(this);
+        ibMessageMessages.setOnClickListener(this);
+        ibChatRoomMessages.setOnClickListener(this);
+        ibActivitiesMessages.setOnClickListener(this);
+        ibProfileMessages.setOnClickListener(this);
         ivChatRequest.setOnClickListener(this);
-
 
         hotLists = new ArrayList<>();
         newMatchesAdapter = new NewMatchesAdapter(activity, hotLists);
-
         liveChatList = new ArrayList<>();
         liveChatAdapter = new LiveChatAdapter(activity, liveChatList);
-
-
         layoutManagerNewMatches = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
-        //layoutManagerLiveChat = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
-
 
         RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(activity, 1);
         rvLiveChat.setLayoutManager(mLayoutManager);
         rvLiveChat.addItemDecoration(new GridSpacingItemDecoration(1, GridSpacingItemDecoration.dpToPx(10, activity), true));
         rvLiveChat.setItemAnimator(new DefaultItemAnimator());
         rvLiveChat.setAdapter(liveChatAdapter);
-
-
-        //rvLiveChat.setLayoutManager(layoutManagerLiveChat);
-        //rvLiveChat.setAdapter(liveChatAdapter);
-
 
         rvNewMatches.setLayoutManager(layoutManagerNewMatches);
         rvNewMatches.setAdapter(newMatchesAdapter);
@@ -186,31 +174,37 @@ public class MessagesActivity extends AppCompatActivity implements View.OnClickL
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.ibtnPhotoBlogs:
-                startActivity(new Intent(activity, LoginActivity.class));
-                break;
-            case R.id.ibtMessage:
-                startActivity(new Intent(activity, LandingActivity.class));
-                break;
-            case R.id.ibChatRoom:
+            case R.id.ibPictureMessages:
                 startActivity(new Intent(activity, PicturesActivity.class));
+                finish();
+                break;
+            case R.id.ibMessageMessages:
+                startActivity(new Intent(activity, MessagesActivity.class));
+                finish();
+                break;
+            case R.id.ibChatRoomMessages:
+                startActivity(new Intent(activity, ChatRoomsActivity.class));
+                finish();
                 break;
 
-            case R.id.ibNotification:
-                startActivity(new Intent(activity, ViewImageActivity.class));
+            case R.id.ibActivitiesMessages:
+                startActivity(new Intent(activity, ActivitiesActivity.class));
+                finish();
                 break;
 
-            case R.id.ibProfile:
+            case R.id.ibProfileMessages:
                 startActivity(new Intent(activity, ProfileFirstActivity.class));
+                finish();
                 break;
 
             case R.id.ivChatRequest:
                 startActivity(new Intent(activity, MatchActivity.class));
+                finish();
                 break;
-
-
         }
     }
+
+
 
 
 }

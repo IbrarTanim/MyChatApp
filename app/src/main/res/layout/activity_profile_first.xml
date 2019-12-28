@@ -46,7 +46,6 @@
                     android:layout_weight="7" />
 
 
-
             </LinearLayout>
 
             <LinearLayout
@@ -268,7 +267,7 @@
                         <View
                             android:layout_width="@dimen/zero"
                             android:layout_height="match_parent"
-                            android:layout_weight="3"/>
+                            android:layout_weight="3" />
 
                         <LinearLayout
                             android:layout_width="@dimen/zero"
@@ -470,7 +469,7 @@
                     android:weightSum="2">
 
                     <ImageButton
-                        android:id="@+id/ibtnPicturesFirst"
+                        android:id="@+id/ibPictureProfile"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/zero"
                         android:layout_weight="1"
@@ -496,7 +495,7 @@
                     android:weightSum="2">
 
                     <ImageButton
-                        android:id="@+id/ibtMessage"
+                        android:id="@+id/ibMessageProfile"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/zero"
                         android:layout_weight="1"
@@ -524,7 +523,7 @@
                     android:weightSum="2">
 
                     <ImageButton
-                        android:id="@+id/ibChatRoom"
+                        android:id="@+id/ibChatRoomProfile"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/zero"
                         android:layout_weight="1"
@@ -552,7 +551,7 @@
                     android:weightSum="2">
 
                     <ImageButton
-                        android:id="@+id/ibNotification"
+                        android:id="@+id/ibActivitiesProfile"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/zero"
                         android:layout_weight="1"
@@ -580,6 +579,7 @@
                     android:weightSum="2">
 
                     <ImageButton
+                        android:id="@+id/ibProfileProfile"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/zero"
                         android:layout_weight="1"
@@ -657,8 +657,8 @@
             android:layout_width="@dimen/sixty"
             android:layout_height="@dimen/forty"
             android:layout_alignParentRight="true"
-            android:layout_marginRight="20dp"
             android:layout_marginTop="350dp"
+            android:layout_marginRight="20dp"
             android:gravity="center"
             android:text="Edit"
             android:textColor="@color/black"

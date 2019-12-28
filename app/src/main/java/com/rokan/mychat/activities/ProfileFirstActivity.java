@@ -11,7 +11,7 @@ import com.rokan.mychat.R;
 
 public class ProfileFirstActivity extends AppCompatActivity implements View.OnClickListener {
     ProfileFirstActivity activity;
-    ImageButton ibtnPicturesFirst;
+    ImageButton ibPictureProfile, ibMessageProfile, ibChatRoomProfile, ibActivitiesProfile, ibProfileProfile;
     TextView tvEdit;
 
     @Override
@@ -20,22 +20,50 @@ public class ProfileFirstActivity extends AppCompatActivity implements View.OnCl
         setContentView(R.layout.activity_profile_first);
         activity = this;
 
-        ibtnPicturesFirst = findViewById(R.id.ibtnPicturesFirst);
+        ibPictureProfile = findViewById(R.id.ibPictureProfile);
+        ibMessageProfile = findViewById(R.id.ibMessageProfile);
+        ibChatRoomProfile = findViewById(R.id.ibChatRoomProfile);
+        ibActivitiesProfile = findViewById(R.id.ibActivitiesProfile);
+        ibProfileProfile = findViewById(R.id.ibProfileProfile);
         tvEdit = findViewById(R.id.tvEdit);
 
-        ibtnPicturesFirst.setOnClickListener(this);
+        ibPictureProfile.setOnClickListener(this);
+        ibMessageProfile.setOnClickListener(this);
+        ibChatRoomProfile.setOnClickListener(this);
+        ibActivitiesProfile.setOnClickListener(this);
+        ibProfileProfile.setOnClickListener(this);
         tvEdit.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.ibtnPicturesFirst:
+            case R.id.ibPictureProfile:
                 startActivity(new Intent(activity, PrivateChatActivity.class));
+                finish();
+                break;
+            case R.id.ibMessageProfile:
+                startActivity(new Intent(activity, LandingActivity.class));
+                finish();
+                break;
+            case R.id.ibChatRoomProfile:
+                startActivity(new Intent(activity, PicturesActivity.class));
+                finish();
+                break;
+
+            case R.id.ibActivitiesProfile:
+                startActivity(new Intent(activity, ViewImageActivity.class));
+                finish();
+                break;
+
+            case R.id.ibProfileProfile:
+                startActivity(new Intent(activity, ProfileFirstActivity.class));
+                finish();
                 break;
 
             case R.id.tvEdit:
                 startActivity(new Intent(activity, ProfileSecondActivity.class));
+                finish();
                 break;
 
         }

@@ -1,10 +1,13 @@
 package com.rokan.mychat.activities;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
+import android.view.View;
+import android.widget.ImageButton;
 
 import com.rokan.mychat.R;
 import com.rokan.mychat.adapters.HotListAdapter;
@@ -15,7 +18,7 @@ import com.rokan.mychat.pojo.PhotoBlogs;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PicturesActivity extends AppCompatActivity {
+public class PicturesActivity extends AppCompatActivity implements View.OnClickListener {
 
     PicturesActivity activity;
     private PhotoBlogsAdapter photoBlogsAdapter;
@@ -23,10 +26,10 @@ public class PicturesActivity extends AppCompatActivity {
     private RecyclerView rvPhotoBlogs;
     private RecyclerView rvHotList;
     private List<HotList> hotLists;
-    //LinearLayoutManager layoutManagerPhotoBlogs;
     private HotListAdapter hotListAdapter;
     LinearLayoutManager layoutManager;
 
+    ImageButton ibPicturePictures, ibMessagePictures, ibChatRoomPictures, ibActivitiesPictures, ibProfilePictures;
 
 
     @Override
@@ -37,12 +40,15 @@ public class PicturesActivity extends AppCompatActivity {
         activity = this;
         rvHotList = findViewById(R.id.rvHotList);
         rvPhotoBlogs = findViewById(R.id.rvPhotoBlogs);
+
+        ibPicturePictures = findViewById(R.id.ibPicturePictures);
+        ibMessagePictures = findViewById(R.id.ibMessagePictures);
+        ibChatRoomPictures = findViewById(R.id.ibChatRoomPictures);
+        ibActivitiesPictures = findViewById(R.id.ibActivitiesPictures);
+        ibProfilePictures = findViewById(R.id.ibProfilePictures);
+
         photoBlogsList = new ArrayList<>();
-
-
         photoBlogsAdapter = new PhotoBlogsAdapter(activity, photoBlogsList);
-        //layoutManagerPhotoBlogs = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
-
         hotLists = new ArrayList<>();
         hotListAdapter = new HotListAdapter(activity, hotLists);
 
@@ -50,17 +56,16 @@ public class PicturesActivity extends AppCompatActivity {
         rvHotList.setLayoutManager(layoutManager);
         rvHotList.setAdapter(hotListAdapter);
 
-        /*RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(activity, 2);
-        rvPhotoBlogs.setLayoutManager(mLayoutManager);
-        rvPhotoBlogs.addItemDecoration(new GridSpacingItemDecoration(2, GridSpacingItemDecoration.dpToPx(10, activity), true));
-        rvPhotoBlogs.setItemAnimator(new DefaultItemAnimator());*/
-
         StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(2, LinearLayoutManager.VERTICAL);
         rvPhotoBlogs.setLayoutManager(staggeredGridLayoutManager);
         rvPhotoBlogs.setAdapter(photoBlogsAdapter);
 
 
-
+        ibPicturePictures.setOnClickListener(this);
+        ibMessagePictures.setOnClickListener(this);
+        ibChatRoomPictures.setOnClickListener(this);
+        ibActivitiesPictures.setOnClickListener(this);
+        ibProfilePictures.setOnClickListener(this);
 
 
         preparePhotoBlogs();
@@ -158,6 +163,35 @@ public class PicturesActivity extends AppCompatActivity {
 
 
         photoBlogsAdapter.notifyDataSetChanged();
+    }
+
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.ibPicturePictures:
+                startActivity(new Intent(activity, PicturesActivity.class));
+                finish();
+                break;
+            case R.id.ibMessagePictures:
+                startActivity(new Intent(activity, MessagesActivity.class));
+                finish();
+                break;
+            case R.id.ibChatRoomPictures:
+                startActivity(new Intent(activity, ChatRoomsActivity.class));
+                finish();
+                break;
+
+            case R.id.ibActivitiesPictures:
+                startActivity(new Intent(activity, ActivitiesActivity.class));
+                finish();
+                break;
+
+            case R.id.ibProfilePictures:
+                startActivity(new Intent(activity, ProfileFirstActivity.class));
+                finish();
+                break;
+        }
     }
 
 
