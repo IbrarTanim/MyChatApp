@@ -17,7 +17,7 @@ public class LandingActivity extends AppCompatActivity implements View.OnClickLi
 
     LandingActivity activity;
     ImageView ivInfo;
-    TextView tvContinue;
+    TextView tvContinue, tvSkip;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,8 +27,10 @@ public class LandingActivity extends AppCompatActivity implements View.OnClickLi
 
         ivInfo = findViewById(R.id.ivInfo);
         tvContinue = findViewById(R.id.tvContinue);
+        tvSkip = findViewById(R.id.tvSkip);
         ivInfo.setOnClickListener(this);
         tvContinue.setOnClickListener(this);
+        tvSkip.setOnClickListener(this);
     }
 
     @Override
@@ -46,6 +48,12 @@ public class LandingActivity extends AppCompatActivity implements View.OnClickLi
             case R.id.tvContinue:
                 startActivity(new Intent(activity, ProfileThirdActivity.class));
                 break;
+
+            case R.id.tvSkip:
+                startActivity(new Intent(activity, OtherActivity.class));
+                break;
+
+
         }
     }
 

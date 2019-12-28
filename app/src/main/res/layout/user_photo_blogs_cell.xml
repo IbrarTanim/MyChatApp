@@ -31,6 +31,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="fitXY"
+            android:paddingBottom="@dimen/ten"
+            android:paddingLeft="@dimen/ten"
             android:src="@mipmap/chatting"
             app:riv_border_color="@color/transparent"
             app:riv_mutate_background="true"

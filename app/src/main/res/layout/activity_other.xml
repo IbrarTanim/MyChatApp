@@ -5,109 +5,129 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:weightSum="11">
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/zero"
-            android:layout_weight="1" />
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/zero"
-            android:layout_weight="5"
-            android:background="@color/app_color_left"
+            android:layout_height="match_parent"
             android:orientation="vertical"
-            android:weightSum="5">
+            android:weightSum="10">
 
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/zero"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="It's a Match!"
-                android:textColor="@color/white"
-                android:textSize="@dimen/twenty"
-                android:textStyle="bold" />
+                android:layout_weight="5"
+                android:background="@color/app_color_left"
+                android:orientation="vertical"
+                android:weightSum="5">
 
-            <TextView
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="1.5"
+                    android:gravity="center|bottom"
+                    android:text="It's a Match!"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/forty"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:text="You and Sophie have liked each other"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/twenty"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="3" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/zero"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="You and Sophie have liked each other"
-                android:textColor="@color/white"
-                android:textSize="@dimen/fifteen"
-                android:textStyle="bold" />
+                android:layout_weight="5"
+                android:background="@color/app_color_right"
+                android:orientation="vertical"
+                android:weightSum="7">
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/zero"
-                android:layout_weight="3" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="2" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_marginLeft="@dimen/twenty"
+                    android:layout_marginRight="@dimen/twenty"
+                    android:layout_weight="1"
+                    android:background="@drawable/login_screen_background"
+                    android:gravity="center"
+                    android:text="Send a Message"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/twenty"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="1" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_marginLeft="@dimen/twenty"
+                    android:layout_marginRight="@dimen/twenty"
+                    android:layout_weight="1"
+                    android:background="@drawable/login_screen_background"
+                    android:gravity="center"
+                    android:text="You and Sophie have liked each other"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/fifteen"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="2" />
+
+
+            </LinearLayout>
 
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/zero"
-            android:layout_weight="5"
-            android:background="@color/app_color_right"
-            android:orientation="vertical"
-            android:weightSum="7">
+        <ImageView
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_centerInParent="true"
+            android:background="@color/transparent"
+            android:src="@mipmap/match_love_icon" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/zero"
-                android:layout_weight="2" />
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:src="@mipmap/match_love_icon" />
 
+    </RelativeLayout>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/zero"
-                android:layout_marginLeft="@dimen/twenty"
-                android:layout_marginRight="@dimen/twenty"
-                android:layout_weight="1"
-                android:background="@drawable/login_btn_bg"
-                android:gravity="center"
-                android:text="Send a Message"
-                android:textColor="@color/white"
-                android:textSize="@dimen/twenty"
-                android:textStyle="bold" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/zero"
-                android:layout_weight="1" />
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/zero"
-                android:layout_marginLeft="@dimen/twenty"
-                android:layout_marginRight="@dimen/twenty"
-                android:layout_weight="1"
-                android:background="@drawable/login_btn_bg"
-                android:gravity="center"
-                android:text="You and Sophie have liked each other"
-                android:textColor="@color/white"
-                android:textSize="@dimen/fifteen"
-                android:textStyle="bold" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/zero"
-                android:layout_weight="2" />
-
-
-        </LinearLayout>
-
-
-    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

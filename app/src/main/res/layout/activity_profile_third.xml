@@ -1,318 +1,313 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ScrollView
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="@dimen/five"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:orientation="vertical"
+        android:weightSum="24">
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_weight="2"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0.0px"
+            android:elevation="5dp"
+            card_view:cardElevation="5dp"
+            card_view:cardPreventCornerOverlap="false">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/chatting"
+                    app:riv_border_color="@color/transparent"
+                    app:riv_mutate_background="true"
+                    app:riv_oval="false" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/thirty"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="Samnata's Photo Blogs"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/eighteen"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="@dimen/forty"
+                    android:layout_height="@dimen/forty"
+                    android:background="@color/transparent"
+                    android:layout_marginTop="@dimen/thirty"
+                    android:padding="@dimen/ten"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_back_button" />
+
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:weightSum="20">
-
-            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/zero"
-                android:layout_weight="2"
-                android:clipChildren="false"
-                android:clipToPadding="false"
-                android:divider="@android:color/transparent"
-                android:dividerHeight="0.0px"
-                android:elevation="5dp"
-                app:cardCornerRadius="@dimen/twenty"
-                card_view:cardElevation="5dp"
-                card_view:cardPreventCornerOverlap="false">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="fitXY"
-                        android:src="@mipmap/chatting"
-                        app:riv_corner_radius="@dimen/twenty"
-                        app:riv_border_color="@color/transparent"
-                        app:riv_mutate_background="true"
-                        app:riv_oval="false" />
+            android:layout_height="@dimen/zero"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/ten"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_marginRight="@dimen/ten"
+            android:background="@drawable/profile_third_bottom_bg"
+            android:orientation="horizontal"
+            android:weightSum="19">
 
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/thirty"
-                        android:layout_centerInParent="true"
-                        android:gravity="center"
-                        android:text="Samnata's Photo Blogs"
-                        android:textColor="@color/white"
-                        android:textSize="@dimen/eighteen"
-                        android:textStyle="bold" />
-
-                    <ImageView
-                        android:layout_width="@dimen/sixty"
-                        android:layout_height="@dimen/sixty"
-                        android:background="@color/transparent"
-                        android:padding="@dimen/fifteen"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/ic_back_button" />
-
-
-                </RelativeLayout>
-
-
-            </android.support.v7.widget.CardView>
+            <View
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="3" />
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/zero"
-                android:layout_weight="1"
-                android:background="@drawable/profile_second_bottom_bg"
-                android:orientation="horizontal"
-                android:weightSum="18">
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:orientation="vertical"
+                android:weightSum="2">
 
-
-                <View
-                    android:layout_width="@dimen/zero"
-                    android:layout_height="match_parent"
-                    android:layout_weight="3" />
-
-                <LinearLayout
-                    android:layout_width="@dimen/zero"
-                    android:layout_height="match_parent"
-                    android:layout_weight="5"
-                    android:orientation="vertical"
-                    android:weightSum="2">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/zero"
-                        android:layout_weight="1"
-                        android:gravity="center|left"
-                        android:text="Liked me"
-                        android:textColor="@color/chat_text_color"
-                        android:textSize="@dimen/twelve"
-                        android:textStyle="bold" />
-
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/zero"
-                        android:layout_weight="1"
-                        android:orientation="horizontal"
-                        android:weightSum="3">
-
-                        <TextView
-                            android:layout_width="@dimen/zero"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center|left"
-                            android:text="485"
-                            android:textColor="@color/chat_text_color"
-                            android:textSize="@dimen/fifteen"
-                            android:textStyle="normal" />
-
-                        <ImageView
-                            android:layout_width="@dimen/zero"
-                            android:layout_height="match_parent"
-                            android:layout_weight="2"
-                            android:background="@color/transparent"
-                            android:padding="@dimen/five"
-                            android:scaleType="fitStart"
-                            android:src="@drawable/ic_profile_one_liked_me" />
-                    </LinearLayout>
-
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/zero"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="Visited me"
-                        android:textColor="@color/black"
-                        android:textSize="@dimen/twelve"
-                        android:textStyle="bold" />
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="@dimen/zero"
-                    android:layout_height="match_parent"
-                    android:layout_weight="5"
-                    android:orientation="vertical"
-                    android:weightSum="2">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/zero"
-                        android:layout_weight="1"
-                        android:gravity="center|left"
-                        android:text="Favorited me"
-                        android:textColor="@color/chat_text_color"
-                        android:textSize="@dimen/twelve"
-                        android:textStyle="bold" />
-
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/zero"
-                        android:layout_weight="1"
-                        android:orientation="horizontal"
-                        android:weightSum="3">
-
-                        <TextView
-                            android:layout_width="@dimen/zero"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center|left"
-                            android:text="485"
-                            android:textColor="@color/chat_text_color"
-                            android:textSize="@dimen/fifteen"
-                            android:textStyle="normal" />
-
-                        <ImageView
-                            android:layout_width="@dimen/zero"
-                            android:layout_height="match_parent"
-                            android:layout_weight="2"
-                            android:background="@color/transparent"
-                            android:padding="@dimen/five"
-                            android:scaleType="fitStart"
-                            android:src="@drawable/ic_profile_one_favorite_me" />
-                    </LinearLayout>
-
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/zero"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="Visited me"
-                        android:textColor="@color/black"
-                        android:textSize="@dimen/twelve"
-                        android:textStyle="bold" />
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="@dimen/zero"
-                    android:layout_height="match_parent"
-                    android:layout_weight="5"
-                    android:orientation="vertical"
-                    android:weightSum="2">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/zero"
-                        android:layout_weight="1"
-                        android:gravity="center|left"
-                        android:text="Visited me"
-                        android:textColor="@color/chat_text_color"
-                        android:textSize="@dimen/twelve"
-                        android:textStyle="bold" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/zero"
-                        android:layout_weight="1"
-                        android:orientation="horizontal"
-                        android:weightSum="3">
-
-                        <TextView
-                            android:layout_width="@dimen/zero"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center|left"
-                            android:text="485"
-                            android:textColor="@color/chat_text_color"
-                            android:textSize="@dimen/fifteen"
-                            android:textStyle="normal" />
-
-                        <ImageView
-                            android:layout_width="@dimen/zero"
-                            android:layout_height="match_parent"
-                            android:layout_weight="2"
-                            android:background="@color/transparent"
-                            android:padding="@dimen/five"
-                            android:scaleType="fitStart"
-                            android:src="@drawable/ic_profile_one_visited_me" />
-                    </LinearLayout>
-
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/zero"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="Visited me"
-                        android:textColor="@color/black"
-                        android:textSize="@dimen/twelve"
-                        android:textStyle="bold" />
-
-
-                </LinearLayout>
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/zero"
-                android:layout_weight="1"
-                android:orientation="horizontal"
-                android:weightSum="4">
-
-                <ImageView
-                    android:layout_width="@dimen/zero"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="@color/transparent"
-                    android:padding="@dimen/ten"
-                    android:scaleType="fitStart"
-                    android:src="@mipmap/bell_icon" />
-
-                <View
-                    android:layout_width="@dimen/zero"
-                    android:layout_height="match_parent"
-                    android:layout_weight="2" />
-
-                <ImageView
-                    android:layout_width="@dimen/zero"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="@color/transparent"
-                    android:padding="@dimen/ten"
-                    android:scaleType="fitEnd"
-                    android:src="@mipmap/blac_plus_icon" />
-
-            </LinearLayout>
-
-
-
-                <android.support.v7.widget.RecyclerView
-                    android:id="@+id/rvUserPhotoBlogs"
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/zero"
-                    android:layout_weight="16"
-                    android:nestedScrollingEnabled="false"
-                    android:overScrollMode="never"
-                    android:scrollbars="none" />
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="Liked"
+                    android:textColor="@color/chat_text_color"
+                    android:textSize="@dimen/twelve"
+                    android:textStyle="bold" />
 
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:text="485"
+                        android:textColor="@color/chat_text_color"
+                        android:textSize="@dimen/fifteen"
+                        android:textStyle="normal" />
+
+                    <ImageView
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@color/transparent"
+                        android:padding="@dimen/five"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/ic_profile_one_liked_me" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Visited me"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/twelve"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="Favorited"
+                    android:textColor="@color/chat_text_color"
+                    android:textSize="@dimen/twelve"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:text="485"
+                        android:textColor="@color/chat_text_color"
+                        android:textSize="@dimen/fifteen"
+                        android:textStyle="normal" />
+
+                    <ImageView
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@color/transparent"
+                        android:padding="@dimen/five"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/ic_profile_one_favorite_me" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Visited me"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/twelve"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="Visited"
+                    android:textColor="@color/chat_text_color"
+                    android:textSize="@dimen/twelve"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:text="485"
+                        android:textColor="@color/chat_text_color"
+                        android:textSize="@dimen/fifteen"
+                        android:textStyle="normal" />
+
+                    <ImageView
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@color/transparent"
+                        android:padding="@dimen/five"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/ic_profile_one_visited_me" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Visited me"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/twelve"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <ImageView
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:padding="@dimen/ten"
+                android:scaleType="fitStart"
+                android:src="@mipmap/bell_icon" />
+
+            <View
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="2" />
+
+            <ImageView
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:padding="@dimen/ten"
+                android:scaleType="fitEnd"
+                android:src="@mipmap/add_photo_black" />
 
         </LinearLayout>
 
 
-    </ScrollView>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvUserPhotoBlogs"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero"
+            android:layout_weight="20"
+            android:nestedScrollingEnabled="false"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
 
 
-</android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.OnlyStatusBar">
-        <activity android:name=".activities.OtherActivity"></activity>
+        <activity android:name=".activities.ProfileFourActivity"></activity>
+        <activity
+            android:name=".activities.OtherActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme.OnlyStatusBar" />
         <activity
             android:name=".activities.ProfileThirdActivity"
             android:screenOrientation="sensorPortrait"
