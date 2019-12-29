@@ -1,5 +1,6 @@
 package com.rokan.mychat.activities;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -83,6 +84,13 @@ public class UserPhotoBlogActivity extends AppCompatActivity {
 
 
         userPhotoBlogsAdapter.notifyDataSetChanged();
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        startActivity(new Intent(activity, ProfileSecondActivity.class));
+        finish();
     }
 
 

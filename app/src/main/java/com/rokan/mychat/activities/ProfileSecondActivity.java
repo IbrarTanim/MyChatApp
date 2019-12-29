@@ -31,11 +31,20 @@ public class ProfileSecondActivity extends AppCompatActivity implements View.OnC
         switch (view.getId()) {
             case R.id.ivPictureProfileSecond:
                 startActivity(new Intent(activity, UserPhotoBlogActivity.class));
+                finish();
                 break;
             case R.id.ivchatProfileSecond:
                 startActivity(new Intent(activity, PrivateChatActivity.class));
+                finish();
                 break;
 
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        startActivity(new Intent(activity, ProfileFirstActivity.class));
+        finish();
     }
 }
