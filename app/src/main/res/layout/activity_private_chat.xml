@@ -14,7 +14,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="@dimen/zero"
-            android:layout_weight="0.5"/>
+            android:layout_weight="0.5" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -79,8 +79,8 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="@dimen/zero"
-            android:layout_weight="0.03"
-            android:background="@color/color_b" />
+            android:layout_weight="0.01"
+            android:background="@color/message_text_color" />
 
 
         <android.support.v4.widget.NestedScrollView
@@ -97,30 +97,50 @@
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/ten"
-                    android:padding="@dimen/fifteen"
                     android:layout_weight="2"
                     android:background="@drawable/chat_bg_me"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintLeft_toLeftOf="parent"
                     android:gravity="left"
+                    android:padding="@dimen/fifteen"
                     android:text="Let's try to run your application. I assume you have connected your actual Android Mobile device with your computer. To run the app from android studio"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/fifteen" />
-                <TextView
-                    android:id="@+id/tvTextAnother"
-                    android:layout_width="250dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/ten"
-                    android:padding="@dimen/fifteen"
-                    android:layout_weight="2"
-                    android:background="@drawable/chat_bg_another"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tvTextMe"
-                    android:gravity="left"
-                    android:text="Let's try to run your application. I assume you have connected your actual Android Mobile device with your computer. To run the app from android studio"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/fifteen" />
+                    android:textSize="@dimen/fifteen"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
+
+                <RelativeLayout
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/ten"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTextMe">
+
+
+                    <TextView
+                        android:id="@+id/tvTextAnother"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/fifteen"
+                        android:layout_weight="2"
+                        android:background="@drawable/chat_bg_another"
+                        android:gravity="left"
+                        android:paddingBottom="@dimen/ten"
+                        android:paddingLeft="@dimen/ten"
+                        android:paddingTop="@dimen/ten"
+                        android:paddingRight="@dimen/fifty"
+                        android:text="Let's try to run your application. I assume you have connected your actual Android Mobile device with your computer. To run the app from android studio"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/fifteen" />
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/ten"
+                        android:background="@drawable/making_corner" />
+
+
+                </RelativeLayout>
 
 
             </android.support.constraint.ConstraintLayout>
@@ -131,16 +151,15 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="@dimen/zero"
-            android:layout_weight="0.03"
-            android:background="@color/color_b" />
+            android:layout_weight="0.01"
+            android:background="@color/message_text_color" />
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/zero"
-            android:layout_weight="1"
             android:layout_margin="@dimen/five"
-            android:background="@drawable/profile_third_bottom_bg"
+            android:layout_weight="1"
             android:orientation="horizontal"
             android:weightSum="10">
 
