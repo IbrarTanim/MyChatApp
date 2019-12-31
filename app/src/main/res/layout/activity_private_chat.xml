@@ -65,13 +65,30 @@
                 android:textColor="@color/black"
                 android:textSize="@dimen/fifteen" />
 
-            <de.hdodenhof.circleimageview.CircleImageView
+            <RelativeLayout
                 android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
-                android:layout_weight="2"
-                android:background="@color/transparent"
-                android:padding="@dimen/ten"
-                android:src="@mipmap/chatting" />
+                android:layout_weight="2">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:padding="@dimen/ten"
+                    android:src="@mipmap/chatting" />
+
+                <TextView
+                    android:layout_width="@dimen/twenty"
+                    android:layout_height="@dimen/twenty"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/rounded_textview"
+                    android:gravity="center"
+                    android:text="16"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/ten" />
+            </RelativeLayout>
 
 
         </LinearLayout>
@@ -96,8 +113,8 @@
                 <RelativeLayout
                     android:id="@+id/rlTextMe"
                     android:layout_width="250dp"
-                    android:layout_marginTop="@dimen/twenty"
                     android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/twenty"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
 
