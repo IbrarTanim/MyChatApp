@@ -2,12 +2,8 @@
 
     <solid android:color="@color/white" />
 
-    <stroke android:color="@color/transparent" />
-
     <corners
-
-        android:bottomLeftRadius="@dimen/sixty"
-        android:topRightRadius="@dimen/fifteen" />
+        android:bottomLeftRadius="@dimen/sixty" />
 
 
 </shape>
