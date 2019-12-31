@@ -58,7 +58,7 @@
                 android:layout_weight="1"
                 android:background="@color/transparent"
                 android:scaleType="fitCenter"
-                android:src="@mipmap/search_icon_decm" />
+                android:src="@android:drawable/ic_menu_search" />
 
 
         </LinearLayout>
