@@ -33,13 +33,35 @@
                 android:src="@mipmap/back_icon_decm" />
 
 
-            <de.hdodenhof.circleimageview.CircleImageView
+
+            <RelativeLayout
                 android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
-                android:layout_weight="2"
-                android:background="@color/transparent"
-                android:padding="@dimen/ten"
-                android:src="@mipmap/chatting" />
+                android:layout_weight="2">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:padding="@dimen/ten"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@color/app_color_left"
+                    android:src="@mipmap/chatting" />
+
+                <TextView
+                    android:layout_width="@dimen/twenty"
+                    android:layout_height="@dimen/twenty"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/rounded_textview"
+                    android:gravity="center"
+                    android:text="12"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/ten" />
+
+            </RelativeLayout>
+
 
 
             <TextView
@@ -47,7 +69,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="2"
                 android:gravity="center|left"
-                android:text="Kelly"
+                android:text="Jelly"
                 android:textColor="@color/black"
                 android:textSize="@dimen/fifteen" />
 
@@ -76,6 +98,8 @@
                     android:layout_height="match_parent"
                     android:background="@color/transparent"
                     android:padding="@dimen/ten"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@color/app_color_right"
                     android:src="@mipmap/chatting" />
 
                 <TextView
@@ -88,6 +112,7 @@
                     android:text="16"
                     android:textColor="@color/black"
                     android:textSize="@dimen/ten" />
+
             </RelativeLayout>
 
 
@@ -97,7 +122,7 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/zero"
             android:layout_weight="0.02"
-            android:background="@color/photo_blogs_transparent" />
+            android:background="@color/message_text_color" />
 
 
         <android.support.v4.widget.NestedScrollView
@@ -188,7 +213,7 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/zero"
             android:layout_weight="0.02"
-            android:background="@color/photo_blogs_transparent" />
+            android:background="@color/message_text_color" />
 
 
         <LinearLayout
