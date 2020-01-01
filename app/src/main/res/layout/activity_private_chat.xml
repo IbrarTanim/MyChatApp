@@ -125,8 +125,8 @@
 
         <android.support.v4.widget.NestedScrollView
             android:layout_width="match_parent"
-            android:layout_marginBottom="@dimen/ten"
             android:layout_height="@dimen/zero"
+            android:layout_marginBottom="@dimen/ten"
             android:layout_weight="8">
 
             <android.support.constraint.ConstraintLayout
@@ -258,8 +258,6 @@
 
 
                 </RelativeLayout>
-
-
 
 
             </android.support.constraint.ConstraintLayout>
