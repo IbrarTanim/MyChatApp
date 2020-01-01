@@ -1,15 +1,18 @@
 package com.rokan.mychat.activities;
 
 import android.content.Intent;
+import android.support.v4.widget.NestedScrollView;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
+import android.view.View;
+import android.widget.ImageView;
 
 import com.rokan.mychat.R;
 import com.rokan.mychat.adapters.PrivateChatAdapter;
-import com.rokan.mychat.adapters.UserPhotoBlogsAdapter;
+import com.rokan.mychat.pojo.PrivateChat;
 import com.rokan.mychat.pojo.UserPhotoBlogs;
 
 import java.util.ArrayList;
@@ -18,36 +21,54 @@ import java.util.List;
 public class PrivateChatActivity extends AppCompatActivity {
     PrivateChatActivity activity;
 
-    private PrivateChatAdapter  privateChatAdapter;
-    private List<UserPhotoBlogs> privateChatList;
+    private PrivateChatAdapter privateChatAdapter;
+    private List<PrivateChat> privateChatList;
     private RecyclerView rvPrivateChat;
-    LinearLayoutManager layoutManager;
+    ImageView ivPrivateChatSendImage;
+    NestedScrollView nsPrivateChatAlbum;
+
+    boolean isPrivateChatImageOption = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_private_chat);
         activity = this;
+        isPrivateChatImageOption = true;
 
+        rvPrivateChat = findViewById(R.id.rvPrivateChat);
+        ivPrivateChatSendImage = findViewById(R.id.ivPrivateChatSendImage);
+        nsPrivateChatAlbum = findViewById(R.id.nsPrivateChatAlbum);
+        nsPrivateChatAlbum.setVisibility(View.GONE);
 
-        rvPrivateChat = findViewById(R.id.rvUserPhotoBlogs);
+        ivPrivateChatSendImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                if (isPrivateChatImageOption != true) {
+                    nsPrivateChatAlbum.setVisibility(View.GONE);
+                    isPrivateChatImageOption = true;
+
+                } else {
+                    nsPrivateChatAlbum.setVisibility(View.VISIBLE);
+                    isPrivateChatImageOption = false;
+                }
+
+            }
+        });
         privateChatList = new ArrayList<>();
 
-
         privateChatAdapter = new PrivateChatAdapter(activity, privateChatList);
-        StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(2, LinearLayoutManager.VERTICAL);
+        StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(1, LinearLayoutManager.HORIZONTAL);
         rvPrivateChat.setLayoutManager(staggeredGridLayoutManager);
         rvPrivateChat.setAdapter(privateChatAdapter);
 
 
-
-        preparePhotoBlogs();
+        preparePrivateChat();
     }
 
-    private void preparePhotoBlogs() {
-
-
-        int[] listItemPhotoBlogs = new int[]{
+    private void preparePrivateChat() {
+        int[] listItemPrivateChat = new int[]{
                 R.mipmap.chatting,
                 R.mipmap.humayunahmed,
                 R.mipmap.find_your_love,
@@ -58,35 +79,33 @@ public class PrivateChatActivity extends AppCompatActivity {
                 R.mipmap.samsurrahman,
         };
 
-        UserPhotoBlogs userPhotoBlogs = new UserPhotoBlogs(listItemPhotoBlogs[0]);
-        privateChatList.add(userPhotoBlogs);
+        PrivateChat privateChat = new PrivateChat(listItemPrivateChat[0]);
+        privateChatList.add(privateChat);
 
-        userPhotoBlogs = new UserPhotoBlogs(listItemPhotoBlogs[1]);
-        privateChatList.add(userPhotoBlogs);
+        privateChat = new PrivateChat(listItemPrivateChat[1]);
+        privateChatList.add(privateChat);
 
-        userPhotoBlogs = new UserPhotoBlogs(listItemPhotoBlogs[2]);
-        privateChatList.add(userPhotoBlogs);
+        privateChat = new PrivateChat(listItemPrivateChat[2]);
+        privateChatList.add(privateChat);
 
-        userPhotoBlogs = new UserPhotoBlogs(listItemPhotoBlogs[3]);
-        privateChatList.add(userPhotoBlogs);
+        privateChat = new PrivateChat(listItemPrivateChat[3]);
+        privateChatList.add(privateChat);
 
-        userPhotoBlogs = new UserPhotoBlogs(listItemPhotoBlogs[4]);
-        privateChatList.add(userPhotoBlogs);
+        privateChat = new PrivateChat(listItemPrivateChat[4]);
+        privateChatList.add(privateChat);
 
-        userPhotoBlogs = new UserPhotoBlogs(listItemPhotoBlogs[5]);
-        privateChatList.add(userPhotoBlogs);
+        privateChat = new PrivateChat(listItemPrivateChat[5]);
+        privateChatList.add(privateChat);
 
-        userPhotoBlogs = new UserPhotoBlogs(listItemPhotoBlogs[6]);
-        privateChatList.add(userPhotoBlogs);
+        privateChat = new PrivateChat(listItemPrivateChat[6]);
+        privateChatList.add(privateChat);
 
-        userPhotoBlogs = new UserPhotoBlogs(listItemPhotoBlogs[7]);
-        privateChatList.add(userPhotoBlogs);
+        privateChat = new PrivateChat(listItemPrivateChat[7]);
+        privateChatList.add(privateChat);
 
 
         privateChatAdapter.notifyDataSetChanged();
     }
-
-
 
 
     @Override

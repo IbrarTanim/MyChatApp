@@ -17,6 +17,7 @@ import com.rokan.mychat.R;
 import com.rokan.mychat.activities.ViewImageActivity;
 import com.rokan.mychat.pojo.LiveChat;
 import com.rokan.mychat.pojo.PhotoBlogs;
+import com.rokan.mychat.pojo.PrivateChat;
 import com.rokan.mychat.pojo.UserPhotoBlogs;
 
 import java.util.List;
@@ -27,7 +28,7 @@ public class PrivateChatAdapter extends RecyclerView.Adapter<PrivateChatAdapter.
 
 
     private Context mContext;
-    private List<UserPhotoBlogs> userPhotoBlogsList;
+    private List<PrivateChat> privateChatList;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         RoundedImageView rivPrivateChatImage;
@@ -40,10 +41,9 @@ public class PrivateChatAdapter extends RecyclerView.Adapter<PrivateChatAdapter.
 
     }
 
-
-    public PrivateChatAdapter(Context mContext, List<UserPhotoBlogs> userPhotoBlogsList) {
+    public PrivateChatAdapter(Context mContext, List<PrivateChat> privateChatList) {
         this.mContext = mContext;
-        this.userPhotoBlogsList = userPhotoBlogsList;
+        this.privateChatList = privateChatList;
     }
 
     @Override
@@ -56,12 +56,12 @@ public class PrivateChatAdapter extends RecyclerView.Adapter<PrivateChatAdapter.
 
     @Override
     public void onBindViewHolder(final PrivateChatAdapter.MyViewHolder holder, int position) {
-        UserPhotoBlogs userPhotoBlogs = userPhotoBlogsList.get(position);
-        Glide.with(mContext).load(userPhotoBlogs.getRoundedUserBlogProfilePic()).into(holder.rivPrivateChatImage);
+        PrivateChat privateChat = privateChatList.get(position);
+        Glide.with(mContext).load(privateChat.getRoundedPrivateChatPic()).into(holder.rivPrivateChatImage);
     }
 
     @Override
     public int getItemCount() {
-        return userPhotoBlogsList.size();
+        return privateChatList.size();
     }
 }

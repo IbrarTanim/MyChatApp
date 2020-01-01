@@ -133,7 +133,7 @@
             <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="@dimen/twenty">
+                android:layout_marginBottom="@dimen/ten">
 
 
                 <RelativeLayout
@@ -269,13 +269,15 @@
 
 
         <android.support.v4.widget.NestedScrollView
+            android:id="@+id/nsPrivateChatAlbum"
             android:layout_width="match_parent"
-            android:layout_height="100dp">
+            android:layout_height="120dp">
 
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/rvPrivateChat"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/five"
                 android:nestedScrollingEnabled="false"
                 android:overScrollMode="never"
                 android:scrollbars="none" />
@@ -312,6 +314,7 @@
                 android:textSize="@dimen/eighteen" />
 
             <ImageView
+                android:id="@+id/ivPrivateChatSendImage"
                 android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
