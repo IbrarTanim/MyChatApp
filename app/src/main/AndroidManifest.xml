@@ -9,9 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.OnlyStatusBar">
-        <activity android:name=".activities.ActivitiesActivity"></activity>
-        <activity android:name=".activities.ChatRoomsActivity" />
-        <activity android:name=".activities.PrivateChatActivity" />
+        <activity
+            android:name=".activities.ActivitiesActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme.OnlyStatusBar" />
+        <activity
+            android:name=".activities.ChatRoomsActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme.OnlyStatusBar" />
+        <activity
+            android:name=".activities.PrivateChatActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme.OnlyStatusBar" />
         <activity
             android:name=".activities.MatchActivity"
             android:screenOrientation="sensorPortrait"

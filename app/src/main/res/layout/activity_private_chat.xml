@@ -53,6 +53,7 @@
                     android:layout_height="@dimen/twenty_22"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentBottom="true"
+                    android:layout_marginRight="@dimen/five"
                     android:background="@drawable/circuler_textview"
                     android:gravity="center"
                     android:text="12"
@@ -105,6 +106,7 @@
                     android:layout_height="@dimen/twenty_22"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/five"
                     android:background="@drawable/circuler_textview"
                     android:gravity="center"
                     android:text="16"
@@ -126,12 +128,12 @@
         <android.support.v4.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="@dimen/zero"
-            android:layout_marginBottom="@dimen/ten"
             android:layout_weight="8">
 
             <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/twenty">
 
 
                 <RelativeLayout
@@ -261,6 +263,22 @@
 
 
             </android.support.constraint.ConstraintLayout>
+
+
+        </android.support.v4.widget.NestedScrollView>
+
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvPrivateChat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:nestedScrollingEnabled="false"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
 
 
         </android.support.v4.widget.NestedScrollView>
