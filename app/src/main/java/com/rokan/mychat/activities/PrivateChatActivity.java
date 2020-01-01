@@ -25,7 +25,7 @@ public class PrivateChatActivity extends AppCompatActivity {
     private List<PrivateChat> privateChatList;
     private RecyclerView rvPrivateChat;
     ImageView ivPrivateChatSendImage;
-    NestedScrollView nsPrivateChatAlbum;
+    NestedScrollView nsPrivateChatAlbum, nsPrivateChatAlbumMain;
 
     boolean isPrivateChatImageOption = false;
 
@@ -39,6 +39,7 @@ public class PrivateChatActivity extends AppCompatActivity {
         rvPrivateChat = findViewById(R.id.rvPrivateChat);
         ivPrivateChatSendImage = findViewById(R.id.ivPrivateChatSendImage);
         nsPrivateChatAlbum = findViewById(R.id.nsPrivateChatAlbum);
+        nsPrivateChatAlbumMain = findViewById(R.id.nsPrivateChatAlbumMain);
         nsPrivateChatAlbum.setVisibility(View.GONE);
 
         ivPrivateChatSendImage.setOnClickListener(new View.OnClickListener() {
@@ -47,10 +48,12 @@ public class PrivateChatActivity extends AppCompatActivity {
 
                 if (isPrivateChatImageOption != true) {
                     nsPrivateChatAlbum.setVisibility(View.GONE);
+                    nsPrivateChatAlbumMain.fullScroll(View.FOCUS_UP);
                     isPrivateChatImageOption = true;
 
                 } else {
                     nsPrivateChatAlbum.setVisibility(View.VISIBLE);
+                    nsPrivateChatAlbumMain.fullScroll(View.FOCUS_DOWN);
                     isPrivateChatImageOption = false;
                 }
 
