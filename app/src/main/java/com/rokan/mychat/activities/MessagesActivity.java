@@ -204,7 +204,10 @@ public class MessagesActivity extends AppCompatActivity implements View.OnClickL
         }
     }
 
-
-
-
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        startActivity(new Intent(activity, PicturesActivity.class));
+        finish();
+    }
 }

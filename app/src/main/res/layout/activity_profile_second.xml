@@ -31,7 +31,7 @@
                 android:background="@color/transparent"
                 android:padding="@dimen/five"
                 android:scaleType="fitStart"
-                android:src="@mipmap/back_icon_decm" />
+                android:src="@android:drawable/ic_menu_close_clear_cancel" />
 
             <View
                 android:layout_width="@dimen/zero"

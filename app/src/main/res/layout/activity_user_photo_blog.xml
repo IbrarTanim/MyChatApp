@@ -69,8 +69,8 @@
                             android:layout_height="@dimen/thirty"
                             android:layout_centerInParent="true"
                             android:gravity="center"
-                            android:text="Samnata's Photo Blogs"
-                            android:textColor="@color/black"
+                            android:text="Samnata's Photo"
+                            android:textColor="@color/white"
                             android:textSize="@dimen/eighteen"
                             android:textStyle="bold" />
 
@@ -300,12 +300,10 @@
                 android:id="@+id/rvUserPhotoBlogs"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/zero"
-                android:layout_marginRight="@dimen/five"
                 android:layout_weight="18"
                 android:nestedScrollingEnabled="false"
                 android:overScrollMode="never"
                 android:scrollbars="none" />
-
 
         </LinearLayout>
 
@@ -313,7 +311,7 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/fab"
-        android:layout_width="50dp"
+        android:layout_width="@dimen/fifty"
         android:layout_height="@dimen/fifty"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"

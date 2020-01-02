@@ -1,5 +1,6 @@
 package com.rokan.mychat.activities;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -18,7 +19,7 @@ public class ChatRoomsActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        //startActivity(new Intent(activity, MessagesActivity.class));
+        startActivity(new Intent(activity, PicturesActivity.class));
         finish();
     }
 }

@@ -20,7 +20,7 @@ public class ActivitiesActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        //startActivity(new Intent(activity, MessagesActivity.class));
+        startActivity(new Intent(activity, PicturesActivity.class));
         finish();
     }
 }

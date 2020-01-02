@@ -43,11 +43,11 @@ public class ProfileFirstActivity extends AppCompatActivity implements View.OnCl
                 finish();
                 break;
             case R.id.ibMessageProfile:
-                startActivity(new Intent(activity, LandingActivity.class));
+                startActivity(new Intent(activity, MessagesActivity.class));
                 finish();
                 break;
             case R.id.ibChatRoomProfile:
-                startActivity(new Intent(activity, PicturesActivity.class));
+                startActivity(new Intent(activity, ChatRoomsActivity.class));
                 finish();
                 break;
 
@@ -67,5 +67,13 @@ public class ProfileFirstActivity extends AppCompatActivity implements View.OnCl
                 break;
 
         }
+    }
+
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        startActivity(new Intent(activity, PicturesActivity.class));
+        finish();
     }
 }
