@@ -49,11 +49,13 @@ public class PrivateChatActivity extends AppCompatActivity {
                 if (isPrivateChatImageOption != true) {
                     nsPrivateChatAlbum.setVisibility(View.GONE);
                     nsPrivateChatAlbumMain.fullScroll(View.FOCUS_UP);
+                    //nsPrivateChatAlbumMain.scrollTo(0, nsPrivateChatAlbumMain.getTop());
                     isPrivateChatImageOption = true;
 
                 } else {
                     nsPrivateChatAlbum.setVisibility(View.VISIBLE);
                     nsPrivateChatAlbumMain.fullScroll(View.FOCUS_DOWN);
+                    //nsPrivateChatAlbumMain.scrollTo(0, nsPrivateChatAlbumMain.getBottom());
                     isPrivateChatImageOption = false;
                 }
 
