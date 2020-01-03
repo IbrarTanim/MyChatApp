@@ -64,34 +64,49 @@
                             app:riv_oval="false" />
 
 
-                        <TextView
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="@dimen/thirty"
-                            android:layout_centerInParent="true"
-                            android:gravity="center"
-                            android:text="Samnata's Photo"
-                            android:textColor="@color/white"
-                            android:textSize="@dimen/eighteen"
-                            android:textStyle="bold" />
-
-                        <ImageView
-                            android:layout_width="@dimen/forty"
                             android:layout_height="@dimen/forty"
                             android:layout_marginTop="@dimen/thirty"
-                            android:background="@color/transparent"
-                            android:scaleType="fitCenter"
-                            android:src="@android:drawable/ic_menu_close_clear_cancel" />
+                            android:orientation="horizontal"
+                            android:weightSum="10">
 
-                        <ImageView
-                            android:layout_width="@dimen/forty"
-                            android:layout_height="@dimen/forty"
-                            android:layout_alignParentRight="true"
-                            android:layout_marginTop="@dimen/thirty"
-                            android:background="@color/transparent"
-                            android:padding="@dimen/five"
-                            android:scaleType="fitCenter"
-                            android:src="@mipmap/bell_icon" />
 
+                            <ImageView
+                                android:layout_width="@dimen/zero"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:padding="@dimen/five"
+                                android:background="@color/transparent"
+                                android:scaleType="fitCenter"
+                                android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+
+                            <TextView
+                                android:layout_width="@dimen/zero"
+                                android:layout_height="match_parent"
+                                android:layout_weight="8"
+                                android:gravity="center"
+                                android:shadowColor="@color/black"
+                                android:shadowDx="5"
+                                android:shadowDy="5"
+                                android:shadowRadius="5"
+                                android:text="Samnata's Photo"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/eighteen"
+                                android:textStyle="bold" />
+
+
+                            <ImageView
+                                android:layout_width="@dimen/zero"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:padding="@dimen/five"
+                                android:background="@color/transparent"
+                                android:scaleType="fitCenter"
+                                android:src="@mipmap/bell_icon" />
+
+                        </LinearLayout>
 
                     </RelativeLayout>
 
@@ -119,7 +134,7 @@
                                 android:layout_height="@dimen/zero"
                                 android:layout_weight="1"
                                 android:gravity="center|left"
-                                android:text="Liked"
+                                android:text="LIKED"
                                 android:textColor="@color/chat_text_color"
                                 android:textSize="@dimen/twelve"
                                 android:textStyle="bold" />
@@ -149,7 +164,8 @@
                                     android:background="@color/transparent"
                                     android:padding="@dimen/five"
                                     android:scaleType="fitStart"
-                                    android:src="@drawable/ic_profile_one_liked_me" />
+                                    android:src="@drawable/ic_profile_one_liked_me"
+                                    android:visibility="gone" />
                             </LinearLayout>
 
 
@@ -178,7 +194,7 @@
                                 android:layout_height="@dimen/zero"
                                 android:layout_weight="1"
                                 android:gravity="center|left"
-                                android:text="Favorited"
+                                android:text="COMMENTED"
                                 android:textColor="@color/chat_text_color"
                                 android:textSize="@dimen/twelve"
                                 android:textStyle="bold" />
@@ -208,7 +224,8 @@
                                     android:background="@color/transparent"
                                     android:padding="@dimen/five"
                                     android:scaleType="fitStart"
-                                    android:src="@drawable/ic_profile_one_favorite_me" />
+                                    android:src="@drawable/ic_profile_one_favorite_me"
+                                    android:visibility="gone" />
                             </LinearLayout>
 
 
@@ -237,7 +254,7 @@
                                 android:layout_height="@dimen/zero"
                                 android:layout_weight="1"
                                 android:gravity="center|left"
-                                android:text="Visited"
+                                android:text="VIEWED"
                                 android:textColor="@color/chat_text_color"
                                 android:textSize="@dimen/twelve"
                                 android:textStyle="bold" />
@@ -266,7 +283,8 @@
                                     android:background="@color/transparent"
                                     android:padding="@dimen/five"
                                     android:scaleType="fitStart"
-                                    android:src="@drawable/ic_profile_one_visited_me" />
+                                    android:src="@drawable/ic_profile_one_visited_me"
+                                    android:visibility="gone" />
                             </LinearLayout>
 
 
