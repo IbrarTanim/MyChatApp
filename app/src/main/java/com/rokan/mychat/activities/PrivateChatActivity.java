@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v4.widget.NestedScrollView;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
@@ -26,6 +27,7 @@ public class PrivateChatActivity extends AppCompatActivity {
     private RecyclerView rvPrivateChat;
     ImageView ivPrivateChatSendImage;
     NestedScrollView nsPrivateChatAlbum, nsPrivateChatAlbumMain;
+    CardView cvPrivateChat;
 
     boolean isPrivateChatImageOption = false;
 
@@ -35,12 +37,15 @@ public class PrivateChatActivity extends AppCompatActivity {
         setContentView(R.layout.activity_private_chat);
         activity = this;
         isPrivateChatImageOption = true;
+        cvPrivateChat = findViewById(R.id.cvPrivateChat);
 
         rvPrivateChat = findViewById(R.id.rvPrivateChat);
         ivPrivateChatSendImage = findViewById(R.id.ivPrivateChatSendImage);
         nsPrivateChatAlbum = findViewById(R.id.nsPrivateChatAlbum);
         nsPrivateChatAlbumMain = findViewById(R.id.nsPrivateChatAlbumMain);
         nsPrivateChatAlbum.setVisibility(View.GONE);
+        cvPrivateChat.setRadius(0);
+
 
         ivPrivateChatSendImage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,14 +53,12 @@ public class PrivateChatActivity extends AppCompatActivity {
 
                 if (isPrivateChatImageOption != true) {
                     nsPrivateChatAlbum.setVisibility(View.GONE);
-                    //nsPrivateChatAlbumMain.fullScroll(View.FOCUS_UP);
-                    //nsPrivateChatAlbumMain.scrollTo(0, nsPrivateChatAlbumMain.getTop());
+                    cvPrivateChat.setRadius(0);
                     isPrivateChatImageOption = true;
 
                 } else {
                     nsPrivateChatAlbum.setVisibility(View.VISIBLE);
-                    //nsPrivateChatAlbumMain.fullScroll(View.FOCUS_DOWN);
-                    //nsPrivateChatAlbumMain.scrollTo(0, nsPrivateChatAlbumMain.getBottom());
+                    cvPrivateChat.setRadius(20);
                     isPrivateChatImageOption = false;
                 }
 
