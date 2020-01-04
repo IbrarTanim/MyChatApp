@@ -22,14 +22,13 @@ public class ActivitiesAdapter extends RecyclerView.Adapter<ActivitiesAdapter.My
     private List<Activities> activitiesList;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        public TextView tvActivitiesName, tvActivitiesTime, tvBlock;
+        public TextView tvActivitiesName, tvActivitiesTime;
         public CircleImageView civActivitiesProfilePic;
 
         public MyViewHolder(View view) {
             super(view);
             tvActivitiesName = view.findViewById(R.id.tvActivitiesName);
             tvActivitiesTime = view.findViewById(R.id.tvActivitiesTime);
-            tvBlock = view.findViewById(R.id.tvBlock);
             civActivitiesProfilePic = view.findViewById(R.id.civActivitiesProfilePic);
         }
 
@@ -56,40 +55,7 @@ public class ActivitiesAdapter extends RecyclerView.Adapter<ActivitiesAdapter.My
         Activities activities = activitiesList.get(position);
 
 
-        switch (position){
-            case 3:
-                holder.tvBlock.setVisibility(View.VISIBLE);
-                holder.tvActivitiesName.setText(activities.getName());
-                holder.tvActivitiesTime.setText(activities.getTime());
-                Glide.with(mContext).load(activities.getActivitiesProfilePic()).into(holder.civActivitiesProfilePic);
-                break;
 
-            case 4:
-                holder.tvBlock.setVisibility(View.VISIBLE);
-                holder.tvActivitiesName.setText(activities.getName());
-                holder.tvActivitiesTime.setText(activities.getTime());
-                Glide.with(mContext).load(activities.getActivitiesProfilePic()).into(holder.civActivitiesProfilePic);
-                break;
-
-            case 5:
-                holder.tvBlock.setVisibility(View.VISIBLE);
-                holder.tvActivitiesName.setText(activities.getName());
-                holder.tvActivitiesTime.setText(activities.getTime());
-                Glide.with(mContext).load(activities.getActivitiesProfilePic()).into(holder.civActivitiesProfilePic);
-                break;
-
-
-
-                default:
-                    holder.tvBlock.setVisibility(View.INVISIBLE);
-                    holder.tvActivitiesName.setText(activities.getName());
-                    holder.tvActivitiesTime.setText(activities.getTime());
-                    Glide.with(mContext).load(activities.getActivitiesProfilePic()).into(holder.civActivitiesProfilePic);
-                    break;
-
-
-
-        }
 
 
 

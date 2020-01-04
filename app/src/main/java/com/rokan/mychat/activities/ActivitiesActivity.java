@@ -73,6 +73,12 @@ public class ActivitiesActivity extends AppCompatActivity implements View.OnClic
                 R.mipmap.jaforiqbal,
                 R.mipmap.taking_photo,
                 R.mipmap.samsurrahman,
+                R.mipmap.find_friends,
+                R.mipmap.jaforiqbal,
+                R.mipmap.taking_photo,
+                R.mipmap.samsurrahman,
+
+
         };
 
 
@@ -93,6 +99,25 @@ public class ActivitiesActivity extends AppCompatActivity implements View.OnClic
 
         activities = new Activities(listItem[5], getString(R.string.amanta), getString(R.string.time));
         activitiesList.add(activities);
+
+        activities = new Activities(listItem[6], getString(R.string.amanta), getString(R.string.time));
+        activitiesList.add(activities);
+
+        activities = new Activities(listItem[7], getString(R.string.amanta), getString(R.string.time));
+        activitiesList.add(activities);
+
+        activities = new Activities(listItem[8], getString(R.string.amanta), getString(R.string.time));
+        activitiesList.add(activities);
+
+        activities = new Activities(listItem[9], getString(R.string.amanta), getString(R.string.time));
+        activitiesList.add(activities);
+
+        activities = new Activities(listItem[10], getString(R.string.amanta), getString(R.string.time));
+        activitiesList.add(activities);
+
+        activities = new Activities(listItem[11], getString(R.string.amanta), getString(R.string.time));
+        activitiesList.add(activities);
+
 
         activitiesAdapter.notifyDataSetChanged();
     }

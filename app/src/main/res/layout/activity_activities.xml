@@ -278,8 +278,6 @@
                     android:id="@+id/rvActivities"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/zero"
-                    android:layout_marginTop="@dimen/five"
-                    android:layout_marginLeft="@dimen/five"
                     android:layout_weight="9"
                     android:nestedScrollingEnabled="false"
                     android:overScrollMode="never"
