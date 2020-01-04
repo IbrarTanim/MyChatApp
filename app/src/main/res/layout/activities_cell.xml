@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_width="120dp"
     android:layout_height="120dp">;
@@ -13,19 +14,23 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/zero"
-            android:layout_weight="7">
+            android:layout_weight="8">
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/civActivitiesProfilePic"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="@dimen/five"
-                android:src="@mipmap/chatting" />
+                android:background="@color/transparent"
+                android:layout_margin="@dimen/two"
+                android:src="@mipmap/chatting"
+                app:civ_border_color="#E6FFFFFF" />
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/circle_activities" />
+                android:background="@color/transparent"
+                android:src="@drawable/circle_activities"
+                app:civ_border_color="#E6FFFFFF" />
 
 
         </RelativeLayout>
@@ -35,12 +40,12 @@
             android:id="@+id/tvActivitiesName"
             android:layout_width="match_parent"
             android:layout_height="@dimen/zero"
-            android:layout_weight="2"
+            android:layout_weight="1"
             android:gravity="center"
             android:text="Samanta"
             android:textColor="@color/black"
             android:textSize="@dimen/twelve"
-            android:visibility="visible" />
+            android:visibility="gone" />
 
         <TextView
             android:id="@+id/tvActivitiesTime"
@@ -51,7 +56,7 @@
             android:text="Friday"
             android:textColor="@color/black"
             android:textSize="@dimen/ten"
-            android:visibility="visible" />
+            android:visibility="gone" />
 
     </LinearLayout>
 
