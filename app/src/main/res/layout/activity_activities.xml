@@ -3,7 +3,445 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero"
+            android:layout_weight="0.6" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero"
+            android:layout_weight="0.4"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <View
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5" />
+
+            <TextView
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5"
+                android:gravity="center|left"
+                android:text="Activities"
+                android:textColor="@color/black"
+                android:textSize="@dimen/twenty"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="5" />
+
+
+            <View
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5" />
+
+            <ImageView
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:padding="@dimen/three"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/add_photo_black"
+                android:visibility="invisible" />
+
+            <View
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero"
+            android:layout_weight="8"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zero"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:padding="@dimen/ten"
+                android:weightSum="30">
+
+                <TextView
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:gravity="center"
+                    android:text="LIKE"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fifteen"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:gravity="center"
+                    android:text="FAVORITE"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fifteen"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:gravity="center"
+                    android:text="VISITOR"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fifteen"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zero"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="New Likes"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fifteen" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="8"
+                    android:orientation="horizontal"
+                    android:weightSum="9">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:orientation="vertical"
+                        android:weightSum="10">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/zero"
+                            android:layout_weight="7"
+                            android:background="@color/transparent"
+                            android:src="@mipmap/chatting" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/zero"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:text="Samanta"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fifteen" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/zero"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Friday"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ten" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:orientation="vertical"
+                        android:weightSum="10">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/zero"
+                            android:layout_weight="7"
+                            android:background="@color/transparent"
+                            android:src="@mipmap/chatting" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/zero"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:text="Hossain"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fifteen" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/zero"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="sunday"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ten" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:orientation="vertical"
+                        android:weightSum="10">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/zero"
+                            android:layout_weight="7"
+                            android:background="@color/transparent"
+                            android:src="@mipmap/chatting" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/zero"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:text="Lira"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fifteen" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/zero"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="10 minutes ago"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ten" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zero"
+                android:layout_weight="6"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="1"
+                    android:gravity="center|bottom"
+                    android:text="All Likes"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/fifteen" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvActivities"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_marginTop="@dimen/five"
+                    android:layout_marginLeft="@dimen/five"
+                    android:layout_weight="9"
+                    android:nestedScrollingEnabled="false"
+                    android:overScrollMode="never"
+                    android:scrollbars="none" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="25">
+
+
+            <LinearLayout
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <ImageButton
+                    android:id="@+id/ibPictureActivities"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_camera" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="1"
+                    android:gravity="center|top"
+                    android:text="Pictures"
+                    android:textColor="@color/black"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <ImageButton
+                    android:id="@+id/ibMessageActivities"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:padding="@dimen/fifteen"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_message" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="1"
+                    android:gravity="center|top"
+                    android:text="Messages"
+                    android:textColor="@color/black"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <ImageButton
+                    android:id="@+id/ibChatRoomActivities"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:padding="@dimen/ten"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_chat_room" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="1"
+                    android:gravity="center|top"
+                    android:text="Chatrooms"
+                    android:textColor="@color/black"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <ImageButton
+                    android:id="@+id/ibActivitiesActivities"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:padding="@dimen/ten"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_notification" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="1"
+                    android:gravity="center|top"
+                    android:text="Activities"
+                    android:textColor="@color/black"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <ImageButton
+                    android:id="@+id/ibProfileActivities"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:padding="@dimen/ten"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_profile" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="1"
+                    android:gravity="center|top"
+                    android:text="Profile"
+                    android:textColor="@color/black"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
 
 
 </android.support.constraint.ConstraintLayout>
