@@ -12,7 +12,7 @@ import com.rokan.mychat.R;
 public class ProfileSecondActivity extends AppCompatActivity implements View.OnClickListener {
 
     ProfileSecondActivity activity;
-    ImageView ivPictureProfileSecond, ivchatProfileSecond;
+    ImageView ivPictureProfileSecond, ivchatProfileSecond, ivInfoProfileSecond;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,8 +22,10 @@ public class ProfileSecondActivity extends AppCompatActivity implements View.OnC
 
         ivPictureProfileSecond = findViewById(R.id.ivPictureProfileSecond);
         ivchatProfileSecond = findViewById(R.id.ivchatProfileSecond);
+        ivInfoProfileSecond = findViewById(R.id.ivInfoProfileSecond);
         ivPictureProfileSecond.setOnClickListener(this);
         ivchatProfileSecond.setOnClickListener(this);
+        ivInfoProfileSecond.setOnClickListener(this);
     }
 
     @Override
@@ -37,6 +39,12 @@ public class ProfileSecondActivity extends AppCompatActivity implements View.OnC
                 startActivity(new Intent(activity, PrivateChatActivity.class));
                 finish();
                 break;
+
+            case R.id.ivInfoProfileSecond:
+                startActivity(new Intent(activity, InfoActivity.class));
+                finish();
+                break;
+
 
         }
     }

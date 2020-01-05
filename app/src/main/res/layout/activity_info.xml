@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/find_your_love">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zero"
+                android:layout_weight="2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zero"
+                android:layout_weight="8">
+
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/twenty"
+                    android:layout_marginRight="@dimen/twenty"
+                    android:layout_weight="5"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="0.0px"
+                    android:elevation="5dp"
+                    app:cardCornerRadius="@dimen/twenty"
+                    card_view:cardElevation="5dp"
+                    card_view:cardPreventCornerOverlap="false">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="10">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/zero"
+                            android:layout_weight="2" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/zero"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="19">
+
+                            <View
+                                android:layout_width="@dimen/zero"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2" />
+
+                            <LinearLayout
+                                android:layout_width="@dimen/zero"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/zero"
+                                    android:layout_weight="1"
+                                    android:gravity="center|top"
+                                    android:text="LIKED"
+                                    android:textColor="@color/chat_text_color"
+                                    android:textSize="@dimen/twelve"
+                                    android:textStyle="bold" />
+
+
+                                <TextView
+                                    android:layout_width="@dimen/thirty_five"
+                                    android:layout_height="@dimen/twenty"
+                                    android:layout_gravity="center|bottom"
+                                    android:layout_weight="1"
+                                    android:padding="@dimen/five"
+                                    android:background="@drawable/circuler_info_text"
+                                    android:gravity="center"
+                                    android:text="956"
+                                    android:textColor="@color/chat_text_color"
+                                    android:textSize="@dimen/twelve"
+                                    android:textStyle="normal" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="@dimen/zero"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/zero"
+                                    android:layout_weight="1"
+                                    android:gravity="center|top"
+                                    android:text="COMMENTED"
+                                    android:textColor="@color/chat_text_color"
+                                    android:textSize="@dimen/twelve"
+                                    android:textStyle="bold" />
+
+
+                                <TextView
+                                    android:layout_width="@dimen/thirty_five"
+                                    android:layout_height="@dimen/twenty"
+                                    android:layout_gravity="center|bottom"
+                                    android:layout_weight="1"
+                                    android:padding="@dimen/five"
+                                    android:background="@drawable/circuler_info_text"
+                                    android:gravity="center"
+                                    android:text="96"
+                                    android:textColor="@color/chat_text_color"
+                                    android:textSize="@dimen/twelve"
+                                    android:textStyle="normal" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="@dimen/zero"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/zero"
+                                    android:layout_weight="1"
+                                    android:gravity="center|top"
+                                    android:text="VIEWED"
+                                    android:textColor="@color/chat_text_color"
+                                    android:textSize="@dimen/twelve"
+                                    android:textStyle="bold" />
+
+
+                                <TextView
+                                    android:layout_width="@dimen/thirty_five"
+                                    android:layout_height="@dimen/twenty"
+                                    android:layout_gravity="center|bottom"
+                                    android:layout_weight="1"
+                                    android:padding="@dimen/five"
+                                    android:background="@drawable/circuler_info_text"
+                                    android:gravity="center"
+                                    android:text="956"
+                                    android:textColor="@color/chat_text_color"
+                                    android:textSize="@dimen/twelve"
+                                    android:textStyle="normal" />
+
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="@dimen/zero"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="@dimen/hundred_fifty"
+            android:layout_height="@dimen/hundred_fifty"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/seventy"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/chatting"
+            app:riv_border_color="@color/transparent"
+            app:riv_corner_radius="@dimen/twenty"
+            app:riv_mutate_background="true"
+            app:riv_oval="false" />
+
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

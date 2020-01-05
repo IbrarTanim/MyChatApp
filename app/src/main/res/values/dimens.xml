@@ -23,4 +23,6 @@
     <dimen name="heart_height">150dp</dimen>
     <dimen name="twenty_22">22dp</dimen>
     <dimen name="three_hundrad">300dp</dimen>
+    <dimen name="seventy">70dp</dimen>
+    <dimen name="thirty_five">35dp</dimen>
 </resources>

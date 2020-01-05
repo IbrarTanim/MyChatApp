@@ -233,6 +233,7 @@
             android:weightSum="3">
 
             <ImageView
+                android:id="@+id/ivInfoProfileSecond"
                 android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
