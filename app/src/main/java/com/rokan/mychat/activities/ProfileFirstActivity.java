@@ -72,7 +72,7 @@ public class ProfileFirstActivity extends AppCompatActivity implements View.OnCl
                 break;
 
                 case R.id.llHotlistFirstProfile:
-                startActivity(new Intent(activity, HotlistFirstProfileAdapter.class));
+                startActivity(new Intent(activity, HotListActivity.class));
                 finish();
                 break;
 
