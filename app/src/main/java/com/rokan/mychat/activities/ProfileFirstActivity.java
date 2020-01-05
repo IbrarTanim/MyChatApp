@@ -5,14 +5,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.rokan.mychat.R;
+import com.rokan.mychat.adapters.HotlistFirstProfileAdapter;
 
 public class ProfileFirstActivity extends AppCompatActivity implements View.OnClickListener {
     ProfileFirstActivity activity;
     ImageButton ibPictureProfile, ibMessageProfile, ibChatRoomProfile, ibActivitiesProfile, ibProfileProfile;
     TextView tvEdit;
+    LinearLayout llHotlistFirstProfile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +29,7 @@ public class ProfileFirstActivity extends AppCompatActivity implements View.OnCl
         ibActivitiesProfile = findViewById(R.id.ibActivitiesProfile);
         ibProfileProfile = findViewById(R.id.ibProfileProfile);
         tvEdit = findViewById(R.id.tvEdit);
+        llHotlistFirstProfile = findViewById(R.id.llHotlistFirstProfile);
 
         ibPictureProfile.setOnClickListener(this);
         ibMessageProfile.setOnClickListener(this);
@@ -33,6 +37,7 @@ public class ProfileFirstActivity extends AppCompatActivity implements View.OnCl
         ibActivitiesProfile.setOnClickListener(this);
         ibProfileProfile.setOnClickListener(this);
         tvEdit.setOnClickListener(this);
+        llHotlistFirstProfile.setOnClickListener(this);
     }
 
     @Override
@@ -65,6 +70,13 @@ public class ProfileFirstActivity extends AppCompatActivity implements View.OnCl
                 startActivity(new Intent(activity, ProfileSecondActivity.class));
                 finish();
                 break;
+
+                case R.id.llHotlistFirstProfile:
+                startActivity(new Intent(activity, HotlistFirstProfileAdapter.class));
+                finish();
+                break;
+
+
 
         }
     }

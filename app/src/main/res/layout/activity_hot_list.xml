@@ -126,11 +126,17 @@
                             android:layout_width="match_parent"
                             android:layout_height="@dimen/zero"
                             android:layout_weight="7"
-                            android:orientation="horizontal"
-                            android:weightSum="19">
+                            android:orientation="horizontal">
 
-
-
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/rvHotListFirstProfile"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/zero"
+                                android:layout_marginRight="@dimen/five"
+                                android:layout_weight="18"
+                                android:nestedScrollingEnabled="false"
+                                android:overScrollMode="never"
+                                android:scrollbars="none" />
 
                         </LinearLayout>
 
