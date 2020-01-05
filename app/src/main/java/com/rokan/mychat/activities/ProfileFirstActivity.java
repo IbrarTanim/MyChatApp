@@ -77,7 +77,6 @@ public class ProfileFirstActivity extends AppCompatActivity implements View.OnCl
                 break;
 
 
-
         }
     }
 

@@ -131,9 +131,9 @@
                             <android.support.v7.widget.RecyclerView
                                 android:id="@+id/rvHotListFirstProfile"
                                 android:layout_width="match_parent"
-                                android:layout_height="@dimen/zero"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="@dimen/five"
                                 android:layout_marginRight="@dimen/five"
-                                android:layout_weight="18"
                                 android:nestedScrollingEnabled="false"
                                 android:overScrollMode="never"
                                 android:scrollbars="none" />
