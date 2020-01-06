@@ -134,7 +134,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/zero"
-                    android:layout_weight="2.3"
+                    android:layout_weight="2.1"
                     android:gravity="left|center"
                     android:text="Be seen! Use your Boddo credits to bid for a spot on the Hotlist and show everyone who are you. The higher you bid, the higher you are on the list, valid 12 hours."
                     android:textColor="@color/black"
@@ -160,14 +160,16 @@
                         android:id="@+id/rvHotListFirstProfile"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginTop="@dimen/five"
-                        android:layout_marginRight="@dimen/five"
-                        android:layout_marginBottom="@dimen/five"
                         android:nestedScrollingEnabled="false"
                         android:overScrollMode="never"
                         android:scrollbars="none" />
 
                 </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="0.2"/>
 
 
             </LinearLayout>
