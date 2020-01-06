@@ -10,8 +10,6 @@
         android:id="@+id/hotlistFirstProfileCard"
         android:layout_width="110dp"
         android:layout_height="150dp"
-        android:layout_marginLeft="@dimen/five"
-        android:layout_marginBottom="@dimen/five"
         android:clipChildren="false"
         android:clipToPadding="false"
         android:divider="@android:color/transparent"
@@ -45,9 +43,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/thirty"
                 android:layout_alignParentBottom="true"
-                android:background="@color/photo_blogs_transparent"
+                android:background="@drawable/hotlist_profile_first_tranparent"
                 android:gravity="center"
-                android:layout_marginBottom="@dimen/five"
                 android:text="30 Credits"
                 android:textColor="@color/white" />
 
@@ -56,6 +53,10 @@
                 android:layout_height="@dimen/twenty_five"
                 android:layout_alignParentTop="true"
                 android:gravity="center"
+                android:shadowColor="@color/black"
+                android:shadowDx="5"
+                android:shadowDy="5"
+                android:shadowRadius="5"
                 android:text="2"
                 android:textColor="@color/white" />
 

@@ -49,6 +49,10 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="1"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="5"
+                    android:shadowDy="5"
+                    android:shadowRadius="5"
                     android:textColor="@color/white"
                     android:textSize="@dimen/twenty"
                     android:textStyle="bold" />
@@ -65,6 +69,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/zero"
                 android:layout_weight="6"
+                android:paddingLeft="@dimen/five"
                 android:background="@drawable/white_top_rounded_bg"
                 android:orientation="vertical"
                 android:weightSum="10">
@@ -72,7 +77,7 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/zero"
-                    android:layout_weight="0.5" />
+                    android:layout_weight="0.2"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -85,7 +90,7 @@
                         android:layout_width="@dimen/zero"
                         android:layout_height="match_parent"
                         android:layout_weight="2"
-                        android:gravity="center"
+                        android:gravity="center|left"
                         android:text="Hotlist"
                         android:textColor="@color/black"
                         android:textSize="@dimen/fifteen"
@@ -129,8 +134,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/zero"
-                    android:layout_marginLeft="@dimen/twenty"
-                    android:layout_weight="2"
+                    android:layout_weight="2.3"
                     android:gravity="left|center"
                     android:text="Be seen! Use your Boddo credits to bid for a spot on the Hotlist and show everyone who are you. The higher you bid, the higher you are on the list, valid 12 hours."
                     android:textColor="@color/black"
@@ -158,6 +162,7 @@
                         android:layout_height="match_parent"
                         android:layout_marginTop="@dimen/five"
                         android:layout_marginRight="@dimen/five"
+                        android:layout_marginBottom="@dimen/five"
                         android:nestedScrollingEnabled="false"
                         android:overScrollMode="never"
                         android:scrollbars="none" />

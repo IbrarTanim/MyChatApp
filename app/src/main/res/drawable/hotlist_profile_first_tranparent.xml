@@ -1,0 +1,13 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid android:color="@color/photo_blogs_transparent" />
+
+    <stroke android:color="@color/photo_blogs_transparent" />
+
+    <corners
+
+        android:bottomLeftRadius="@dimen/five"
+        android:bottomRightRadius="@dimen/five" />
+
+
+</shape>
