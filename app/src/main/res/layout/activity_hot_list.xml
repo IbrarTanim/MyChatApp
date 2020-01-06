@@ -21,130 +21,148 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/zero"
-                android:layout_weight="2" />
+                android:layout_weight="0.5" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/zero"
-                android:layout_weight="8">
+                android:layout_weight="0.5"
+                android:orientation="horizontal"
+                android:weightSum="10">
 
-                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                    android:layout_width="match_parent"
+                <ImageView
+                    android:layout_width="@dimen/zero"
                     android:layout_height="match_parent"
-                    android:layout_marginBottom="-20dp"
-                    android:layout_weight="5"
-                    android:clipChildren="false"
-                    android:clipToPadding="false"
-                    android:divider="@android:color/transparent"
-                    android:dividerHeight="0.0px"
-                    android:elevation="5dp"
-                    app:cardCornerRadius="@dimen/thirty"
-                    card_view:cardElevation="5dp"
-                    card_view:cardPreventCornerOverlap="false">
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@android:drawable/ic_menu_close_clear_cancel" />
 
-                    <LinearLayout
+                <View
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8" />
+
+                <TextView
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/twenty"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zero"
+                android:layout_weight="3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zero"
+                android:layout_weight="6"
+                android:background="@drawable/white_top_rounded_bg"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="0.5" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="Hotlist"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/fifteen"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5" />
+
+                    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/five"
+                        android:layout_weight="3"
+                        android:clipChildren="false"
+                        android:clipToPadding="false"
+                        android:divider="@android:color/transparent"
+                        android:dividerHeight="0.0px"
+                        android:elevation="5dp"
+                        app:cardCornerRadius="@dimen/ten"
+                        card_view:cardBackgroundColor="@color/app_color_right"
+                        card_view:cardElevation="5dp"
+                        card_view:cardPreventCornerOverlap="false">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="JOIN"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/fifteen" />
+
+
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_marginLeft="@dimen/twenty"
+                    android:layout_weight="2"
+                    android:gravity="left|center"
+                    android:text="Be seen! Use your Boddo credits to bid for a spot on the Hotlist and show everyone who are you. The higher you bid, the higher you are on the list, valid 12 hours."
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fifteen" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="All Hotlist"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fifteen"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="6"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rvHotListFirstProfile"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:weightSum="10">
+                        android:layout_marginTop="@dimen/five"
+                        android:layout_marginRight="@dimen/five"
+                        android:nestedScrollingEnabled="false"
+                        android:overScrollMode="never"
+                        android:scrollbars="none" />
 
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="@dimen/zero"
-                            android:layout_weight="0.3" />
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="@dimen/zero"
-                            android:layout_weight="0.7"
-                            android:orientation="horizontal"
-                            android:weightSum="10">
-
-                            <ImageView
-                                android:layout_width="@dimen/zero"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:background="@color/transparent"
-                                android:src="@android:drawable/ic_menu_close_clear_cancel" />
-
-                            <View
-                                android:layout_width="@dimen/zero"
-                                android:layout_height="match_parent"
-                                android:layout_weight="6" />
-
-                            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                                android:layout_width="@dimen/zero"
-                                android:layout_height="match_parent"
-                                android:layout_margin="@dimen/five"
-                                android:layout_weight="3"
-                                android:clipChildren="false"
-                                android:clipToPadding="false"
-                                android:divider="@android:color/transparent"
-                                android:dividerHeight="0.0px"
-                                android:elevation="5dp"
-                                app:cardCornerRadius="@dimen/twenty"
-                                card_view:cardBackgroundColor="@color/app_color_right"
-                                card_view:cardElevation="5dp"
-                                card_view:cardPreventCornerOverlap="false">
-
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:gravity="center"
-                                    android:text="amanta"
-                                    android:textColor="@color/white"
-                                    android:textSize="@dimen/fifteen" />
-
-
-                            </android.support.v7.widget.CardView>
-
-
-                        </LinearLayout>
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="@dimen/zero"
-                            android:layout_marginLeft="@dimen/twenty"
-                            android:layout_weight="1.5"
-                            android:gravity="left|center"
-                            android:text="Be seen! Use your Boddo credits to bid for a spot on the Hotlist and show everyone who are you. The higher you bid, the higher you are on the list, valid 12 hours."
-                            android:textColor="@color/black"
-                            android:textSize="@dimen/fifteen" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="@dimen/zero"
-                            android:layout_marginLeft="@dimen/twenty"
-                            android:layout_weight="0.5"
-                            android:gravity="center|left"
-                            android:text="All Hotlist"
-                            android:textColor="@color/black"
-                            android:textSize="@dimen/fifteen" />
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="@dimen/zero"
-                            android:layout_weight="7"
-                            android:orientation="horizontal">
-
-                            <android.support.v7.widget.RecyclerView
-                                android:id="@+id/rvHotListFirstProfile"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_marginTop="@dimen/five"
-                                android:layout_marginRight="@dimen/five"
-                                android:nestedScrollingEnabled="false"
-                                android:overScrollMode="never"
-                                android:scrollbars="none" />
-
-                        </LinearLayout>
-
-
-                    </LinearLayout>
-
-
-                </android.support.v7.widget.CardView>
+                </LinearLayout>
 
 
             </LinearLayout>
