@@ -26,7 +26,7 @@ public class ChatRequestAdapter extends RecyclerView.Adapter<ChatRequestAdapter.
     private List<LiveChat> liveChatList;
 
     public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        public TextView tvNameTitle, tvChatText, tvChatTime;
+        public TextView tvNameTitle, tvChatText, tvChatRequestAccept;
         public CircleImageView civLiveChatProfilePic;
         LinearLayout llLiveChat;
 
@@ -34,7 +34,7 @@ public class ChatRequestAdapter extends RecyclerView.Adapter<ChatRequestAdapter.
             super(view);
             tvNameTitle = view.findViewById(R.id.tvNameTitle);
             tvChatText = view.findViewById(R.id.tvChatText);
-            tvChatTime = view.findViewById(R.id.tvChatTime);
+            tvChatRequestAccept = view.findViewById(R.id.tvChatRequestAccept);
             civLiveChatProfilePic = view.findViewById(R.id.civLiveChatProfilePic);
             llLiveChat = view.findViewById(R.id.llLiveChat);
             llLiveChat.setOnClickListener(this);
@@ -60,7 +60,7 @@ public class ChatRequestAdapter extends RecyclerView.Adapter<ChatRequestAdapter.
 
     @Override
     public ChatRequestAdapter.MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        final View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_list, parent, false);
+        final View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.chat_request_cell, parent, false);
         final ChatRequestAdapter.MyViewHolder myViewHolder = new ChatRequestAdapter.MyViewHolder(itemView);
 
 
@@ -73,7 +73,7 @@ public class ChatRequestAdapter extends RecyclerView.Adapter<ChatRequestAdapter.
 
         holder.tvNameTitle.setText(liveChat.getNameTitle());
         holder.tvChatText.setText(liveChat.getChatText());
-        holder.tvChatTime.setText(liveChat.getChatTime());
+        holder.tvChatRequestAccept.setText(liveChat.getChatTime());
         Glide.with(mContext).load(liveChat.getLivProfilePic()).into(holder.civLiveChatProfilePic);
 
     }

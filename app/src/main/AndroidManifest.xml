@@ -9,7 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.OnlyStatusBar">
-        <activity android:name=".activities.ChatRequestActivity"></activity>
+        <activity
+            android:name=".activities.UploadPhotoActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme.OnlyStatusBar" />
+        <activity
+            android:name=".activities.ChatRequestActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme.OnlyStatusBar" />
         <activity
             android:name=".activities.HotListActivity"
             android:screenOrientation="sensorPortrait"

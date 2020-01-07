@@ -47,7 +47,7 @@
             android:layout_height="match_parent"
             android:layout_weight="7.5"
             android:orientation="vertical"
-            android:padding="3dp"
+            android:padding="2dp"
             android:weightSum="7">
 
             <LinearLayout
@@ -61,26 +61,33 @@
                     android:id="@+id/tvNameTitle"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="6"
+                    android:layout_weight="5"
                     android:gravity="center|left"
                     android:text="Mr.Abul Kalam"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/eighteen"
+                    android:textSize="@dimen/fifteen"
                     android:textStyle="bold" />
 
-                <View
+                <TextView
+                    android:id="@+id/tvChatRequestIgnore"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:layout_marginRight="@dimen/three"
+                    android:background="@drawable/gradientbackground"
+                    android:text="Ignore"
+                    android:textColor="@color/message_text_color" />
 
 
                 <TextView
-                    android:id="@+id/tvChatTime"
+                    android:id="@+id/tvChatRequestAccept"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="3"
-                    android:gravity="center|right"
-                    android:text="15 min ago"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:background="@drawable/gradientbackground"
+                    android:text="Accept"
                     android:textColor="@color/message_text_color" />
 
             </LinearLayout>

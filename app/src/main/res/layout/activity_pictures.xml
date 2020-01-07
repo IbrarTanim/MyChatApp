@@ -54,6 +54,7 @@
                 android:layout_weight="0.5" />
 
             <ImageView
+                android:id="@+id/ivUploadPhoto"
                 android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
                 android:layout_weight="1"

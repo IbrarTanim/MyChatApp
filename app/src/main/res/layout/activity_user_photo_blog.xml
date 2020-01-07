@@ -248,7 +248,7 @@
     </android.support.v4.widget.NestedScrollView>
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/fab"
+        android:id="@+id/civUploadPhoto"
         android:layout_width="@dimen/fifty"
         android:layout_height="@dimen/fifty"
         android:layout_alignParentRight="true"

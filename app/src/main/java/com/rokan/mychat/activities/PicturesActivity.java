@@ -8,6 +8,7 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 import com.rokan.mychat.R;
 import com.rokan.mychat.adapters.HotListAdapter;
@@ -28,6 +29,7 @@ public class PicturesActivity extends AppCompatActivity implements View.OnClickL
     private List<HotList> hotLists;
     private HotListAdapter hotListAdapter;
     LinearLayoutManager layoutManager;
+    ImageView ivUploadPhoto;
 
     ImageButton ibPicturePictures, ibMessagePictures, ibChatRoomPictures, ibActivitiesPictures, ibProfilePictures;
 
@@ -39,6 +41,7 @@ public class PicturesActivity extends AppCompatActivity implements View.OnClickL
 
         activity = this;
         rvHotList = findViewById(R.id.rvHotList);
+        ivUploadPhoto = findViewById(R.id.ivUploadPhoto);
         rvPhotoBlogs = findViewById(R.id.rvPhotoBlogs);
 
         ibPicturePictures = findViewById(R.id.ibPicturePictures);
@@ -66,6 +69,7 @@ public class PicturesActivity extends AppCompatActivity implements View.OnClickL
         ibChatRoomPictures.setOnClickListener(this);
         ibActivitiesPictures.setOnClickListener(this);
         ibProfilePictures.setOnClickListener(this);
+        ivUploadPhoto.setOnClickListener(this);
 
 
         preparePhotoBlogs();
@@ -191,6 +195,13 @@ public class PicturesActivity extends AppCompatActivity implements View.OnClickL
                 startActivity(new Intent(activity, ProfileFirstActivity.class));
                 finish();
                 break;
+
+            case R.id.ivUploadPhoto:
+                startActivity(new Intent(activity, UploadPhotoActivity.class));
+                finish();
+                break;
+
+
         }
     }
 

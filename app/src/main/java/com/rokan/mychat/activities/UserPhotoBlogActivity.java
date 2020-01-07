@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
+import android.view.View;
 
 import com.rokan.mychat.R;
 import com.rokan.mychat.adapters.UserPhotoBlogsAdapter;
@@ -14,13 +15,16 @@ import com.rokan.mychat.pojo.UserPhotoBlogs;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UserPhotoBlogActivity extends AppCompatActivity {
+import de.hdodenhof.circleimageview.CircleImageView;
+
+public class UserPhotoBlogActivity extends AppCompatActivity implements View.OnClickListener {
 
     UserPhotoBlogActivity activity;
     private UserPhotoBlogsAdapter userPhotoBlogsAdapter;
     private List<UserPhotoBlogs> userPhotoBlogsList;
     private RecyclerView rvUserPhotoBlogs;
     LinearLayoutManager layoutManager;
+    CircleImageView civUploadPhoto;
 
 
     @Override
@@ -30,6 +34,7 @@ public class UserPhotoBlogActivity extends AppCompatActivity {
 
         activity = this;
         rvUserPhotoBlogs = findViewById(R.id.rvUserPhotoBlogs);
+        civUploadPhoto = findViewById(R.id.civUploadPhoto);
         userPhotoBlogsList = new ArrayList<>();
 
 
@@ -39,6 +44,7 @@ public class UserPhotoBlogActivity extends AppCompatActivity {
         rvUserPhotoBlogs.setAdapter(userPhotoBlogsAdapter);
 
 
+        civUploadPhoto.setOnClickListener(this);
         preparePhotoBlogs();
 
     }
@@ -94,4 +100,13 @@ public class UserPhotoBlogActivity extends AppCompatActivity {
     }
 
 
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.civUploadPhoto:
+                startActivity(new Intent(activity, UploadPhotoActivity.class));
+                finish();
+                break;
+        }
+    }
 }

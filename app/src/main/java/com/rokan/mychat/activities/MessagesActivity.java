@@ -198,7 +198,7 @@ public class MessagesActivity extends AppCompatActivity implements View.OnClickL
                 break;
 
             case R.id.ivChatRequest:
-                startActivity(new Intent(activity, MatchActivity.class));
+                startActivity(new Intent(activity, ChatRequestActivity.class));
                 finish();
                 break;
         }
