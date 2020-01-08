@@ -37,7 +37,6 @@ public class UserPhotoBlogActivity extends AppCompatActivity implements View.OnC
         civUploadPhoto = findViewById(R.id.civUploadPhoto);
         userPhotoBlogsList = new ArrayList<>();
 
-
         userPhotoBlogsAdapter = new UserPhotoBlogsAdapter(activity, userPhotoBlogsList);
         StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(2, LinearLayoutManager.VERTICAL);
         rvUserPhotoBlogs.setLayoutManager(staggeredGridLayoutManager);
@@ -104,7 +103,7 @@ public class UserPhotoBlogActivity extends AppCompatActivity implements View.OnC
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.civUploadPhoto:
-                startActivity(new Intent(activity, UploadPhotoActivity.class));
+                startActivity(new Intent(activity, ProfilePictureActivity.class));
                 finish();
                 break;
         }

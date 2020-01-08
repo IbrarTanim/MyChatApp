@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:weightSum="10">
+        android:weightSum="9">
 
         <View
             android:layout_width="match_parent"
@@ -58,57 +58,143 @@
 
         </LinearLayout>
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/zero"
-            android:layout_weight="1" />
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/zero"
-            android:layout_weight="2"
+            android:layout_weight="4"
             android:orientation="horizontal"
             android:weightSum="15">
 
-
-            <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            <RelativeLayout
                 android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
-                android:layout_centerHorizontal="true"
                 android:layout_margin="@dimen/three"
-                android:layout_weight="5"
-                android:scaleType="centerCrop"
-                android:src="@mipmap/chatting"
-                app:riv_border_color="@color/transparent"
-                app:riv_corner_radius="@dimen/ten"
-                app:riv_mutate_background="true"
-                app:riv_oval="false" />
+                android:layout_weight="10">
 
-            <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/find_your_love"
+                    app:riv_border_color="@color/transparent"
+                    app:riv_corner_radius="@dimen/ten"
+                    app:riv_mutate_background="true"
+                    app:riv_oval="false" />
+
+                <TextView
+                    android:layout_width="@dimen/forty"
+                    android:layout_height="@dimen/forty"
+                    android:gravity="center"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="5"
+                    android:shadowDy="5"
+                    android:shadowRadius="5"
+                    android:text="1"
+                    android:textSize="@dimen/twenty"
+                    android:textStyle="bold" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/fifty"
+                    android:layout_height="@dimen/fifty"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="bottom|end"
+                    android:background="@drawable/rounded_textview"
+                    android:src="@drawable/ic_add_to_hotlist_icon" />
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
                 android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
-                android:layout_centerHorizontal="true"
-                android:layout_margin="@dimen/three"
                 android:layout_weight="5"
-                android:scaleType="centerCrop"
-                android:src="@mipmap/chatting"
-                app:riv_border_color="@color/transparent"
-                app:riv_corner_radius="@dimen/ten"
-                app:riv_mutate_background="true"
-                app:riv_oval="false" />
+                android:orientation="vertical"
+                android:weightSum="10">
 
-            <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:layout_width="@dimen/zero"
-                android:layout_height="match_parent"
-                android:layout_centerHorizontal="true"
-                android:layout_margin="@dimen/three"
-                android:layout_weight="5"
-                android:scaleType="centerCrop"
-                android:src="@mipmap/chatting"
-                app:riv_border_color="@color/transparent"
-                app:riv_corner_radius="@dimen/ten"
-                app:riv_mutate_background="true"
-                app:riv_oval="false" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_margin="@dimen/three"
+                    android:layout_weight="5">
+
+                    <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/find_your_love"
+                        app:riv_border_color="@color/transparent"
+                        app:riv_corner_radius="@dimen/ten"
+                        app:riv_mutate_background="true"
+                        app:riv_oval="false" />
+
+                    <TextView
+                        android:layout_width="@dimen/forty"
+                        android:layout_height="@dimen/forty"
+                        android:gravity="center"
+                        android:text="2"
+                        android:shadowColor="@color/black"
+                        android:shadowDx="5"
+                        android:shadowDy="5"
+                        android:shadowRadius="5"
+                        android:textSize="@dimen/twenty"
+                        android:textStyle="bold" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="@dimen/fifty"
+                        android:layout_height="@dimen/fifty"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="bottom|end"
+                        android:background="@drawable/rounded_textview"
+                        android:src="@drawable/ic_add_to_hotlist_icon" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_margin="@dimen/three"
+                    android:layout_weight="5">
+
+                    <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/find_your_love"
+                        app:riv_border_color="@color/transparent"
+                        app:riv_corner_radius="@dimen/ten"
+                        app:riv_mutate_background="true"
+                        app:riv_oval="false" />
+
+                    <TextView
+                        android:layout_width="@dimen/forty"
+                        android:layout_height="@dimen/forty"
+                        android:gravity="center"
+                        android:shadowColor="@color/black"
+                        android:shadowDx="5"
+                        android:shadowDy="5"
+                        android:shadowRadius="5"
+                        android:text="3"
+                        android:textSize="@dimen/twenty"
+                        android:textStyle="bold" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="@dimen/fifty"
+                        android:layout_height="@dimen/fifty"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="bottom|end"
+                        android:background="@drawable/rounded_textview"
+                        android:src="@drawable/ic_add_to_hotlist_icon" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
 
 
         </LinearLayout>
@@ -120,44 +206,126 @@
             android:orientation="horizontal"
             android:weightSum="15">
 
-            <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:layout_width="@dimen/zero"
-                android:layout_height="match_parent"
-                android:layout_centerHorizontal="true"
-                android:layout_margin="@dimen/three"
-                android:layout_weight="5"
-                android:scaleType="centerCrop"
-                android:src="@mipmap/chatting"
-                app:riv_border_color="@color/transparent"
-                app:riv_corner_radius="@dimen/ten"
-                app:riv_mutate_background="true"
-                app:riv_oval="false" />
 
-            <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            <RelativeLayout
                 android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
-                android:layout_centerHorizontal="true"
                 android:layout_margin="@dimen/three"
-                android:layout_weight="5"
-                android:scaleType="centerCrop"
-                android:src="@mipmap/chatting"
-                app:riv_border_color="@color/transparent"
-                app:riv_corner_radius="@dimen/ten"
-                app:riv_mutate_background="true"
-                app:riv_oval="false" />
+                android:layout_weight="5">
 
-            <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/find_your_love"
+                    app:riv_border_color="@color/transparent"
+                    app:riv_corner_radius="@dimen/ten"
+                    app:riv_mutate_background="true"
+                    app:riv_oval="false" />
+
+                <TextView
+                    android:layout_width="@dimen/forty"
+                    android:layout_height="@dimen/forty"
+                    android:gravity="center"
+                    android:text="4"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="5"
+                    android:shadowDy="5"
+                    android:shadowRadius="5"
+                    android:textSize="@dimen/twenty"
+                    android:textStyle="bold" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/fifty"
+                    android:layout_height="@dimen/fifty"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="bottom|end"
+                    android:background="@drawable/rounded_textview"
+                    android:src="@drawable/ic_add_to_hotlist_icon" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
                 android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
-                android:layout_centerHorizontal="true"
                 android:layout_margin="@dimen/three"
-                android:layout_weight="5"
-                android:scaleType="centerCrop"
-                android:src="@mipmap/chatting"
-                app:riv_border_color="@color/transparent"
-                app:riv_corner_radius="@dimen/ten"
-                app:riv_mutate_background="true"
-                app:riv_oval="false" />
+                android:layout_weight="5">
+
+                <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/find_your_love"
+                    app:riv_border_color="@color/transparent"
+                    app:riv_corner_radius="@dimen/ten"
+                    app:riv_mutate_background="true"
+                    app:riv_oval="false" />
+
+                <TextView
+                    android:layout_width="@dimen/forty"
+                    android:layout_height="@dimen/forty"
+                    android:gravity="center"
+                    android:text="5"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="5"
+                    android:shadowDy="5"
+                    android:shadowRadius="5"
+                    android:textSize="@dimen/twenty"
+                    android:textStyle="bold" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/fifty"
+                    android:layout_height="@dimen/fifty"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="bottom|end"
+                    android:background="@drawable/rounded_textview"
+                    android:src="@drawable/ic_add_to_hotlist_icon" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/three"
+                android:layout_weight="5">
+
+                <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/find_your_love"
+                    app:riv_border_color="@color/transparent"
+                    app:riv_corner_radius="@dimen/ten"
+                    app:riv_mutate_background="true"
+                    app:riv_oval="false" />
+
+                <TextView
+                    android:layout_width="@dimen/forty"
+                    android:layout_height="@dimen/forty"
+                    android:gravity="center"
+                    android:text="6"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="5"
+                    android:shadowDy="5"
+                    android:shadowRadius="5"
+                    android:textSize="@dimen/twenty"
+                    android:textStyle="bold" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/fifty"
+                    android:layout_height="@dimen/fifty"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="bottom|end"
+                    android:background="@drawable/rounded_textview"
+                    android:src="@drawable/ic_add_to_hotlist_icon" />
+
+
+            </RelativeLayout>
 
 
         </LinearLayout>
@@ -170,48 +338,129 @@
             android:weightSum="15">
 
 
-            <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            <RelativeLayout
                 android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
-                android:layout_centerHorizontal="true"
                 android:layout_margin="@dimen/three"
-                android:layout_weight="5"
-                android:scaleType="centerCrop"
-                android:src="@mipmap/chatting"
-                app:riv_border_color="@color/transparent"
-                app:riv_corner_radius="@dimen/ten"
-                app:riv_mutate_background="true"
-                app:riv_oval="false" />
+                android:layout_weight="5">
 
-            <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:layout_width="@dimen/zero"
-                android:layout_height="match_parent"
-                android:layout_centerHorizontal="true"
-                android:layout_margin="@dimen/three"
-                android:layout_weight="5"
-                android:scaleType="centerCrop"
-                android:src="@mipmap/chatting"
-                app:riv_border_color="@color/transparent"
-                app:riv_corner_radius="@dimen/ten"
-                app:riv_mutate_background="true"
-                app:riv_oval="false" />
+                <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/find_your_love"
+                    app:riv_border_color="@color/transparent"
+                    app:riv_corner_radius="@dimen/ten"
+                    app:riv_mutate_background="true"
+                    app:riv_oval="false" />
 
-            <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                <TextView
+                    android:layout_width="@dimen/forty"
+                    android:layout_height="@dimen/forty"
+                    android:gravity="center"
+                    android:text="7"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="5"
+                    android:shadowDy="5"
+                    android:shadowRadius="5"
+                    android:textSize="@dimen/twenty"
+                    android:textStyle="bold" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/fifty"
+                    android:layout_height="@dimen/fifty"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="bottom|end"
+                    android:background="@drawable/rounded_textview"
+                    android:src="@drawable/ic_add_to_hotlist_icon" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
                 android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
-                android:layout_centerHorizontal="true"
                 android:layout_margin="@dimen/three"
-                android:layout_weight="5"
-                android:scaleType="centerCrop"
-                android:src="@mipmap/chatting"
-                app:riv_border_color="@color/transparent"
-                app:riv_corner_radius="@dimen/ten"
-                app:riv_mutate_background="true"
-                app:riv_oval="false" />
+                android:layout_weight="5">
+
+                <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/find_your_love"
+                    app:riv_border_color="@color/transparent"
+                    app:riv_corner_radius="@dimen/ten"
+                    app:riv_mutate_background="true"
+                    app:riv_oval="false" />
+
+                <TextView
+                    android:layout_width="@dimen/forty"
+                    android:layout_height="@dimen/forty"
+                    android:gravity="center"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="5"
+                    android:shadowDy="5"
+                    android:shadowRadius="5"
+                    android:text="8"
+                    android:textSize="@dimen/twenty"
+                    android:textStyle="bold" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/fifty"
+                    android:layout_height="@dimen/fifty"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="bottom|end"
+                    android:background="@drawable/rounded_textview"
+                    android:src="@drawable/ic_add_to_hotlist_icon" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/three"
+                android:layout_weight="5">
+
+                <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/find_your_love"
+                    app:riv_border_color="@color/transparent"
+                    app:riv_corner_radius="@dimen/ten"
+                    app:riv_mutate_background="true"
+                    app:riv_oval="false" />
+
+                <TextView
+                    android:layout_width="@dimen/forty"
+                    android:layout_height="@dimen/forty"
+                    android:gravity="center"
+                    android:text="9"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="5"
+                    android:shadowDy="5"
+                    android:shadowRadius="5"
+                    android:textSize="@dimen/twenty"
+                    android:textStyle="bold" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/fifty"
+                    android:layout_height="@dimen/fifty"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="bottom|end"
+                    android:background="@drawable/rounded_textview"
+                    android:src="@drawable/ic_add_to_hotlist_icon" />
+
+
+            </RelativeLayout>
+
 
 
         </LinearLayout>
-
 
 
     </LinearLayout>
