@@ -10,39 +10,67 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:weightSum="10">
+        android:weightSum="11">
 
         <View
             android:layout_width="match_parent"
             android:layout_height="@dimen/zero"
-            android:layout_weight="1" />
+            android:layout_weight="0.4" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/zero"
-            android:layout_weight="9"
-            android:orientation="vertical"
+            android:layout_marginTop="@dimen/five"
+            android:layout_weight="0.6"
+            android:orientation="horizontal"
             android:weightSum="10">
 
+            <TextView
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/five"
+                android:layout_weight="5"
+                android:gravity="center|left"
+                android:text="Chat Request"
+                android:textColor="@color/black"
+                android:textSize="@dimen/twenty"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="4" />
+
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/zero"
+                android:id="@+id/ivChatRequest"
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@color/transparent"
-                android:padding="@dimen/ten"
-                android:scaleType="fitStart"
+                android:padding="@dimen/two"
+                android:scaleType="fitCenter"
                 android:src="@android:drawable/ic_menu_close_clear_cancel" />
 
             <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/zero"
-                android:layout_weight="1" />
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero"
+            android:layout_marginTop="@dimen/ten"
+            android:layout_weight="10"
+            android:orientation="vertical">
 
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/rvChatRequest"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/zero"
-                android:layout_weight="8"
+                android:layout_weight="10"
                 android:nestedScrollingEnabled="false"
                 android:overScrollMode="never"
                 android:scrollbars="none" />

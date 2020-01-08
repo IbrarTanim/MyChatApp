@@ -1,5 +1,6 @@
 package com.rokan.mychat.activities;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -23,7 +24,6 @@ public class ChatRequestActivity extends AppCompatActivity {
     private List<LiveChat> liveChatList;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,7 +33,6 @@ public class ChatRequestActivity extends AppCompatActivity {
         rvChatRequest = findViewById(R.id.rvChatRequest);
         liveChatList = new ArrayList<>();
         chatRequestAdapter = new ChatRequestAdapter(activity, liveChatList);
-
 
         RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(activity, 1);
         rvChatRequest.setLayoutManager(mLayoutManager);
@@ -84,5 +83,12 @@ public class ChatRequestActivity extends AppCompatActivity {
 
 
         chatRequestAdapter.notifyDataSetChanged();
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        startActivity(new Intent(activity, MessagesActivity.class));
+        finish();
     }
 }
