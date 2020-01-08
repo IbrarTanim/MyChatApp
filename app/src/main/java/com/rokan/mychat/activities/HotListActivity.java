@@ -6,6 +6,11 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
+import android.view.DragEvent;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.LinearLayout;
 
 import com.rokan.mychat.R;
 import com.rokan.mychat.adapters.HotlistFirstProfileAdapter;
@@ -21,6 +26,7 @@ public class HotListActivity extends AppCompatActivity {
     private HotlistFirstProfileAdapter hotlistFirstProfileAdapter;
     private List<UserPhotoBlogs> userPhotoBlogsList;
     private RecyclerView rvHotListFirstProfile;
+    LinearLayout llExtendable;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,9 +35,9 @@ public class HotListActivity extends AppCompatActivity {
         activity = this;
 
         rvHotListFirstProfile = findViewById(R.id.rvHotListFirstProfile);
+        llExtendable = findViewById(R.id.llExtendable);
+
         userPhotoBlogsList = new ArrayList<>();
-
-
         hotlistFirstProfileAdapter = new HotlistFirstProfileAdapter(activity, userPhotoBlogsList);
         StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(3, LinearLayoutManager.VERTICAL);
         rvHotListFirstProfile.setLayoutManager(staggeredGridLayoutManager);
@@ -39,6 +45,17 @@ public class HotListActivity extends AppCompatActivity {
 
 
         preparePhotoBlogs();
+
+        llExtendable.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                ViewGroup.LayoutParams params = llExtendable.getLayoutParams();
+                params.height = ViewGroup.LayoutParams.MATCH_PARENT;
+                llExtendable.setLayoutParams(params);
+
+                return false;
+            }
+        });
     }
 
     private void preparePhotoBlogs() {

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero"
+            android:layout_weight="0.4" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero"
+            android:layout_marginTop="@dimen/five"
+            android:layout_weight="0.6"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/five"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:text="Profile Picture"
+                android:textColor="@color/black"
+                android:textSize="@dimen/twenty"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="4.5" />
+
+            <ImageView
+                android:id="@+id/ivChatRequest"
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:padding="@dimen/five"
+                android:scaleType="fitCenter"
+                android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+            <View
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="15">
+
+
+            <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/three"
+                android:layout_weight="5"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/chatting"
+                app:riv_border_color="@color/transparent"
+                app:riv_corner_radius="@dimen/ten"
+                app:riv_mutate_background="true"
+                app:riv_oval="false" />
+
+            <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/three"
+                android:layout_weight="5"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/chatting"
+                app:riv_border_color="@color/transparent"
+                app:riv_corner_radius="@dimen/ten"
+                app:riv_mutate_background="true"
+                app:riv_oval="false" />
+
+            <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/three"
+                android:layout_weight="5"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/chatting"
+                app:riv_border_color="@color/transparent"
+                app:riv_corner_radius="@dimen/ten"
+                app:riv_mutate_background="true"
+                app:riv_oval="false" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="15">
+
+            <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/three"
+                android:layout_weight="5"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/chatting"
+                app:riv_border_color="@color/transparent"
+                app:riv_corner_radius="@dimen/ten"
+                app:riv_mutate_background="true"
+                app:riv_oval="false" />
+
+            <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/three"
+                android:layout_weight="5"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/chatting"
+                app:riv_border_color="@color/transparent"
+                app:riv_corner_radius="@dimen/ten"
+                app:riv_mutate_background="true"
+                app:riv_oval="false" />
+
+            <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/three"
+                android:layout_weight="5"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/chatting"
+                app:riv_border_color="@color/transparent"
+                app:riv_corner_radius="@dimen/ten"
+                app:riv_mutate_background="true"
+                app:riv_oval="false" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="15">
+
+
+            <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/three"
+                android:layout_weight="5"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/chatting"
+                app:riv_border_color="@color/transparent"
+                app:riv_corner_radius="@dimen/ten"
+                app:riv_mutate_background="true"
+                app:riv_oval="false" />
+
+            <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/three"
+                android:layout_weight="5"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/chatting"
+                app:riv_border_color="@color/transparent"
+                app:riv_corner_radius="@dimen/ten"
+                app:riv_mutate_background="true"
+                app:riv_oval="false" />
+
+            <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/three"
+                android:layout_weight="5"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/chatting"
+                app:riv_border_color="@color/transparent"
+                app:riv_corner_radius="@dimen/ten"
+                app:riv_mutate_background="true"
+                app:riv_oval="false" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
