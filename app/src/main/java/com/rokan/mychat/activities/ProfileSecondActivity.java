@@ -8,6 +8,7 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 
 import com.rokan.mychat.R;
+import com.rokan.mychat.dialog.DialogControl;
 import com.rokan.mychat.dialog.ProfileSecondInfoDailog;
 
 public class ProfileSecondActivity extends AppCompatActivity implements View.OnClickListener {
@@ -50,11 +51,8 @@ public class ProfileSecondActivity extends AppCompatActivity implements View.OnC
 
             case R.id.ivInfoProfileSecond:
                 ProfileSecondInfoDailog profileSecondInfoDailog = new ProfileSecondInfoDailog(activity);
-                profileSecondInfoDailog.getWindow().setFlags(WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE, WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE);
-                profileSecondInfoDailog.show();
-                profileSecondInfoDailog.setCancelable(true);
-                profileSecondInfoDailog.getWindow().getDecorView().setSystemUiVisibility(activity.getWindow().getDecorView().getSystemUiVisibility());
-                profileSecondInfoDailog.getWindow().clearFlags(WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE);
+                DialogControl.ShowDialog(activity, profileSecondInfoDailog);
+
                 break;
 
 
