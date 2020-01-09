@@ -31,7 +31,7 @@
             android:background="@null"
             android:gravity="center"
             android:hint="Write your hobies"
-            android:inputType="number"
+            android:inputType="text"
             android:textColor="@color/black"
             android:textColorHint="@color/black"
             android:textSize="@dimen/fifteen" />
