@@ -43,7 +43,7 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="@dimen/fifteen"
+                        android:layout_height="@dimen/zero"
                         android:layout_weight="1"
                         android:orientation="horizontal"
                         android:weightSum="19">
@@ -160,13 +160,6 @@
 
                     </LinearLayout>
 
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_margin="@dimen/ten"
-                        android:layout_weight="0.01"
-                        android:background="@color/photo_blogs_transparent" />
-
 
                     <android.support.v4.widget.NestedScrollView
                         android:layout_width="match_parent"
@@ -178,41 +171,455 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:orientation="vertical">
-
-
-
+                            android:orientation="vertical"
+                            android:weightSum="10">
 
                             <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="@dimen/fifty"
-                                android:layout_weight="0.5"
+                                android:layout_height="@dimen/zero"
+                                android:layout_weight="1"
                                 android:gravity="center|left"
                                 android:text="About"
                                 android:textColor="@color/black"
-                                android:textSize="@dimen/fifteen" />
+                                android:textSize="@dimen/fifteen"
+                                android:textStyle="bold" />
 
                             <EditText
                                 android:layout_width="match_parent"
-                                android:layout_height="@dimen/hundrad"
-                                android:layout_weight="1"
+                                android:layout_height="@dimen/eighty"
+                                android:layout_weight="4"
                                 android:background="@null"
+                                android:gravity="left"
                                 android:hint="Write something"
-                                android:inputType="textNoSuggestions"
+                                android:inputType="text|textMultiLine|textCapSentences"
+                                android:maxLines="4"
+                                android:overScrollMode="always"
+                                android:scrollbarStyle="insideInset"
+                                android:scrollbars="vertical"
                                 android:textColor="@color/black"
                                 android:textColorHint="@color/black"
                                 android:textSize="@dimen/fifteen" />
 
                             <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="@dimen/two_hundrad"
+                                android:layout_height="@dimen/zero"
                                 android:layout_weight="0.5"
-                                android:gravity="center|left"
+                                android:gravity="top|left"
                                 android:text="Others Info"
                                 android:textColor="@color/black"
-                                android:textSize="@dimen/fifteen" />
+                                android:textSize="@dimen/fifteen"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/forty"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:weightSum="10">
+
+
+                                <ImageView
+                                    android:layout_width="@dimen/zero"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@color/transparent"
+                                    android:src="@mipmap/add_icon" />
+
+                                <TextView
+                                    android:layout_width="@dimen/zero"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
+                                    android:text="About"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/fifteen"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="@dimen/zero"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="7"
+                                    android:gravity="left|center"
+                                    android:text="Tell some thing about yourself"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/fifteen" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/forty"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:weightSum="10">
+
+
+                                <ImageView
+                                    android:layout_width="@dimen/zero"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@color/transparent"
+                                    android:src="@mipmap/add_icon" />
+
+                                <TextView
+                                    android:layout_width="@dimen/zero"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="4"
+                                    android:gravity="center"
+                                    android:text="Relationship"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/fifteen"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="@dimen/zero"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:gravity="left|center"
+                                    android:text="Married"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/fifteen" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/forty"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:weightSum="10">
+
+
+                                <ImageView
+                                    android:layout_width="@dimen/zero"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@color/transparent"
+                                    android:src="@mipmap/add_icon" />
+
+                                <TextView
+                                    android:layout_width="@dimen/zero"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="4"
+                                    android:gravity="center"
+                                    android:text="Lookinf for"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/fifteen"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="@dimen/zero"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:gravity="left|center"
+                                    android:text="Mail"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/fifteen" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/forty"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:weightSum="10">
+
+
+                                <ImageView
+                                    android:layout_width="@dimen/zero"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@color/transparent"
+                                    android:src="@mipmap/add_icon" />
+
+                                <TextView
+                                    android:layout_width="@dimen/zero"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="4"
+                                    android:gravity="center"
+                                    android:text="Profession"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/fifteen"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="@dimen/zero"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:gravity="left|center"
+                                    android:text="Software Engineer"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/fifteen" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/forty"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:weightSum="10">
+
+
+                                <ImageView
+                                    android:layout_width="@dimen/zero"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@color/transparent"
+                                    android:src="@mipmap/add_icon" />
+
+                                <TextView
+                                    android:layout_width="@dimen/zero"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="4"
+                                    android:gravity="center"
+                                    android:text="Education"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/fifteen"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="@dimen/zero"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:gravity="left|center"
+                                    android:text="M.Sc in CSE"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/fifteen" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/forty"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:weightSum="10">
+
+
+                                <ImageView
+                                    android:layout_width="@dimen/zero"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@color/transparent"
+                                    android:src="@mipmap/add_icon" />
+
+                                <TextView
+                                    android:layout_width="@dimen/zero"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="4"
+                                    android:gravity="center"
+                                    android:text="Language"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/fifteen"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="@dimen/zero"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:gravity="left|center"
+                                    android:text="Bangla"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/fifteen" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/forty"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:weightSum="10">
+
+
+                                <ImageView
+                                    android:layout_width="@dimen/zero"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@color/transparent"
+                                    android:src="@mipmap/add_icon" />
+
+                                <TextView
+                                    android:layout_width="@dimen/zero"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="4"
+                                    android:gravity="center"
+                                    android:text="Height"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/fifteen"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="@dimen/zero"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:gravity="left|center"
+                                    android:text="5.8"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/fifteen" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/forty"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:weightSum="10">
+
+
+                                <ImageView
+                                    android:layout_width="@dimen/zero"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@color/transparent"
+                                    android:src="@mipmap/add_icon" />
+
+                                <TextView
+                                    android:layout_width="@dimen/zero"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="4"
+                                    android:gravity="center"
+                                    android:text="Hair color"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/fifteen"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="@dimen/zero"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:gravity="left|center"
+                                    android:text="Black"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/fifteen" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/forty"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:weightSum="10">
+
+
+                                <ImageView
+                                    android:layout_width="@dimen/zero"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@color/transparent"
+                                    android:src="@mipmap/add_icon" />
+
+                                <TextView
+                                    android:layout_width="@dimen/zero"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="4"
+                                    android:gravity="center"
+                                    android:text="Eye color"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/fifteen"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="@dimen/zero"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:gravity="left|center"
+                                    android:text="Black"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/fifteen" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/forty"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:weightSum="10">
+
+
+                                <ImageView
+                                    android:layout_width="@dimen/zero"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@color/transparent"
+                                    android:src="@mipmap/add_icon" />
+
+                                <TextView
+                                    android:layout_width="@dimen/zero"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="4"
+                                    android:gravity="center"
+                                    android:text="Smoking"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/fifteen"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="@dimen/zero"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:gravity="left|center"
+                                    android:text="No"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/fifteen" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/forty"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:weightSum="10">
+
+
+                                <ImageView
+                                    android:layout_width="@dimen/zero"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@color/transparent"
+                                    android:src="@mipmap/add_icon" />
+
+                                <TextView
+                                    android:layout_width="@dimen/zero"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="4"
+                                    android:gravity="center"
+                                    android:text="Hobbies"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/fifteen"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="@dimen/zero"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:gravity="left|center"
+                                    android:text="reading articles"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/fifteen" />
+
+
+                            </LinearLayout>
 
                         </LinearLayout>
+
+
                     </android.support.v4.widget.NestedScrollView>
 
 
