@@ -222,51 +222,16 @@
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
                                     android:layout_weight="1"
+                                    android:scaleType="fitCenter"
+                                    android:padding="@dimen/five"
                                     android:background="@color/transparent"
-                                    android:src="@mipmap/add_icon" />
-
-                                <TextView
-                                    android:layout_width="@dimen/zero"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="2"
-                                    android:gravity="center"
-                                    android:text="About"
-                                    android:textColor="@color/black"
-                                    android:textSize="@dimen/fifteen"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:layout_width="@dimen/zero"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="7"
-                                    android:gravity="left|center"
-                                    android:text="Tell some thing about yourself"
-                                    android:textColor="@color/black"
-                                    android:textSize="@dimen/fifteen" />
-
-
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="@dimen/forty"
-                                android:layout_weight="1"
-                                android:orientation="horizontal"
-                                android:weightSum="10">
-
-
-                                <ImageView
-                                    android:layout_width="@dimen/zero"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:background="@color/transparent"
-                                    android:src="@mipmap/add_icon" />
+                                    android:src="@drawable/ic_relationship_icon" />
 
                                 <TextView
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
                                     android:layout_weight="4"
-                                    android:gravity="center"
+                                    android:gravity="center|left"
                                     android:text="Relationship"
                                     android:textColor="@color/black"
                                     android:textSize="@dimen/fifteen"
@@ -296,14 +261,16 @@
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
                                     android:layout_weight="1"
+                                    android:scaleType="fitCenter"
+                                    android:padding="@dimen/five"
                                     android:background="@color/transparent"
-                                    android:src="@mipmap/add_icon" />
+                                    android:src="@drawable/ic_looking_for_icon" />
 
                                 <TextView
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
                                     android:layout_weight="4"
-                                    android:gravity="center"
+                                    android:gravity="center|left"
                                     android:text="Lookinf for"
                                     android:textColor="@color/black"
                                     android:textSize="@dimen/fifteen"
@@ -333,14 +300,16 @@
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
                                     android:layout_weight="1"
+                                    android:scaleType="fitCenter"
+                                    android:padding="@dimen/five"
                                     android:background="@color/transparent"
-                                    android:src="@mipmap/add_icon" />
+                                    android:src="@drawable/ic_profession_icon" />
 
                                 <TextView
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
                                     android:layout_weight="4"
-                                    android:gravity="center"
+                                    android:gravity="center|left"
                                     android:text="Profession"
                                     android:textColor="@color/black"
                                     android:textSize="@dimen/fifteen"
@@ -370,14 +339,16 @@
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
                                     android:layout_weight="1"
+                                    android:scaleType="fitCenter"
+                                    android:padding="@dimen/five"
                                     android:background="@color/transparent"
-                                    android:src="@mipmap/add_icon" />
+                                    android:src="@drawable/ic_education_icon" />
 
                                 <TextView
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
                                     android:layout_weight="4"
-                                    android:gravity="center"
+                                    android:gravity="center|left"
                                     android:text="Education"
                                     android:textColor="@color/black"
                                     android:textSize="@dimen/fifteen"
@@ -407,14 +378,16 @@
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
                                     android:layout_weight="1"
+                                    android:scaleType="fitCenter"
+                                    android:padding="@dimen/five"
                                     android:background="@color/transparent"
-                                    android:src="@mipmap/add_icon" />
+                                    android:src="@drawable/ic_language_icon" />
 
                                 <TextView
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
                                     android:layout_weight="4"
-                                    android:gravity="center"
+                                    android:gravity="center|left"
                                     android:text="Language"
                                     android:textColor="@color/black"
                                     android:textSize="@dimen/fifteen"
@@ -444,14 +417,16 @@
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
                                     android:layout_weight="1"
+                                    android:scaleType="fitCenter"
+                                    android:padding="@dimen/five"
                                     android:background="@color/transparent"
-                                    android:src="@mipmap/add_icon" />
+                                    android:src="@drawable/ic_height_icon" />
 
                                 <TextView
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
                                     android:layout_weight="4"
-                                    android:gravity="center"
+                                    android:gravity="center|left"
                                     android:text="Height"
                                     android:textColor="@color/black"
                                     android:textSize="@dimen/fifteen"
@@ -481,14 +456,16 @@
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
                                     android:layout_weight="1"
+                                    android:scaleType="fitCenter"
+                                    android:padding="@dimen/five"
                                     android:background="@color/transparent"
-                                    android:src="@mipmap/add_icon" />
+                                    android:src="@drawable/ic_hair_color_icon" />
 
                                 <TextView
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
                                     android:layout_weight="4"
-                                    android:gravity="center"
+                                    android:gravity="center|left"
                                     android:text="Hair color"
                                     android:textColor="@color/black"
                                     android:textSize="@dimen/fifteen"
@@ -518,14 +495,16 @@
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
                                     android:layout_weight="1"
+                                    android:scaleType="fitCenter"
+                                    android:padding="@dimen/five"
                                     android:background="@color/transparent"
-                                    android:src="@mipmap/add_icon" />
+                                    android:src="@drawable/ic_eye_color_icon" />
 
                                 <TextView
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
                                     android:layout_weight="4"
-                                    android:gravity="center"
+                                    android:gravity="center|left"
                                     android:text="Eye color"
                                     android:textColor="@color/black"
                                     android:textSize="@dimen/fifteen"
@@ -555,14 +534,16 @@
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
                                     android:layout_weight="1"
+                                    android:scaleType="fitCenter"
+                                    android:padding="@dimen/five"
                                     android:background="@color/transparent"
-                                    android:src="@mipmap/add_icon" />
+                                    android:src="@drawable/ic_smoking_icon" />
 
                                 <TextView
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
                                     android:layout_weight="4"
-                                    android:gravity="center"
+                                    android:gravity="center|left"
                                     android:text="Smoking"
                                     android:textColor="@color/black"
                                     android:textSize="@dimen/fifteen"
@@ -592,14 +573,16 @@
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
                                     android:layout_weight="1"
+                                    android:scaleType="fitCenter"
+                                    android:padding="@dimen/five"
                                     android:background="@color/transparent"
-                                    android:src="@mipmap/add_icon" />
+                                    android:src="@drawable/ic_hobbie_icon" />
 
                                 <TextView
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
                                     android:layout_weight="4"
-                                    android:gravity="center"
+                                    android:gravity="center|left"
                                     android:text="Hobbies"
                                     android:textColor="@color/black"
                                     android:textSize="@dimen/fifteen"
@@ -616,6 +599,10 @@
 
 
                             </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/fifty" />
 
                         </LinearLayout>
 

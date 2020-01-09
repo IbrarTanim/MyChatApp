@@ -27,4 +27,5 @@
     <dimen name="thirty_five">35dp</dimen>
     <dimen name="hundrad_twenty">120dp</dimen>
     <dimen name="two_hundrad">200dp</dimen>
+    <dimen name="seven">7dp</dimen>
 </resources>
