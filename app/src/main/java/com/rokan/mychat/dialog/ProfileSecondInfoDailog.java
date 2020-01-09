@@ -59,34 +59,51 @@ public class ProfileSecondInfoDailog extends Dialog implements View.OnClickListe
             case R.id.tvRlationship:
                 RelationShipDialog relationShipDialog = new RelationShipDialog(activity);
                 DialogControl.ShowDialog(activity, relationShipDialog);
-
                 break;
 
             case R.id.tvLookingfor:
+                LookingforDialog lookingforDialog = new LookingforDialog(activity);
+                DialogControl.ShowDialog(activity, lookingforDialog);
                 break;
 
             case R.id.tvProfession:
+                ProfessionDialog professionDialog = new ProfessionDialog(activity);
+                DialogControl.ShowDialog(activity, professionDialog);
                 break;
 
             case R.id.tvEducation:
+                EducationDialog educationDialog = new EducationDialog(activity);
+                DialogControl.ShowDialog(activity, educationDialog);
                 break;
 
             case R.id.tvLanguage:
+                LanguageDialog languageDialog = new LanguageDialog(activity);
+                DialogControl.ShowDialog(activity, languageDialog);
                 break;
 
             case R.id.tvHeight:
+                HeightDialog heightDialog = new HeightDialog(activity);
+                DialogControl.ShowDialog(activity, heightDialog);
                 break;
 
             case R.id.tvHairColor:
+                HairColorDialog hairColorDialog = new HairColorDialog(activity);
+                DialogControl.ShowDialog(activity, hairColorDialog);
                 break;
 
             case R.id.tvEyeColor:
+                EyeColorDialog eyeColorDialog = new EyeColorDialog(activity);
+                DialogControl.ShowDialog(activity, eyeColorDialog);
                 break;
 
             case R.id.tvSmoking:
+                SmokingDialog smokingDialog = new SmokingDialog(activity);
+                DialogControl.ShowDialog(activity, smokingDialog);
                 break;
 
             case R.id.tvHobbie:
+                HobbiesDialog hobbiesDialog = new HobbiesDialog(activity);
+                DialogControl.ShowDialog(activity, hobbiesDialog);
                 break;
 
 
