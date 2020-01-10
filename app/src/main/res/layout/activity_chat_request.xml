@@ -39,7 +39,7 @@
             <View
                 android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
-                android:layout_weight="4" />
+                android:layout_weight="3" />
 
             <ImageView
                 android:id="@+id/ivChatRequest"
@@ -54,7 +54,7 @@
             <View
                 android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
-                android:layout_weight="0.5" />
+                android:layout_weight="1" />
 
 
         </LinearLayout>

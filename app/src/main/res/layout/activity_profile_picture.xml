@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:weightSum="9">
+        android:weightSum="9.5">
 
         <View
             android:layout_width="match_parent"
@@ -68,7 +68,7 @@
             <RelativeLayout
                 android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
-                android:layout_margin="@dimen/three"
+                android:layout_margin="@dimen/seven"
                 android:layout_weight="10">
 
                 <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -98,7 +98,6 @@
                     android:layout_height="@dimen/fifty"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_gravity="bottom|end"
                     android:background="@drawable/rounded_textview"
                     android:src="@drawable/ic_add_to_hotlist_icon" />
 
@@ -116,7 +115,7 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/zero"
-                    android:layout_margin="@dimen/three"
+                    android:layout_margin="@dimen/seven"
                     android:layout_weight="5">
 
                     <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -133,11 +132,11 @@
                         android:layout_width="@dimen/forty"
                         android:layout_height="@dimen/forty"
                         android:gravity="center"
-                        android:text="2"
                         android:shadowColor="@color/black"
                         android:shadowDx="5"
                         android:shadowDy="5"
                         android:shadowRadius="5"
+                        android:text="2"
                         android:textSize="@dimen/twenty"
                         android:textStyle="bold" />
 
@@ -156,7 +155,7 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/zero"
-                    android:layout_margin="@dimen/three"
+                    android:layout_margin="@dimen/seven"
                     android:layout_weight="5">
 
                     <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -210,7 +209,7 @@
             <RelativeLayout
                 android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
-                android:layout_margin="@dimen/three"
+                android:layout_margin="@dimen/seven"
                 android:layout_weight="5">
 
                 <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -227,11 +226,11 @@
                     android:layout_width="@dimen/forty"
                     android:layout_height="@dimen/forty"
                     android:gravity="center"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="5"
+                    android:shadowDy="5"
+                    android:shadowRadius="5"
                     android:text="4"
-                    android:shadowColor="@color/black"
-                    android:shadowDx="5"
-                    android:shadowDy="5"
-                    android:shadowRadius="5"
                     android:textSize="@dimen/twenty"
                     android:textStyle="bold" />
 
@@ -250,7 +249,7 @@
             <RelativeLayout
                 android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
-                android:layout_margin="@dimen/three"
+                android:layout_margin="@dimen/seven"
                 android:layout_weight="5">
 
                 <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -267,11 +266,11 @@
                     android:layout_width="@dimen/forty"
                     android:layout_height="@dimen/forty"
                     android:gravity="center"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="5"
+                    android:shadowDy="5"
+                    android:shadowRadius="5"
                     android:text="5"
-                    android:shadowColor="@color/black"
-                    android:shadowDx="5"
-                    android:shadowDy="5"
-                    android:shadowRadius="5"
                     android:textSize="@dimen/twenty"
                     android:textStyle="bold" />
 
@@ -290,7 +289,7 @@
             <RelativeLayout
                 android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
-                android:layout_margin="@dimen/three"
+                android:layout_margin="@dimen/seven"
                 android:layout_weight="5">
 
                 <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -307,11 +306,11 @@
                     android:layout_width="@dimen/forty"
                     android:layout_height="@dimen/forty"
                     android:gravity="center"
-                    android:text="6"
                     android:shadowColor="@color/black"
                     android:shadowDx="5"
                     android:shadowDy="5"
                     android:shadowRadius="5"
+                    android:text="6"
                     android:textSize="@dimen/twenty"
                     android:textStyle="bold" />
 
@@ -341,7 +340,7 @@
             <RelativeLayout
                 android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
-                android:layout_margin="@dimen/three"
+                android:layout_margin="@dimen/seven"
                 android:layout_weight="5">
 
                 <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -358,11 +357,11 @@
                     android:layout_width="@dimen/forty"
                     android:layout_height="@dimen/forty"
                     android:gravity="center"
-                    android:text="7"
                     android:shadowColor="@color/black"
                     android:shadowDx="5"
                     android:shadowDy="5"
                     android:shadowRadius="5"
+                    android:text="7"
                     android:textSize="@dimen/twenty"
                     android:textStyle="bold" />
 
@@ -381,7 +380,7 @@
             <RelativeLayout
                 android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
-                android:layout_margin="@dimen/three"
+                android:layout_margin="@dimen/seven"
                 android:layout_weight="5">
 
                 <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -421,7 +420,7 @@
             <RelativeLayout
                 android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
-                android:layout_margin="@dimen/three"
+                android:layout_margin="@dimen/seven"
                 android:layout_weight="5">
 
                 <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -438,11 +437,11 @@
                     android:layout_width="@dimen/forty"
                     android:layout_height="@dimen/forty"
                     android:gravity="center"
-                    android:text="9"
                     android:shadowColor="@color/black"
                     android:shadowDx="5"
                     android:shadowDy="5"
                     android:shadowRadius="5"
+                    android:text="9"
                     android:textSize="@dimen/twenty"
                     android:textStyle="bold" />
 
@@ -459,8 +458,17 @@
             </RelativeLayout>
 
 
-
         </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="Hold to drug and drop"
+            android:textColor="@color/black"
+            android:textSize="@dimen/twenty"
+            android:textStyle="bold" />
 
 
     </LinearLayout>
