@@ -18,6 +18,8 @@ import android.widget.TextView;
 import com.rokan.mychat.R;
 import com.rokan.mychat.adapters.HotlistFirstProfileAdapter;
 import com.rokan.mychat.adapters.UserPhotoBlogsAdapter;
+import com.rokan.mychat.dialog.DialogControl;
+import com.rokan.mychat.dialog.JoinDialog;
 import com.rokan.mychat.pojo.UserPhotoBlogs;
 
 import java.util.ArrayList;
@@ -31,8 +33,7 @@ public class HotListActivity extends AppCompatActivity {
     private HotlistFirstProfileAdapter hotlistFirstProfileAdapter;
     private List<UserPhotoBlogs> userPhotoBlogsList;
     private RecyclerView rvHotListFirstProfile;
-    LinearLayout llExtendable;
-    TextView tvDetail;
+    TextView tvDetail, tvJOIN;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,12 +42,11 @@ public class HotListActivity extends AppCompatActivity {
         activity = this;
 
 
-
         rvHotListFirstProfile = findViewById(R.id.rvHotListFirstProfile);
         tvDetail = findViewById(R.id.tvDetail);
+        tvJOIN = findViewById(R.id.tvJOIN);
         //tvDetail.setJustificationMode(JUSTIFICATION_MODE_INTER_WORD);
 
-        llExtendable = findViewById(R.id.llExtendable);
 
         userPhotoBlogsList = new ArrayList<>();
         hotlistFirstProfileAdapter = new HotlistFirstProfileAdapter(activity, userPhotoBlogsList);
@@ -55,18 +55,16 @@ public class HotListActivity extends AppCompatActivity {
         rvHotListFirstProfile.setAdapter(hotlistFirstProfileAdapter);
 
 
-        preparePhotoBlogs();
-
-        llExtendable.setOnTouchListener(new View.OnTouchListener() {
+        tvJOIN.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                ViewGroup.LayoutParams params = llExtendable.getLayoutParams();
-                params.height = ViewGroup.LayoutParams.MATCH_PARENT;
-                llExtendable.setLayoutParams(params);
-
-                return false;
+            public void onClick(View view) {
+                JoinDialog joinDialog = new JoinDialog(activity);
+                DialogControl.ShowDialog(activity, joinDialog);
             }
         });
+        preparePhotoBlogs();
+
+
     }
 
     private void preparePhotoBlogs() {
