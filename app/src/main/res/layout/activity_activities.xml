@@ -262,7 +262,7 @@
                 android:layout_height="@dimen/zero"
                 android:layout_weight="6"
                 android:orientation="vertical"
-                android:weightSum="10">
+                android:weightSum="10.5">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -273,6 +273,11 @@
                     android:textColor="@color/black"
                     android:textStyle="bold"
                     android:textSize="@dimen/fifteen" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/bottom_rounded_bg" />
 
                 <android.support.v7.widget.RecyclerView
                     android:id="@+id/rvActivities"

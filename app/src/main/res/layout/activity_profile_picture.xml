@@ -100,7 +100,7 @@
                     android:layout_alignParentRight="true"
                     android:layout_alignParentBottom="true"
                     android:background="@drawable/rounded_textview"
-                    android:src="@drawable/ic_add_to_hotlist_icon" />
+                    android:src="@drawable/ic_plus_profile_photo_icon" />
 
 
             </RelativeLayout>
@@ -476,8 +476,8 @@
             android:gravity="center"
             android:text="Hold to drug and drop"
             android:textColor="@color/black"
-            android:textSize="@dimen/twenty"
-            android:textStyle="bold" />
+            android:textSize="@dimen/fifteen"
+            android:textStyle="normal" />
 
 
     </LinearLayout>

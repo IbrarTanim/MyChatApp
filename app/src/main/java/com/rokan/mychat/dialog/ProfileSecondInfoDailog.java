@@ -2,11 +2,15 @@ package com.rokan.mychat.dialog;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.makeramen.roundedimageview.RoundedImageView;
 import com.rokan.mychat.R;
+import com.rokan.mychat.activities.LandingActivity;
+import com.rokan.mychat.activities.ProfilePictureActivity;
 import com.rokan.mychat.activities.ProfileSecondActivity;
 
 public class ProfileSecondInfoDailog extends Dialog implements View.OnClickListener {
@@ -15,6 +19,7 @@ public class ProfileSecondInfoDailog extends Dialog implements View.OnClickListe
 
     TextView tvRlationship, tvLookingfor, tvProfession, tvEducation, tvLanguage;
     TextView tvHeight, tvHairColor, tvEyeColor, tvSmoking, tvHobbie;
+    RoundedImageView rivInfoProfileSecond;
 
 
     public ProfileSecondInfoDailog(ProfileSecondActivity activity) {
@@ -38,6 +43,7 @@ public class ProfileSecondInfoDailog extends Dialog implements View.OnClickListe
         tvEyeColor = findViewById(R.id.tvEyeColor);
         tvSmoking = findViewById(R.id.tvSmoking);
         tvHobbie = findViewById(R.id.tvHobbie);
+        rivInfoProfileSecond = findViewById(R.id.rivInfoProfileSecond);
 
         tvRlationship.setOnClickListener(this);
         tvLookingfor.setOnClickListener(this);
@@ -49,6 +55,7 @@ public class ProfileSecondInfoDailog extends Dialog implements View.OnClickListe
         tvEyeColor.setOnClickListener(this);
         tvSmoking.setOnClickListener(this);
         tvHobbie.setOnClickListener(this);
+        rivInfoProfileSecond.setOnClickListener(this);
 
     }
 
@@ -104,6 +111,10 @@ public class ProfileSecondInfoDailog extends Dialog implements View.OnClickListe
             case R.id.tvHobbie:
                 HobbiesDialog hobbiesDialog = new HobbiesDialog(activity);
                 DialogControl.ShowDialog(activity, hobbiesDialog);
+                break;
+
+            case R.id.rivInfoProfileSecond:
+                activity.startActivity(new Intent(activity, ProfilePictureActivity.class));
                 break;
 
 

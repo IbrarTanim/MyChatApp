@@ -1,6 +1,8 @@
 package com.rokan.mychat.activities;
 
 import android.content.Intent;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -11,6 +13,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.rokan.mychat.R;
 import com.rokan.mychat.adapters.HotlistFirstProfileAdapter;
@@ -20,6 +23,8 @@ import com.rokan.mychat.pojo.UserPhotoBlogs;
 import java.util.ArrayList;
 import java.util.List;
 
+import static android.text.Layout.JUSTIFICATION_MODE_INTER_WORD;
+
 public class HotListActivity extends AppCompatActivity {
 
     HotListActivity activity;
@@ -27,6 +32,7 @@ public class HotListActivity extends AppCompatActivity {
     private List<UserPhotoBlogs> userPhotoBlogsList;
     private RecyclerView rvHotListFirstProfile;
     LinearLayout llExtendable;
+    TextView tvDetail;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +40,12 @@ public class HotListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_hot_list);
         activity = this;
 
+
+
         rvHotListFirstProfile = findViewById(R.id.rvHotListFirstProfile);
+        tvDetail = findViewById(R.id.tvDetail);
+        //tvDetail.setJustificationMode(JUSTIFICATION_MODE_INTER_WORD);
+
         llExtendable = findViewById(R.id.llExtendable);
 
         userPhotoBlogsList = new ArrayList<>();
