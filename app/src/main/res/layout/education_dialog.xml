@@ -10,58 +10,78 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:weightSum="5.5">
+        android:weightSum="5">
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.25" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_margin="@dimen/five"
-            android:layout_weight="1"
+            android:layout_weight="0.5"
             android:gravity="center"
-            android:text="Relationship"
+            android:text="Education"
             android:textColor="@color/black"
             android:textSize="@dimen/fifteen" />
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1" />
 
-
-        <RadioGroup
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_margin="@dimen/five"
-            android:layout_weight="2"
-            android:orientation="horizontal"
-            android:weightSum="2">
+            android:layout_weight="4">
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Married" />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="2">
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Unmarried" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Some college studies" />
 
-        </RadioGroup>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Current college student" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Bachelor's degree" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Master's degree" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="PhD/ MD/ Post doctorate" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Other" />
+
+            </RadioGroup>
+
+        </ScrollView>
 
 
         <TextView
             android:layout_width="@dimen/hundrad"
             android:layout_height="0dp"
-            android:layout_gravity="right|bottom"
-            android:layout_margin="@dimen/five"
-            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:layout_marginBottom="@dimen/five"
             android:background="@drawable/gradientbackground"
             android:gravity="center"
             android:text="Done"
