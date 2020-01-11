@@ -92,7 +92,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:background="@color/transparent"
-                            android:padding="@dimen/five"
+                            android:padding="@dimen/seven"
                             android:scaleType="fitCenter"
                             android:src="@mipmap/clock_white_croped" />
 
@@ -161,15 +161,15 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/zero"
-                        android:layout_weight="5"
-                        android:orientation="horizontal"
-                        android:weightSum="3">
+                        android:layout_weight="8"
+                        android:orientation="vertical"
+                        android:weightSum="2">
 
                         <TextView
-                            android:layout_width="@dimen/zero"
-                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/zero"
                             android:layout_weight="1"
-                            android:gravity="center"
+                            android:gravity="center|bottom"
                             android:shadowColor="@color/black"
                             android:shadowDx="5"
                             android:shadowDy="5"
@@ -180,9 +180,9 @@
                             android:textStyle="bold" />
 
                         <ImageView
-                            android:layout_width="@dimen/zero"
-                            android:layout_height="match_parent"
-                            android:layout_weight="2"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/zero"
+                            android:layout_weight="1"
                             android:padding="@dimen/two"
                             android:background="@color/transparent"
                             android:scaleType="fitCenter"
@@ -194,87 +194,8 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/zero"
-                        android:layout_weight="1" />
+                        android:layout_weight="10" />
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/zero"
-                        android:layout_weight="5"
-                        android:orientation="horizontal"
-                        android:weightSum="3">
-
-
-                        <TextView
-                            android:layout_width="@dimen/zero"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:shadowColor="@color/black"
-                            android:shadowDx="5"
-                            android:shadowDy="5"
-                            android:shadowRadius="3"
-                            android:text="19"
-                            android:textColor="@color/white"
-                            android:textSize="@dimen/fifteen"
-                            android:textStyle="bold" />
-
-                        <ImageView
-                            android:layout_width="@dimen/zero"
-                            android:layout_height="match_parent"
-                            android:layout_weight="2"
-                            android:padding="@dimen/two"
-                            android:background="@color/transparent"
-                            android:scaleType="fitCenter"
-                            android:src="@mipmap/comment_icon_decm" />
-
-
-
-                    </LinearLayout>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/zero"
-                        android:layout_weight="1" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/zero"
-                        android:layout_weight="5"
-                        android:orientation="horizontal"
-                        android:weightSum="3">
-
-
-
-                        <TextView
-                            android:layout_width="@dimen/zero"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:shadowColor="@color/black"
-                            android:shadowDx="5"
-                            android:shadowDy="5"
-                            android:shadowRadius="3"
-                            android:text="14"
-                            android:textColor="@color/white"
-                            android:textSize="@dimen/fifteen"
-                            android:textStyle="bold" />
-
-                        <ImageView
-                            android:layout_width="@dimen/zero"
-                            android:layout_height="match_parent"
-                            android:layout_weight="2"
-                            android:padding="@dimen/two"
-                            android:drawable="@drawable/shadow_bg"
-                            android:scaleType="fitCenter"
-                            android:src="@mipmap/love_icon_decm" />
-
-
-                    </LinearLayout>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/zero"
-                        android:layout_weight="1" />
 
 
                 </LinearLayout>
@@ -467,22 +388,92 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/zero"
                     android:layout_weight="3"
-                    android:orientation="horizontal"
-                    android:weightSum="10">
+                    android:weightSum="12"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+
+
+                        <ImageView
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:padding="@dimen/two"
+                            android:background="@color/transparent"
+                            android:scaleType="fitCenter"
+                            android:src="@mipmap/comment_icon_decm" />
+
+
+                        <TextView
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center|left"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="5"
+                            android:shadowDy="5"
+                            android:shadowRadius="3"
+                            android:text="19"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/fifteen"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <ImageView
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:padding="@dimen/two"
+                            android:drawable="@drawable/shadow_bg"
+                            android:scaleType="fitCenter"
+                            android:src="@mipmap/love_icon_decm" />
+
+
+                        <TextView
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center|left"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="5"
+                            android:shadowDy="5"
+                            android:shadowRadius="3"
+                            android:text="14"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/fifteen"
+                            android:textStyle="bold" />
+
+
+
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="@dimen/zero"
                         android:layout_height="match_parent"
                         android:layout_weight="8"
+                        android:layout_marginRight="@dimen/seven"
                         android:background="@drawable/chatting_bg_overlay"
                         android:orientation="horizontal"
                         android:weightSum="10">
 
                         <EditText
-                            android:layout_width="match_parent"
+                            android:layout_width="@dimen/zero"
                             android:layout_height="match_parent"
-                            android:layout_marginLeft="@dimen/ten"
-                            android:gravity="center|left"
+                            android:gravity="center"
+                            android:layout_weight="8"
                             android:hint="Write a comment"
                             android:background="@null"
                             android:inputType="textNoSuggestions"
@@ -497,6 +488,7 @@
                             android:layout_weight="2" />
 
                     </LinearLayout>
+
 
 
                 </LinearLayout>
@@ -514,7 +506,6 @@
             android:layout_height="130dp"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="@dimen/ten"
             android:orientation="vertical"
             android:weightSum="4.25">
 
@@ -534,8 +525,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/zero"
                 android:layout_weight="2"
+                android:padding="@dimen/ten"
                 android:background="@color/transparent"
-                android:src="@drawable/ic_message_send_icon" />
+                android:src="@mipmap/send_icon" />
 
 
         </LinearLayout>
