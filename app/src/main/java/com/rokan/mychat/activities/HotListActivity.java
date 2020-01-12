@@ -41,7 +41,6 @@ public class HotListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_hot_list);
         activity = this;
 
-
         rvHotListFirstProfile = findViewById(R.id.rvHotListFirstProfile);
         tvDetail = findViewById(R.id.tvDetail);
         tvJOIN = findViewById(R.id.tvJOIN);

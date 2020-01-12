@@ -5,93 +5,104 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero"
+            android:layout_weight="0.4" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
+            android:layout_height="@dimen/zero"
+            android:layout_marginTop="@dimen/five"
+            android:layout_weight="0.6"
+            android:orientation="horizontal"
             android:weightSum="10">
 
+            <TextView
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/five"
+                android:layout_weight="4"
+                android:gravity="center|left"
+                android:text="Hotlist"
+                android:textColor="@color/black"
+                android:textSize="@dimen/twenty"
+                android:textStyle="bold" />
+
             <View
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="4.5" />
+
+            <ImageView
+                android:id="@+id/ivChatRequest"
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:padding="@dimen/five"
+                android:scaleType="fitCenter"
+                android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+            <View
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5" />
+
+
+        </LinearLayout>
+
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero"
+            android:layout_weight="9">
+
+
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/zero"
-                android:layout_weight="0.4" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/zero"
-                android:layout_marginTop="@dimen/five"
-                android:layout_weight="0.6"
-                android:orientation="horizontal"
-                android:weightSum="10">
-
-                <TextView
-                    android:layout_width="@dimen/zero"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="@dimen/five"
-                    android:layout_weight="4"
-                    android:gravity="center|left"
-                    android:text="Hotlist"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/twenty"
-                    android:textStyle="bold" />
-
-                <View
-                    android:layout_width="@dimen/zero"
-                    android:layout_height="match_parent"
-                    android:layout_weight="4.5" />
-
-                <ImageView
-                    android:id="@+id/ivChatRequest"
-                    android:layout_width="@dimen/zero"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="@color/transparent"
-                    android:padding="@dimen/five"
-                    android:scaleType="fitCenter"
-                    android:src="@android:drawable/ic_menu_close_clear_cancel" />
-
-                <View
-                    android:layout_width="@dimen/zero"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.5" />
-
-
-            </LinearLayout>
-
-
-            <android.support.v4.widget.NestedScrollView
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/zero"
-                android:layout_weight="9">
+                android:layout_height="match_parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:weightSum="5"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:weightSum="5">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="200dp"
                         android:layout_weight="2">
 
-                        <ImageView
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:scaleType="centerCrop"
-                            android:src="@mipmap/anisul" />
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/transparent"
+                                android:scaleType="centerCrop"
+                                android:src="@mipmap/find_your_love" />
+
+
+                        </LinearLayout>
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="@dimen/hundred_fifty"
                             android:layout_height="@dimen/thirty"
                             android:layout_alignParentBottom="true"
-                            android:gravity="center"
+                            android:layout_marginLeft="@dimen/sixty"
+                            android:gravity="center|left"
                             android:shadowColor="@color/black"
                             android:shadowDx="5"
                             android:shadowDy="5"
@@ -112,76 +123,72 @@
                         android:paddingLeft="@dimen/five"
                         android:weightSum="10">
 
-                        <LinearLayout
+                        <View
                             android:layout_width="match_parent"
-                            android:layout_height="@dimen/thirty"
-                            android:layout_weight="1"
-                            android:orientation="horizontal"
-                            android:weightSum="10">
-
-
-                            <View
-                                android:layout_width="@dimen/zero"
-                                android:layout_height="match_parent"
-                                android:layout_weight="7" />
-
-
-                            <TextView
-                                android:id="@+id/tvJOIN"
-                                android:layout_width="@dimen/zero"
-                                android:layout_height="match_parent"
-                                android:layout_gravity="bottom"
-                                android:layout_margin="@dimen/five"
-                                android:layout_weight="3"
-                                android:background="@drawable/gradientbackground"
-                                android:gravity="center"
-                                android:text="JOIN"
-                                android:textColor="@color/white"
-                                android:textSize="@dimen/fifteen" />
-
-
-                        </LinearLayout>
+                            android:layout_height="@dimen/zero"
+                            android:layout_weight="0.5" />
 
                         <TextView
                             android:id="@+id/tvDetail"
                             android:layout_width="match_parent"
-                            android:layout_height="@dimen/fifty"
-                            android:layout_marginBottom="@dimen/ten"
+                            android:layout_height="@dimen/zero"
                             android:layout_weight="2"
                             android:gravity="left|center"
                             android:text="Be seen! Use your Boddo credits to bid for a spot on the Hotlist and show everyone who are you. The higher you bid, the higher you are on the list, valid 12 hours."
                             android:textColor="@color/black"
                             android:textSize="@dimen/fifteen" />
 
-                        <LinearLayout
+                        <View
                             android:layout_width="match_parent"
                             android:layout_height="@dimen/zero"
+                            android:layout_weight="0.5" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rvHotListFirstProfile"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/zero"
+                            android:layout_marginTop="@dimen/five"
+                            android:layout_marginRight="@dimen/five"
+                            android:layout_marginBottom="@dimen/five"
                             android:layout_weight="7"
-                            android:orientation="horizontal">
-
-                            <android.support.v7.widget.RecyclerView
-                                android:id="@+id/rvHotListFirstProfile"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:nestedScrollingEnabled="false"
-                                android:overScrollMode="never"
-                                android:scrollbars="none" />
-
-                        </LinearLayout>
-
+                            android:nestedScrollingEnabled="false"
+                            android:overScrollMode="never"
+                            android:scrollbars="none" />
 
                     </LinearLayout>
 
 
                 </LinearLayout>
 
-            </android.support.v4.widget.NestedScrollView>
+                <TextView
+                    android:id="@+id/tvJOIN"
+                    android:layout_width="@dimen/hundred_fifty"
+                    android:layout_height="@dimen/forty"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="270dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/gradientbackground"
+                    android:gravity="center"
+                    android:text="JOIN"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/fifteen" />
+
+                <ImageView
+                    android:layout_width="@dimen/eighty"
+                    android:layout_height="@dimen/hundrad"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="230dp"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:src="@drawable/ic_star_of_hotlist" />
 
 
-        </LinearLayout>
+            </RelativeLayout>
 
 
-    </RelativeLayout>
+        </android.support.v4.widget.NestedScrollView>
 
 
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>
