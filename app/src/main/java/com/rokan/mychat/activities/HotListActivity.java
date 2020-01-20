@@ -78,6 +78,13 @@ public class HotListActivity extends AppCompatActivity {
                 R.mipmap.jaforiqbal,
                 R.mipmap.taking_photo,
                 R.mipmap.samsurrahman,
+                R.mipmap.chatting,
+                R.mipmap.humayunahmed,
+                R.mipmap.find_your_love,
+                R.mipmap.anisul,
+                R.mipmap.find_friends,
+                R.mipmap.jaforiqbal,
+                R.mipmap.taking_photo,
         };
 
         UserPhotoBlogs userPhotoBlogs = new UserPhotoBlogs(listItemPhotoBlogs[0]);
@@ -104,6 +111,26 @@ public class HotListActivity extends AppCompatActivity {
         userPhotoBlogs = new UserPhotoBlogs(listItemPhotoBlogs[7]);
         userPhotoBlogsList.add(userPhotoBlogs);
 
+        userPhotoBlogs = new UserPhotoBlogs(listItemPhotoBlogs[8]);
+        userPhotoBlogsList.add(userPhotoBlogs);
+
+        userPhotoBlogs = new UserPhotoBlogs(listItemPhotoBlogs[9]);
+        userPhotoBlogsList.add(userPhotoBlogs);
+
+        userPhotoBlogs = new UserPhotoBlogs(listItemPhotoBlogs[10]);
+        userPhotoBlogsList.add(userPhotoBlogs);
+
+        userPhotoBlogs = new UserPhotoBlogs(listItemPhotoBlogs[11]);
+        userPhotoBlogsList.add(userPhotoBlogs);
+
+        userPhotoBlogs = new UserPhotoBlogs(listItemPhotoBlogs[12]);
+        userPhotoBlogsList.add(userPhotoBlogs);
+
+        userPhotoBlogs = new UserPhotoBlogs(listItemPhotoBlogs[13]);
+        userPhotoBlogsList.add(userPhotoBlogs);
+
+        userPhotoBlogs = new UserPhotoBlogs(listItemPhotoBlogs[14]);
+        userPhotoBlogsList.add(userPhotoBlogs);
 
         hotlistFirstProfileAdapter.notifyDataSetChanged();
     }
