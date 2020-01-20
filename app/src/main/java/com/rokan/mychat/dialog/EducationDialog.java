@@ -26,3 +26,5 @@ public class EducationDialog extends Dialog {
         setContentView(R.layout.education_dialog);
     }
 }
+
+

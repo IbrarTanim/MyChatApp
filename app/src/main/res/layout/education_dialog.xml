@@ -35,9 +35,9 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="Education"
-                android:textStyle="bold"
                 android:textColor="@color/black"
-                android:textSize="@dimen/fifteen" />
+                android:textSize="@dimen/fifteen"
+                android:textStyle="bold" />
 
 
             <android.support.v4.widget.NestedScrollView
@@ -50,7 +50,37 @@
                     android:layout_height="match_parent"
                     android:layout_marginLeft="@dimen/fifteen"
                     android:orientation="vertical"
-                    android:weightSum="6">
+                    android:weightSum="11">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="No degree" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Special school" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Some high school" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Associate degree" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="High school graduate" />
 
                     <RadioButton
                         android:layout_width="wrap_content"
