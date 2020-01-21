@@ -34,29 +34,35 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Relationship"
-                android:textStyle="bold"
+                android:text="What is your relationship status?"
                 android:textColor="@color/black"
-                android:textSize="@dimen/fifteen" />
+                android:textSize="@dimen/eighteen"
+                android:textStyle="bold" />
 
 
             <android.support.v4.widget.NestedScrollView
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/zero"
-                android:layout_weight="5">
+                android:layout_weight="6">
 
                 <RadioGroup
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="@dimen/fifteen"
                     android:orientation="vertical"
-                    android:weightSum="4">
+                    android:weightSum="5">
 
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Single" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Married" />
 
                     <RadioButton
                         android:layout_width="wrap_content"
@@ -80,11 +86,6 @@
                 </RadioGroup>
 
             </android.support.v4.widget.NestedScrollView>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1" />
 
 
             <TextView

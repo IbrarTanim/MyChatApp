@@ -62,6 +62,8 @@
         <android.support.v4.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="@dimen/zero"
+            android:overScrollMode="never"
+            android:scrollbars="none"
             android:layout_weight="10">
 
                 <RelativeLayout

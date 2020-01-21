@@ -34,16 +34,16 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Education"
+                android:text="What is your educational background?"
                 android:textColor="@color/black"
-                android:textSize="@dimen/fifteen"
+                android:textSize="@dimen/eighteen"
                 android:textStyle="bold" />
 
 
             <android.support.v4.widget.NestedScrollView
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/zero"
-                android:layout_weight="5">
+                android:layout_weight="6">
 
                 <RadioGroup
                     android:layout_width="match_parent"
@@ -122,10 +122,7 @@
 
             </android.support.v4.widget.NestedScrollView>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1" />
+
 
 
             <TextView

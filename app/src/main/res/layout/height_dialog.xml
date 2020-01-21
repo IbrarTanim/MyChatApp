@@ -34,15 +34,15 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Height"
+                android:text=" What is your height?"
                 android:textColor="@color/black"
-                android:textSize="@dimen/fifteen"
+                android:textSize="@dimen/eighteen"
                 android:textStyle="bold" />
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="5"
+                android:layout_weight="6"
                 android:background="@null"
                 android:gravity="center"
                 android:hint="Write your height"
@@ -52,10 +52,7 @@
                 android:textSize="@dimen/fifteen"
                 android:textStyle="bold" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1" />
+
 
 
             <TextView
