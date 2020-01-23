@@ -184,9 +184,9 @@
                                 <ImageView
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
-                                    android:layout_weight="3"
+                                    android:layout_weight="2"
                                     android:background="@color/transparent"
-                                    android:padding="@dimen/five"
+                                    android:padding="@dimen/ten"
                                     android:scaleType="fitCenter"
                                     android:src="@drawable/ic_about_me_icon" />
 
@@ -194,7 +194,7 @@
                                 <LinearLayout
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
-                                    android:layout_weight="7"
+                                    android:layout_weight="8"
                                     android:orientation="vertical"
                                     android:weightSum="2">
 
@@ -241,9 +241,9 @@
                                 <ImageView
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
-                                    android:layout_weight="3"
+                                    android:layout_weight="2"
                                     android:background="@color/transparent"
-                                    android:padding="@dimen/five"
+                                    android:padding="@dimen/ten"
                                     android:scaleType="fitCenter"
                                     android:src="@drawable/ic_relationship_icon" />
 
@@ -251,7 +251,7 @@
                                 <LinearLayout
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
-                                    android:layout_weight="7"
+                                    android:layout_weight="8"
                                     android:orientation="vertical"
                                     android:weightSum="2">
 
@@ -293,9 +293,9 @@
                                 <ImageView
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
-                                    android:layout_weight="3"
+                                    android:layout_weight="2"
                                     android:background="@color/transparent"
-                                    android:padding="@dimen/five"
+                                    android:padding="@dimen/ten"
                                     android:scaleType="fitCenter"
                                     android:src="@drawable/ic_looking_for_icon" />
 
@@ -303,7 +303,7 @@
                                 <LinearLayout
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
-                                    android:layout_weight="7"
+                                    android:layout_weight="8"
                                     android:orientation="vertical"
                                     android:weightSum="2">
 
@@ -345,9 +345,9 @@
                                 <ImageView
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
-                                    android:layout_weight="3"
+                                    android:layout_weight="2"
                                     android:background="@color/transparent"
-                                    android:padding="@dimen/five"
+                                    android:padding="@dimen/ten"
                                     android:scaleType="fitCenter"
                                     android:src="@drawable/ic_profession_icon" />
 
@@ -355,7 +355,7 @@
                                 <LinearLayout
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
-                                    android:layout_weight="7"
+                                    android:layout_weight="8"
                                     android:orientation="vertical"
                                     android:weightSum="2">
 
@@ -397,9 +397,9 @@
                                 <ImageView
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
-                                    android:layout_weight="3"
+                                    android:layout_weight="2"
                                     android:background="@color/transparent"
-                                    android:padding="@dimen/five"
+                                    android:padding="@dimen/ten"
                                     android:scaleType="fitCenter"
                                     android:src="@drawable/ic_education_icon" />
 
@@ -407,7 +407,7 @@
                                 <LinearLayout
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
-                                    android:layout_weight="7"
+                                    android:layout_weight="8"
                                     android:orientation="vertical"
                                     android:weightSum="2">
 
@@ -449,9 +449,9 @@
                                 <ImageView
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
-                                    android:layout_weight="3"
+                                    android:layout_weight="2"
                                     android:background="@color/transparent"
-                                    android:padding="@dimen/five"
+                                    android:padding="@dimen/ten"
                                     android:scaleType="fitCenter"
                                     android:src="@drawable/ic_language_icon" />
 
@@ -459,7 +459,7 @@
                                 <LinearLayout
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
-                                    android:layout_weight="7"
+                                    android:layout_weight="8"
                                     android:orientation="vertical"
                                     android:weightSum="2">
 
@@ -501,9 +501,9 @@
                                 <ImageView
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
-                                    android:layout_weight="3"
+                                    android:layout_weight="2"
                                     android:background="@color/transparent"
-                                    android:padding="@dimen/five"
+                                    android:padding="@dimen/ten"
                                     android:scaleType="fitCenter"
                                     android:src="@drawable/ic_height_icon" />
 
@@ -511,7 +511,7 @@
                                 <LinearLayout
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
-                                    android:layout_weight="7"
+                                    android:layout_weight="8"
                                     android:orientation="vertical"
                                     android:weightSum="2">
 
@@ -553,9 +553,9 @@
                                 <ImageView
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
-                                    android:layout_weight="3"
+                                    android:layout_weight="2"
                                     android:background="@color/transparent"
-                                    android:padding="@dimen/five"
+                                    android:padding="@dimen/ten"
                                     android:scaleType="fitCenter"
                                     android:src="@drawable/ic_hair_color_icon" />
 
@@ -563,7 +563,7 @@
                                 <LinearLayout
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
-                                    android:layout_weight="7"
+                                    android:layout_weight="8"
                                     android:orientation="vertical"
                                     android:weightSum="2">
 
@@ -605,9 +605,9 @@
                                 <ImageView
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
-                                    android:layout_weight="3"
+                                    android:layout_weight="2"
                                     android:background="@color/transparent"
-                                    android:padding="@dimen/five"
+                                    android:padding="@dimen/ten"
                                     android:scaleType="fitCenter"
                                     android:src="@drawable/ic_eye_color_icon" />
 
@@ -615,7 +615,7 @@
                                 <LinearLayout
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
-                                    android:layout_weight="7"
+                                    android:layout_weight="8"
                                     android:orientation="vertical"
                                     android:weightSum="2">
 
@@ -657,9 +657,9 @@
                                 <ImageView
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
-                                    android:layout_weight="3"
+                                    android:layout_weight="2"
                                     android:background="@color/transparent"
-                                    android:padding="@dimen/five"
+                                    android:padding="@dimen/ten"
                                     android:scaleType="fitCenter"
                                     android:src="@drawable/ic_smoking_icon" />
 
@@ -667,7 +667,7 @@
                                 <LinearLayout
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
-                                    android:layout_weight="7"
+                                    android:layout_weight="8"
                                     android:orientation="vertical"
                                     android:weightSum="2">
 
@@ -709,9 +709,9 @@
                                 <ImageView
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
-                                    android:layout_weight="3"
+                                    android:layout_weight="2"
                                     android:background="@color/transparent"
-                                    android:padding="@dimen/five"
+                                    android:padding="@dimen/ten"
                                     android:scaleType="fitCenter"
                                     android:src="@drawable/ic_hobbie_icon" />
 
@@ -719,7 +719,7 @@
                                 <LinearLayout
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
-                                    android:layout_weight="7"
+                                    android:layout_weight="8"
                                     android:orientation="vertical"
                                     android:weightSum="2">
 
