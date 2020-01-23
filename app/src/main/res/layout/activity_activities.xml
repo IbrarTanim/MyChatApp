@@ -286,7 +286,7 @@
                             android:textColor="@color/black"
                             android:textSize="@dimen/fifteen"
                             android:textStyle="bold" />
-                            
+
                     </LinearLayout>
 
                     <android.support.v7.widget.RecyclerView
