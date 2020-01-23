@@ -62,30 +62,47 @@
         <android.support.v4.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="@dimen/zero"
+            android:layout_weight="10"
             android:overScrollMode="never"
-            android:scrollbars="none"
-            android:layout_weight="10">
+            android:scrollbars="none">
 
-                <RelativeLayout
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:id="@+id/llExtendable"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="10">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                    </RelativeLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_weight="2.5"
                         android:orientation="vertical"
-                        android:weightSum="5">
+                        android:weightSum="2.5">
 
                         <RelativeLayout
                             android:layout_width="match_parent"
-                            android:layout_height="250dp">
+                            android:layout_height="0dp"
+                            android:layout_weight="2">
 
                             <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:background="@color/transparent"
                                 android:scaleType="centerCrop"
-                                android:src="@mipmap/anisul" />
+                                android:src="@mipmap/find_your_love" />
 
                             <TextView
                                 android:layout_width="@dimen/hundred_fifty"
@@ -104,65 +121,57 @@
 
                         </RelativeLayout>
 
-                        <LinearLayout
-                            android:id="@+id/llExtendable"
+                        <TextView
+                            android:id="@+id/tvDetail"
                             android:layout_width="match_parent"
-                            android:layout_height="@dimen/zero"
-                            android:layout_weight="4"
-                            android:orientation="vertical"
-                            android:paddingLeft="@dimen/five"
-                            android:weightSum="15">
-
-
-                            <TextView
-                                android:id="@+id/tvDetail"
-                                android:layout_width="match_parent"
-                                android:layout_height="80dp"
-                                android:gravity="left|center"
-                                android:text="Be seen! Use your Boddo credits to bid for a spot on the Hotlist and show everyone who are you. The higher you bid, the higher you are on the list, valid 12 hours."
-                                android:textColor="@color/black"
-                                android:textSize="@dimen/fifteen" />
-
-                            <android.support.v7.widget.RecyclerView
-                                android:id="@+id/rvHotListFirstProfile"
-                                android:layout_width="match_parent"
-                                android:layout_height="@dimen/zero"
-                                android:layout_weight="15"
-                                android:nestedScrollingEnabled="false"
-                                android:overScrollMode="never"
-                                android:scrollbars="none" />
-
-                        </LinearLayout>
-
+                            android:layout_height="@dimen/fifty"
+                            android:layout_weight="0.5"
+                            android:gravity="left|center"
+                            android:text="Be seen! Use your Boddo credits to bid for a spot on the Hotlist and show everyone who are you. The higher you bid, the higher you are on the list, valid 12 hours."
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fifteen" />
 
                     </LinearLayout>
 
-                    <TextView
-                        android:id="@+id/tvJOIN"
-                        android:layout_width="@dimen/hundred_fifty"
-                        android:layout_height="@dimen/forty"
-                        android:layout_alignParentRight="true"
-                        android:layout_gravity="bottom"
-                        android:layout_marginTop="220dp"
-                        android:layout_weight="3"
-                        android:background="@drawable/gradientbackground"
-                        android:gravity="center"
-                        android:text="JOIN"
-                        android:textColor="@color/white"
-                        android:textSize="@dimen/fifteen" />
 
-                    <ImageView
-                        android:layout_width="@dimen/eighty"
-                        android:layout_height="@dimen/hundrad"
-                        android:layout_alignParentLeft="true"
-                        android:layout_marginTop="200dp"
-                        android:background="@color/transparent"
-                        android:gravity="center"
-                        android:src="@drawable/ic_star_of_hotlist" />
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rvHotListFirstProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/zero"
+                        android:layout_weight="7.5"
+                        android:fillViewport="true"
+                        android:nestedScrollingEnabled="true"
+                        android:overScrollMode="never"
+                        android:scrollbars="none" />
+
+                </LinearLayout>
 
 
-                </RelativeLayout>
+                <TextView
+                    android:id="@+id/tvJOIN"
+                    android:layout_width="@dimen/hundred_fifty"
+                    android:layout_height="@dimen/thirty"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="260dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/gradientbackground"
+                    android:gravity="center"
+                    android:text="JOIN"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/fifteen" />
 
+                <ImageView
+                    android:layout_width="@dimen/seventy"
+                    android:layout_height="@dimen/seventy"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="230dp"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:src="@drawable/ic_star_of_hotlist" />
+
+
+            </RelativeLayout>
 
 
         </android.support.v4.widget.NestedScrollView>
