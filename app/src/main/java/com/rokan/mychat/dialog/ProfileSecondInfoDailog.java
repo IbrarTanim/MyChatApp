@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.makeramen.roundedimageview.RoundedImageView;
@@ -15,7 +16,8 @@ import com.rokan.mychat.activities.ProfileSecondActivity;
 
 public class ProfileSecondInfoDailog extends Dialog implements View.OnClickListener {
     ProfileSecondActivity activity;
-    //Context context;
+
+    LinearLayout llAbout;
 
     TextView tvRlationship, tvLookingfor, tvProfession, tvEducation, tvLanguage;
     TextView tvHeight, tvHairColor, tvEyeColor, tvSmoking, tvHobbie;
@@ -33,6 +35,7 @@ public class ProfileSecondInfoDailog extends Dialog implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.info_dialog_profile_second);
 
+        llAbout = findViewById(R.id.llAbout);
         tvRlationship = findViewById(R.id.tvRlationship);
         tvLookingfor = findViewById(R.id.tvLookingfor);
         tvProfession = findViewById(R.id.tvProfession);
@@ -45,6 +48,7 @@ public class ProfileSecondInfoDailog extends Dialog implements View.OnClickListe
         tvHobbie = findViewById(R.id.tvHobbie);
         rivInfoProfileSecond = findViewById(R.id.rivInfoProfileSecond);
 
+        llAbout.setOnClickListener(this);
         tvRlationship.setOnClickListener(this);
         tvLookingfor.setOnClickListener(this);
         tvProfession.setOnClickListener(this);
@@ -63,10 +67,18 @@ public class ProfileSecondInfoDailog extends Dialog implements View.OnClickListe
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
+
+
+            case R.id.llAbout:
+                AboutDialog aboutDialog = new AboutDialog(activity);
+                DialogControl.ShowDialog(activity, aboutDialog);
+                break;
+
             case R.id.tvRlationship:
                 RelationShipDialog relationShipDialog = new RelationShipDialog(activity);
                 DialogControl.ShowDialog(activity, relationShipDialog);
                 break;
+
 
             case R.id.tvLookingfor:
                 LookingforDialog lookingforDialog = new LookingforDialog(activity);

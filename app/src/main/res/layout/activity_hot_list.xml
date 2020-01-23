@@ -149,10 +149,11 @@
 
                 <TextView
                     android:id="@+id/tvJOIN"
-                    android:layout_width="@dimen/hundred_fifty"
+                    android:layout_width="@dimen/hundrad"
                     android:layout_height="@dimen/thirty"
                     android:layout_alignParentRight="true"
                     android:layout_gravity="bottom"
+                    android:layout_marginRight="@dimen/ten"
                     android:layout_marginTop="260dp"
                     android:layout_weight="3"
                     android:background="@drawable/gradientbackground"

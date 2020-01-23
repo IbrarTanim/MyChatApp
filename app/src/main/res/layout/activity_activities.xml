@@ -82,194 +82,191 @@
                 android:overScrollMode="never"
                 android:scrollbars="none">
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="10">
+
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_weight="2.5"
                         android:orientation="vertical"
-                        android:weightSum="10">
+                        android:weightSum="5">
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="200dp"
-                            android:layout_weight="2.5"
-                            android:weightSum="5"
-                            android:orientation="vertical">
+                            android:layout_height="@dimen/zero"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/ten"
+                            android:weightSum="30">
+
+                            <TextView
+                                android:layout_width="@dimen/zero"
+                                android:layout_height="match_parent"
+                                android:layout_weight="10"
+                                android:gravity="center"
+                                android:text="LIKE"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/fifteen"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:layout_width="@dimen/zero"
+                                android:layout_height="match_parent"
+                                android:layout_weight="10"
+                                android:gravity="center"
+                                android:text="FAVORITE"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/fifteen"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:layout_width="@dimen/zero"
+                                android:layout_height="match_parent"
+                                android:layout_weight="10"
+                                android:gravity="center"
+                                android:text="VISITOR"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/fifteen"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/zero"
+                            android:layout_weight="3.5"
+                            android:background="@color/white"
+                            android:orientation="vertical"
+                            android:weightSum="10">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/zero"
+                                android:layout_weight="2"
+                                android:gravity="center"
+                                android:text="New Likes"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/fifteen"
+                                android:textStyle="bold" />
 
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="@dimen/zero"
-                                android:layout_weight="1"
+                                android:layout_weight="8"
                                 android:orientation="horizontal"
-                                android:padding="@dimen/ten"
-                                android:weightSum="30">
-
-                                <TextView
-                                    android:layout_width="@dimen/zero"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="10"
-                                    android:gravity="center"
-                                    android:text="LIKE"
-                                    android:textColor="@color/black"
-                                    android:textSize="@dimen/fifteen"
-                                    android:textStyle="bold" />
-
-
-                                <TextView
-                                    android:layout_width="@dimen/zero"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="10"
-                                    android:gravity="center"
-                                    android:text="FAVORITE"
-                                    android:textColor="@color/black"
-                                    android:textSize="@dimen/fifteen"
-                                    android:textStyle="bold" />
-
-
-                                <TextView
-                                    android:layout_width="@dimen/zero"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="10"
-                                    android:gravity="center"
-                                    android:text="VISITOR"
-                                    android:textColor="@color/black"
-                                    android:textSize="@dimen/fifteen"
-                                    android:textStyle="bold" />
-
-
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="@dimen/zero"
-                                android:layout_weight="3"
-                                android:background="@color/white"
-                                android:orientation="vertical"
-                                android:weightSum="10">
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="@dimen/zero"
-                                    android:layout_weight="2"
-                                    android:gravity="center"
-                                    android:text="New Likes"
-                                    android:textColor="@color/black"
-                                    android:textSize="@dimen/fifteen"
-                                    android:textStyle="bold" />
+                                android:weightSum="9">
 
                                 <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="@dimen/zero"
-                                    android:layout_weight="8"
-                                    android:orientation="horizontal"
-                                    android:weightSum="9">
+                                    android:layout_width="@dimen/zero"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3"
+                                    android:orientation="vertical"
+                                    android:weightSum="10">
 
-                                    <LinearLayout
-                                        android:layout_width="@dimen/zero"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight="3"
-                                        android:orientation="vertical"
-                                        android:weightSum="10">
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/zero"
+                                        android:layout_weight="6"
+                                        android:background="@color/transparent"
+                                        android:src="@mipmap/chatting" />
 
-                                        <de.hdodenhof.circleimageview.CircleImageView
-                                            android:layout_width="match_parent"
-                                            android:layout_height="@dimen/zero"
-                                            android:layout_weight="6"
-                                            android:background="@color/transparent"
-                                            android:src="@mipmap/chatting" />
-
-                                        <TextView
-                                            android:layout_width="match_parent"
-                                            android:layout_height="@dimen/zero"
-                                            android:layout_weight="2"
-                                            android:gravity="center"
-                                            android:text="Samanta"
-                                            android:textColor="@color/black"
-                                            android:textSize="@dimen/fifteen" />
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/zero"
+                                        android:layout_weight="2"
+                                        android:gravity="center"
+                                        android:text="Samanta"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/fifteen" />
 
 
-                                        <TextView
-                                            android:layout_width="match_parent"
-                                            android:layout_height="@dimen/zero"
-                                            android:layout_weight="2"
-                                            android:text="Friday"
-                                            android:gravity="center|top"
-                                            android:textColor="@color/black"
-                                            android:textSize="@dimen/ten" />
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/zero"
+                                        android:layout_weight="2"
+                                        android:gravity="center|top"
+                                        android:text="Friday"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/ten" />
 
 
-                                    </LinearLayout>
+                                </LinearLayout>
 
-                                    <LinearLayout
-                                        android:layout_width="@dimen/zero"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight="3"
-                                        android:orientation="vertical"
-                                        android:weightSum="10">
+                                <LinearLayout
+                                    android:layout_width="@dimen/zero"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3"
+                                    android:orientation="vertical"
+                                    android:weightSum="10">
 
-                                        <de.hdodenhof.circleimageview.CircleImageView
-                                            android:layout_width="match_parent"
-                                            android:layout_height="@dimen/zero"
-                                            android:layout_weight="6"
-                                            android:background="@color/transparent"
-                                            android:src="@mipmap/chatting" />
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/zero"
+                                        android:layout_weight="6"
+                                        android:background="@color/transparent"
+                                        android:src="@mipmap/chatting" />
 
-                                        <TextView
-                                            android:layout_width="match_parent"
-                                            android:layout_height="@dimen/zero"
-                                            android:layout_weight="2"
-                                            android:gravity="center"
-                                            android:text="Hossain"
-                                            android:textColor="@color/black"
-                                            android:textSize="@dimen/fifteen" />
-
-
-                                        <TextView
-                                            android:layout_width="match_parent"
-                                            android:layout_height="@dimen/zero"
-                                            android:layout_weight="2"
-                                            android:gravity="center|top"
-                                            android:text="sunday"
-                                            android:textColor="@color/black"
-                                            android:textSize="@dimen/ten" />
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/zero"
+                                        android:layout_weight="2"
+                                        android:gravity="center"
+                                        android:text="Hossain"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/fifteen" />
 
 
-                                    </LinearLayout>
-
-                                    <LinearLayout
-                                        android:layout_width="@dimen/zero"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight="3"
-                                        android:orientation="vertical"
-                                        android:weightSum="10">
-
-                                        <de.hdodenhof.circleimageview.CircleImageView
-                                            android:layout_width="match_parent"
-                                            android:layout_height="@dimen/zero"
-                                            android:layout_weight="6"
-                                            android:background="@color/transparent"
-                                            android:src="@mipmap/chatting" />
-
-                                        <TextView
-                                            android:layout_width="match_parent"
-                                            android:layout_height="@dimen/zero"
-                                            android:layout_weight="2"
-                                            android:gravity="center"
-                                            android:text="Lira"
-                                            android:textColor="@color/black"
-                                            android:textSize="@dimen/fifteen" />
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/zero"
+                                        android:layout_weight="2"
+                                        android:gravity="center|top"
+                                        android:text="sunday"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/ten" />
 
 
-                                        <TextView
-                                            android:layout_width="match_parent"
-                                            android:layout_height="@dimen/zero"
-                                            android:layout_weight="2"
-                                            android:gravity="center|top"
-                                            android:text="10 minutes ago"
-                                            android:textColor="@color/black"
-                                            android:textSize="@dimen/ten" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="@dimen/zero"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3"
+                                    android:orientation="vertical"
+                                    android:weightSum="10">
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/zero"
+                                        android:layout_weight="6"
+                                        android:background="@color/transparent"
+                                        android:src="@mipmap/chatting" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/zero"
+                                        android:layout_weight="2"
+                                        android:gravity="center"
+                                        android:text="Lira"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/fifteen" />
 
 
-                                    </LinearLayout>
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/zero"
+                                        android:layout_weight="2"
+                                        android:gravity="center|top"
+                                        android:text="10 minutes ago"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/ten" />
 
 
                                 </LinearLayout>
@@ -277,42 +274,32 @@
 
                             </LinearLayout>
 
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="@dimen/zero"
-                                android:layout_weight="1"
-                                android:orientation="vertical"
-                                android:weightSum="1">
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="@dimen/zero"
-                                    android:layout_weight="1"
-                                    android:gravity="center"
-                                    android:text="All Likes"
-                                    android:textColor="@color/black"
-                                    android:textSize="@dimen/fifteen"
-                                    android:textStyle="bold" />
-
-                            </LinearLayout>
 
                         </LinearLayout>
 
-                        <android.support.v7.widget.RecyclerView
-                            android:id="@+id/rvActivities"
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="@dimen/zero"
-                            android:layout_weight="7.5"
-                            android:nestedScrollingEnabled="false"
-                            android:overScrollMode="never"
-                            android:scrollbars="none" />
-
-
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:text="All Likes"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fifteen"
+                            android:textStyle="bold" />
+                            
                     </LinearLayout>
 
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rvActivities"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/zero"
+                        android:layout_weight="7.5"
+                        android:nestedScrollingEnabled="false"
+                        android:overScrollMode="never"
+                        android:scrollbars="none" />
 
 
-
+                </LinearLayout>
 
 
             </android.support.v4.widget.NestedScrollView>
