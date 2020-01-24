@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.OnlyStatusBar">
+        <activity android:name=".activities.SearchUserActivity"></activity>
         <activity
             android:name=".activities.ProfilePictureActivity"
             android:screenOrientation="sensorPortrait"

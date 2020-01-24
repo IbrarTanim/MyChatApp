@@ -2,7 +2,7 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="300dp"
+    android:layout_width="350dp"
     android:layout_height="600dp">
 
     <RelativeLayout
@@ -76,7 +76,6 @@
                                 android:layout_height="@dimen/twenty"
                                 android:layout_gravity="center|bottom"
                                 android:layout_weight="1"
-                                android:background="@drawable/circuler_info_text"
                                 android:gravity="center"
                                 android:padding="@dimen/five"
                                 android:text="956"
@@ -109,7 +108,6 @@
                                 android:layout_height="@dimen/twenty"
                                 android:layout_gravity="center|bottom"
                                 android:layout_weight="1"
-                                android:background="@drawable/circuler_info_text"
                                 android:gravity="center"
                                 android:padding="@dimen/five"
                                 android:text="96"
@@ -142,7 +140,6 @@
                                 android:layout_height="@dimen/twenty"
                                 android:layout_gravity="center|bottom"
                                 android:layout_weight="1"
-                                android:background="@drawable/circuler_info_text"
                                 android:gravity="center"
                                 android:padding="@dimen/five"
                                 android:text="956"
@@ -182,15 +179,29 @@
                                 android:orientation="horizontal"
                                 android:weightSum="10">
 
-
-                                <ImageView
+                                <LinearLayout
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
                                     android:layout_weight="2"
-                                    android:background="@color/transparent"
-                                    android:padding="@dimen/ten"
-                                    android:scaleType="fitCenter"
-                                    android:src="@drawable/ic_about_me_icon" />
+                                    android:orientation="vertical"
+                                    android:weightSum="2">
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/zero"
+                                        android:layout_weight="1"
+                                        android:layout_gravity="center"
+                                        android:padding="@dimen/two"
+                                        android:background="@color/transparent"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/ic_about_me_icon" />
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/zero"
+                                        android:layout_weight="1" />
+
+                                </LinearLayout>
 
 
                                 <LinearLayout
@@ -226,6 +237,7 @@
                             </LinearLayout>
 
                             <LinearLayout
+                                android:id="@+id/llRelationship"
                                 android:layout_width="match_parent"
                                 android:layout_height="@dimen/sixty"
                                 android:layout_marginTop="@dimen/ten"
@@ -233,15 +245,30 @@
                                 android:orientation="horizontal"
                                 android:weightSum="10">
 
-
-                                <ImageView
+                                <LinearLayout
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
                                     android:layout_weight="2"
-                                    android:background="@color/transparent"
-                                    android:padding="@dimen/ten"
-                                    android:scaleType="fitCenter"
-                                    android:src="@drawable/ic_relationship_icon" />
+                                    android:orientation="vertical"
+                                    android:weightSum="2">
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/zero"
+                                        android:layout_weight="1"
+                                        android:layout_gravity="center"
+                                        android:padding="@dimen/two"
+                                        android:background="@color/transparent"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/ic_relationship_icon" />
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/zero"
+                                        android:layout_weight="1" />
+
+                                </LinearLayout>
+
 
 
                                 <LinearLayout
@@ -278,6 +305,7 @@
                             </LinearLayout>
 
                             <LinearLayout
+                                android:id="@+id/llLocationFor"
                                 android:layout_width="match_parent"
                                 android:layout_height="@dimen/sixty"
                                 android:layout_marginTop="@dimen/ten"
@@ -286,14 +314,30 @@
                                 android:weightSum="10">
 
 
-                                <ImageView
+                                <LinearLayout
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
                                     android:layout_weight="2"
-                                    android:background="@color/transparent"
-                                    android:padding="@dimen/ten"
-                                    android:scaleType="fitCenter"
-                                    android:src="@drawable/ic_looking_for_icon" />
+                                    android:orientation="vertical"
+                                    android:weightSum="2">
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/zero"
+                                        android:layout_weight="1"
+                                        android:layout_gravity="center"
+                                        android:padding="@dimen/two"
+                                        android:background="@color/transparent"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/ic_looking_for_icon" />
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/zero"
+                                        android:layout_weight="1" />
+
+                                </LinearLayout>
+
 
 
                                 <LinearLayout
@@ -309,7 +353,7 @@
                                         android:layout_height="@dimen/zero"
                                         android:layout_weight="1"
                                         android:gravity="center|left"
-                                        android:text="Lookinf for"
+                                        android:text="Looking for"
                                         android:textColor="@color/black"
                                         android:textSize="@dimen/fifteen" />
 
@@ -318,7 +362,7 @@
                                         android:layout_height="@dimen/zero"
                                         android:layout_weight="1"
                                         android:gravity="left|center"
-                                        android:text="Mail"
+                                        android:text="Male"
                                         android:textColor="@color/black"
                                         android:textSize="@dimen/fifteen"
                                         android:textStyle="bold" />
@@ -330,6 +374,7 @@
                             </LinearLayout>
 
                             <LinearLayout
+                                android:id="@+id/llProfession"
                                 android:layout_width="match_parent"
                                 android:layout_height="@dimen/sixty"
                                 android:layout_marginTop="@dimen/ten"
@@ -338,14 +383,29 @@
                                 android:weightSum="10">
 
 
-                                <ImageView
+                                <LinearLayout
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
                                     android:layout_weight="2"
-                                    android:background="@color/transparent"
-                                    android:padding="@dimen/ten"
-                                    android:scaleType="fitCenter"
-                                    android:src="@drawable/ic_profession_icon" />
+                                    android:orientation="vertical"
+                                    android:weightSum="2">
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/zero"
+                                        android:layout_weight="1"
+                                        android:layout_gravity="center"
+                                        android:padding="@dimen/two"
+                                        android:background="@color/transparent"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/ic_profession_icon" />
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/zero"
+                                        android:layout_weight="1" />
+
+                                </LinearLayout>
 
 
                                 <LinearLayout
@@ -382,6 +442,7 @@
                             </LinearLayout>
 
                             <LinearLayout
+                                android:id="@+id/llEducation"
                                 android:layout_width="match_parent"
                                 android:layout_height="@dimen/sixty"
                                 android:layout_marginTop="@dimen/ten"
@@ -390,15 +451,29 @@
                                 android:weightSum="10">
 
 
-                                <ImageView
+                                <LinearLayout
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
                                     android:layout_weight="2"
-                                    android:background="@color/transparent"
-                                    android:padding="@dimen/ten"
-                                    android:scaleType="fitCenter"
-                                    android:src="@drawable/ic_education_icon" />
+                                    android:orientation="vertical"
+                                    android:weightSum="2">
 
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/zero"
+                                        android:layout_weight="1"
+                                        android:layout_gravity="center"
+                                        android:padding="@dimen/two"
+                                        android:background="@color/transparent"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/ic_education_icon" />
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/zero"
+                                        android:layout_weight="1" />
+
+                                </LinearLayout>
 
                                 <LinearLayout
                                     android:layout_width="@dimen/zero"
@@ -434,6 +509,7 @@
                             </LinearLayout>
 
                             <LinearLayout
+                                android:id="@+id/llLanguage"
                                 android:layout_width="match_parent"
                                 android:layout_height="@dimen/sixty"
                                 android:layout_marginTop="@dimen/ten"
@@ -442,14 +518,31 @@
                                 android:weightSum="10">
 
 
-                                <ImageView
+                                <LinearLayout
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
                                     android:layout_weight="2"
-                                    android:background="@color/transparent"
-                                    android:padding="@dimen/ten"
-                                    android:scaleType="fitCenter"
-                                    android:src="@drawable/ic_language_icon" />
+                                    android:orientation="vertical"
+                                    android:weightSum="2">
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/zero"
+                                        android:layout_weight="1"
+                                        android:layout_gravity="center"
+                                        android:padding="@dimen/two"
+                                        android:background="@color/transparent"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/ic_language_icon" />
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/zero"
+                                        android:layout_weight="1" />
+
+                                </LinearLayout>
+
+
 
 
                                 <LinearLayout
@@ -486,6 +579,7 @@
                             </LinearLayout>
 
                             <LinearLayout
+                                android:id="@+id/llHeight"
                                 android:layout_width="match_parent"
                                 android:layout_height="@dimen/sixty"
                                 android:layout_marginTop="@dimen/ten"
@@ -494,14 +588,29 @@
                                 android:weightSum="10">
 
 
-                                <ImageView
+                                <LinearLayout
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
                                     android:layout_weight="2"
-                                    android:background="@color/transparent"
-                                    android:padding="@dimen/ten"
-                                    android:scaleType="fitCenter"
-                                    android:src="@drawable/ic_height_icon" />
+                                    android:orientation="vertical"
+                                    android:weightSum="2">
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/zero"
+                                        android:layout_weight="1"
+                                        android:layout_gravity="center"
+                                        android:padding="@dimen/two"
+                                        android:background="@color/transparent"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/ic_height_icon" />
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/zero"
+                                        android:layout_weight="1" />
+
+                                </LinearLayout>
 
 
                                 <LinearLayout
@@ -538,6 +647,7 @@
                             </LinearLayout>
 
                             <LinearLayout
+                                android:id="@+id/llHairColor"
                                 android:layout_width="match_parent"
                                 android:layout_height="@dimen/sixty"
                                 android:layout_marginTop="@dimen/ten"
@@ -545,16 +655,29 @@
                                 android:orientation="horizontal"
                                 android:weightSum="10">
 
-
-                                <ImageView
+                                <LinearLayout
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
                                     android:layout_weight="2"
-                                    android:background="@color/transparent"
-                                    android:padding="@dimen/ten"
-                                    android:scaleType="fitCenter"
-                                    android:src="@drawable/ic_hair_color_icon" />
+                                    android:orientation="vertical"
+                                    android:weightSum="2">
 
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/zero"
+                                        android:layout_weight="1"
+                                        android:layout_gravity="center"
+                                        android:padding="@dimen/two"
+                                        android:background="@color/transparent"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/ic_hair_color_icon" />
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/zero"
+                                        android:layout_weight="1" />
+
+                                </LinearLayout>
 
                                 <LinearLayout
                                     android:layout_width="@dimen/zero"
@@ -590,6 +713,7 @@
                             </LinearLayout>
 
                             <LinearLayout
+                                android:id="@+id/llEyeColor"
                                 android:layout_width="match_parent"
                                 android:layout_height="@dimen/sixty"
                                 android:layout_marginTop="@dimen/ten"
@@ -597,16 +721,29 @@
                                 android:orientation="horizontal"
                                 android:weightSum="10">
 
-
-                                <ImageView
+                                <LinearLayout
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
                                     android:layout_weight="2"
-                                    android:background="@color/transparent"
-                                    android:padding="@dimen/ten"
-                                    android:scaleType="fitCenter"
-                                    android:src="@drawable/ic_eye_color_icon" />
+                                    android:orientation="vertical"
+                                    android:weightSum="2">
 
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/zero"
+                                        android:layout_weight="1"
+                                        android:layout_gravity="center"
+                                        android:padding="@dimen/two"
+                                        android:background="@color/transparent"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/ic_eye_color_icon" />
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/zero"
+                                        android:layout_weight="1" />
+
+                                </LinearLayout>
 
                                 <LinearLayout
                                     android:layout_width="@dimen/zero"
@@ -642,6 +779,7 @@
                             </LinearLayout>
 
                             <LinearLayout
+                                android:id="@+id/llSmoking"
                                 android:layout_width="match_parent"
                                 android:layout_height="@dimen/sixty"
                                 android:layout_marginTop="@dimen/ten"
@@ -649,15 +787,29 @@
                                 android:orientation="horizontal"
                                 android:weightSum="10">
 
-
-                                <ImageView
+                                <LinearLayout
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
                                     android:layout_weight="2"
-                                    android:background="@color/transparent"
-                                    android:padding="@dimen/ten"
-                                    android:scaleType="fitCenter"
-                                    android:src="@drawable/ic_smoking_icon" />
+                                    android:orientation="vertical"
+                                    android:weightSum="2">
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/zero"
+                                        android:layout_weight="1"
+                                        android:layout_gravity="center"
+                                        android:padding="@dimen/two"
+                                        android:background="@color/transparent"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/ic_smoking_icon" />
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/zero"
+                                        android:layout_weight="1" />
+
+                                </LinearLayout>
 
 
                                 <LinearLayout
@@ -694,6 +846,7 @@
                             </LinearLayout>
 
                             <LinearLayout
+                                android:id="@+id/llHobbies"
                                 android:layout_width="match_parent"
                                 android:layout_height="@dimen/sixty"
                                 android:layout_marginTop="@dimen/ten"
@@ -701,16 +854,29 @@
                                 android:orientation="horizontal"
                                 android:weightSum="10">
 
-
-                                <ImageView
+                                <LinearLayout
                                     android:layout_width="@dimen/zero"
                                     android:layout_height="match_parent"
                                     android:layout_weight="2"
-                                    android:background="@color/transparent"
-                                    android:padding="@dimen/ten"
-                                    android:scaleType="fitCenter"
-                                    android:src="@drawable/ic_hobbie_icon" />
+                                    android:orientation="vertical"
+                                    android:weightSum="2">
 
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/zero"
+                                        android:layout_weight="1"
+                                        android:layout_gravity="center"
+                                        android:padding="@dimen/two"
+                                        android:background="@color/transparent"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/ic_hobbie_icon" />
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/zero"
+                                        android:layout_weight="1" />
+
+                                </LinearLayout>
 
                                 <LinearLayout
                                     android:layout_width="@dimen/zero"
@@ -774,6 +940,16 @@
             app:riv_corner_radius="@dimen/twenty"
             app:riv_mutate_background="true"
             app:riv_oval="false" />
+
+
+        <ImageView
+            android:layout_width="@dimen/thirty"
+            android:layout_height="@dimen/thirty"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/hundred_fifty"
+            android:layout_marginRight="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_plus_profile_photo_icon" />
 
 
     </RelativeLayout>
