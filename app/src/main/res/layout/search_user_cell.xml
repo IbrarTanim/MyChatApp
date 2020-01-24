@@ -31,7 +31,7 @@
                 android:id="@+id/ivSearchUserProfile"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:scaleType="fitXY"
+                android:scaleType="centerCrop"
                 android:src="@mipmap/chatting"
                 app:riv_border_color="@color/transparent"
                 app:riv_corner_radius="@dimen/five"
@@ -41,7 +41,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/thirty"
+                android:layout_height="@dimen/twenty_five"
                 android:layout_margin="@dimen/five"
                 android:layout_alignParentBottom="true"
                 android:orientation="horizontal"
@@ -56,39 +56,37 @@
                     android:shadowDx="5"
                     android:shadowDy="5"
                     android:shadowRadius="5"
+                    android:textStyle="bold"
                     android:text="Aifaz Tanim Farabi"
                     android:textColor="@color/white"
-                    android:textSize="@dimen/ten" />
+                    android:textSize="@dimen/twelve" />
 
 
                 <LinearLayout
                     android:layout_width="@dimen/zero"
                     android:layout_height="match_parent"
                     android:layout_weight="3"
-                    android:background="@drawable/male_rounded_bg"
+                    android:background="@drawable/gradientbackground"
                     android:orientation="horizontal"
-                    android:weightSum="3">
+                    android:weightSum="2">
 
                     <ImageView
                         android:layout_width="@dimen/zero"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:padding="@dimen/three"
                         android:background="@color/transparent"
-                        android:src="@drawable/ic_add_to_hotlist_icon" />
+                        android:src="@drawable/ic_male_icon" />
 
                     <TextView
                         android:layout_width="@dimen/zero"
                         android:layout_height="match_parent"
-                        android:layout_weight="2"
+                        android:layout_weight="1"
                         android:gravity="center"
-                        android:shadowColor="@color/black"
-                        android:shadowDx="5"
-                        android:shadowDy="5"
-                        android:shadowRadius="5"
                         android:text="23"
                         android:textStyle="bold"
                         android:textColor="@color/white"
-                        android:textSize="@dimen/fifteen" />
+                        android:textSize="@dimen/twelve" />
 
 
                 </LinearLayout>

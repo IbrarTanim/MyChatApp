@@ -62,20 +62,29 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/zero"
             android:layout_weight="0.6"
+            android:layout_marginRight="@dimen/five"
+            android:layout_marginLeft="@dimen/five"
             android:background="@drawable/gray_rounded_bg"
             android:orientation="horizontal"
             android:weightSum="10">
 
-            <TextView
+
+            <EditText
                 android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="@dimen/five"
                 android:layout_weight="8.5"
+                android:background="@null"
                 android:gravity="center|left"
-                android:text="Search anybody"
+                android:hint="Search anybody"
+                android:inputType="textAutoCorrect"
                 android:textColor="@color/gray"
+                android:textColorHint="@color/gray"
                 android:textSize="@dimen/fifteen"
-                android:textStyle="bold" />
+                android:textStyle="normal" />
+
+
+
 
             <ImageView
                 android:layout_width="@dimen/zero"
