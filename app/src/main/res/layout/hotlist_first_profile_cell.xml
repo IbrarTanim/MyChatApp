@@ -10,10 +10,10 @@
         android:id="@+id/hotlistFirstProfileCard"
         android:layout_width="110dp"
         android:layout_height="150dp"
+        android:layout_marginBottom="@dimen/five"
         android:clipChildren="false"
         android:clipToPadding="false"
         android:divider="@android:color/transparent"
-        android:layout_marginBottom="@dimen/five"
         android:dividerHeight="0.0px"
         android:elevation="5dp"
         card_view:cardCornerRadius="@dimen/five"
@@ -57,11 +57,11 @@
                 android:shadowColor="@color/black"
                 android:shadowDx="5"
                 android:shadowDy="5"
-                android:textStyle="bold"
                 android:shadowRadius="5"
                 android:text="2"
+                android:textColor="@color/white"
                 android:textSize="@dimen/twenty"
-                android:textColor="@color/white" />
+                android:textStyle="bold" />
 
 
         </RelativeLayout>
