@@ -56,7 +56,6 @@
                 android:layout_height="match_parent"
                 android:layout_weight="0.5" />
 
-
         </LinearLayout>
 
         <LinearLayout
@@ -71,17 +70,12 @@
                 android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="@dimen/five"
-                android:layout_weight="4"
-                android:gravity="center"
+                android:layout_weight="8.5"
+                android:gravity="center|left"
                 android:text="Search anybody"
                 android:textColor="@color/gray"
-                android:textSize="@dimen/twenty"
+                android:textSize="@dimen/fifteen"
                 android:textStyle="bold" />
-
-            <View
-                android:layout_width="@dimen/zero"
-                android:layout_height="match_parent"
-                android:layout_weight="4.5" />
 
             <ImageView
                 android:layout_width="@dimen/zero"
@@ -101,7 +95,7 @@
         </LinearLayout>
 
         <android.support.v7.widget.RecyclerView
-            android:id="@+id/rvChatRequest"
+            android:id="@+id/rvSearchUser"
             android:layout_width="match_parent"
             android:layout_height="@dimen/zero"
             android:layout_marginTop="@dimen/ten"

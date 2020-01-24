@@ -14,7 +14,7 @@ import com.rokan.mychat.dialog.ProfileSecondInfoDailog;
 public class ProfileSecondActivity extends AppCompatActivity implements View.OnClickListener {
 
     ProfileSecondActivity activity;
-    ImageView ivPictureProfileSecond, ivchatProfileSecond, ivInfoProfileSecond, ivLikeProfileSecond;
+    ImageView ivPictureProfileSecond, ivchatProfileSecond, ivInfoProfileSecond, ivLikeProfileSecond, ivSearchProfileSecond;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,20 +26,29 @@ public class ProfileSecondActivity extends AppCompatActivity implements View.OnC
         ivchatProfileSecond = findViewById(R.id.ivchatProfileSecond);
         ivInfoProfileSecond = findViewById(R.id.ivInfoProfileSecond);
         ivLikeProfileSecond = findViewById(R.id.ivLikeProfileSecond);
+        ivSearchProfileSecond = findViewById(R.id.ivSearchProfileSecond);
 
         ivPictureProfileSecond.setOnClickListener(this);
         ivchatProfileSecond.setOnClickListener(this);
         ivInfoProfileSecond.setOnClickListener(this);
         ivLikeProfileSecond.setOnClickListener(this);
+        ivSearchProfileSecond.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
+            case R.id.ivSearchProfileSecond:
+                startActivity(new Intent(activity, SearchUserActivity.class));
+                finish();
+                break;
+
             case R.id.ivPictureProfileSecond:
                 startActivity(new Intent(activity, UserPhotoBlogActivity.class));
                 finish();
                 break;
+
+
             case R.id.ivchatProfileSecond:
                 startActivity(new Intent(activity, PrivateChatActivity.class));
                 finish();

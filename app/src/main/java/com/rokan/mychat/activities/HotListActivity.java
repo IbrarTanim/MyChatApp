@@ -44,8 +44,6 @@ public class HotListActivity extends AppCompatActivity {
         rvHotListFirstProfile = findViewById(R.id.rvHotListFirstProfile);
         tvDetail = findViewById(R.id.tvDetail);
         tvJOIN = findViewById(R.id.tvJOIN);
-        //tvDetail.setJustificationMode(JUSTIFICATION_MODE_INTER_WORD);
-
 
         userPhotoBlogsList = new ArrayList<>();
         hotlistFirstProfileAdapter = new HotlistFirstProfileAdapter(activity, userPhotoBlogsList);
