@@ -27,7 +27,7 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="1" />
+                android:layout_weight="2" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -43,7 +43,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/zero"
-                android:layout_weight="6"
+                android:layout_weight="5"
                 android:layout_margin="@dimen/ten"
                 android:gravity="center|left"
                 android:text="If you wish to monitor users and kick abusers then apply for room admin. It is a volunteer job, no money, no free credits. You will enjoy the power only."
@@ -57,7 +57,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/gradientbackground"
                 android:gravity="center"
-                android:text="I understand"
+                android:text="Apply"
                 android:textColor="@color/white"
                 android:textSize="@dimen/fifteen" />
 
