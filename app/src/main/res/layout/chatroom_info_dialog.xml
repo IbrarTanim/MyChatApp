@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="250dp"
+    android:layout_height="150dp"
+    android:background="@drawable/forget_password_dialog_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tvGuidelines"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="Guidelines"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fifteen" />
+
+        <TextView
+            android:id="@+id/tvApplyForAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="Apply for admin"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fifteen" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

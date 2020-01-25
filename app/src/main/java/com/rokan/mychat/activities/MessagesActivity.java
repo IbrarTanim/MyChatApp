@@ -81,7 +81,6 @@ public class MessagesActivity extends AppCompatActivity implements View.OnClickL
         rvNewMatches.setLayoutManager(layoutManagerNewMatches);
         rvNewMatches.setAdapter(newMatchesAdapter);
 
-
         prepareHotList();
         prepareLiveChat();
 
