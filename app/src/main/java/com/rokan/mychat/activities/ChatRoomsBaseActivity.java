@@ -50,7 +50,7 @@ public class ChatRoomsBaseActivity extends AppCompatActivity {
         tabOne.setText(R.string.bangladesh);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
             tabOne.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
-            tabOne.setTextSize(18);
+            tabOne.setTextSize(15);
         }
         tabOne.setTextColor(Color.BLACK);
         tabLayout.getTabAt(0).setCustomView(tabOne);
@@ -60,7 +60,7 @@ public class ChatRoomsBaseActivity extends AppCompatActivity {
         tabTwo.setText(R.string.friends);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
             tabTwo.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
-            tabTwo.setTextSize(18);
+            tabTwo.setTextSize(15);
         }
         tabTwo.setTextColor(Color.BLACK);
         tabLayout.getTabAt(1).setCustomView(tabTwo);
@@ -69,7 +69,7 @@ public class ChatRoomsBaseActivity extends AppCompatActivity {
         tabThree.setText(R.string.global);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
             tabThree.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
-            tabThree.setTextSize(18);
+            tabThree.setTextSize(15);
         }
         tabThree.setTextColor(Color.BLACK);
         tabLayout.getTabAt(2).setCustomView(tabThree);
