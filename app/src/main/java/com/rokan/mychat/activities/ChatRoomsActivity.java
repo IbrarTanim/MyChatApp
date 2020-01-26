@@ -11,9 +11,9 @@ import com.rokan.mychat.dialog.ChatRoomInfoDialog;
 import com.rokan.mychat.dialog.DialogControl;
 import com.rokan.mychat.dialog.LookingforDialog;
 
-public class ChatRoomsActivity extends AppCompatActivity {
+public class ChatRoomsActivity extends AppCompatActivity implements View.OnClickListener {
     ChatRoomsActivity activity;
-    ImageView ivChatRoomInfo;
+    ImageView ivChatRoomInfo, ivBangladesh;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,15 +22,30 @@ public class ChatRoomsActivity extends AppCompatActivity {
         activity = this;
 
         ivChatRoomInfo = findViewById(R.id.ivChatRoomInfo);
-        ivChatRoomInfo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        ivBangladesh = findViewById(R.id.ivBangladesh);
+
+        ivChatRoomInfo.setOnClickListener(this);
+        ivBangladesh.setOnClickListener(this);
+
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.ivChatRoomInfo:
                 ChatRoomInfoDialog chatRoomInfoDialog = new ChatRoomInfoDialog(activity);
                 DialogControl.ShowDialog(activity, chatRoomInfoDialog);
 
-            }
-        });
+                break;
+            case R.id.ivBangladesh:
+                startActivity(new Intent(activity, ChatRoomsBaseActivity.class));
+                finish();
+                break;
+
+        }
+
     }
+
 
     @Override
     public void onBackPressed() {
@@ -38,4 +53,6 @@ public class ChatRoomsActivity extends AppCompatActivity {
         startActivity(new Intent(activity, PicturesActivity.class));
         finish();
     }
+
+
 }
