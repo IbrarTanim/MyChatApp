@@ -1,13 +1,352 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/app_color_right">
+        android:background="@color/white">
 
-    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zero"
+                android:layout_weight="1.12" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvPrivateChat"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zero"
+                android:layout_weight="8.52"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="0.0px"
+                android:elevation="5dp"
+                app:cardElevation="5dp"
+                app:cardPreventCornerOverlap="false">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="8.52">
+
+
+                    <android.support.v4.widget.NestedScrollView
+                        android:id="@+id/nsPrivateChatAlbumMain"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/zero"
+                        android:layout_weight="8">
+
+                        <android.support.constraint.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/twenty">
+
+
+                            <RelativeLayout
+                                android:id="@+id/rlTextMe"
+                                android:layout_width="250dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="@dimen/twenty"
+                                android:background="@drawable/chat_bg_me"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <TextView
+                                    android:id="@+id/tvTextMe"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:paddingLeft="@dimen/forty"
+                                    android:paddingTop="@dimen/ten"
+                                    android:paddingRight="@dimen/ten"
+                                    android:paddingBottom="@dimen/ten"
+                                    android:text="Let's try to run your application. I assume you have connected your actual Android Mobile device with your computer. To run the app from android studio"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/fifteen" />
+
+
+                                <TextView
+                                    android:layout_width="30dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentLeft="true"
+                                    android:background="@drawable/making_corner_me"
+                                    android:elevation="8dp" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rlTextAnother"
+                                android:layout_width="250dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="@dimen/twenty"
+                                android:background="@drawable/chat_bg_another"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/rlTextMe">
+
+
+                                <TextView
+                                    android:id="@+id/tvTextAnother"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:paddingLeft="@dimen/ten"
+                                    android:paddingTop="@dimen/ten"
+                                    android:paddingRight="@dimen/forty"
+                                    android:paddingBottom="@dimen/ten"
+                                    android:text="Let's try to run your application. I assume you have connected your actual Android Mobile device with your computer. To run the app from android studio.Let's try to run your application. I assume you have connected your actual Android Mobile device with your computer."
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/fifteen" />
+
+                                <TextView
+                                    android:layout_width="30dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentRight="true"
+                                    android:background="@drawable/making_corner" />
+
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rlTextMeSecond"
+                                android:layout_width="250dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="@dimen/twenty"
+                                android:background="@drawable/chat_bg_me"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/rlTextAnother">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:paddingLeft="@dimen/forty"
+                                    android:paddingTop="@dimen/ten"
+                                    android:paddingRight="@dimen/ten"
+                                    android:paddingBottom="@dimen/ten"
+                                    android:text="Hello"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/fifteen" />
+
+
+                                <TextView
+                                    android:layout_width="30dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentLeft="true"
+                                    android:background="@drawable/making_corner_me"
+                                    android:elevation="8dp" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rlTextAnotherSecond"
+                                android:layout_width="250dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="@dimen/twenty"
+                                android:background="@drawable/chat_bg_another"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/rlTextMeSecond">
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:paddingLeft="@dimen/ten"
+                                    android:paddingTop="@dimen/ten"
+                                    android:paddingRight="@dimen/forty"
+                                    android:paddingBottom="@dimen/ten"
+                                    android:text="Hi"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/fifteen" />
+
+                                <TextView
+                                    android:layout_width="30dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentRight="true"
+                                    android:background="@drawable/making_corner" />
+
+
+                            </RelativeLayout>
+
+
+
+                        </android.support.constraint.ConstraintLayout>
+
+
+                    </android.support.v4.widget.NestedScrollView>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/zero"
+                        android:layout_weight="0.02"
+                        android:background="@color/message_text_color" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/zero"
+                        android:layout_margin="@dimen/five"
+                        android:layout_weight="0.5"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <EditText
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/ten"
+                            android:layout_weight="8"
+                            android:background="@null"
+                            android:hint="Write something"
+                            android:inputType="textNoSuggestions"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+                            android:textSize="@dimen/fifteen" />
+
+                        <ImageView
+                            android:id="@+id/ivPrivateChatSendImage"
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/transparent"
+                            android:padding="@dimen/two"
+                            android:src="@mipmap/blac_plus_icon" />
+
+                        <ImageView
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/transparent"
+                            android:padding="@dimen/two"
+                            android:src="@mipmap/send_icon" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+
+            <ImageView
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:padding="@dimen/five"
+                android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="50dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/circle_private_chat"
+                    android:padding="@dimen/five"
+                    android:src="@mipmap/chatting" />
+
+                <TextView
+                    android:layout_width="@dimen/twenty_22"
+                    android:layout_height="@dimen/twenty_22"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="@dimen/ten"
+                    android:background="@drawable/circuler_textview"
+                    android:gravity="center"
+                    android:text="12"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/ten" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center|left"
+                android:text="Jelly"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fifteen" />
+
+            <View
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center|right"
+                android:text="Kelly"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fifteen" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="50dp"
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/circle_private_chat"
+                    android:padding="@dimen/five"
+                    android:src="@mipmap/chatting" />
+
+
+                <TextView
+                    android:layout_width="@dimen/twenty_22"
+                    android:layout_height="@dimen/twenty_22"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/circuler_textview"
+                    android:gravity="center"
+                    android:text="16"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/ten" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
 
 </android.support.constraint.ConstraintLayout>

@@ -3,7 +3,7 @@
     <solid android:color="@color/white" />
 
     <corners
-        android:bottomLeftRadius="@dimen/sixty" />
+        android:bottomLeftRadius="@dimen/ten" />
 
 
 </shape>
