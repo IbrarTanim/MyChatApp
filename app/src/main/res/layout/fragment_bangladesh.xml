@@ -45,7 +45,7 @@
 
                         <RelativeLayout
                             android:id="@+id/rlTextMe"
-                            android:layout_width="250dp"
+                            android:layout_width="300dp"
                             android:layout_height="match_parent"
                             android:layout_marginLeft="@dimen/five"
                             android:layout_marginTop="@dimen/twenty"
@@ -121,7 +121,7 @@
 
                         <RelativeLayout
                             android:id="@+id/rlTextAnother"
-                            android:layout_width="250dp"
+                            android:layout_width="300dp"
                             android:layout_height="match_parent"
                             android:layout_marginTop="@dimen/twenty"
                             android:layout_marginRight="@dimen/five"
@@ -140,7 +140,7 @@
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="@dimen/thirty"
-                                    android:gravity="left"
+                                    android:gravity="center|right"
                                     android:paddingLeft="@dimen/ten"
                                     android:paddingRight="@dimen/forty"
                                     android:text="Me"
@@ -193,7 +193,7 @@
 
                         <RelativeLayout
                             android:id="@+id/rlTextMeSecond"
-                            android:layout_width="150dp"
+                            android:layout_width="140dp"
                             android:layout_height="match_parent"
                             android:layout_marginLeft="@dimen/five"
                             android:layout_marginTop="@dimen/twenty"
@@ -211,7 +211,7 @@
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="@dimen/thirty"
-                                    android:gravity="center"
+                                    android:gravity="left"
                                     android:paddingLeft="@dimen/forty"
                                     android:paddingRight="@dimen/ten"
                                     android:text="Farabi"
@@ -223,7 +223,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="@dimen/twenty"
-                                    android:gravity="center"
+                                    android:gravity="left"
                                     android:paddingLeft="@dimen/forty"
                                     android:paddingTop="@dimen/five"
                                     android:paddingRight="@dimen/ten"
@@ -266,7 +266,7 @@
 
                         <RelativeLayout
                             android:id="@+id/rlTextAnotherSecond"
-                            android:layout_width="150dp"
+                            android:layout_width="120dp"
                             android:layout_height="match_parent"
                             android:layout_marginTop="@dimen/twenty"
                             android:layout_marginRight="@dimen/five"
@@ -285,7 +285,7 @@
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="@dimen/thirty"
-                                    android:gravity="center"
+                                    android:gravity="left"
                                     android:paddingLeft="@dimen/ten"
                                     android:paddingRight="@dimen/forty"
                                     android:text="Me"
@@ -297,7 +297,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="@dimen/twenty"
-                                    android:gravity="center"
+                                    android:gravity="left"
                                     android:paddingLeft="@dimen/ten"
                                     android:paddingTop="@dimen/five"
                                     android:paddingRight="@dimen/forty"
