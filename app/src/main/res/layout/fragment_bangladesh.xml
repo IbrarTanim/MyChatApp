@@ -47,6 +47,7 @@
                             android:id="@+id/rlTextMe"
                             android:layout_width="250dp"
                             android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/five"
                             android:layout_marginTop="@dimen/twenty"
                             app:layout_constraintLeft_toLeftOf="parent"
                             app:layout_constraintTop_toTopOf="parent">
@@ -88,8 +89,7 @@
                                 android:layout_alignParentBottom="true"
                                 android:background="@drawable/circle_private_chat"
                                 android:padding="@dimen/five"
-                                android:src="@mipmap/chatting"
-                                app:layout_constraintLeft_toLeftOf="parent" />
+                                android:src="@mipmap/chatting" />
 
                         </RelativeLayout>
 
@@ -98,30 +98,46 @@
                             android:layout_width="250dp"
                             android:layout_height="match_parent"
                             android:layout_marginTop="@dimen/twenty"
-                            android:background="@drawable/chat_bg_another"
+                            android:layout_marginRight="@dimen/five"
                             app:layout_constraintRight_toRightOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/rlTextMe">
 
 
-                            <TextView
-                                android:id="@+id/tvTextAnother"
+                            <RelativeLayout
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="left"
-                                android:paddingLeft="@dimen/ten"
-                                android:paddingTop="@dimen/ten"
-                                android:paddingRight="@dimen/forty"
-                                android:paddingBottom="@dimen/ten"
-                                android:text="Let's try to run your application. I assume you have connected your actual Android Mobile device with your computer. To run the app from android studio.Let's try to run your application. I assume you have connected your actual Android Mobile device with your computer."
-                                android:textColor="@color/white"
-                                android:textSize="@dimen/fifteen" />
-
-                            <TextView
-                                android:layout_width="30dp"
                                 android:layout_height="match_parent"
-                                android:layout_alignParentRight="true"
-                                android:background="@drawable/making_corner" />
+                                android:layout_marginRight="@dimen/thirty"
+                                android:layout_marginBottom="@dimen/fifteen"
+                                android:background="@drawable/chat_bg_another">
 
+                                <TextView
+                                    android:id="@+id/tvTextAnother"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:paddingLeft="@dimen/ten"
+                                    android:paddingTop="@dimen/ten"
+                                    android:paddingRight="@dimen/forty"
+                                    android:paddingBottom="@dimen/ten"
+                                    android:text="Let's try to run your application. I assume you have connected your actual Android Mobile device with your computer. To run the app from android studio.Let's try to run your application. I assume you have connected your actual Android Mobile device with your computer."
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/fifteen" />
+
+                                <TextView
+                                    android:layout_width="30dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentRight="true"
+                                    android:background="@drawable/making_corner" />
+
+                            </RelativeLayout>
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentBottom="true"
+                                android:background="@drawable/circle_private_chat"
+                                android:src="@mipmap/chatting" />
 
                         </RelativeLayout>
 
@@ -129,30 +145,49 @@
                             android:id="@+id/rlTextMeSecond"
                             android:layout_width="250dp"
                             android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/five"
                             android:layout_marginTop="@dimen/twenty"
-                            android:background="@drawable/chat_bg_me"
                             app:layout_constraintLeft_toLeftOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/rlTextAnother">
 
-                            <TextView
+                            <RelativeLayout
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="left"
-                                android:paddingLeft="@dimen/forty"
-                                android:paddingTop="@dimen/ten"
-                                android:paddingRight="@dimen/ten"
-                                android:paddingBottom="@dimen/ten"
-                                android:text="Hello"
-                                android:textColor="@color/black"
-                                android:textSize="@dimen/fifteen" />
-
-
-                            <TextView
-                                android:layout_width="30dp"
                                 android:layout_height="match_parent"
-                                android:layout_alignParentLeft="true"
-                                android:background="@drawable/making_corner_me"
-                                android:elevation="8dp" />
+                                android:layout_marginLeft="@dimen/thirty"
+                                android:layout_marginBottom="@dimen/fifteen"
+                                android:background="@drawable/chat_bg_me">
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:paddingLeft="@dimen/forty"
+                                    android:paddingTop="@dimen/ten"
+                                    android:paddingRight="@dimen/ten"
+                                    android:paddingBottom="@dimen/ten"
+                                    android:text="Hello"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/fifteen" />
+
+
+                                <TextView
+                                    android:layout_width="30dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentLeft="true"
+                                    android:background="@drawable/making_corner_me"
+                                    android:elevation="8dp" />
+
+                            </RelativeLayout>
+
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignParentBottom="true"
+                                android:background="@drawable/circle_private_chat"
+                                android:padding="@dimen/five"
+                                android:src="@mipmap/chatting" />
 
                         </RelativeLayout>
 
@@ -161,28 +196,45 @@
                             android:layout_width="250dp"
                             android:layout_height="match_parent"
                             android:layout_marginTop="@dimen/twenty"
-                            android:background="@drawable/chat_bg_another"
+                            android:layout_marginRight="@dimen/five"
                             app:layout_constraintRight_toRightOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/rlTextMeSecond">
 
 
-                            <TextView
+                            <RelativeLayout
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="left"
-                                android:paddingLeft="@dimen/ten"
-                                android:paddingTop="@dimen/ten"
-                                android:paddingRight="@dimen/forty"
-                                android:paddingBottom="@dimen/ten"
-                                android:text="Hi"
-                                android:textColor="@color/white"
-                                android:textSize="@dimen/fifteen" />
-
-                            <TextView
-                                android:layout_width="30dp"
                                 android:layout_height="match_parent"
+                                android:layout_marginRight="@dimen/thirty"
+                                android:layout_marginBottom="@dimen/fifteen"
+                                android:background="@drawable/chat_bg_another">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:paddingLeft="@dimen/ten"
+                                    android:paddingTop="@dimen/ten"
+                                    android:paddingRight="@dimen/forty"
+                                    android:paddingBottom="@dimen/ten"
+                                    android:text="Hi"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/fifteen" />
+
+                                <TextView
+                                    android:layout_width="30dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentRight="true"
+                                    android:background="@drawable/making_corner" />
+
+                            </RelativeLayout>
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
                                 android:layout_alignParentRight="true"
-                                android:background="@drawable/making_corner" />
+                                android:layout_alignParentBottom="true"
+                                android:background="@drawable/circle_private_chat"
+                                android:src="@mipmap/chatting" />
 
 
                         </RelativeLayout>
