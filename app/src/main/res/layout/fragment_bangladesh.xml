@@ -57,7 +57,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_marginLeft="@dimen/thirty"
-                                android:layout_marginBottom="@dimen/fifteen"
+                                android:layout_marginBottom="@dimen/twenty"
                                 android:background="@drawable/chat_bg_me">
 
 
@@ -109,7 +109,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="20dp"
-                                android:gravity="center|bottom"
+                                android:gravity="bottom|right"
                                 android:text="10.50 am"
                                 android:layout_alignParentRight="true"
                                 android:layout_alignParentBottom="true"
@@ -133,7 +133,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_marginRight="@dimen/thirty"
-                                android:layout_marginBottom="@dimen/fifteen"
+                                android:layout_marginBottom="@dimen/twenty"
                                 android:background="@drawable/chat_bg_another">
 
 
@@ -143,7 +143,7 @@
                                     android:gravity="left"
                                     android:paddingLeft="@dimen/ten"
                                     android:paddingRight="@dimen/forty"
-                                    android:text="Tanim"
+                                    android:text="Me"
                                     android:textColor="@color/white"
                                     android:textSize="@dimen/fifteen"
                                     android:textStyle="bold" />
@@ -181,7 +181,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="20dp"
-                                android:gravity="center|bottom"
+                                android:gravity="left|bottom"
                                 android:text="20.50 pm"
                                 android:layout_alignParentRight="true"
                                 android:layout_alignParentBottom="true"
@@ -204,7 +204,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_marginLeft="@dimen/thirty"
-                                android:layout_marginBottom="@dimen/fifteen"
+                                android:layout_marginBottom="@dimen/twenty"
                                 android:background="@drawable/chat_bg_me">
 
 
@@ -254,9 +254,8 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="20dp"
-                                android:gravity="center|right"
+                                android:gravity="bottom|right"
                                 android:text="18.40 pm"
-                                android:layout_marginRight="@dimen/ten"
                                 android:layout_alignParentRight="true"
                                 android:layout_alignParentBottom="true"
                                 android:textColor="@color/gray"
@@ -279,7 +278,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_marginRight="@dimen/thirty"
-                                android:layout_marginBottom="@dimen/fifteen"
+                                android:layout_marginBottom="@dimen/twenty"
                                 android:background="@drawable/chat_bg_another">
 
 
@@ -289,7 +288,7 @@
                                     android:gravity="center"
                                     android:paddingLeft="@dimen/ten"
                                     android:paddingRight="@dimen/forty"
-                                    android:text="Farzad"
+                                    android:text="Me"
                                     android:textColor="@color/white"
                                     android:textSize="@dimen/fifteen"
                                     android:textStyle="bold" />
@@ -325,9 +324,8 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="20dp"
-                                android:gravity="center|left"
+                                android:gravity="bottom|left"
                                 android:text="9.26 am"
-                                android:layout_marginLeft="@dimen/ten"
                                 android:layout_alignParentRight="true"
                                 android:layout_alignParentBottom="true"
                                 android:textColor="@color/gray"
