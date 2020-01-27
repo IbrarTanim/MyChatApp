@@ -40,6 +40,7 @@
 
 
             <ImageView
+                android:id="@+id/ivActiveUser"
                 android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
                 android:layout_gravity="left"

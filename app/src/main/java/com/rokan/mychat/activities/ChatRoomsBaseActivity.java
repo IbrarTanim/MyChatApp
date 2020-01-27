@@ -1,5 +1,6 @@
 package com.rokan.mychat.activities;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
 import android.support.design.widget.TabLayout;
@@ -11,6 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.rokan.mychat.R;
@@ -21,11 +23,12 @@ import com.rokan.mychat.fragment.GlobalFragment;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ChatRoomsBaseActivity extends AppCompatActivity {
+public class ChatRoomsBaseActivity extends AppCompatActivity implements View.OnClickListener {
 
     ChatRoomsBaseActivity activity;
     private TabLayout tabLayout;
     private ViewPager viewPager;
+    ImageView ivActiveUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,8 +40,10 @@ public class ChatRoomsBaseActivity extends AppCompatActivity {
         viewPager = findViewById(R.id.viewpager);
         setupViewPager(viewPager);
         tabLayout = findViewById(R.id.tabs);
+        ivActiveUser = findViewById(R.id.ivActiveUser);
         tabLayout.setupWithViewPager(viewPager);
         setupTabIcons();
+        ivActiveUser.setOnClickListener(this);
     }
 
     /**
@@ -88,6 +93,16 @@ public class ChatRoomsBaseActivity extends AppCompatActivity {
         adapter.addFrag(new FriendsFragment(), getString(R.string.friends));
         adapter.addFrag(new GlobalFragment(), getString(R.string.global));
         viewPager.setAdapter(adapter);
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.ivActiveUser:
+                startActivity(new Intent(activity, ActiveUserActivity.class));
+                finish();
+                break;
+        }
     }
 
     class ViewPagerAdapter extends FragmentPagerAdapter {
