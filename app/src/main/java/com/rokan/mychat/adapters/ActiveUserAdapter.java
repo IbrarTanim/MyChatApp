@@ -25,7 +25,7 @@ public class ActiveUserAdapter extends RecyclerView.Adapter<ActiveUserAdapter.My
     private Context mContext;
     private List<ActiveUser> activeUserList;
 
-    public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+    public class MyViewHolder extends RecyclerView.ViewHolder  {
         public TextView tvNameTitle, tvChatText, tvChatRequestAccept;
         public CircleImageView civLiveChatProfilePic;
         LinearLayout llLiveChat;
@@ -37,19 +37,9 @@ public class ActiveUserAdapter extends RecyclerView.Adapter<ActiveUserAdapter.My
             tvChatRequestAccept = view.findViewById(R.id.tvChatRequestAccept);
             civLiveChatProfilePic = view.findViewById(R.id.civLiveChatProfilePic);
             llLiveChat = view.findViewById(R.id.llLiveChat);
-            llLiveChat.setOnClickListener(this);
         }
 
 
-        @Override
-        public void onClick(View view) {
-            switch (view.getId()) {
-                case R.id.llLiveChat:
-                    mContext.startActivity(new Intent(mContext, PrivateChatActivity.class));
-                    break;
-            }
-
-        }
     }
 
 
