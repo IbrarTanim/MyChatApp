@@ -59,28 +59,28 @@ public class PhotoLikeActivity extends AppCompatActivity {
         };
 
 
-        Comment comment = new Comment(listItem[0], getString(R.string.nazrul), "Hi, Farabi", "11.36 pm");
+        Comment comment = new Comment(listItem[0], getString(R.string.nazrul), "@Nazrul", "11.36 pm");
         commentList.add(comment);
 
-        comment = new Comment(listItem[1], getString(R.string.jafariqbal), "Hi, Farabi", "11.36 pm");
+        comment = new Comment(listItem[1], getString(R.string.jafariqbal), "@Jafor", "11.36 pm");
         commentList.add(comment);
 
-        comment = new Comment(listItem[2], getString(R.string.sufiakamal), "How are you?", "12.36 pm");
+        comment = new Comment(listItem[2], getString(R.string.sufiakamal), "@Sufia", "12.36 pm");
         commentList.add(comment);
 
-        comment = new Comment(listItem[3], getString(R.string.sarat), "Hi, Farabi", "11.36 pm");
+        comment = new Comment(listItem[3], getString(R.string.sarat), "@Shorath", "11.36 pm");
         commentList.add(comment);
 
-        comment = new Comment(listItem[4], getString(R.string.samsurrahman), "I'm also fine.", "2.36 pm");
+        comment = new Comment(listItem[4], getString(R.string.samsurrahman), "@Samsur", "2.36 pm");
         commentList.add(comment);
 
-        comment = new Comment(listItem[5], getString(R.string.robindronath), "Hi, Farabi", "11.36 pm");
+        comment = new Comment(listItem[5], getString(R.string.robindronath), "@Farabi", "11.36 pm");
         commentList.add(comment);
 
-        comment = new Comment(listItem[6], getString(R.string.humayanahmed), "Hello, Farabi", "2.36 pm");
+        comment = new Comment(listItem[6], getString(R.string.humayanahmed), "@Farabi", "2.36 pm");
         commentList.add(comment);
 
-        comment = new Comment(listItem[7], getString(R.string.samsurrahman), "Hi, Fahad", "2.36 pm");
+        comment = new Comment(listItem[7], getString(R.string.samsurrahman), "@Farabi", "2.36 pm");
         commentList.add(comment);
 
 
