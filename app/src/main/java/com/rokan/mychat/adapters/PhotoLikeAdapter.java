@@ -45,7 +45,7 @@ public class PhotoLikeAdapter extends RecyclerView.Adapter<PhotoLikeAdapter.MyVi
 
     @Override
     public PhotoLikeAdapter.MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        final View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.like_cell, parent, false);
+        final View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.photo_like_cell, parent, false);
         final PhotoLikeAdapter.MyViewHolder myViewHolder = new PhotoLikeAdapter.MyViewHolder(itemView);
 
         return myViewHolder;

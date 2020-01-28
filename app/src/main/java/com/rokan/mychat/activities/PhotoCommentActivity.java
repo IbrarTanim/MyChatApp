@@ -22,7 +22,7 @@ public class PhotoCommentActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_comment);
+        setContentView(R.layout.activity_photo_comment);
         activity = this;
 
         rvComment = findViewById(R.id.rvComment);

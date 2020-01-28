@@ -2,15 +2,20 @@ package com.rokan.mychat.dialog;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.ImageView;
 
 import com.rokan.mychat.R;
+import com.rokan.mychat.activities.ChatRoomsBaseActivity;
 import com.rokan.mychat.activities.LandingActivity;
 import com.rokan.mychat.activities.PhotoCommentActivity;
+import com.rokan.mychat.activities.PhotoLikeActivity;
 import com.rokan.mychat.activities.ViewImageActivity;
 import com.rokan.mychat.adapters.LikeAdapter;
 import com.rokan.mychat.adapters.PhotoCommentAdapter;
@@ -29,6 +34,7 @@ public class LikeDialog extends Dialog {
     private LikeAdapter likeAdapter;
     private RecyclerView rvLike;
     private List<Like> likeList;
+    ImageView ivGotoLikeActivity;
 
     public LikeDialog(ViewImageActivity activity) {
         super(activity, R.style.CustomAlertDialog);
@@ -42,8 +48,16 @@ public class LikeDialog extends Dialog {
         setContentView(R.layout.like_dialog);
 
         rvLike = findViewById(R.id.rvLike);
+        ivGotoLikeActivity = findViewById(R.id.ivGotoLikeActivity);
         likeList = new ArrayList<>();
         likeAdapter = new LikeAdapter(activity, likeList);
+
+        ivGotoLikeActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                activity.startActivity(new Intent(activity, PhotoLikeActivity.class));
+            }
+        });
 
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL, false);

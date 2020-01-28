@@ -19,16 +19,17 @@
             android:id="@+id/rvLike"
             android:layout_width="@dimen/zero"
             android:layout_height="match_parent"
-            android:layout_weight="9.5"
+            android:layout_weight="9"
             android:layout_gravity="center"
             android:nestedScrollingEnabled="false"
             android:overScrollMode="never"
             android:scrollbars="none" />
 
         <ImageView
+            android:id="@+id/ivGotoLikeActivity"
             android:layout_width="@dimen/zero"
             android:layout_height="match_parent"
-            android:layout_weight="0.5"
+            android:layout_weight="1"
             android:background="@color/transparent"
             android:src="@mipmap/arrow_right" />
 
