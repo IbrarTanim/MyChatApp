@@ -13,6 +13,12 @@
             android:name=".activities.ActiveUserActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppTheme.OnlyStatusBar" />
+
+        <activity
+            android:name=".activities.CommentActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme.OnlyStatusBar" />
+
         <activity
             android:name=".activities.ChatRoomsBaseActivity"
             android:screenOrientation="sensorPortrait"

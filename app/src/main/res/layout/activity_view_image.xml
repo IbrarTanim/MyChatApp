@@ -401,6 +401,7 @@
 
 
                         <ImageView
+                            android:id="@+id/ivCommentViewImage"
                             android:layout_width="@dimen/zero"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
@@ -433,6 +434,7 @@
                         android:weightSum="2">
 
                         <ImageView
+                            android:id="@+id/ivLoveViewImage"
                             android:layout_width="@dimen/zero"
                             android:layout_height="match_parent"
                             android:layout_weight="1"

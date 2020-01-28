@@ -1,5 +1,6 @@
 package com.rokan.mychat.activities;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -12,7 +13,7 @@ import com.rokan.mychat.R;
 public class ViewImageActivity extends AppCompatActivity implements View.OnClickListener {
 
     ViewImageActivity activity;
-    ImageView ivTitleShowHide;
+    ImageView ivTitleShowHide, ivCommentViewImage, ivLoveViewImage;
     TextView tvTitleChatting;
     boolean isTitleShowed = false;
 
@@ -22,6 +23,8 @@ public class ViewImageActivity extends AppCompatActivity implements View.OnClick
         setContentView(R.layout.activity_view_image);
         activity = this;
         ivTitleShowHide = findViewById(R.id.ivTitleShowHide);
+        ivCommentViewImage = findViewById(R.id.ivCommentViewImage);
+        ivLoveViewImage = findViewById(R.id.ivLoveViewImage);
         tvTitleChatting = findViewById(R.id.tvTitleChatting);
 
         ivTitleShowHide.setImageResource(R.drawable.ic_view_text_arrow_icon_up);
@@ -32,6 +35,8 @@ public class ViewImageActivity extends AppCompatActivity implements View.OnClick
 
 
         ivTitleShowHide.setOnClickListener(this);
+        ivCommentViewImage.setOnClickListener(this);
+        ivLoveViewImage.setOnClickListener(this);
         isTitleShowed = true;
     }
 
@@ -61,6 +66,18 @@ public class ViewImageActivity extends AppCompatActivity implements View.OnClick
                 }
 
                 break;
+
+
+            case R.id.ivCommentViewImage:
+                startActivity(new Intent(activity, CommentActivity.class));
+                finish();
+                break;
+
+            case R.id.ivLoveViewImage:
+
+                break;
+
+
         }
     }
 }
