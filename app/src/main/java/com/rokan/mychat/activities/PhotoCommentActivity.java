@@ -3,29 +3,21 @@ package com.rokan.mychat.activities;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
-
 import com.rokan.mychat.R;
-import com.rokan.mychat.adapters.ActiveUserAdapter;
-import com.rokan.mychat.adapters.CommentAdapter;
-import com.rokan.mychat.pojo.ActiveUser;
+import com.rokan.mychat.adapters.PhotoCommentAdapter;
 import com.rokan.mychat.pojo.Comment;
-import com.rokan.mychat.utilities.GridSpacingItemDecoration;
-
 import java.util.ArrayList;
 import java.util.List;
 
-public class CommentActivity extends AppCompatActivity {
+public class PhotoCommentActivity extends AppCompatActivity {
 
-    CommentActivity activity;
-    private CommentAdapter commentAdapter;
+    PhotoCommentActivity activity;
+    private PhotoCommentAdapter photoCommentAdapter;
     private RecyclerView rvComment;
     private List<Comment> commentList;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,22 +27,11 @@ public class CommentActivity extends AppCompatActivity {
 
         rvComment = findViewById(R.id.rvComment);
         commentList = new ArrayList<>();
-        commentAdapter = new CommentAdapter(activity, commentList);
-
-        /*RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(activity, 1);
-        rvComment.setLayoutManager(mLayoutManager);
-        rvComment.addItemDecoration(new GridSpacingItemDecoration(1, GridSpacingItemDecoration.dpToPx(10, activity), true));
-        rvComment.setItemAnimator(new DefaultItemAnimator());
-        rvComment.setAdapter(commentAdapter);
-*/
-
+        photoCommentAdapter = new PhotoCommentAdapter(activity, commentList);
 
         StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(1, LinearLayoutManager.VERTICAL);
         rvComment.setLayoutManager(staggeredGridLayoutManager);
-        rvComment.setAdapter(commentAdapter);
-
-
-
+        rvComment.setAdapter(photoCommentAdapter);
         prepareLiveChat();
     }
 
@@ -93,7 +74,7 @@ public class CommentActivity extends AppCompatActivity {
         commentList.add(comment);
 
 
-        commentAdapter.notifyDataSetChanged();
+        photoCommentAdapter.notifyDataSetChanged();
     }
 
     @Override

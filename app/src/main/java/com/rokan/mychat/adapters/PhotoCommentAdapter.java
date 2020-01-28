@@ -10,14 +10,13 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.rokan.mychat.R;
-import com.rokan.mychat.pojo.ActiveUser;
 import com.rokan.mychat.pojo.Comment;
 
 import java.util.List;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.MyViewHolder> {
+public class PhotoCommentAdapter extends RecyclerView.Adapter<PhotoCommentAdapter.MyViewHolder> {
 
 
     private Context mContext;
@@ -40,22 +39,22 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.MyViewHo
     }
 
 
-    public CommentAdapter(Context mContext, List<Comment> commentList) {
+    public PhotoCommentAdapter(Context mContext, List<Comment> commentList) {
         this.mContext = mContext;
         this.commentList = commentList;
     }
 
     @Override
-    public CommentAdapter.MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public PhotoCommentAdapter.MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         final View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.comment_cell, parent, false);
-        final CommentAdapter.MyViewHolder myViewHolder = new CommentAdapter.MyViewHolder(itemView);
+        final PhotoCommentAdapter.MyViewHolder myViewHolder = new PhotoCommentAdapter.MyViewHolder(itemView);
 
 
         return myViewHolder;
     }
 
     @Override
-    public void onBindViewHolder(final CommentAdapter.MyViewHolder holder, int position) {
+    public void onBindViewHolder(final PhotoCommentAdapter.MyViewHolder holder, int position) {
         Comment comment = commentList.get(position);
 
         holder.tvNameTitle.setText(comment.getNameTitle());
