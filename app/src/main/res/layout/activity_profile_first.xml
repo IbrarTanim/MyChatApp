@@ -209,6 +209,7 @@
 
 
                             <TextView
+                                android:id="@+id/tvAddBoddoCredits"
                                 android:layout_width="@dimen/zero"
                                 android:layout_height="match_parent"
                                 android:layout_marginRight="2dp"

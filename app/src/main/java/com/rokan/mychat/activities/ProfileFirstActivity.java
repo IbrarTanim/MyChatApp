@@ -14,7 +14,7 @@ import com.rokan.mychat.adapters.HotlistFirstProfileAdapter;
 public class ProfileFirstActivity extends AppCompatActivity implements View.OnClickListener {
     ProfileFirstActivity activity;
     ImageButton ibPictureProfile, ibMessageProfile, ibChatRoomProfile, ibActivitiesProfile, ibProfileProfile;
-    TextView tvEdit;
+    TextView tvEdit, tvAddBoddoCredits;
     LinearLayout llHotlistFirstProfile;
 
     @Override
@@ -29,6 +29,7 @@ public class ProfileFirstActivity extends AppCompatActivity implements View.OnCl
         ibActivitiesProfile = findViewById(R.id.ibActivitiesProfile);
         ibProfileProfile = findViewById(R.id.ibProfileProfile);
         tvEdit = findViewById(R.id.tvEdit);
+        tvAddBoddoCredits = findViewById(R.id.tvAddBoddoCredits);
         llHotlistFirstProfile = findViewById(R.id.llHotlistFirstProfile);
 
         ibPictureProfile.setOnClickListener(this);
@@ -37,6 +38,7 @@ public class ProfileFirstActivity extends AppCompatActivity implements View.OnCl
         ibActivitiesProfile.setOnClickListener(this);
         ibProfileProfile.setOnClickListener(this);
         tvEdit.setOnClickListener(this);
+        tvAddBoddoCredits.setOnClickListener(this);
         llHotlistFirstProfile.setOnClickListener(this);
     }
 
@@ -71,7 +73,13 @@ public class ProfileFirstActivity extends AppCompatActivity implements View.OnCl
                 finish();
                 break;
 
-                case R.id.llHotlistFirstProfile:
+            case R.id.tvAddBoddoCredits:
+                startActivity(new Intent(activity, AddBoddoCreditsActivity.class));
+                finish();
+                break;
+
+
+            case R.id.llHotlistFirstProfile:
                 startActivity(new Intent(activity, HotListActivity.class));
                 finish();
                 break;

@@ -10,22 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.OnlyStatusBar">
         <activity
+            android:name=".activities.AddBoddoCreditsActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme.OnlyStatusBar" />
+        <activity
             android:name=".activities.ActiveUserActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppTheme.OnlyStatusBar" />
-
         <activity
             android:name=".activities.PhotoCommentActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppTheme.OnlyStatusBar" />
-
-
         <activity
             android:name=".activities.PhotoLikeActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppTheme.OnlyStatusBar" />
-
-
         <activity
             android:name=".activities.ChatRoomsBaseActivity"
             android:screenOrientation="sensorPortrait"
