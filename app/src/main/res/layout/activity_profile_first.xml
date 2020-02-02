@@ -94,6 +94,7 @@
 
 
                     <ImageView
+                        android:id="@+id/ivBoddoSupport"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/zero"
                         android:layout_weight="1"

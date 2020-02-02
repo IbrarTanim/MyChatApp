@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -13,6 +14,7 @@ import com.rokan.mychat.R;
 public class ProfileFirstActivity extends AppCompatActivity implements View.OnClickListener {
     ProfileFirstActivity activity;
     ImageButton ibPictureProfile, ibMessageProfile, ibChatRoomProfile, ibActivitiesProfile, ibProfileProfile;
+    ImageView ivBoddoSupport;
     TextView tvEdit, tvAddBoddoCredits;
     LinearLayout llHotlistFirstProfile;
 
@@ -27,6 +29,7 @@ public class ProfileFirstActivity extends AppCompatActivity implements View.OnCl
         ibChatRoomProfile = findViewById(R.id.ibChatRoomProfile);
         ibActivitiesProfile = findViewById(R.id.ibActivitiesProfile);
         ibProfileProfile = findViewById(R.id.ibProfileProfile);
+        ivBoddoSupport = findViewById(R.id.ivBoddoSupport);
         tvEdit = findViewById(R.id.tvEdit);
         tvAddBoddoCredits = findViewById(R.id.tvAddBoddoCredits);
         llHotlistFirstProfile = findViewById(R.id.llHotlistFirstProfile);
@@ -36,6 +39,7 @@ public class ProfileFirstActivity extends AppCompatActivity implements View.OnCl
         ibChatRoomProfile.setOnClickListener(this);
         ibActivitiesProfile.setOnClickListener(this);
         ibProfileProfile.setOnClickListener(this);
+        ivBoddoSupport.setOnClickListener(this);
         tvEdit.setOnClickListener(this);
         tvAddBoddoCredits.setOnClickListener(this);
         llHotlistFirstProfile.setOnClickListener(this);
@@ -66,6 +70,12 @@ public class ProfileFirstActivity extends AppCompatActivity implements View.OnCl
                 startActivity(new Intent(activity, ProfileFirstActivity.class));
                 finish();
                 break;
+
+            case R.id.ivBoddoSupport:
+                startActivity(new Intent(activity, BoddoSupportActivity.class));
+                finish();
+                break;
+
 
             case R.id.tvEdit:
                 startActivity(new Intent(activity, ProfileSecondActivity.class));
