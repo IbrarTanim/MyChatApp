@@ -9,7 +9,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.rokan.mychat.R;
-import com.rokan.mychat.adapters.HotlistFirstProfileAdapter;
 
 public class ProfileFirstActivity extends AppCompatActivity implements View.OnClickListener {
     ProfileFirstActivity activity;
@@ -74,7 +73,7 @@ public class ProfileFirstActivity extends AppCompatActivity implements View.OnCl
                 break;
 
             case R.id.tvAddBoddoCredits:
-                startActivity(new Intent(activity, AddBoddoCreditsActivity.class));
+                startActivity(new Intent(activity, BuyBoddoCreditsActivity.class));
                 finish();
                 break;
 

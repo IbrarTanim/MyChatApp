@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.OnlyStatusBar">
         <activity
-            android:name=".activities.AddBoddoCreditsActivity"
+            android:name=".activities.BuyBoddoCreditsActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppTheme.OnlyStatusBar" />
         <activity
