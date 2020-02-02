@@ -9,6 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/white"
         android:orientation="vertical"
         android:weightSum="11">
 
@@ -82,7 +83,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:weightSum="5">
+                android:weightSum="5.08">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -113,6 +114,15 @@
 
                 </LinearLayout>
 
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:layout_marginRight="@dimen/ten"
+                    android:layout_weight="0.02"
+                    android:background="@color/gray" />
+
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/zero"
@@ -141,6 +151,14 @@
 
 
                 </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:layout_marginRight="@dimen/ten"
+                    android:layout_weight="0.02"
+                    android:background="@color/gray" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -171,6 +189,14 @@
 
                 </LinearLayout>
 
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:layout_marginRight="@dimen/ten"
+                    android:layout_weight="0.02"
+                    android:background="@color/gray" />
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/zero"
@@ -199,6 +225,14 @@
 
 
                 </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:layout_marginRight="@dimen/ten"
+                    android:layout_weight="0.02"
+                    android:background="@color/gray" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -237,7 +271,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="@dimen/zero"
-            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_marginRight="@dimen/ten"
+            android:layout_weight="2"
             android:gravity="center"
             android:text="Through Boddo credits, you can join Hotlist, Access Global chat room, Unlock Likes, Unlock favorites, Unlock visitors and many more."
             android:textColor="@color/gray"
@@ -246,7 +282,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="@dimen/zero"
-            android:layout_weight="3" />
+            android:layout_weight="2" />
 
 
         <LinearLayout
