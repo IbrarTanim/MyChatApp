@@ -132,17 +132,38 @@
                 android:textSize="@dimen/sixteen"
                 android:textStyle="normal" />
 
-            <TextView
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/zero"
                 android:layout_marginLeft="@dimen/ten"
                 android:layout_marginRight="@dimen/ten"
                 android:layout_weight="1"
-                android:gravity="center|left"
-                android:text="Notification settings"
-                android:textColor="@color/black"
-                android:textSize="@dimen/sixteen"
-                android:textStyle="normal" />
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="Notification settings"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sixteen"
+                    android:textStyle="normal" />
+
+
+                <android.support.v7.widget.SwitchCompat
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/ten"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+            </LinearLayout>
+
 
             <TextView
                 android:layout_width="match_parent"
@@ -298,9 +319,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/zero"
                 android:layout_gravity="center"
-                android:padding="@dimen/three"
                 android:layout_weight="1"
                 android:background="@color/transparent"
+                android:padding="@dimen/three"
                 android:src="@mipmap/boddo_logo" />
 
             <LinearLayout
@@ -324,9 +345,9 @@
                 <ImageView
                     android:layout_width="@dimen/thirty"
                     android:layout_height="match_parent"
-                    android:padding="@dimen/two"
                     android:background="@color/transparent"
-                    android:src="@mipmap/love_icon" />
+                    android:padding="@dimen/two"
+                    android:src="@drawable/ic_profile_one_liked_me" />
 
                 <TextView
                     android:layout_width="@dimen/zero"
@@ -352,7 +373,7 @@
                 android:text="Developed and Managed by Blue Tiger Mobile"
                 android:textColor="@color/gray"
                 android:textSize="@dimen/sixteen"
-                android:textStyle="bold" />
+                android:textStyle="normal" />
 
 
         </LinearLayout>
