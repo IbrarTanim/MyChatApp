@@ -57,10 +57,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/zero"
                     android:layout_weight="1"
-                    android:gravity="bottom|left"
+                    android:gravity="top|left"
                     android:text="Online"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/fifteen"
+                    android:textSize="18dp"
                     android:textStyle="normal" />
 
 
