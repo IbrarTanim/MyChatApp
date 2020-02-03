@@ -16,7 +16,7 @@ public class ProfileFirstActivity extends AppCompatActivity implements View.OnCl
     ImageButton ibPictureProfile, ibMessageProfile, ibChatRoomProfile, ibActivitiesProfile, ibProfileProfile;
     ImageView ivBoddoSupport;
     TextView tvEdit, tvAddBoddoCredits;
-    LinearLayout llHotlistFirstProfile, llSettings;
+    LinearLayout llHotlistFirstProfile, llSettings, llLikedMe, llFavoritedMe;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +34,8 @@ public class ProfileFirstActivity extends AppCompatActivity implements View.OnCl
         tvAddBoddoCredits = findViewById(R.id.tvAddBoddoCredits);
         llHotlistFirstProfile = findViewById(R.id.llHotlistFirstProfile);
         llSettings = findViewById(R.id.llSettings);
+        llLikedMe = findViewById(R.id.llLikedMe);
+        llFavoritedMe = findViewById(R.id.llFavoritedMe);
 
         ibPictureProfile.setOnClickListener(this);
         ibMessageProfile.setOnClickListener(this);
@@ -45,6 +47,8 @@ public class ProfileFirstActivity extends AppCompatActivity implements View.OnCl
         tvAddBoddoCredits.setOnClickListener(this);
         llHotlistFirstProfile.setOnClickListener(this);
         llSettings.setOnClickListener(this);
+        llLikedMe.setOnClickListener(this);
+        llFavoritedMe.setOnClickListener(this);
     }
 
     @Override
@@ -97,6 +101,15 @@ public class ProfileFirstActivity extends AppCompatActivity implements View.OnCl
 
             case R.id.llSettings:
                 startActivity(new Intent(activity, SettingsActivity.class));
+                finish();
+                break;
+            case R.id.llLikedMe:
+                startActivity(new Intent(activity, ForgetPasswordActivity.class));
+                finish();
+                break;
+
+            case R.id.llFavoritedMe:
+                startActivity(new Intent(activity, MatchActivity.class));
                 finish();
                 break;
 

@@ -36,15 +36,35 @@
                 android:layout_weight="1"
                 android:src="@mipmap/find_your_love" />
 
-            <TextView
+            <LinearLayout
                 android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
                 android:layout_weight="7.5"
-                android:gravity="center|left"
-                android:text="Boddo team"
-                android:textColor="@color/black"
-                android:textSize="@dimen/twenty"
-                android:textStyle="bold" />
+                android:orientation="vertical"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="2"
+                    android:gravity="bottom|left"
+                    android:text="Boddo team"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/twenty"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="1"
+                    android:gravity="bottom|left"
+                    android:text="Online"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fifteen"
+                    android:textStyle="normal" />
+
+
+            </LinearLayout>
 
 
             <ImageView
