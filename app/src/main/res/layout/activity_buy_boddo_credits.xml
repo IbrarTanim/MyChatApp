@@ -194,7 +194,7 @@
                             android:layout_width="@dimen/zero"
                             android:layout_height="match_parent"
                             android:layout_weight="2"
-                            android:gravity="center"
+                            android:gravity="center|bottom"
                             android:text="$10"
                             android:textColor="@color/black"
                             android:textSize="@dimen/sixteen"
@@ -217,7 +217,7 @@
                             android:layout_weight="8"
                             android:gravity="left|top"
                             android:text="Most popular"
-                            android:textColor="@color/black"
+                            android:textColor="@color/gray"
                             android:textSize="@dimen/fourteen"
                             android:textStyle="bold" />
 
@@ -309,7 +309,7 @@
                             android:layout_width="@dimen/zero"
                             android:layout_height="match_parent"
                             android:layout_weight="2"
-                            android:gravity="center"
+                            android:gravity="center|bottom"
                             android:text="$50"
                             android:textColor="@color/black"
                             android:textSize="@dimen/sixteen"
@@ -332,7 +332,7 @@
                             android:layout_weight="8"
                             android:gravity="left|top"
                             android:text="Great deals"
-                            android:textColor="@color/black"
+                            android:textColor="@color/gray"
                             android:textSize="@dimen/fourteen"
                             android:textStyle="bold" />
 
@@ -361,7 +361,7 @@
             android:gravity="center"
             android:text="Through Boddo credits, you can join Hotlist, Access Global chat room, Unlock Likes, Unlock favorites, Unlock visitors and many more."
             android:textColor="@color/gray"
-            android:textSize="@dimen/eighteen"
+            android:textSize="@dimen/sixteen"
             android:textStyle="bold" />
 
         <View
@@ -378,7 +378,7 @@
             android:weightSum="2">
 
             <TextView
-                android:layout_width="@dimen/hundred_fifty"
+                android:layout_width="@dimen/hundrad_twenty"
                 android:layout_height="@dimen/zero"
                 android:layout_gravity="center"
                 android:layout_weight="1"

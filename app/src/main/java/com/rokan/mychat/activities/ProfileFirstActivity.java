@@ -16,7 +16,7 @@ public class ProfileFirstActivity extends AppCompatActivity implements View.OnCl
     ImageButton ibPictureProfile, ibMessageProfile, ibChatRoomProfile, ibActivitiesProfile, ibProfileProfile;
     ImageView ivBoddoSupport;
     TextView tvEdit, tvAddBoddoCredits;
-    LinearLayout llHotlistFirstProfile;
+    LinearLayout llHotlistFirstProfile, llSettings;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +33,7 @@ public class ProfileFirstActivity extends AppCompatActivity implements View.OnCl
         tvEdit = findViewById(R.id.tvEdit);
         tvAddBoddoCredits = findViewById(R.id.tvAddBoddoCredits);
         llHotlistFirstProfile = findViewById(R.id.llHotlistFirstProfile);
+        llSettings = findViewById(R.id.llSettings);
 
         ibPictureProfile.setOnClickListener(this);
         ibMessageProfile.setOnClickListener(this);
@@ -43,6 +44,7 @@ public class ProfileFirstActivity extends AppCompatActivity implements View.OnCl
         tvEdit.setOnClickListener(this);
         tvAddBoddoCredits.setOnClickListener(this);
         llHotlistFirstProfile.setOnClickListener(this);
+        llSettings.setOnClickListener(this);
     }
 
     @Override
@@ -90,6 +92,11 @@ public class ProfileFirstActivity extends AppCompatActivity implements View.OnCl
 
             case R.id.llHotlistFirstProfile:
                 startActivity(new Intent(activity, HotListActivity.class));
+                finish();
+                break;
+
+            case R.id.llSettings:
+                startActivity(new Intent(activity, SettingsActivity.class));
                 finish();
                 break;
 

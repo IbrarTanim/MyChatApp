@@ -28,8 +28,8 @@
 
 
             <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentBottom="true"
                 android:layout_gravity="center"
@@ -41,7 +41,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="7.5"
                 android:gravity="center|left"
-                android:text="Boddo support"
+                android:text="Boddo team"
                 android:textColor="@color/black"
                 android:textSize="@dimen/twenty"
                 android:textStyle="bold" />
@@ -159,8 +159,6 @@
                                     android:layout_width="50dp"
                                     android:layout_height="50dp"
                                     android:layout_alignParentBottom="true"
-                                    android:background="@drawable/circle_private_chat"
-                                    android:padding="@dimen/five"
                                     android:src="@mipmap/chatting" />
 
                                 <TextView
@@ -232,7 +230,6 @@
                                     android:layout_height="50dp"
                                     android:layout_alignParentRight="true"
                                     android:layout_alignParentBottom="true"
-                                    android:background="@drawable/circle_private_chat"
                                     android:src="@mipmap/find_friends" />
 
                                 <TextView
@@ -304,8 +301,6 @@
                                     android:layout_width="50dp"
                                     android:layout_height="50dp"
                                     android:layout_alignParentBottom="true"
-                                    android:background="@drawable/circle_private_chat"
-                                    android:padding="@dimen/five"
                                     android:src="@mipmap/anisul" />
 
                                 <TextView
@@ -376,7 +371,6 @@
                                     android:layout_height="50dp"
                                     android:layout_alignParentRight="true"
                                     android:layout_alignParentBottom="true"
-                                    android:background="@drawable/circle_private_chat"
                                     android:src="@mipmap/find_your_love" />
 
                                 <TextView
@@ -421,7 +415,7 @@
                             android:layout_marginLeft="@dimen/ten"
                             android:layout_weight="8"
                             android:background="@null"
-                            android:hint="Write something"
+                            android:hint="Share your issues"
                             android:inputType="textNoSuggestions"
                             android:textColor="@color/black"
                             android:textColorHint="@color/black"

@@ -116,6 +116,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/llSettings"
                     android:layout_width="@dimen/zero"
                     android:layout_height="match_parent"
                     android:layout_weight="5"

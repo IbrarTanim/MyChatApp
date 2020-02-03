@@ -9,7 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.OnlyStatusBar">
-        <activity android:name=".activities.BoddoSupportActivity"></activity>
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme.OnlyStatusBar" />
+        <activity
+            android:name=".activities.BoddoSupportActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme.OnlyStatusBar" />
         <activity
             android:name=".activities.BuyBoddoCreditsActivity"
             android:screenOrientation="sensorPortrait"
