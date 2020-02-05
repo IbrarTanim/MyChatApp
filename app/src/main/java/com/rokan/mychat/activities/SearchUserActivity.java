@@ -9,6 +9,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.rokan.mychat.R;
@@ -22,12 +23,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class SearchUserActivity extends AppCompatActivity {
+public class SearchUserActivity extends AppCompatActivity implements View.OnClickListener {
 
     SearchUserActivity activity;
     private SearchUserAdapter searchUserAdapter;
     private List<UserPhotoBlogs> userPhotoBlogsList;
     private RecyclerView rvSearchUser;
+
+    ImageView ivSearchClose, ivSearch;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,22 +39,19 @@ public class SearchUserActivity extends AppCompatActivity {
         activity = this;
 
         rvSearchUser = findViewById(R.id.rvSearchUser);
+        ivSearchClose = findViewById(R.id.ivSearchClose);
+        ivSearch = findViewById(R.id.ivSearch);
+
         userPhotoBlogsList = new ArrayList<>();
-
         searchUserAdapter = new SearchUserAdapter(activity, userPhotoBlogsList);
-
-        /*StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(2, LinearLayoutManager.VERTICAL);
-        rvSearchUser.setLayoutManager(staggeredGridLayoutManager);
-        rvSearchUser.setAdapter(searchUserAdapter);*/
-
-
         RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(activity, 2);
         rvSearchUser.setLayoutManager(mLayoutManager);
         rvSearchUser.addItemDecoration(new GridSpacingItemDecoration(2, GridSpacingItemDecoration.dpToPx(10, activity), true));
         rvSearchUser.setItemAnimator(new DefaultItemAnimator());
         rvSearchUser.setAdapter(searchUserAdapter);
 
-
+        ivSearchClose.setOnClickListener(this);
+        ivSearch.setOnClickListener(this);
 
         preparePhotoBlogs();
 
@@ -131,5 +131,22 @@ public class SearchUserActivity extends AppCompatActivity {
         super.onBackPressed();
         startActivity(new Intent(activity, ProfileSecondActivity.class));
         finish();
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.ivSearchClose:
+                startActivity(new Intent(activity, FirstConversationActivity.class));
+                finish();
+                break;
+
+            case R.id.ivSearch:
+                startActivity(new Intent(activity, MessageSentActivity.class));
+                finish();
+                break;
+
+
+        }
     }
 }
