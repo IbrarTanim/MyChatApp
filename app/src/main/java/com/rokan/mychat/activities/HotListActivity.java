@@ -5,6 +5,8 @@ import android.os.Build;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.DefaultItemAnimator;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
@@ -21,6 +23,7 @@ import com.rokan.mychat.adapters.UserPhotoBlogsAdapter;
 import com.rokan.mychat.dialog.DialogControl;
 import com.rokan.mychat.dialog.JoinDialog;
 import com.rokan.mychat.pojo.UserPhotoBlogs;
+import com.rokan.mychat.utilities.GridSpacingItemDecoration;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -47,9 +50,18 @@ public class HotListActivity extends AppCompatActivity {
 
         userPhotoBlogsList = new ArrayList<>();
         hotlistFirstProfileAdapter = new HotlistFirstProfileAdapter(activity, userPhotoBlogsList);
-        StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(3, LinearLayoutManager.VERTICAL);
-        rvHotListFirstProfile.setLayoutManager(staggeredGridLayoutManager);
+
+        RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(activity, 3);
+        rvHotListFirstProfile.setLayoutManager(mLayoutManager);
+        rvHotListFirstProfile.addItemDecoration(new GridSpacingItemDecoration(3, GridSpacingItemDecoration.dpToPx(10, activity), true));
+        rvHotListFirstProfile.setItemAnimator(new DefaultItemAnimator());
         rvHotListFirstProfile.setAdapter(hotlistFirstProfileAdapter);
+
+
+
+        /*StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(3, LinearLayoutManager.VERTICAL);
+        rvHotListFirstProfile.setLayoutManager(staggeredGridLayoutManager);
+        rvHotListFirstProfile.setAdapter(hotlistFirstProfileAdapter);*/
 
 
         tvJOIN.setOnClickListener(new View.OnClickListener() {

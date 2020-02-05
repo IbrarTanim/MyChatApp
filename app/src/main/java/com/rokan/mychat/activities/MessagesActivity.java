@@ -70,7 +70,10 @@ public class MessagesActivity extends AppCompatActivity implements View.OnClickL
         newMatchesAdapter = new NewMatchesAdapter(activity, hotLists);
         liveChatList = new ArrayList<>();
         liveChatAdapter = new LiveChatAdapter(activity, liveChatList);
+
         layoutManagerNewMatches = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
+        rvNewMatches.setLayoutManager(layoutManagerNewMatches);
+        rvNewMatches.setAdapter(newMatchesAdapter);
 
         RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(activity, 1);
         rvLiveChat.setLayoutManager(mLayoutManager);
@@ -78,8 +81,7 @@ public class MessagesActivity extends AppCompatActivity implements View.OnClickL
         rvLiveChat.setItemAnimator(new DefaultItemAnimator());
         rvLiveChat.setAdapter(liveChatAdapter);
 
-        rvNewMatches.setLayoutManager(layoutManagerNewMatches);
-        rvNewMatches.setAdapter(newMatchesAdapter);
+
 
         prepareHotList();
         prepareLiveChat();
