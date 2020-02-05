@@ -53,7 +53,7 @@ public class HotListActivity extends AppCompatActivity {
 
         RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(activity, 3);
         rvHotListFirstProfile.setLayoutManager(mLayoutManager);
-        rvHotListFirstProfile.addItemDecoration(new GridSpacingItemDecoration(3, GridSpacingItemDecoration.dpToPx(10, activity), true));
+        rvHotListFirstProfile.addItemDecoration(new GridSpacingItemDecoration(3, GridSpacingItemDecoration.dpToPx(15, activity), true));
         rvHotListFirstProfile.setItemAnimator(new DefaultItemAnimator());
         rvHotListFirstProfile.setAdapter(hotlistFirstProfileAdapter);
 
@@ -148,7 +148,7 @@ public class HotListActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        startActivity(new Intent(activity, ProfileSecondActivity.class));
+        startActivity(new Intent(activity, ProfileFirstActivity.class));
         finish();
     }
 }
