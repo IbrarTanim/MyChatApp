@@ -162,7 +162,7 @@
                 android:layout_height="@dimen/zero"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="You have limited number of chat request. write something nice to get a reply"
+                android:text="You have limited number of chat request. Write something nice to get a reply"
                 android:textColor="@color/black"
                 android:textSize="@dimen/fifteen"
                 android:textStyle="bold" />
