@@ -16,7 +16,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="@dimen/zero"
-            android:layout_weight="0.5" />
+            android:layout_weight="0.4" />
 
 
         <LinearLayout
@@ -45,6 +45,7 @@
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
+                    android:layout_centerInParent="true"
                     android:background="@drawable/circle_private_chat"
                     android:padding="@dimen/five"
                     android:src="@mipmap/chatting" />
@@ -54,7 +55,7 @@
                     android:layout_height="@dimen/twenty_22"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginRight="@dimen/twelve"
+                    android:layout_marginBottom="@dimen/five"
                     android:background="@drawable/circuler_textview"
                     android:gravity="center"
                     android:text="12"
@@ -107,6 +108,7 @@
                     android:layout_height="@dimen/twenty_22"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/five"
                     android:background="@drawable/circuler_textview"
                     android:gravity="center"
                     android:text="16"
@@ -121,15 +123,14 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="@dimen/zero"
-            android:layout_marginTop="@dimen/five"
-            android:background="@color/white_customize"
-            android:layout_weight="0.03" />
+            android:layout_weight="0.03"
+            android:background="@color/white_customize" />
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/zero"
-            android:layout_weight="8.5"
+            android:layout_weight="8.8"
             android:orientation="vertical"
             android:weightSum="10">
 
@@ -145,7 +146,7 @@
                 android:gravity="center"
                 android:text="Send a chat request"
                 android:textColor="@color/black"
-                android:textSize="@dimen/fifteen"
+                android:textSize="@dimen/eighteen"
                 android:textStyle="bold" />
 
             <de.hdodenhof.circleimageview.CircleImageView
@@ -179,7 +180,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/zero"
-            android:layout_weight="1"
+            android:layout_weight="0.8"
             android:orientation="vertical">
 
             <View
@@ -191,7 +192,6 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/zero"
-                android:layout_margin="@dimen/five"
                 android:layout_weight="0.5"
                 android:orientation="horizontal"
                 android:weightSum="10">
@@ -214,7 +214,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/transparent"
-                    android:padding="@dimen/two"
+                    android:padding="@dimen/five"
                     android:src="@mipmap/blac_plus_icon" />
 
                 <ImageView
@@ -229,6 +229,24 @@
             </LinearLayout>
 
         </LinearLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/nsFirstConversation"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="120dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvFirstConversation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/five"
+                android:nestedScrollingEnabled="false"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+
+
+        </android.support.v4.widget.NestedScrollView>
 
 
     </LinearLayout>

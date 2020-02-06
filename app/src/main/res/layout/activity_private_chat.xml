@@ -286,6 +286,7 @@
                     android:layout_width="50dp"
                     android:layout_height="60dp"
                     android:background="@drawable/circle_private_chat"
+                    android:layout_centerInParent="true"
                     android:padding="@dimen/five"
                     android:src="@mipmap/chatting" />
 
@@ -294,7 +295,6 @@
                     android:layout_height="@dimen/twenty_22"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginRight="@dimen/ten"
                     android:background="@drawable/circuler_textview"
                     android:gravity="center"
                     android:text="12"
