@@ -31,12 +31,10 @@ public class HotlistFirstProfileAdapter extends RecyclerView.Adapter<HotlistFirs
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         RoundedImageView ivHotlistFirstProfile;
-        public CardView hotlistFirstProfileCard;
 
         public MyViewHolder(View view) {
             super(view);
             ivHotlistFirstProfile = view.findViewById(R.id.ivHotlistFirstProfile);
-            hotlistFirstProfileCard = view.findViewById(R.id.hotlistFirstProfileCard);
 
         }
 
