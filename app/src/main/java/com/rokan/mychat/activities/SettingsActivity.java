@@ -11,7 +11,7 @@ import com.rokan.mychat.R;
 public class SettingsActivity extends AppCompatActivity implements View.OnClickListener {
 
     SettingsActivity activity;
-    TextView tvBlockeduser, tvTransaction;
+    TextView tvBlockeduser, tvTransaction, tvBasicInfo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,8 +20,10 @@ public class SettingsActivity extends AppCompatActivity implements View.OnClickL
         activity = this;
         tvBlockeduser = findViewById(R.id.tvBlockeduser);
         tvTransaction = findViewById(R.id.tvTransaction);
+        tvBasicInfo = findViewById(R.id.tvBasicInfo);
         tvBlockeduser.setOnClickListener(this);
         tvTransaction.setOnClickListener(this);
+        tvBasicInfo.setOnClickListener(this);
     }
 
 
@@ -34,6 +36,11 @@ public class SettingsActivity extends AppCompatActivity implements View.OnClickL
                 break;
             case R.id.tvTransaction:
                 startActivity(new Intent(activity, TransactionActivity.class));
+                finish();
+                break;
+
+            case R.id.tvBasicInfo:
+                startActivity(new Intent(activity, EditBasicInfoActivity.class));
                 finish();
                 break;
 

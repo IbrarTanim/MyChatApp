@@ -122,6 +122,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/tvBasicInfo"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/zero"
                 android:layout_marginLeft="@dimen/ten"
