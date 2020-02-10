@@ -8,8 +8,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
         android:background="@color/white"
+        android:orientation="vertical"
         android:weightSum="11"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -50,8 +50,8 @@
                 android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:padding="@dimen/five"
                 android:background="@color/transparent"
+                android:padding="@dimen/five"
                 android:scaleType="fitCenter"
                 android:src="@drawable/ic_chat_request_icon" />
 
@@ -78,7 +78,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:weightSum="10">
+                    android:weightSum="10.05">
 
                     <LinearLayout
                         android:id="@+id/llNewMatches"
@@ -126,6 +126,14 @@
 
                     </LinearLayout>
 
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/zero"
+                        android:layout_weight="0.05"
+                        android:layout_marginTop="@dimen/five"
+                        android:layout_marginBottom="@dimen/five"
+                        android:background="@color/white_customize" />
+
                     <android.support.v7.widget.RecyclerView
                         android:id="@+id/rvLiveChat"
                         android:layout_width="match_parent"
@@ -139,8 +147,6 @@
                 </LinearLayout>
 
 
-
-
             </android.support.v4.widget.NestedScrollView>
 
         </LinearLayout>
@@ -151,7 +157,6 @@
             android:layout_weight="1"
             android:orientation="horizontal"
             android:weightSum="25">
-
 
 
             <LinearLayout
@@ -204,7 +209,7 @@
                     android:gravity="center|top"
                     android:text="Messages"
                     android:textColor="@color/black"
-                    android:textStyle="normal"/>
+                    android:textStyle="normal" />
 
             </LinearLayout>
 
@@ -232,7 +237,7 @@
                     android:gravity="center|top"
                     android:text="Chatrooms"
                     android:textColor="@color/black"
-                    android:textStyle="normal"/>
+                    android:textStyle="normal" />
 
             </LinearLayout>
 
@@ -260,7 +265,7 @@
                     android:gravity="center|top"
                     android:text="Activities"
                     android:textColor="@color/black"
-                    android:textStyle="normal"/>
+                    android:textStyle="normal" />
 
             </LinearLayout>
 
@@ -288,7 +293,7 @@
                     android:gravity="center|top"
                     android:text="Profile"
                     android:textColor="@color/black"
-                    android:textStyle="normal"/>
+                    android:textStyle="normal" />
 
             </LinearLayout>
 

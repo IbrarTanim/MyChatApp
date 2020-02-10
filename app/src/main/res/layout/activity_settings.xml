@@ -58,7 +58,7 @@
             android:layout_height="@dimen/zero"
             android:layout_weight="10"
             android:orientation="vertical"
-            android:weightSum="20">
+            android:weightSum="20.2">
 
             <TextView
                 android:layout_width="match_parent"
@@ -276,6 +276,14 @@
                 android:layout_height="@dimen/zero"
                 android:layout_weight="1" />
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zero"
+                android:layout_weight="0.1"
+                android:layout_marginTop="@dimen/five"
+                android:layout_marginBottom="@dimen/five"
+                android:background="@color/white_customize" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/zero"
@@ -310,6 +318,14 @@
 
 
             </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zero"
+                android:layout_weight="0.1"
+                android:layout_marginTop="@dimen/five"
+                android:layout_marginBottom="@dimen/five"
+                android:background="@color/white_customize" />
 
             <View
                 android:layout_width="match_parent"
