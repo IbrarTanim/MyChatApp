@@ -45,7 +45,7 @@
                     android:layout_margin="@dimen/ten"
                     android:layout_weight="5"
                     android:gravity="center"
-                    android:text="See who has interest in you! Check it out who visited your profile."
+                    android:text="Are you sure you want to leave the chat room? People will miss you, come back soon."
                     android:textColor="@color/gray"
                     android:textSize="@dimen/fifteen" />
 
@@ -66,7 +66,7 @@
                         android:layout_weight="1"
                         android:background="@drawable/gradientbackground"
                         android:gravity="center"
-                        android:text="View"
+                        android:text="Yes"
                         android:textColor="@color/white"
                         android:textSize="@dimen/fifteen"
                         android:textStyle="bold" />
@@ -80,7 +80,7 @@
                         android:gravity="center"
                         android:paddingLeft="@dimen/five"
                         android:paddingRight="@dimen/five"
-                        android:text="Active boddo plus"
+                        android:text="I will stay"
                         android:textColor="@color/white"
                         android:textSize="@dimen/fifteen"
                         android:textStyle="bold" />

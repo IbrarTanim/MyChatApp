@@ -36,18 +36,18 @@
                 android:layout_weight="5"
                 android:layout_margin="@dimen/ten"
                 android:gravity="center|left"
-                android:text="You don't have sufficient credits, please top up your account."
+                android:text="You don't have sufficient credits. Please top up your account."
                 android:textColor="@color/gray"
                 android:textSize="@dimen/fifteen" />
 
             <TextView
-                android:layout_width="@dimen/hundred_fifty"
+                android:layout_width="170dp"
                 android:layout_height="0dp"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:background="@drawable/gradientbackground"
                 android:gravity="center"
-                android:text="OK"
+                android:text="Add boddo credits"
                 android:textColor="@color/white"
                 android:textSize="@dimen/fifteen" />
 

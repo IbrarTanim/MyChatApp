@@ -11,13 +11,14 @@ import com.rokan.mychat.dialog.DailyLoginBonusDialog;
 import com.rokan.mychat.dialog.DialogControl;
 import com.rokan.mychat.dialog.GuidelinesDialog;
 import com.rokan.mychat.dialog.InsufficientCreditsDialog;
+import com.rokan.mychat.dialog.LeaveChatroomInfoDialog;
 import com.rokan.mychat.dialog.ViewVisitorDialog;
 
 public class SettingsActivity extends AppCompatActivity implements View.OnClickListener {
 
     SettingsActivity activity;
     TextView tvBlockeduser, tvTransaction, tvBasicInfo, tvTermsOfService, tvPrivacyPolicy, tvUID, tvBoddoVersion;
-    TextView tvRestore;
+    TextView tvRestore, tvDeleteAccount;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +33,7 @@ public class SettingsActivity extends AppCompatActivity implements View.OnClickL
         tvUID = findViewById(R.id.tvUID);
         tvBoddoVersion = findViewById(R.id.tvBoddoVersion);
         tvRestore = findViewById(R.id.tvRestore);
+        tvDeleteAccount = findViewById(R.id.tvDeleteAccount);
 
         tvBlockeduser.setOnClickListener(this);
         tvTransaction.setOnClickListener(this);
@@ -41,6 +43,7 @@ public class SettingsActivity extends AppCompatActivity implements View.OnClickL
         tvUID.setOnClickListener(this);
         tvBoddoVersion.setOnClickListener(this);
         tvRestore.setOnClickListener(this);
+        tvDeleteAccount.setOnClickListener(this);
     }
 
 
@@ -83,6 +86,11 @@ public class SettingsActivity extends AppCompatActivity implements View.OnClickL
             case R.id.tvRestore:
                 ViewVisitorDialog viewVisitorDialog = new ViewVisitorDialog(activity);
                 DialogControl.ShowDialog(activity, viewVisitorDialog);
+                break;
+
+            case R.id.tvDeleteAccount:
+                LeaveChatroomInfoDialog leaveChatroomInfoDialog = new LeaveChatroomInfoDialog(activity);
+                DialogControl.ShowDialog(activity, leaveChatroomInfoDialog);
                 break;
 
 
