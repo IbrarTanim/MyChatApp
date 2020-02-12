@@ -44,7 +44,7 @@
                     android:layout_height="@dimen/zero"
                     android:layout_margin="@dimen/ten"
                     android:layout_weight="5"
-                    android:gravity="center"
+                    android:gravity="left|top"
                     android:text="Are you sure you want to leave the chat room? People will miss you, come back soon."
                     android:textColor="@color/gray"
                     android:textSize="@dimen/fifteen" />

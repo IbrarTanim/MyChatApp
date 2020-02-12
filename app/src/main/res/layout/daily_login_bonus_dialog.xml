@@ -36,7 +36,7 @@
                 android:layout_weight="5"
                 android:layout_margin="@dimen/ten"
                 android:text="You just earned 5 credits to visit us today. Visit again tomorrow for more free credits."
-                android:gravity="center|left"
+                android:gravity="top|left"
                 android:textColor="@color/gray"
                 android:textSize="@dimen/fifteen" />
 
