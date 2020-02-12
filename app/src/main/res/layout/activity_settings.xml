@@ -213,6 +213,7 @@
             </LinearLayout>
 
             <TextView
+                android:id="@+id/tvUID"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/zero"
                 android:layout_marginLeft="@dimen/ten"
@@ -225,6 +226,7 @@
                 android:textStyle="normal" />
 
             <TextView
+                android:id="@+id/tvBoddoVersion"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/zero"
                 android:layout_marginLeft="@dimen/ten"
@@ -249,6 +251,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/tvTermsOfService"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/zero"
                 android:layout_marginLeft="@dimen/ten"
@@ -261,6 +264,7 @@
                 android:textStyle="normal" />
 
             <TextView
+                android:id="@+id/tvPrivacyPolicy"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/zero"
                 android:layout_marginLeft="@dimen/ten"
@@ -295,6 +299,7 @@
                 android:weightSum="2">
 
                 <TextView
+                    android:id="@+id/tvRestore"
                     android:layout_width="@dimen/zero"
                     android:layout_height="match_parent"
                     android:layout_marginRight="@dimen/ten"
@@ -307,6 +312,7 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/tvDeleteAccount"
                     android:layout_width="@dimen/zero"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
