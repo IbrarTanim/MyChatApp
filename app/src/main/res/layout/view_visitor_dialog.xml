@@ -114,7 +114,7 @@
             android:layout_centerHorizontal="true"
             app:civ_border_width="@dimen/ten"
             app:civ_border_color="@color/white"
-            android:src="@mipmap/chatting" />
+            android:src="@mipmap/find_your_love" />
 
     </RelativeLayout>
 
