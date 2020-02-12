@@ -79,6 +79,7 @@ public class SettingsActivity extends AppCompatActivity implements View.OnClickL
                 InsufficientCreditsDialog insufficientCreditsDialog = new InsufficientCreditsDialog(activity);
                 DialogControl.ShowDialog(activity, insufficientCreditsDialog);
                 break;
+                
             case R.id.tvRestore:
                 ViewVisitorDialog viewVisitorDialog = new ViewVisitorDialog(activity);
                 DialogControl.ShowDialog(activity, viewVisitorDialog);

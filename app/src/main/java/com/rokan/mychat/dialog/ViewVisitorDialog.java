@@ -21,6 +21,6 @@ public class ViewVisitorDialog extends Dialog {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.insufficient_credits_dialog);
+        setContentView(R.layout.view_visitor_dialog);
     }
 }
