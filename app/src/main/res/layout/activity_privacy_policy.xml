@@ -28,18 +28,14 @@
             <TextView
                 android:layout_width="@dimen/zero"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="@dimen/five"
-                android:layout_weight="4"
-                android:gravity="center"
+                android:layout_marginLeft="@dimen/ten"
+                android:layout_weight="8.5"
+                android:gravity="center|left"
                 android:text="Privacy policy"
                 android:textColor="@color/black"
                 android:textSize="@dimen/twenty"
                 android:textStyle="bold" />
 
-            <View
-                android:layout_width="@dimen/zero"
-                android:layout_height="match_parent"
-                android:layout_weight="4.5" />
 
             <ImageView
                 android:id="@+id/ivChatRequest"
