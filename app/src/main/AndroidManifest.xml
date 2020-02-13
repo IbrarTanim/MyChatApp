@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.OnlyStatusBar">
         <activity
+            android:name=".activities.AccountClosedActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme.OnlyStatusBar" />
+        <activity
             android:name=".activities.PrivacyPolicyActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppTheme.OnlyStatusBar" />

@@ -15,7 +15,7 @@ public class ProfileFirstActivity extends AppCompatActivity implements View.OnCl
     ProfileFirstActivity activity;
     ImageButton ibPictureProfile, ibMessageProfile, ibChatRoomProfile, ibActivitiesProfile, ibProfileProfile;
     ImageView ivBoddoSupport;
-    TextView tvEdit, tvAddBoddoCredits;
+    TextView tvEdit, tvAddBoddoCredits, tvDiscoverBoddoPlus;
     LinearLayout llHotlistFirstProfile, llSettings, llLikedMe, llFavoritedMe;
 
     @Override
@@ -32,6 +32,7 @@ public class ProfileFirstActivity extends AppCompatActivity implements View.OnCl
         ivBoddoSupport = findViewById(R.id.ivBoddoSupport);
         tvEdit = findViewById(R.id.tvEdit);
         tvAddBoddoCredits = findViewById(R.id.tvAddBoddoCredits);
+        tvDiscoverBoddoPlus = findViewById(R.id.tvDiscoverBoddoPlus);
         llHotlistFirstProfile = findViewById(R.id.llHotlistFirstProfile);
         llSettings = findViewById(R.id.llSettings);
         llLikedMe = findViewById(R.id.llLikedMe);
@@ -45,6 +46,7 @@ public class ProfileFirstActivity extends AppCompatActivity implements View.OnCl
         ivBoddoSupport.setOnClickListener(this);
         tvEdit.setOnClickListener(this);
         tvAddBoddoCredits.setOnClickListener(this);
+        tvDiscoverBoddoPlus.setOnClickListener(this);
         llHotlistFirstProfile.setOnClickListener(this);
         llSettings.setOnClickListener(this);
         llLikedMe.setOnClickListener(this);
@@ -90,6 +92,11 @@ public class ProfileFirstActivity extends AppCompatActivity implements View.OnCl
 
             case R.id.tvAddBoddoCredits:
                 startActivity(new Intent(activity, BuyBoddoCreditsActivity.class));
+                finish();
+                break;
+
+            case R.id.tvDiscoverBoddoPlus:
+                startActivity(new Intent(activity, AccountClosedActivity.class));
                 finish();
                 break;
 
