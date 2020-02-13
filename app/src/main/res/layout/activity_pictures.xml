@@ -129,8 +129,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/zero"
                     android:layout_weight="0.05"
-                    android:layout_marginTop="@dimen/five"
-                    android:layout_marginBottom="@dimen/five"
+                    android:layout_marginBottom="@dimen/twelve"
                     android:background="@color/white_customize" />
 
                 <LinearLayout
@@ -156,8 +155,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/zero"
                     android:layout_weight="0.05"
-                    android:layout_marginTop="@dimen/five"
-                    android:layout_marginBottom="@dimen/five"
+                    android:layout_marginBottom="@dimen/ten"
                     android:background="@color/white_customize" />
 
                 <android.support.v7.widget.RecyclerView

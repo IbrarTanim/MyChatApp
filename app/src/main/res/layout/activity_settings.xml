@@ -279,15 +279,20 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/zero"
-                android:layout_weight="1" />
+                android:layout_weight="0.5" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/zero"
-                android:layout_weight="0.1"
                 android:layout_marginTop="@dimen/five"
                 android:layout_marginBottom="@dimen/five"
+                android:layout_weight="0.1"
                 android:background="@color/white_customize" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zero"
+                android:layout_weight="0.5" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -329,15 +334,20 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/zero"
-                android:layout_weight="0.1"
+                android:layout_weight="0.5" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zero"
                 android:layout_marginTop="@dimen/five"
                 android:layout_marginBottom="@dimen/five"
+                android:layout_weight="0.1"
                 android:background="@color/white_customize" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/zero"
-                android:layout_weight="1" />
+                android:layout_weight="0.5" />
 
 
             <ImageView

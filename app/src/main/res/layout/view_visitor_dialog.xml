@@ -45,7 +45,7 @@
                     android:layout_margin="@dimen/ten"
                     android:layout_weight="5"
                     android:gravity="left|top"
-                    android:text="See who has interest in you! Check it out who visited your profile."
+                    android:text="See who has interest in you. Check it out who visited you. Cost of viewing of this profile 10 Credits."
                     android:textColor="@color/gray"
                     android:textSize="@dimen/fifteen" />
 
@@ -80,7 +80,7 @@
                         android:gravity="center"
                         android:paddingLeft="@dimen/five"
                         android:paddingRight="@dimen/five"
-                        android:text="Active boddo plus"
+                        android:text="Boddo Plus"
                         android:textColor="@color/white"
                         android:textSize="@dimen/fifteen"
                         android:textStyle="bold" />

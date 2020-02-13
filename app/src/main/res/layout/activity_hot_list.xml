@@ -139,6 +139,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="@dimen/zero"
                             android:layout_weight="8"
+                            android:layout_marginRight="@dimen/five"
                             android:nestedScrollingEnabled="false"
                             android:overScrollMode="never"
                             android:scrollbars="none" />

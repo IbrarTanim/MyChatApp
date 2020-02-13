@@ -58,12 +58,6 @@ public class HotListActivity extends AppCompatActivity {
         rvHotListFirstProfile.setAdapter(hotlistFirstProfileAdapter);
 
 
-
-        /*StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(3, LinearLayoutManager.VERTICAL);
-        rvHotListFirstProfile.setLayoutManager(staggeredGridLayoutManager);
-        rvHotListFirstProfile.setAdapter(hotlistFirstProfileAdapter);*/
-
-
         tvJOIN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
