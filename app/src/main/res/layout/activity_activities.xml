@@ -93,7 +93,7 @@
                         android:layout_height="200dp"
                         android:layout_weight="2.5"
                         android:orientation="vertical"
-                        android:weightSum="5.1">
+                        android:weightSum="5.05">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -285,13 +285,6 @@
 
                         </LinearLayout>
 
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="@dimen/zero"
-                            android:layout_weight="0.05"
-                            android:layout_marginTop="@dimen/five"
-                            android:layout_marginBottom="@dimen/five"
-                            android:background="@color/white_customize" />
 
                         <TextView
                             android:layout_width="match_parent"

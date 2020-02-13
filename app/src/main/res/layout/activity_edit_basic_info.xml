@@ -70,7 +70,7 @@
                 android:layout_height="@dimen/zero"
                 android:layout_weight="1"
                 android:orientation="vertical"
-                android:weightSum="2.03">
+                android:weightSum="2.09">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -99,8 +99,8 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/zero"
-                    android:layout_weight="0.03"
-                    android:background="@color/gray" />
+                    android:layout_weight="0.09"
+                    android:background="@color/white_customize" />
 
             </LinearLayout>
 
@@ -114,7 +114,7 @@
                 android:layout_height="@dimen/zero"
                 android:layout_weight="1"
                 android:orientation="vertical"
-                android:weightSum="2.03">
+                android:weightSum="2.09">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -161,8 +161,8 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/zero"
-                    android:layout_weight="0.03"
-                    android:background="@color/gray" />
+                    android:layout_weight="0.09"
+                    android:background="@color/white_customize" />
 
             </LinearLayout>
 
@@ -216,7 +216,7 @@
                 android:layout_height="@dimen/zero"
                 android:layout_weight="1"
                 android:orientation="vertical"
-                android:weightSum="2.03">
+                android:weightSum="2.09">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -273,8 +273,8 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/zero"
-                    android:layout_weight="0.03"
-                    android:background="@color/gray" />
+                    android:layout_weight="0.09"
+                    android:background="@color/white_customize" />
 
             </LinearLayout>
 
@@ -289,7 +289,7 @@
                 android:layout_height="@dimen/zero"
                 android:layout_weight="1"
                 android:orientation="vertical"
-                android:weightSum="2.03">
+                android:weightSum="2.09">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -336,8 +336,8 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/zero"
-                    android:layout_weight="0.03"
-                    android:background="@color/gray" />
+                    android:layout_weight="0.09"
+                    android:background="@color/white_customize" />
 
             </LinearLayout>
 
@@ -352,7 +352,7 @@
                 android:layout_height="@dimen/zero"
                 android:layout_weight="2"
                 android:orientation="vertical"
-                android:weightSum="3.56">
+                android:weightSum="3.68">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -399,8 +399,8 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/zero"
-                    android:layout_weight="0.03"
-                    android:background="@color/gray" />
+                    android:layout_weight="0.09"
+                    android:background="@color/white_customize" />
 
                 <View
                     android:layout_width="match_parent"
@@ -441,8 +441,8 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/zero"
-                    android:layout_weight="0.03"
-                    android:background="@color/gray" />
+                    android:layout_weight="0.09"
+                    android:background="@color/white_customize" />
 
 
             </LinearLayout>

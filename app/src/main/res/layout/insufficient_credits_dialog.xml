@@ -47,7 +47,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/gradientbackground"
                 android:gravity="center"
-                android:text="Add boddo credits"
+                android:text="Add credits"
                 android:textColor="@color/white"
                 android:textSize="@dimen/fifteen" />
 
